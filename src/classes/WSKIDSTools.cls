@@ -1,5 +1,7 @@
 public class WSKIDSTools{
 
+    //BLUE CANVAS DEMO
+
     public static void createPipeFile(Id ReportId){
     
         /*THIS IS A PLACE HOLDER FOR THE METHOD WITH EXAMPLE CODE. THIS CODE NEEDS TO BE REFACTORED*/
