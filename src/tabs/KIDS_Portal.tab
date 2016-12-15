@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <frameHeight>600</frameHeight>
+    <hasSidebar>false</hasSidebar>
+    <label>KIDS Portal</label>
+    <mobileReady>false</mobileReady>
+    <motif>Custom83: Pencil</motif>
+    <url>https://kids.county.allegheny.pa.us/KIDS/Commonframework/Login.aspx</url>
+    <urlEncodingKey>UTF-8</urlEncodingKey>
+</CustomTab>

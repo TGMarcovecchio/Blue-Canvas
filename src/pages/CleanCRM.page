@@ -1,0 +1,40 @@
+<apex:page >
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="https://s7.activeprime.com/shared/js/jquery.hack.min.js" />
+    <script>
+      var _cew;
+      var key='worldclassindustrialnetwork__meja_5543_mexu';
+      var session=codec.encode('{!$User.Username}_session_{!$Api.Session_ID}');
+      var base_url = 'https://s7.activeprime.com/ccrm/action/';
+      ap$(document).ready(function(){
+        var url = base_url + 'match/entity/ui/key=' + key + '/?session=' + session;
+        
+        var _scrolling = 'auto';
+        if(ap$.pm.browser_supports()) {
+          _scrolling = 'no';
+        }
+        ap$('#ap_body').prepend('<iframe id="ap_window" src="'+url+'" width="100%" height="100%" scrolling="'+_scrolling+'" frameborder="0"/>');
+
+        if(ap$.pm.browser_supports()) {
+          ap$('#ap_body').height(630);
+          ap$('#ap_window').height(600);
+          ap$.pm.bind('ap_resize_iframe', function(data) {
+            var h = Math.max(data['height'],650);
+            ap$('#ap_body').height(h+30);
+            ap$('#ap_window').height(h);
+          });
+        }
+        else {
+          ap$('#ap_body').height(5130);
+          ap$('#ap_window').height(5100);
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="ap_body"></div>
+  </body>
+</html>
+</apex:page>

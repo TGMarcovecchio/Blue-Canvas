@@ -1,0 +1,123 @@
+<apex:page standardcontroller="Opportunity"><apex:messages />
+	<apex:sectionheader title="{!$ObjectType.Opportunity.label} Detail" subtitle="{!Opportunity.name}"/>
+	<chatter:feedwithfollowers entityId="{!Opportunity.Id}"/>
+	<apex:form >
+		<apex:pageblock mode="maindetail" title="{!$ObjectType.Opportunity.label} Detail">
+			<apex:pageblockbuttons >
+				<apex:commandbutton value="Edit" action="{!Edit}"/>
+				<apex:commandbutton value="Delete" action="{!Delete}"/>
+				<!-- *************** Uncomment as needed LAYOUT PAGE :: http://WWW.CLERISOFT.COM (2008-2013) *************** -->
+					<!-- <apex:commandbutton value="Include Offline" action="{!URLFOR($Action.Opportunity.IncludeOffline,Opportunity.id)}"/> -->
+					<!-- <apex:commandbutton value="Clone" action="{!URLFOR($Action.Opportunity.Clone,Opportunity.id)}"/> -->
+					<!-- <apex:commandbutton value="Convert" action="{!URLFOR($Action.Opportunity.Convert,Opportunity.id)}"/> -->
+					<!-- <apex:commandbutton value="Find Duplicates" action="{!URLFOR($Action.Opportunity.FindDup,Opportunity.id)}"/> -->
+					<!-- <apex:commandbutton value="Request Update" action="{!URLFOR($Action.Opportunity.RequestUpdate,Opportunity.id)}"/> -->
+					<!-- <apex:commandbutton value="Advanced Setup" action="{!URLFOR($Action.Opportunity.AdvancedSetup,Opportunity.id)}"/> -->
+					<!-- <apex:commandbutton value="Manage Members" action="{!URLFOR($Action.Opportunity.ManageMembers,Opportunity.id)}"/> -->
+					<!-- <apex:commandbutton value="Close Case" action="{!URLFOR($Action.Opportunity.CloseCase,Opportunity.id)}"/> -->
+				<!-- *************** Uncomment as needed LAYOUT PAGE :: http://WWW.CLERISOFT.COM (2008-2013) *************** -->
+			</apex:pageblockbuttons>
+
+			<!-- ********** Output Panel for Record Type : WIN Opportunity **********  -->
+			<apex:outputpanel rendered="{!OR(ISNULL(Opportunity.RecordTypeId),CASESAFEID(Opportunity.RecordTypeId)='01230000001YFH3AAO')}">
+				<apex:pageblocksection title="Opportunity Information" showheader="false" collapsible="false" columns="2">
+					<apex:outputfield value="{!Opportunity.Name}"/>
+					<apex:outputfield value="{!Opportunity.Stage_Image__c}"/>
+					<apex:outputfield value="{!Opportunity.Opportunity_Code__c}"/>
+					<apex:outputfield value="{!Opportunity.Line_of_Business__c}"/>
+					<apex:pageblocksectionitem />
+					<apex:outputfield value="{!Opportunity.StageName}"/>
+					<apex:outputfield value="{!Opportunity.AccountId}"/>
+					<apex:outputfield value="{!Opportunity.WIN_Stage__c}"/>
+					<apex:outputfield value="{!Opportunity.Project__c}"/>
+					<apex:outputfield value="{!Opportunity.CloseDate}"/>
+					<apex:pageblocksectionitem />
+					<apex:outputfield value="{!Opportunity.Probability}"/>
+					<apex:outputfield value="{!Opportunity.Type}"/>
+					<apex:pageblocksectionitem />
+					<apex:outputfield value="{!Opportunity.Amount}"/>
+					<apex:outputfield value="{!Opportunity.Sent_Proposal__c}"/>
+					<apex:outputfield value="{!Opportunity.Weighted_Amount__c}"/>
+					<apex:outputfield value="{!Opportunity.Proposal_Date__c}"/>
+					<apex:outputfield value="{!Opportunity.Remaining_Amount__c}"/>
+					<apex:pageblocksectionitem />
+					<apex:pageblocksectionitem />
+					<apex:outputfield value="{!Opportunity.To_Be_Invoiced__c}"/>
+				</apex:pageblocksection>
+				<apex:pageblocksection title="Description Information" showheader="true" collapsible="true" columns="1">
+					<apex:outputfield value="{!Opportunity.Description}"/>
+					<apex:outputfield value="{!Opportunity.Priority__c}"/>
+				</apex:pageblocksection>
+				<apex:pageblocksection title="Additional Information" showheader="true" collapsible="true" columns="2">
+					<apex:outputfield value="{!Opportunity.ForecastCategoryName}"/>
+					<apex:outputfield value="{!Opportunity.CampaignId}"/>
+					<apex:outputfield value="{!Opportunity.LeadSource}"/>
+					<apex:pageblocksectionitem />
+					<apex:outputfield value="{!Opportunity.NextStep}"/>
+					<apex:pageblocksectionitem />
+				</apex:pageblocksection>
+				<apex:pageblocksection title="Forcasting" showheader="true" collapsible="true" columns="2">
+					<apex:outputfield value="{!Opportunity.ExpectedRevenue}"/>
+					<apex:outputfield value="{!Opportunity.Net_Project_Revenue__c}"/>
+					<apex:outputfield value="{!Opportunity.ExpectedNetRev__c}"/>
+					<apex:outputfield value="{!Opportunity.Subcontracted_Value__c}"/>
+				</apex:pageblocksection>
+				<apex:pageblocksection title="Invoicing Information" showheader="true" collapsible="true" columns="2">
+					<apex:outputfield value="{!Opportunity.Hours_Planned__c}"/>
+					<apex:outputfield value="{!Opportunity.Total_Paid__c}"/>
+					<apex:outputfield value="{!Opportunity.Rate__c}"/>
+					<apex:outputfield value="{!Opportunity.SOW_Type__c}"/>
+					<apex:outputfield value="{!Opportunity.Number_of_Invoices__c}"/>
+					<apex:outputfield value="{!Opportunity.SOW_Start_Date__c}"/>
+					<apex:outputfield value="{!Opportunity.Total_Invoiced_Amount__c}"/>
+					<apex:outputfield value="{!Opportunity.SOW_End_Date__c}"/>
+				</apex:pageblocksection>
+				<apex:pageblocksection title="System Information" showheader="true" collapsible="true" columns="2">
+					<apex:pageblocksectionitem >
+						<apex:outputlabel value="Opportunity Owner"/>
+							<apex:outputpanel >
+							<apex:outputfield value="{!Opportunity.OwnerId}"/>
+							<apex:outputlink value="{!URLFOR($Action.Opportunity.ChangeOwner,Opportunity.id)}" rendered="{!NOT(ISNULL(Opportunity.Id))}">[Change]</apex:outputlink>
+						</apex:outputpanel>
+					</apex:pageblocksectionitem>
+					<apex:pageblocksectionitem >
+						<apex:outputlabel value="Last Modified By"/>
+						<apex:outputpanel >
+							<apex:outputfield value="{!Opportunity.LastModifiedById}"/>
+							<apex:outputfield value="{!Opportunity.LastModifiedDate}"/>
+						</apex:outputpanel>
+					</apex:pageblocksectionitem>
+					<apex:pageblocksectionitem >
+						<apex:outputlabel value="Created By"/>
+						<apex:outputpanel >
+							<apex:outputfield value="{!Opportunity.CreatedById}"/>
+							<apex:outputfield value="{!Opportunity.CreatedDate}"/>
+						</apex:outputpanel>
+					</apex:pageblocksectionitem>
+					<apex:pageblocksectionitem />
+				</apex:pageblocksection>
+			</apex:outputpanel>
+		</apex:pageblock>
+	</apex:form>
+
+	<!-- ********** Related Lists Output Panel for Record Type : WIN Opportunity **********  -->
+	<apex:outputpanel rendered="{!OR(ISNULL(Opportunity.RecordTypeId),CASESAFEID(Opportunity.RecordTypeId)='01230000001YFH3AAO')}">
+		<apex:relatedlist list="OpportunityContactRoles" title="Contact Roles"/>
+		<apex:relatedlist list="OpportunityLineItems" title="Products"/>
+		<apex:relatedlist list="Quotes" title="Quotes"/>
+		<apex:relatedlist list="Invoices__r" title="Invoices"/>
+		<apex:relatedlist list="OpportunityTeamMembers" title="Opportunity Team"/>
+		<apex:relatedlist list="OpportunitySplits" title="Opportunity Splits"/>
+		<apex:relatedlist list="Time_Records__r" title="Time Records"/>
+		<apex:relatedlist list="OpenActivities" title="Open Activities"/>
+		<apex:relatedlist list="ActivityHistories" title="Activity History"/>
+		<apex:relatedlist list="Work_Items__r" title="Milestones"/>
+		<apex:relatedlist list="Expense_Records__r" title="Expense Records"/>
+		<apex:relatedlist list="Cost_Items__r" title="Cost Items"/>
+		<apex:relatedlist list="NotesAndAttachments" title="Notes & Attachments"/>
+		<apex:relatedlist list="OpportunityHistories" title="Stage History"/>
+	</apex:outputpanel>
+	<center><br/>
+		<i style="font-size:10px;color:#aaa;">Generated By LAYOUT PAGE <a href="http://www.clerisoft.com" target="_blank">[http://www.clerisoft.com]</a> (2008-2013) : Tue Nov 05 2013 17:34:29 GMT-0500 (Eastern Standard Time)</i>
+	</center><br/>
+</apex:page>

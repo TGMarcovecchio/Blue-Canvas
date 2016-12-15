@@ -1,0 +1,197 @@
+<apex:page standardcontroller="Lead" showHeader="true" tabStyle="lead">
+<apex:stylesheet value="/sCSS/21.0/sprites/1297816277000/Theme3/default/gc/versioning.css" />
+   <style>
+      .activeTab {background-color: #236FBD; color:white; background-image:none}
+      .inactiveTab { background-color: lightgrey; color:black; background-image:none}
+   </style>           
+       <apex:tabPanel switchType="client" selectedTab="tabdetails" id="LeadTabPanel" tabClass="activeTab" inactiveTabClass="inactiveTab" >
+          <apex:tab label="Details" name="LeadDetails" id="tabdetails">
+             <apex:detail relatedList="false" title="true" inlineEdit="true"/>
+          </apex:tab>
+          <apex:tab label="Lead Information" name="LeadInfo" id="tabinfo">
+             <apex:form >
+             <apex:pageblock >
+             <apex:pageblockbuttons >
+                <apex:commandbutton value="Edit" action="{!Edit}"/>
+                <apex:commandbutton value="Delete" action="{!Delete}"/>
+                </apex:pageblockbuttons>
+                <apex:outputpanel >
+                    <apex:pageblocksection title="Lead Information" showheader="false" collapsible="false" columns="2">
+                    <apex:pageblocksectionitem >
+                        <apex:outputlabel value="Lead Owner"/>
+                            <apex:outputpanel >
+                            <apex:outputfield value="{!Lead.OwnerId}">
+                            <apex:inlineEditSupport showOnEdit="saveButton, cancelButton"  hideOnEdit="editButton" event="ondblclick"  changedStyleClass="myBoldClass" resetFunction="resetInlineEdit"/>
+                            </apex:outputfield>
+                            <apex:outputlink value="{!URLFOR($Action.Lead.ChangeOwner,Lead.id)}" rendered="{!NOT(ISNULL(Lead.Id))}">[Change]</apex:outputlink>
+                        </apex:outputpanel>
+                    </apex:pageblocksectionitem>
+                    <apex:outputfield value="{!Lead.Status}"/>
+                    <apex:pageblocksectionitem >
+                        <apex:outputlabel value="Name"/>
+                        <apex:outputpanel >
+                            <apex:outputfield value="{!Lead.Salutation}"/>
+                            <apex:outputfield value="{!Lead.FirstName}"/>
+                            <apex:outputfield value="{!Lead.LastName}"/>
+                        </apex:outputpanel>
+                    </apex:pageblocksectionitem>
+                    <apex:outputfield value="{!Lead.Rating}"/>
+                    <apex:outputfield value="{!Lead.Company}"/>
+                    <apex:outputfield value="{!Lead.Email}"/>
+                    <apex:outputfield value="{!Lead.Title}"/>
+                    <apex:outputfield value="{!Lead.Alternative_Email__c}"/>
+                    <apex:outputfield value="{!Lead.Department__c}"/>
+                    <apex:outputfield value="{!Lead.Alternative_Email_2__c}"/>
+                    <apex:outputfield value="{!Lead.Birthdate__c}"/>
+                    <apex:outputfield value="{!Lead.Home_Phone__c}"/>
+                    <apex:outputfield value="{!Lead.Number_of_Calls__c}"/>
+                    <apex:outputfield value="{!Lead.Phone}"/>
+                    <apex:outputfield value="{!Lead.First_Call__c}"/>
+                    <apex:outputfield value="{!Lead.MobilePhone}"/>
+                    <apex:outputfield value="{!Lead.Last_Call__c}"/>
+                    </apex:pageblocksection>
+                </apex:outputpanel>
+            </apex:pageblock>
+            </apex:form>
+          </apex:tab>
+          
+          <!-- New Tab -->
+          <apex:tab label="Home Contact Information" name="HomeContactInfo" id="tabHomeInfo">
+                <apex:pageblock >
+                <apex:outputpanel >
+                <apex:pageblocksection title="Home Contact Information" showheader="true" collapsible="true" columns="2">
+                    <apex:outputfield value="{!Lead.Home_Street__c}"/>
+                    <apex:outputfield value="{!Lead.Home_City__c}"/>
+                    <apex:outputfield value="{!Lead.Home_State__c}"/>
+                    <apex:outputfield value="{!Lead.Home_Postal_Zip_Code__c}"/>
+                </apex:pageblocksection>
+                </apex:outputpanel>
+            </apex:pageblock>            
+          </apex:tab>
+          
+          <!-- New Tab -->
+          <apex:tab label="Lead Additional Details" name="LeadAdditionalDetails" id="tabLeadAddDetails">
+                <apex:pageblock >
+                <apex:outputpanel >
+                <apex:pageblocksection title="Lead Details" showheader="true" collapsible="true" columns="2">
+                    <apex:outputfield value="{!Lead.Primary_lob__c}"/>
+                    <apex:outputfield value="{!Lead.LeadSource}"/>
+                    <apex:outputfield value="{!Lead.Follow_up_Priority__c}"/>
+                    <apex:outputfield value="{!Lead.Reffering_Contact__c}"/>
+                </apex:pageblocksection>
+                </apex:outputpanel>
+            </apex:pageblock>            
+          </apex:tab>
+          
+          <!-- New Tab -->
+          <apex:tab label="LinkedIn Information" name="LinkedInInfo" id="tabLinkedInInfo">
+                <apex:pageblock >
+                <apex:outputpanel >
+                <apex:pageblocksection title="LinkedIn Information" showheader="true" collapsible="true" columns="2">
+                    <apex:outputfield value="{!Lead.Position_role__c}"/>
+                    <apex:outputfield value="{!Lead.Prediction_Likelihood_of_Response__c}"/>
+                    <apex:outputfield value="{!Lead.Number_Contacts__c}"/>
+                    <apex:outputfield value="{!Lead.Reason_for_Prediction__c}"/>
+                    <apex:outputfield value="{!Lead.Degree_of_Separation__c}"/>
+                </apex:pageblocksection>
+                </apex:outputpanel>
+            </apex:pageblock>            
+          </apex:tab>
+          
+          <!-- New Tab -->
+          <apex:tab label="Address Information" name="AddressInformation" id="tabAddress">
+                <apex:pageblock >
+                <apex:outputpanel >
+                <apex:pageblocksection title="Address Information" showheader="true" collapsible="true" columns="2">
+                    <apex:pageblocksectionitem >
+                        <apex:outputlabel value="Address"/>
+                        <apex:outputpanel >
+                            <apex:outputfield value="{!Lead.Street}"/><br/>
+                            <apex:outputfield value="{!Lead.City}"/>
+                            <apex:outputfield value="{!Lead.State}"/>
+                            <apex:outputfield value="{!Lead.PostalCode}"/><br/>
+                            <apex:outputfield value="{!Lead.Country}"/>
+                        </apex:outputpanel>
+                    </apex:pageblocksectionitem>
+                    <apex:outputfield value="{!Lead.Website}"/>
+                </apex:pageblocksection>
+                </apex:outputpanel>
+            </apex:pageblock>
+          </apex:tab>
+          
+          <!-- New Tab -->
+          <apex:tab label="Additional Information" name="AdditionalInfo" id="tabAddInfo">
+                <apex:pageblock >
+                <apex:outputpanel >
+                <apex:pageblocksection title="Additional Information" showheader="true" collapsible="true" columns="2">
+                    <apex:outputfield value="{!Lead.NumberOfEmployees}"/>
+                    <apex:outputfield value="{!Lead.AnnualRevenue}"/>
+                    <apex:outputfield value="{!Lead.Industry}"/>
+                </apex:pageblocksection>
+                </apex:outputpanel>
+            </apex:pageblock>            
+          </apex:tab>
+          
+          <!-- New Tab -->
+          <apex:tab label="Description Information" name="DescriptionInfo" id="tabDescInfo">
+                <apex:pageblock >
+                <apex:outputpanel >
+                <apex:pageblocksection title="Description Information" showheader="false" collapsible="false" columns="1">
+                    <apex:outputfield value="{!Lead.Description}"/>
+                </apex:pageblocksection>
+                </apex:outputpanel>
+            </apex:pageblock>
+          </apex:tab>
+          
+          <!-- New Tab -->
+          <apex:tab label="System Information" name="SystemInformation" id="tabSysInfo">
+                <apex:pageblock >
+                <apex:outputpanel >
+                <apex:pageblocksection title="System Information" showheader="false" collapsible="false" columns="2">
+                    <apex:pageblocksectionitem >
+                        <apex:outputlabel value="Created By"/>
+                        <apex:outputpanel >
+                            <apex:outputfield value="{!Lead.CreatedById}"/>
+                            <apex:outputfield value="{!Lead.CreatedDate}"/>
+                        </apex:outputpanel>
+                    </apex:pageblocksectionitem>
+                    <apex:pageblocksectionitem >
+                        <apex:outputlabel value="Last Modified By"/>
+                        <apex:outputpanel >
+                            <apex:outputfield value="{!Lead.LastModifiedById}"/>
+                            <apex:outputfield value="{!Lead.LastModifiedDate}"/>
+                        </apex:outputpanel>
+                    </apex:pageblocksectionitem>
+                </apex:pageblocksection>
+                </apex:outputpanel>
+            </apex:pageblock> 
+          </apex:tab>
+          
+        <!-- Related Lists As Tabs -->
+          
+          
+          <apex:tab label="Open Activities" name="OpenActivities" id="tabOpenAct">
+             <apex:relatedList subject="{!lead}" list="OpenActivities" />
+          </apex:tab>
+          
+          <apex:tab label="Activity History" name="ActivityHistories" id="tabActHist">
+             <apex:relatedList subject="{!lead}" list="ActivityHistories" />
+          </apex:tab>
+             
+          <apex:tab label="Notes and Attachments" name="NotesAndAttachments" id="tabNoteAtt">
+             <apex:relatedList subject="{!lead}" list="NotesAndAttachments" />
+          </apex:tab>
+          
+          <apex:tab label="HTML Email Status" name="EmailStatuses" id="tabEmailStat">
+             <apex:relatedList subject="{!lead}" list="EmailStatuses" />
+          </apex:tab>
+             
+          <apex:tab label="Campaign History" name="CampaignMembers" id="tabCampaignHist">
+             <apex:relatedList subject="{!lead}" list="CampaignMembers" />
+          </apex:tab>
+             
+       </apex:tabPanel>
+
+
+    
+</apex:page>

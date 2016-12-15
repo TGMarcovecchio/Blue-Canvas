@@ -1,0 +1,47 @@
+<apex:page standardController="Opportunity" showHeader="true" tabStyle="opportunity" >
+   <style>
+      .activeTab {background-color: green; color:white; 
+         background-image:none}
+      .inactiveTab { background-color: lightgrey; color:black; 
+         background-image:none}
+   </style>
+   <apex:tabPanel switchType="client" selectedTab="tabdetails" id="OpportunityTabPanel" tabClass="activeTab" inactiveTabClass="inactiveTab">   
+      <apex:tab label="Stage 1" name="Stage1" id="tabStage1">
+      <apex:pageblock mode="maindetail" title="{!$ObjectType.Opportunity.label} Detail">
+    <apex:outputpanel rendered="{!OR(ISNULL(Opportunity.RecordTypeId),CASESAFEID(Opportunity.RecordTypeId)='01230000001YFH3AAO')}">
+                <apex:pageblocksection title="Opportunity Information" showheader="false" collapsible="false" columns="2">
+                    <apex:outputfield value="{!Opportunity.Description}"/>
+                    <apex:outputfield value="{!Opportunity.Priority__c}"/>
+               
+                
+                    <apex:outputfield value="{!Opportunity.ForecastCategoryName}"/>
+                    <apex:outputfield value="{!Opportunity.CampaignId}"/>
+                    <apex:outputfield value="{!Opportunity.LeadSource}"/>
+             
+                    <apex:outputfield value="{!Opportunity.NextStep}"/>
+                  
+                
+                    <apex:outputfield value="{!Opportunity.ExpectedRevenue}"/>
+                    <apex:outputfield value="{!Opportunity.Net_Project_Revenue__c}"/>
+                    <apex:outputfield value="{!Opportunity.ExpectedNetRev__c}"/>
+                    <apex:outputfield value="{!Opportunity.Subcontracted_Value__c}"/>
+               
+                
+                    <apex:outputfield value="{!Opportunity.Hours_Planned__c}"/>
+                    <apex:outputfield value="{!Opportunity.Total_Paid__c}"/>
+                    <apex:outputfield value="{!Opportunity.Rate__c}"/>
+                    <apex:outputfield value="{!Opportunity.SOW_Type__c}"/>
+                    <apex:outputfield value="{!Opportunity.Number_of_Invoices__c}"/>
+                    <apex:outputfield value="{!Opportunity.SOW_Start_Date__c}"/>
+                    <apex:outputfield value="{!Opportunity.Total_Invoiced_Amount__c}"/>
+                    <apex:outputfield value="{!Opportunity.SOW_End_Date__c}"/>
+                    </apex:pageblocksection>
+     </apex:outputpanel>
+     </apex:pageblock>           
+      </apex:tab>
+      <apex:tab label="Stage 2" name="Stage2" id="tabStage2">
+      </apex:tab>
+      <apex:tab label="Stage 3" name="Stage3" id="tabStage3">
+      </apex:tab>
+   </apex:tabPanel>
+</apex:page>
