@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <description>Mass update and mass edit selected records from list view or related list</description>
+    <label>Mass Update And Mass Edit</label>
+    <tab>standard-Lead</tab>
+    <tab>standard-report</tab>
+    <tab>Line_of_Business__c</tab>
+    <tab>ActivePrime_Admin</tab>
+    <tab>standard-ProfilePlatformFeed</tab>
+    <tab>standard-Campaign</tab>
+    <tab>standard-Dashboard</tab>
+    <tab>standard-ProfilePlatformOverview</tab>
+    <tab>standard-Product2</tab>
+    <tab>standard-Idea</tab>
+    <tab>standard-Solution</tab>
+    <tab>standard-CollaborationGroup</tab>
+    <tab>activities__Activities</tab>
+    <tab>standard-OtherUserProfile</tab>
+    <tab>Assignment__c</tab>
+    <tab>standard-UserProfile</tab>
+    <tab>GBLite__GridBuddy_User_Guide</tab>
+    <tab>GBLite__Grid_Wizard</tab>
+    <tab>GBLite__Buy_GridBuddy</tab>
+    <tab>GBLite__GridBuddy_Setup_Guide</tab>
+    <tab>GBLite__All_Grids</tab>
+    <tab>standard-Workspace</tab>
+    <tab>standard-Chatter</tab>
+    <tab>standard-Case</tab>
+    <tab>Payment__c</tab>
+    <tab>standard-PartnerNetworkConnection</tab>
+    <tab>Statement_of_Work__c</tab>
+    <tab>standard-Account</tab>
+    <tab>Expense_Record__c</tab>
+    <tab>Cost_Item__c</tab>
+    <tab>SFDC_Project__c</tab>
+    <tab>Expense_Report__c</tab>
+    <tab>Timesheet__c</tab>
+    <tab>Time_Record__c</tab>
+    <tab>standard-Opportunity</tab>
+    <tab>Invoice__c</tab>
+    <tab>standard-ContentSubscriptions</tab>
+    <tab>standard-Forecasting3</tab>
+    <tab>standard-Document</tab>
+    <tab>standard-ContentSearch</tab>
+    <tab>Milestone__c</tab>
+    <tab>standard-File</tab>
+    <tab>standard-Contact</tab>
+    <tab>standard-Contract</tab>
+    <tab>standard-AppLauncher</tab>
+    <tab>Project_Team__c</tab>
+    <tab>KIDS_Service_Log_Record__c</tab>
+    <tab>KIDS_Choice_Value__c</tab>
+    <tab>KIDS_Service_Log_Report__c</tab>
+</CustomApplication>
