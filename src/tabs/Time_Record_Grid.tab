@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <frameHeight>1000</frameHeight>
+    <hasSidebar>false</hasSidebar>
+    <label>Time Record Grid</label>
+    <mobileReady>false</mobileReady>
+    <motif>Custom95: Stopwatch</motif>
+    <url>https://gblite.na1.visual.force.com/apex/Grid?gname=Time%20Records</url>
+    <urlEncodingKey>UTF-8</urlEncodingKey>
+</CustomTab>

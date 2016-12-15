@@ -1,0 +1,496 @@
+<apex:page standardController="Lead" title="Convert Lead: {!lead.Name}">
+  <link rel="stylesheet" type="text/css" media="screen" href="https://s7.activeprime.com/ce/css/ap_aps_widgets.min.css" />
+  <script src="https://s7.activeprime.com/ce/js/ap_sfdc_widgets.min.js" type="text/javascript"></script>
+  <script src="../../soap/ajax/18.0/connection.js" type="text/javascript"></script>
+  
+  <script type="text/javascript">
+    jQuery.noConflict();
+    var sfdc_url = null;
+    var cb_tsk5_fu = new Array ();
+    
+    jQuery(document).ready(function(){
+      var _conn = sforce.connection;
+      _conn.sessionId = "{!$Api.Session_ID}";
+      _conn.client = 'ActivePrime/1.0';
+      
+      var base_url = "https://s7.activeprime.com/ce/action/";
+      var key = "worldclassindustrialnetwork__meja_5543_mexu";
+      var session = codec.encode('{!$User.Username}_session_{!$Api.Session_ID}');
+      var session_id = '{!$Api.Session_ID}';
+      var first_name = jQuery('#hidden_first_name').text();
+      var last_name = jQuery('#hidden_last_name').text();
+      var company = jQuery('#hidden_account_name').text();
+      var lead_id = "{!lead.Id}";
+      
+      var lc = new ap_lead_conversion_sfdc_widget({base_url:base_url,key:key,session_id:session_id,session:session,first_name:first_name,last_name:last_name,account_name:company,lead_id:lead_id,_conn:_conn});
+    });
+  </script>
+  
+  <!-- sfdc scripts -->
+  <script type="text/javascript">
+    function bodyOnLoad() {
+      //NOT USED
+      ActivityFunction.initWhoWhatFields('00Q','tsk2_fu','tsk2_fu_lkid','whobtn','tsk2_fu_mlktp','tsk3_fu','tsk3_fu_lkid','whtbtn','tsk3_fu_mlktp','IsVisibleInSelfService_fu');
+      handleTextAreaElementChange('tsk6_fu', 32000, 'remaining', 'over limit');
+      LookupAutoCompleteInputElement.registerSupportedEntities("tsk2_fu",{});
+      LookupAutoCompleteInputElement.registerSupportedEntities("tsk3_fu",{});
+      if (window.sfdcPage.onChangeOwnerDisplay) {window.sfdcPage.onChangeOwnerDisplay('tsk1_fu', 'tsk1_fu_tmuDspGrp', 'tsk1_fu_lkwgt', 'null', 200, 'IsRecurrence_fu');};
+      TaskEditPage.reenableReminders('tsk12_fu','IsRecurrence_fu','reminder_ldt_fu','reminder_ldt_fu_time','reminder_dt_fu','reminder_dt_fu_time');
+      setFocusOnLoad();
+      if (typeof(startSessionTimer)!='undefined') {startSessionTimer(); };
+      if (typeof(ActivityReminder)!='undefined') {ActivityReminder.initialize([], false, false);};
+      if ((window.sfdcPage) && (sfdcPage.executeOnloadQueue)){sfdcPage.executeOnloadQueue();};
+      new SidebarSearchAutoCompleteElement("sbstr","\/_ui\/common\/search\/client\/ui\/SidebarSearchAutoCompleteServlet",1,{},true,"sen","sbsearch");
+    }
+    
+    function bodyOnBeforeUnload() {
+      if ((window.sfdcPage) && (sfdcPage.executeOnBeforeUnloadQueue)){sfdcPage.executeOnBeforeUnloadQueue();};
+    }
+    
+    function bodyOnFocus() {
+      closePopup();
+    }
+    
+    function bodyOnUnload() {}
+    
+    function viewAccount() {
+      var acc_id = jQuery('#accid').val();
+      if (acc_id == null || acc_id == "" || acc_id == "--None--" || acc_id == 000000000000000) {
+        alert("You can only view existing accounts.");
+      } else if (sfdc_url){
+        loc = sfdc_url + acc_id + '/p';
+        window.open(loc,'APLeadConversion');
+      } else {
+        printWin('/'+acc_id+'/p');
+      }
+    }
+    
+    function viewContact() {
+      var con_id = jQuery('#conid').val();
+      if (con_id == null || con_id == "" || con_id == "--None--" || con_id == 000000000000000) {
+        alert("You can only view existing contacts.");
+      } else if (sfdc_url){
+        loc = sfdc_url + con_id + '/p';
+        window.open(loc,'APLeadConversion');
+      } else {
+        printWin('/'+con_id+'/p');
+      }
+    }
+    
+    // shows the Overwrite Lead Source checkbox when a an existing person acct is selected..
+    function accountSelChange(selId) {
+      var sel = document.getElementById(selId);
+      var overwriteDiv = document.getElementById('overwritediv');
+      if (sel.value != null && sel.value != '' && sel.value != '000000000000000') {
+        overwriteDiv.style.display='';
+      } else {
+        overwriteDiv.style.display='none';
+      }
+    }
+  </script>
+    
+  <div style="display:none;"><span id="hidden_first_name">{!lead.FirstName}</span><span id="hidden_last_name">{!lead.LastName}</span><span id="hidden_account_name">{!lead.Company}</span></div>
+
+  <!-- Start page content -->
+  <div class="bPageTitle">
+    <div class="ptBody secondaryPalette">
+      <div class="content">
+        <img src="/s.gif" alt="Lead" class="pageTitleIcon" title="Lead"></img>
+        <h1 class="pageType">Convert Lead<span class="titleSeparatingColon">:</span></h1>
+        <h2 class="pageDescription"> {!lead.Name}</h2>
+        <div class="blank">&nbsp;</div>
+      </div>
+      <div class="links">
+        <a href="javascript:openPopupFocusEscapePounds(%27/help/doc/user_ed.jsp?loc=help&amp;target=leads_convert.htm&amp;section=Leads%27, %27Help%27, 700, 600, %27width=700,height=600,resizable=yes,toolbar=yes,status=no,scrollbars=yes,menubar=yes,directories=no,location=no,dependant=no%27, false, false);" title="Help for this Page (New Window)"><span class="helpLink">Help for this Page</span><img src="/s.gif" alt="Help" class="helpIcon" title="Help"></img></a>
+      </div>
+    </div>
+    <div class="ptBreadcrumb"></div>
+  </div>
+
+  <table border="0" cellpadding="0" cellspacing="2">
+      <tbody><tr>
+          <td colspan="4">Leads can be converted to accounts, contacts, opportunities, and followup tasks.<br/>You should only convert a lead once you have identified it as qualified.<br/>After this lead has been converted, it can no longer be viewed or edited as a lead, but can be viewed in lead reports.<br/><br/></td>
+      </tr>
+  </tbody></table>
+  <form id="editPage" name="editPage">
+  <div class="bPageBlock bEditBlock secondaryPalette" id="ep">
+    <div class="pbHeader">
+      <table border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td class="pbTitle">
+              <img src="/s.gif" alt="" class="minWidth" title="" width="1" height="1"></img>
+              <h2 class="mainTitle"></h2>
+            </td>
+            <td class="pbButton" id="topButtonRow">
+              <input id="convert" value="Convert" class="btn" title="Convert" name="save" type="button" />&nbsp;
+              <input id="cancel" value="Cancel" class="btn" title="Cancel" name="cancel" type="button" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pbBody">
+      <div class="pbError" id="errorDiv_ep" style="display: none;">Error: Invalid Data.<br/>Review all error messages below to correct your data.</div>
+      <div class="pbSubheader first tertiaryPalette" id="head_1_ep">
+        <span class="pbSubExtra">
+          <span class="requiredLegend">
+            <span class="requiredExampleOuter">
+              <span class="requiredExample">&nbsp;</span>
+            </span>
+            <span class="requiredMark">*</span>
+            <span class="requiredText"> = Required Information</span>
+          </span>
+        </span>
+        <h3>Convert Lead<span class="titleSeparatingColon">:</span></h3>
+      </div>
+      <div class="pbSubsection">
+        <table class="detailList" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr><td class="labelCol requiredInput"><label for="owner_id"><span class="requiredMark">*</span>Record Owner</label></td><td class="data2Col" colspan="3"><div class="requiredInput"><div class="requiredBlock"></div><input name="owner_id_lkid" id="owner_id_lkid" value="{!lead.Owner.Id}" type="hidden"/><input name="owner_id_lkold" id="owner_id_lkold" value="{!lead.Owner.Name}" type="hidden"/><input name="owner_id_lktp" id="owner_id_lktp" value="StandardUserLookup" type="hidden"/><input name="owner_id_lspf" id="owner_id_lspf" value="0" type="hidden"/><input name="owner_id_lspfsub" id="owner_id_lspfsub" value="0" type="hidden"/><input name="owner_id_mod" id="owner_id_mod" value="0" type="hidden"/><span class="lookupInput"><input id="owner_id" maxlength="255" name="owner_id" onchange="getElementByIdCS('owner_id_lkid').value='';getElementByIdCS('owner_id_mod').value='1';" size="20" value="{!lead.Owner.Name}" type="text"/><a href="javascript:%20openLookup%28%27%2F_ui%2Fcommon%2Fdata%2FLookupPage%3Flkfm%3DeditPage%26lknm%3Downer_id%26lktp%3D%27%20%2B%20getElementByIdCS%28%27owner_id_lktp%27%29.value%2C670%2C%271%27%2C%27%26lksrch%3D%27%20%2B%20escapeUTF%28getElementByIdCS%28%27owner_id%27%29.value.substring%280%2C%2080%29%29%29" id="owner_id_lkwgt" onclick="setLastMousePosition(event)" title="Record Owner Lookup (New Window)"><img src="/s.gif" alt="Record Owner Lookup (New Window)" class="lookupIcon" onblur="this.className = 'lookupIcon';" onfocus="this.className = 'lookupIconOn';" onmouseout="this.className = 'lookupIcon';this.className = 'lookupIcon';" onmouseover="this.className = 'lookupIconOn';this.className = 'lookupIconOn';" title="Record Owner Lookup (New Window)"></img></a></span></div></td></tr>
+            <tr><td class="labelCol"><label for="sem">Send Email to the Owner</label></td><td class="data2Col" colspan="3"><input id="sem" name="sem" value="1" type="checkbox"/></td></tr>
+            <tr>
+              <td class="labelCol requiredInput">Account</td>
+              <td class="data2Col" colspan="3">
+                <div class="requiredInput">
+                  <div class="requiredBlock"></div>
+                  <select id="accid" name="accid" title="Account">
+                    <option value="">--None--</option>
+                    <option selected="selected" value="000000000000000">Create New Account: {!lead.Company}</option>
+                  </select>
+                  <input name="acclkid_lkid" id="acclkid_lkid" value="000000000000000" type="hidden"/>
+                  <input name="acclkid_lkold" id="acclkid_lkold" value="null" type="hidden"/>
+                  <input name="acclkid_lktp" id="acclkid_lktp" value="001" type="hidden"/>
+                  <input name="acclkid_lspf" id="acclkid_lspf" value="0" type="hidden"/>
+                  <input name="acclkid_lspfsub" id="acclkid_lspfsub" value="0" type="hidden"/>
+                  <input name="acclkid_mod" id="acclkid_mod" value="0" type="hidden"/>
+                  <span class="lookupInput">
+                    <input id="acclkid" maxlength="255" name="acclkid" onchange="getElementByIdCS('acclkid_lkid').value='';getElementByIdCS('acclkid_mod').value='1';" size="20" style="display: none;" type="text"/>
+                    <a href="javascript:%20openLookup%28%27%2F_ui%2Fcommon%2Fdata%2FLookupPage%3Flkpr%3D00Q5000000OSKzI%26lkfm%3DeditPage%26lknm%3Dacclkid%26leadconv%3D1%26lktp%3D%27%20%2B%20getElementByIdCS%28%27acclkid_lktp%27%29.value%2C670%2C%271%27%2C%27%26lksrch%3D%27%20%2B%20escapeUTF%28getElementByIdCS%28%27acclkid%27%29.value.substring%280%2C%2080%29%29%29" id="acclkid_lkwgt" onclick="setLastMousePosition(event)" title=" Lookup (New Window)"><img src="/s.gif" alt=" Lookup (New Window)" class="lookupIcon" onblur="this.className = 'lookupIcon';" onfocus="this.className = 'lookupIconOn';" onmouseout="this.className = 'lookupIcon';this.className = 'lookupIcon';" onmouseover="this.className = 'lookupIconOn';this.className = 'lookupIconOn';" title=" Lookup (New Window)" /></a>
+                  </span>
+                  <a href="javascript:%20viewAccount%28%29%3B" title="View (New Window)">View</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="labelCol">Possible Account Matches</td>
+              <td class="data2Col" id="ap_lc_account_grid_cell"></td>
+            </tr>
+            <tr>
+              <td class="labelCol requiredInput">Contact</td>
+              <td class="data2Col" colspan="3">
+                <div class="requiredInput">
+                  <div class="requiredBlock"></div>
+                  <select id="conid" name="conid" title="Contact">
+                    <option value="000000000000000">Create New Contact: {!lead.Name}</option>
+                  </select>
+                  <a href="javascript:%20viewContact%28%29%3B" title="View (New Window)">View</a>&nbsp;
+                  <span id="ap_lc_contact_message" style="font-weight:bold; color:#CC0000;">Warning: selecting a Contact already associated with an Account will override your choice of Accounts above.  Selecting a Contact without an Account will associate it to the Account selected above.</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="labelCol">&nbsp;</td>
+              <td class="data2Col" colspan="3">
+                <div class="pbSubsection"><table cellspacing="0" cellpadding="0" border="0" class="detailList"><tbody><tr class="detailRow last"><td colspan="4"><input type="checkbox" value="1" name="sc" id="sc"/><label for="sc">Replace existing Lead Source with the value from this lead</label></td></tr></tbody></table></div>
+              </td>
+            </tr>
+            <tr>
+              <td class="labelCol">Possible Contact Matches</td>
+              <td class="data2Col" id="ap_lc_contact_grid_cell"></td>
+            </tr>
+            <tr><td class="labelCol requiredInput"><label for=""><span class="requiredMark">*</span>Opportunity Name</label></td><td class="data2Col" colspan="3"><div class="requiredInput"><div class="requiredBlock"></div><input id="noopptt" maxlength="80" name="noopptt" size="20" title="Opportunity Name" value="{!lead.Company}-" type="text"/>&nbsp;<br/><input id="nooppti" name="nooppti" onclick="javascript:document.getElementById('noopptt').disabled = document.getElementById('nooppti').checked;" value="1" type="checkbox"/><label for="nooppti">Do not create a new opportunity upon conversion.</label></div></td></tr>
+            <tr>
+              <td class="labelCol requiredInput last"><label for="cstatus"><span class="requiredMark">*</span>Converted Status</label></td>
+              <td class="data2Col last" colspan="3">
+                <div class="requiredInput">
+                  <div class="requiredBlock"></div>
+                  <select id="cstatus" name="cstatus"></select>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="pbSubheader tertiaryPalette" id="head_2_ep"><h3>Task Information<span class="titleSeparatingColon">:</span></h3></div>
+      <div class="pbSubsection">
+        <table class="detailList" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="labelCol requiredInput">
+                <label for="tsk5_fu"><span class="requiredMark">*</span>Subject</label></td><td class="dataCol col02">
+                <div class="requiredInput">
+                  <div class="requiredBlock"></div>
+                  <input id="tsk5_fu" maxlength="80" name="tsk5_fu" size="20" type="text"/>
+                  <a href="javascript:openPopupFocus%28%27%2Fwidg%2Fcombobox.jsp%3Fform%3DeditPage%26field%3Dtsk5_fu%26display%3D1%26cnt%3D5%27%2C%20%27_blank%27%2C%20270%2C%20200%2C%20%27width%3D270%2Cheight%3D200%2Cresizable%3Dyes%2Ctoolbar%3Dno%2Cstatus%3Dno%2Cscrollbars%3Dyes%2Cmenubar%3Dno%2Cdirectories%3Dno%2Clocation%3Dno%2Cdependant%3Dyes%27%2C%20true%2C%20true%29%3B" onclick="setLastMousePosition(event)" size="20" title="Combo (New Window)"><img src="/s.gif" alt="Subject Combo (New Window)" class="comboboxIcon" onblur="this.className = 'comboboxIcon';" onfocus="this.className = 'comboboxIconOn';" onmouseout="this.className = 'comboboxIcon';this.className = 'comboboxIcon';" onmouseover="this.className = 'comboboxIconOn';this.className = 'comboboxIconOn';" title="Subject Combo (New Window)"/></a>
+                </div>
+              </td>
+              <td class="labelCol requiredInput"><label for="tsk12_fu"><span class="requiredMark">*</span>Status</label></td>
+              <td class="dataCol">
+                <div class="requiredInput">
+                  <div class="requiredBlock"></div>
+                  <span>
+                    <select id="tsk12_fu" name="tsk12_fu" onchange="TaskEditPage.reenableReminders('tsk12_fu','IsRecurrence_fu','reminder_ldt_fu','reminder_ldt_fu_time','reminder_dt_fu','reminder_dt_fu_time');"></select>
+                  </span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="labelCol"><label for="tsk4_fu">Due Date</label></td>
+              <td class="dataCol col02">
+                <span class="dateInput dateOnlyInput">
+                  <input id="tsk4_fu" name="tsk4_fu" onfocus="DatePicker.pickDate(true, 'tsk4_fu', false);" size="12" type="text"/>
+                  <span class="dateFormat">[&nbsp;<a href="javascript:DatePicker.insertDate('{!MONTH(TODAY())}/{!DAY(TODAY())}/{!YEAR(TODAY())}', 'tsk4_fu', true);">{!MONTH(TODAY())}/{!DAY(TODAY())}/{!YEAR(TODAY())}</a>&nbsp;]</span>
+                </span>
+              </td>
+              <td class="labelCol empty">&nbsp;</td>
+              <td class="dataCol empty">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="labelCol requiredInput last"><label for="tsk13_fu"><span class="requiredMark">*</span>Priority</label></td>
+              <td class="dataCol col02 last">
+                <div class="requiredInput">
+                  <div class="requiredBlock"></div>
+                  <span>
+                    <select id="tsk13_fu" name="tsk13_fu"></select>
+                  </span>
+                </div>
+              </td>
+              <td class="labelCol empty last">&nbsp;</td>
+              <td class="dataCol empty last">&nbsp;</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="pbSubheader tertiaryPalette" id="head_3_ep"><h3>Description Information<span class="titleSeparatingColon">:</span></h3></div>
+      <div class="pbSubsection">
+        <table class="detailList" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="labelCol">
+                <label for="tsk6_fu">Comments</label>
+                <div class="textCounterOuter">
+                  <div class="textCounterMiddle">
+                    <div class="textCounter" id="tsk6_fu_counter">32000 remaining</div>
+                  </div>
+                </div>
+              </td>
+              <td class="data2Col" colspan="3">
+                <textarea cols="75" id="tsk6_fu" maxlength="32000" name="tsk6_fu" onchange="handleTextAreaElementChange('tsk6_fu', 32000, 'remaining', 'over limit');" onclick="handleTextAreaElementChange('tsk6_fu', 32000, 'remaining', 'over limit');" onkeydown="handleTextAreaElementChange('tsk6_fu', 32000, 'remaining', 'over limit');" onkeyup="handleTextAreaElementChange('tsk6_fu', 32000, 'remaining', 'over limit');" onmousedown="handleTextAreaElementChange('tsk6_fu', 32000, 'remaining', 'over limit');" rows="6" type="text" wrap="soft"></textarea>
+              </td>
+            </tr>
+            <tr class="detailRow last">
+              <td colspan="4">
+                <div>
+                  <input id="email_followup" name="email" value="1" type="checkbox"/>
+                  <label for="email_followup">Send Notification Email</label>
+                  <div class="message infoM2" id="prefEl" style="display: none; float: left; padding: 2px; margin-left: 20px;">
+                    <input id="email_pref" name="email_pref" value="1" type="checkbox"/><label for="email_pref">Make this the default setting.</label>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="pbSubheader tertiaryPalette" id="head_4_ep"><h3>Reminder<span class="titleSeparatingColon">:</span></h3></div>
+      <div class="pbSubsection">
+        <table class="detailList" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="labelCol">Reminder</td>
+              <td class="data2Col" colspan="3">
+                <div>
+                  <input checked="checked" id="reminder_select_check" name="IsReminderSet_fu" onclick="TaskEditPage.reenableReminders('tsk12_fu','IsRecurrence_fu','reminder_ldt_fu','reminder_ldt_fu_time','reminder_dt_fu','reminder_dt_fu_time');" title="Set reminder on/off" value="1" type="checkbox"/>
+                  <label for="reminder_select_check"></label>
+                  <span>
+                    <span class="dateInput dateOnlyInput">
+                      <input id="reminder_dt_fu" name="reminder_dt_fu" onfocus="DatePicker.pickDate(false, 'reminder_dt_fu', false);" size="10" title="Reminder date" value="{!MONTH(TODAY())}/{!DAY(TODAY())}/{!YEAR(TODAY())}" type="text"/>
+                      <select id="reminder_dt_fu_time" name="reminder_dt_fu_time" title="Reminder time">
+                        <option value="0">12:00 AM</option>
+                        <option value="30">12:30 AM</option>
+                        <option value="60">1:00 AM</option>
+                        <option value="90">1:30 AM</option>
+                        <option value="120">2:00 AM</option>
+                        <option value="150">2:30 AM</option>
+                        <option value="180">3:00 AM</option>
+                        <option value="210">3:30 AM</option>
+                        <option value="240">4:00 AM</option>
+                        <option value="270">4:30 AM</option>
+                        <option value="300">5:00 AM</option>
+                        <option value="330">5:30 AM</option>
+                        <option value="360">6:00 AM</option>
+                        <option value="390">6:30 AM</option>
+                        <option value="420">7:00 AM</option>
+                        <option value="450">7:30 AM</option>
+                        <option value="480" selected="selected">8:00 AM</option>
+                        <option value="510">8:30 AM</option>
+                        <option value="540">9:00 AM</option>
+                        <option value="570">9:30 AM</option>
+                        <option value="600">10:00 AM</option>
+                        <option value="630">10:30 AM</option>
+                        <option value="660">11:00 AM</option>
+                        <option value="690">11:30 AM</option>
+                        <option value="720">12:00 PM</option>
+                        <option value="750">12:30 PM</option>
+                        <option value="780">1:00 PM</option>
+                        <option value="810">1:30 PM</option>
+                        <option value="840">2:00 PM</option>
+                        <option value="870">2:30 PM</option>
+                        <option value="900">3:00 PM</option>
+                        <option value="930">3:30 PM</option>
+                        <option value="960">4:00 PM</option>
+                        <option value="990">4:30 PM</option>
+                        <option value="1020">5:00 PM</option>
+                        <option value="1050">5:30 PM</option>
+                        <option value="1080">6:00 PM</option>
+                        <option value="1110">6:30 PM</option>
+                        <option value="1140">7:00 PM</option>
+                        <option value="1170">7:30 PM</option>
+                        <option value="1200">8:00 PM</option>
+                        <option value="1230">8:30 PM</option>
+                        <option value="1260">9:00 PM</option>
+                        <option value="1290">9:30 PM</option>
+                        <option value="1320">10:00 PM</option>
+                        <option value="1350">10:30 PM</option>
+                        <option value="1380">11:00 PM</option>
+                        <option value="1410">11:30 PM</option>
+                      </select>
+                    </span>
+                  </span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="labelCol empty last">&nbsp;</td>
+              <td class="dataCol col02 empty last">&nbsp;</td>
+              <td class="labelCol empty last">&nbsp;</td>
+              <td class="dataCol empty last">&nbsp;</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="pbBottomButtons">
+      <table border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td class="pbTitle"><img src="/s.gif" alt="" class="minWidth" title="" width="1" height="1"/>&nbsp;</td>
+            <td class="pbButtonb" id="bottomButtonRow">
+              <input id="convert" value="Convert" class="btn" title="Convert" name="save" type="button"/>&nbsp;
+              <input id="cancel" value="Cancel" class="btn" title="Cancel" name="cancel" type="button"/>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pbFooter secondaryPalette">
+      <div class="bg"></div>
+    </div>
+  </div>
+  </form>
+  <!-- End page content -->
+
+  <div class="datePicker" id="datePicker">
+    <div class="dateBar">
+      <img src="/s.gif" alt="Previous Month" class="calLeft" onblur="this.className = 'calLeft';" onclick="DatePicker.datePicker.prevMonth();" onfocus="this.className = 'calLeftOn';" onmouseout="this.className = 'calLeft';" onmouseover="this.className = 'calLeftOn';" title="Previous Month"></img>
+      <select id="calMonthPicker" name="calMonthPicker" title="Month">
+        <option value="0">January</option>
+        <option value="1">February</option>
+        <option value="2">March</option>
+        <option value="3">April</option>
+        <option value="4">May</option>
+        <option value="5">June</option>
+        <option value="6">July</option>
+        <option value="7">August</option>
+        <option value="8">September</option>
+        <option value="9">October</option>
+        <option value="10">November</option>
+        <option value="11">December</option>
+      </select>
+      <img src="/s.gif" alt="Next Month" class="calRight" onblur="this.className = 'calRight';" onclick="DatePicker.datePicker.nextMonth();" onfocus="this.className = 'calRightOn';" onmouseout="this.className = 'calRight';" onmouseover="this.className = 'calRightOn';" title="Next Month"/>
+      <select id="calYearPicker" name="calYearPicker" title="Year">
+        <option value="2009">2009</option>
+        <option value="2010">2010</option>
+        <option value="2011">2011</option>
+        <option value="2012">2012</option>
+        <option value="2013">2013</option>
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+      </select>
+    </div>
+    <div class="calBody">
+      <table class="calDays" id="datePickerCalendar" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <th class="dayOfWeek" scope="col">Sun</th>
+            <th class="dayOfWeek" scope="col">Mon</th>
+            <th class="dayOfWeek" scope="col">Tue</th>
+            <th class="dayOfWeek" scope="col">Wed</th>
+            <th class="dayOfWeek" scope="col">Thu</th>
+            <th class="dayOfWeek" scope="col">Fri</th>
+            <th class="dayOfWeek" scope="col">Sat</th>
+          </tr>
+          <tr class="calRow" id="calRow1">
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+          </tr>
+          <tr class="calRow" id="calRow2">
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+          </tr>
+          <tr class="calRow" id="calRow3">
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+          </tr>
+          <tr class="calRow" id="calRow4">
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+          </tr>
+          <tr class="calRow" id="calRow5">
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+
+        </tr>
+          <tr class="calRow" id="calRow6">
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+            <td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="buttonBar">
+        <a href="javascript:%20void%280%29%3B" class="calToday" onclick="DatePicker.datePicker.selectDate('today');return false;">Today</a>
+      </div>
+    </div>
+  </div>
+</apex:page>
