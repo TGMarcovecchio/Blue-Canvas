@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Primary WIN Web to Lead</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <senderEmail>support@winnets.com</senderEmail>
+            <senderName>World-Class Industrial Network</senderName>
+            <template>unfiled$public/I_T_Service</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>
