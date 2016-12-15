@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>tim@winnets.com</contactEmail>
+    <label>Swiper1</label>
+    <oauthConfig>
+        <callbackUrl>https://portal.clickandpledge.com/YourAccount/default.aspx</callbackUrl>
+        <consumerKey>3MVG9AJuBE3rTYDgjVgTfUitelfh8g8.Pdv38QhFjHvV7v9tqlsw1OBQAGOO56ROHoYWsEB65DsRojI2hx8im</consumerKey>
+        <scopes>Full</scopes>
+    </oauthConfig>
+</ConnectedApp>
