@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>richard@winnets.com</contactEmail>
+    <description>Drupal 7 on WIN server</description>
+    <label>Drupal</label>
+    <oauthConfig>
+        <callbackUrl>https://drupal.winnets.com/salesforce/oauth_callback</callbackUrl>
+        <consumerKey>3MVG9AJuBE3rTYDgjVgTfUitelfh8g8.Pdv38I02bGKYMgmTEhJ5ygep47Cs9wic.j5j0TUpO9bl.yczBmYJ_</consumerKey>
+        <scopes>Basic</scopes>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>Full</scopes>
+        <scopes>Chatter</scopes>
+        <scopes>CustomApplications</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <startUrl>http://drupal.winnets.com</startUrl>
+</ConnectedApp>
