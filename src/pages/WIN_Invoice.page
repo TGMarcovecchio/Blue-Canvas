@@ -1,0 +1,108 @@
+<apex:page standardController="Invoice__c" showHeader="false" name="Invoice" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" renderAs="PDF">
+<html>
+    <head>
+        <title>Invoice: {!Invoice__c.Name}</title> 
+        <style type="text/css">
+            @page {
+                size:portrait;
+                margin:.5in .5in 2in .5in;
+                
+                @bottom-center {
+                    content: element(footer);
+                    padding:0;
+                }
+            }
+
+            body {
+                font-family:Georgia, Times serif;
+                font-size:10px;
+            } 
+            
+            #headerTable {
+                width:100%;
+            }
+            
+            #bodyTable td {
+                padding-top:20px;
+            }
+            
+            #bodyTable {
+                width:100%;
+                margin-top:20px;
+                font-size:1.5em;
+            }
+            
+            .address {
+                text-align:right;
+                font-size:1.4em;
+                line-height:1.75;
+                font-weight:bold;
+                color:#444;
+            }
+            
+            .invoice-name {
+                text-align:center;
+                font-size:2.4em;
+                font-weight:bold;
+                padding-top:50px;
+            }
+            
+            .table-label {
+                width:18%;
+                font-weight:bold;
+                vertical-align:top;
+            }
+            
+            #footer {
+                font-size:1.4em;
+                line-height:1.2;
+                text-align:center;
+                position: running(footer);
+                padding:0;
+
+            }
+        </style>   
+    </head>
+    <body>
+        <table id="headerTable">
+            <tr>
+                <td><apex:image url="{!$Resource.WINLogo}" width="295" height="133"/></td>
+                <td class="address" style="text-align:right;">33 Terminal Way<br />Suite 435<br /> Pittsburgh, PA 15219<br /> P: (412) 325-1565 | F: (412) 325-1572</td></tr>
+                <tr><td colspan="2" class="invoice-name">INVOICE # {!Invoice__c.Name}</td></tr>
+        </table>
+        
+        <table id="bodyTable">
+            <tr>
+                <td class="table-label">TO:</td><td>{!Invoice__c.Invoice_Contact_To__r.Name}<br />{!Invoice__c.Account_To__r.Name}<br />{!Invoice__c.Account_To_Street__c}<br />{!Invoice__c.Account_To_City__c}, {!Invoice__c.Account_To_State__c} &nbsp;{!Invoice__c.Account_To_Zip__c}</td>
+            </tr>
+            <tr>
+                <td class="table-label">FROM:</td><td>{!Invoice__c.WIN_Contact_From__r.Name}</td>
+            </tr>
+            <tr>
+                <td class="table-label">DATE:</td><td><apex:outputText value="{0, date, MMMM d',' yyyy}"> <apex:param value="{!Invoice__c.Invoice_Status_Date__c}" /> </apex:outputText></td>
+            </tr>
+            <tr>
+                <td class="table-label">RE:</td><td><apex:outputText value="{!Invoice__c.Invoice_Narrative__c}" escape="false" /></td>
+            </tr>
+            <tr>
+                <td class="table-label">AMOUNT DUE:</td><td><apex:outputText style="font-weight:bold;" value="{0, number, $#,###,###.00}">
+<apex:param value="{!Invoice__c.Invoice_Amount__c}" />
+</apex:outputText></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="table-label" style="font-style:oblique;">*Payment due upon receipt of invoice.</td>
+            </tr>
+        </table>
+        
+        <div id="footer">
+        <p style="text-decoration:underline;">Please make checks payable and envelopes addressed to:</p>
+        <p style="font-weight:bold; color:#444;">World-Class Industrial Network, LLC<br />
+            33 Terminal Way<br />
+            Suite 435<br />
+            Pittsburgh, PA 15219</p>
+        <p>The World-Class Industrial Network Employer Identification Number (EIN) is 25-1818043</p>
+        </div>
+    </body>
+    <!-- {!Invoice__c.Invoice_Narrative__c} --> 
+</html>
+</apex:page>
