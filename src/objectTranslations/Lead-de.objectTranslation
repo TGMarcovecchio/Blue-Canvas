@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Alternate Email --></label>
+        <name>Alternate_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Autoconvert --></label>
+        <name>Autoconvert__c</name>
+    </fields>
+    <fields>
+        <label><!-- Classes --></label>
+        <name>Classes__c</name>
+        <picklistValues>
+            <masterLabel>Black Friday Budgeting: November 3, 2015</masterLabel>
+            <translation><!-- Black Friday Budgeting: November 3, 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit: November 17, 2015</masterLabel>
+            <translation><!-- Credit: November 17, 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intro to Checking &amp; Savings: September 14, 2015</masterLabel>
+            <translation><!-- Intro to Checking &amp; Savings: September 14, 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Life Keys: Tips for Living a Balanced Life: September 22, 2015</masterLabel>
+            <translation><!-- Life Keys: Tips for Living a Balanced Life: September 22, 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mental Money: December 10, 2015</masterLabel>
+            <translation><!-- Mental Money: December 10, 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self Talk: What are the Words Coming Out of Your Mouth?: September 15, 2015</masterLabel>
+            <translation><!-- Self Talk: What are the Words Coming Out of Your Mouth?: September 15, 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Business: October 6, 2015</masterLabel>
+            <translation><!-- Small Business: October 6, 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unloading Baggage: September 9, 2015</masterLabel>
+            <translation><!-- Unloading Baggage: September 9, 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Your Life on Purpose: September 29, 2015</masterLabel>
+            <translation><!-- Your Life on Purpose: September 29, 2015 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Coaches --></label>
+        <name>Coaches__c</name>
+        <picklistValues>
+            <masterLabel>Evette B.</masterLabel>
+            <translation><!-- Evette B. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jaison M.</masterLabel>
+            <translation><!-- Jaison M. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sarah D.</masterLabel>
+            <translation><!-- Sarah D. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Coaching Afternoon --></label>
+        <name>Coaching_Afternoon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coaching Evening --></label>
+        <name>Coaching_Evening__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coaching Friday --></label>
+        <name>Coaching_Friday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coaching Monday --></label>
+        <name>Coaching_Monday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coaching Morning --></label>
+        <name>Coaching_Morning__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coaching Thursday --></label>
+        <name>Coaching_Thursday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coaching Tuesday --></label>
+        <name>Coaching_Tuesday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coaching Wednesday --></label>
+        <name>Coaching_Wednesday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do Not Call --></label>
+        <name>Do_Not_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Opt In --></label>
+        <name>Email_Opt_In__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Opt Out --></label>
+        <name>Email_Opt_Out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Emergency Contact Address --></label>
+        <name>Emergency_Contact_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Emergency Contact First Name --></label>
+        <name>Emergency_Contact_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Emergency Contact Last Name --></label>
+        <name>Emergency_Contact_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Emergency Contact Phone --></label>
+        <name>Emergency_Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Emergency Contact Relationship --></label>
+        <name>Emergency_Contact_Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Female Head of Household --></label>
+        <name>Female_Head_of_Household__c</name>
+    </fields>
+    <fields>
+        <label><!-- Volunteer Availability --></label>
+        <name>GW_Volunteers__Volunteer_Availability__c</name>
+        <picklistValues>
+            <masterLabel>Afternoon</masterLabel>
+            <translation>Nachmittag</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evening</masterLabel>
+            <translation><!-- Evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Morning</masterLabel>
+            <translation>Vormittag</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekdays</masterLabel>
+            <translation>Wochentags</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekends</masterLabel>
+            <translation>Wochenende</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Volunteer Notes --></label>
+        <name>GW_Volunteers__Volunteer_Notes__c</name>
+    </fields>
+    <fields>
+        <help>Wählen Sie die Fertigkeiten dieser Person aus, die zum Suchen von Freiwilligenaufträgen verwendet werden sollten.</help>
+        <label><!-- Volunteer Skills --></label>
+        <name>GW_Volunteers__Volunteer_Skills__c</name>
+        <picklistValues>
+            <masterLabel>Computer usage</masterLabel>
+            <translation>Computernutzung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event Planning</masterLabel>
+            <translation>Veranstaltungsplanung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fundraising</masterLabel>
+            <translation>Spendenaktion</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Landscaping</masterLabel>
+            <translation>Landschaftsbau</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manual labor</masterLabel>
+            <translation>Körperliche Arbeit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Volunteer Status --></label>
+        <name>GW_Volunteers__Volunteer_Status__c</name>
+        <picklistValues>
+            <masterLabel>New Sign Up</masterLabel>
+            <translation>Neue Anmeldung</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Gender Female --></label>
+        <name>Gender_Female__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gender Male --></label>
+        <name>Gender_Male__c</name>
+    </fields>
+    <fields>
+        <label><!-- Home Phone --></label>
+        <name>Home_Phone__c</name>
+    </fields>
+    <fields>
+        <name>Industry</name>
+        <picklistValues>
+            <masterLabel>Agriculture</masterLabel>
+            <translation><!-- Agriculture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Apparel</masterLabel>
+            <translation><!-- Apparel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banking</masterLabel>
+            <translation><!-- Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biotechnology</masterLabel>
+            <translation><!-- Biotechnology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chemicals</masterLabel>
+            <translation><!-- Chemicals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communications</masterLabel>
+            <translation><!-- Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction</masterLabel>
+            <translation><!-- Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consulting</masterLabel>
+            <translation><!-- Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electronics</masterLabel>
+            <translation><!-- Electronics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energy</masterLabel>
+            <translation><!-- Energy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering</masterLabel>
+            <translation><!-- Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entertainment</masterLabel>
+            <translation><!-- Entertainment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environmental</masterLabel>
+            <translation><!-- Environmental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food &amp; Beverage</masterLabel>
+            <translation><!-- Food &amp; Beverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government</masterLabel>
+            <translation><!-- Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Healthcare</masterLabel>
+            <translation><!-- Healthcare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitality</masterLabel>
+            <translation><!-- Hospitality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Machinery</masterLabel>
+            <translation><!-- Machinery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing</masterLabel>
+            <translation><!-- Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media</masterLabel>
+            <translation><!-- Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not For Profit</masterLabel>
+            <translation><!-- Not For Profit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recreation</masterLabel>
+            <translation><!-- Recreation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping</masterLabel>
+            <translation><!-- Shipping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology</masterLabel>
+            <translation><!-- Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telecommunications</masterLabel>
+            <translation><!-- Telecommunications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transportation</masterLabel>
+            <translation><!-- Transportation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utilities</masterLabel>
+            <translation><!-- Utilities --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>LeadSource</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Referral</masterLabel>
+            <translation><!-- Partner Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Inquiry</masterLabel>
+            <translation><!-- Phone Inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchased List</masterLabel>
+            <translation><!-- Purchased List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MC Subscriber --></label>
+        <name>MC4SF__MC_Subscriber__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile --></label>
+        <name>Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal Email --></label>
+        <name>Personal_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Email --></label>
+        <name>Preferred_Email__c</name>
+        <picklistValues>
+            <masterLabel>Alternate</masterLabel>
+            <translation><!-- Alternate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal</masterLabel>
+            <translation><!-- Personal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work</masterLabel>
+            <translation><!-- Work --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Previous Volunteer Experience --></label>
+        <name>Previous_Volunteer_Experience__c</name>
+    </fields>
+    <fields>
+        <label><!-- Race White --></label>
+        <name>Race_White__c</name>
+    </fields>
+    <fields>
+        <name>Rating</name>
+        <picklistValues>
+            <masterLabel>Cold</masterLabel>
+            <translation><!-- Cold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hot</masterLabel>
+            <translation><!-- Hot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warm</masterLabel>
+            <translation><!-- Warm --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reference Email --></label>
+        <name>Reference_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reference First Name --></label>
+        <name>Reference_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reference Last Name --></label>
+        <name>Reference_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reference Phone --></label>
+        <name>Reference_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reference Place of Employment --></label>
+        <name>Reference_Place_of_Employment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reference Title --></label>
+        <name>Reference_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Override DupeCatcher --></label>
+        <name>SFSSDupeCatcher__Override_DupeCatcher__c</name>
+    </fields>
+    <fields>
+        <name>Status</name>
+        <picklistValues>
+            <masterLabel>Closed - Converted</masterLabel>
+            <translation><!-- Closed - Converted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Not Converted</masterLabel>
+            <translation><!-- Closed - Not Converted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open - Not Contacted</masterLabel>
+            <translation><!-- Open - Not Contacted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Working - Contacted</masterLabel>
+            <translation><!-- Working - Contacted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Teaching Expertise --></label>
+        <name>Teaching_Expertise__c</name>
+    </fields>
+    <fields>
+        <label><!-- Volunteer Consent Signed --></label>
+        <name>Volunteer_Consent_Signed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Volunteer Organization --></label>
+        <name>Volunteer_Organization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Email --></label>
+        <name>Work_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Phone --></label>
+        <name>Work_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disable Duplicate Check --></label>
+        <name>dupcheck__dc3DisableDuplicateCheck__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duplicate Check Index --></label>
+        <name>dupcheck__dc3Index__c</name>
+    </fields>
+    <fields>
+        <label><!-- is Web2Lead --></label>
+        <name>dupcheck__dc3Web2Lead__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Email --></label>
+        <name>npe01__Preferred_Email__c</name>
+        <picklistValues>
+            <masterLabel>Alternate</masterLabel>
+            <translation>Alternativ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal</masterLabel>
+            <translation>Persönlich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work</masterLabel>
+            <translation>Geschäftlich</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Preferred Phone --></label>
+        <name>npe01__Preferred_Phone__c</name>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation>Privat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile</masterLabel>
+            <translation>Mobil</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Sonstige</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work</masterLabel>
+            <translation>Geschäftlich</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Der Batch, aus dem dieser Lead erstellt wurde</help>
+        <label><!-- Batch --></label>
+        <name>npsp__Batch__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Company City --></label>
+        <name>npsp__CompanyCity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Country --></label>
+        <name>npsp__CompanyCountry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Zip/Postal Code --></label>
+        <name>npsp__CompanyPostalCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company State/Province --></label>
+        <name>npsp__CompanyState__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Street --></label>
+        <name>npsp__CompanyStreet__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Class Registration --></label>
+        <name>Class_Registration</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Volunteer --></label>
+        <name>Volunteer</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- Send_SMS --></label>
+        <name>CnP_PaaS__Send_SMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Convert_Lead --></label>
+        <name>Convert_Lead</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- MailChimp_Subscriptions_detail --></label>
+        <name>MC4SF__MailChimp_Subscriptions_detail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- MailChimp_Subscriptions_list --></label>
+        <name>MC4SF__MailChimp_Subscriptions_list</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Edit --></label>
+        <name>Mass_Edit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Update --></label>
+        <name>Mass_Update</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- dc3Check --></label>
+        <name>dupcheck__dc3Check</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- dc3Convert --></label>
+        <name>dupcheck__dc3Convert</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- dc3Merge --></label>
+        <name>dupcheck__dc3Merge</name>
+    </webLinks>
+</CustomObjectTranslation>

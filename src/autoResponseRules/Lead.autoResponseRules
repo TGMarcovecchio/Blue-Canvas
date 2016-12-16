@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Confirmation</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Email</field>
+                <operation>contains</operation>
+            </criteriaItems>
+            <senderEmail>amcnamara@prosperityconnection.org</senderEmail>
+            <senderName>Prosperity Connection</senderName>
+            <template>Class_Registration/Class_Reminder</template>
+        </ruleEntry>
+    </autoResponseRule>
+    <autoResponseRule>
+        <fullName>Volunteer Confirmation</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Volunteer_Consent_Signed__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <senderEmail>amcnamara@prosperityconnection.org</senderEmail>
+            <senderName>Abby McNamara</senderName>
+            <template>GW_Volunteers__Volunteers_Email_Templates/GW_Volunteers__Volunteer_Signup_Thank_You</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>
