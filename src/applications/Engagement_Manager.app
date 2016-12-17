@@ -9,4 +9,5 @@
     <tab>standard-Case</tab>
     <tab>standard-ContentNote</tab>
     <tab>standard-report</tab>
+    <tab>npsp__Engagement_Plan__c</tab>
 </CustomApplication>
