@@ -1,0 +1,2160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AdvancedSetup</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ActualCost</fullName>
+    </fields>
+    <fields>
+        <fullName>AmountAllOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>AmountWonOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>BudgetedCost</fullName>
+    </fields>
+    <fields>
+        <fullName>CampaignMemberRecordTypeId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>Dimension_2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Dimension 2</label>
+        <referenceTo>c2g__codaDimension2__c</referenceTo>
+        <relationshipLabel>Show Campaigns</relationshipLabel>
+        <relationshipName>Campaigns</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Dimension_3__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Dimension 3</label>
+        <referenceTo>c2g__codaDimension3__c</referenceTo>
+        <relationshipLabel>Campaigns</relationshipLabel>
+        <relationshipName>Campaigns</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>EndDate</fullName>
+    </fields>
+    <fields>
+        <fullName>ExpectedResponse</fullName>
+    </fields>
+    <fields>
+        <fullName>ExpectedRevenue</fullName>
+    </fields>
+    <fields>
+        <fullName>Hierarchical_Grandparent_Percent__c</fullName>
+        <externalId>false</externalId>
+        <formula>Referral_Account__r.Hierarchical_Grandparent_Percent__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Hierarchical Grandparent %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Hierarchical_Grandparent__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+LEN(Referral_Account__r.Grand_ParentAccount__c)&gt;1,
+Referral_Account__r.Grand_ParentAccount__c,
+&quot;None&quot;)</formula>
+        <label>Hierarchical Grandparent</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hierarchical_Parent_Percent__c</fullName>
+        <externalId>false</externalId>
+        <formula>Referral_Account__r.Hierarchical_Parent_Percent__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Hierarchical Parent %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Hierarchical_Parent__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+LEN(Referral_Account__r.Parent.Name)&gt;1,
+Referral_Account__r.Parent.Name,
+&quot;None&quot;)</formula>
+        <label>Hierarchical Parent</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HierarchyActualCost</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyAmountAllOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyAmountWonOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyBudgetedCost</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyExpectedRevenue</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfContacts</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfConvertedLeads</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfLeads</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfResponses</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfWonOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberSent</fullName>
+    </fields>
+    <fields>
+        <fullName>IsActive</fullName>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfContacts</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfConvertedLeads</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfLeads</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfResponses</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfWonOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberSent</fullName>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PAM__Active_Members__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Members that have been synced with Predictive and can be sent campaign emails.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Campaign members that are synced and active in this campaign</inlineHelpText>
+        <label>Active Members</label>
+        <summaryFilterItems>
+            <field>CampaignMember.PAM__Reason__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </summaryFilterItems>
+        <summaryForeignKey>CampaignMember.CampaignId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>PAM__Bounce_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Bounced / Sent</description>
+        <externalId>false</externalId>
+        <formula>IF( PAM__Sent__c  = 0, 0, (PAM__Bounced__c /   PAM__Sent__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText># emails bounced / # emails sent</inlineHelpText>
+        <label>Bounced Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>PAM__Bounced__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Emails with hard bounces or re-occurring soft bounces in this campaign.</description>
+        <externalId>false</externalId>
+        <inlineHelpText># emails with hard or soft bounces that occurred in this campaign</inlineHelpText>
+        <label>Bounced</label>
+        <summaryFilterItems>
+            <field>CampaignMember.PAM__Reason__c</field>
+            <operation>equals</operation>
+            <value>23</value>
+        </summaryFilterItems>
+        <summaryForeignKey>CampaignMember.CampaignId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>PAM__Can_Not_Be_Sent_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Pending Rate
+Same as the Pending Rate field
+But this field holds the formula</description>
+        <externalId>false</externalId>
+        <formula>IF(PAM__Total_Members__c = 0,0,(PAM__Can_Not_Be_Sent__c /  PAM__Total_Members__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText># emails that cannot be sent / # total members</inlineHelpText>
+        <label>Pending Rate Base</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>PAM__Can_Not_Be_Sent__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Use Completed Level instead.
+This field should not be shown on the Campaign page</description>
+        <externalId>false</externalId>
+        <inlineHelpText># of emails that cannot be sent - see reason code/status in Campaign Members section</inlineHelpText>
+        <label>Completed Level Base</label>
+        <summaryFilterItems>
+            <field>CampaignMember.PAM__Level__c</field>
+            <operation>equals</operation>
+            <value>4</value>
+        </summaryFilterItems>
+        <summaryForeignKey>CampaignMember.CampaignId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>PAM__Click_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Clicked / Delivered</description>
+        <externalId>false</externalId>
+        <formula>IF(PAM__Delivered__c  = 0,0,(  PAM__Clicked__c  /  PAM__Delivered__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText># campaign members that clicked a link in a campaign email one time / # emails delivered</inlineHelpText>
+        <label>Clicked Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>PAM__Click_To_Open_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Clicked / Opened</description>
+        <externalId>false</externalId>
+        <formula>IF( PAM__Opened__c = 0 ,0, (PAM__Clicked__c / PAM__Opened__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Clicked / Opened</inlineHelpText>
+        <label>Click To Open Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>PAM__Clicked_Level__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Members that have clicked a link at least once, but not yet clicked to a completion page.
+
+For Newsletters this number refers to the current edition.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Campaign Members who have clicked a link in the email at least once, but not yet registered a completion
+For Series and Newsletter this number refers to the current edition</inlineHelpText>
+        <label>Clicked Level</label>
+        <summaryFilterItems>
+            <field>CampaignMember.PAM__Level__c</field>
+            <operation>equals</operation>
+            <value>3</value>
+        </summaryFilterItems>
+        <summaryForeignKey>CampaignMember.CampaignId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>PAM__Clicked__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Accumulated # of emails where at least one link have been clicked. 
+
+For Newsletters this count refers to the current edition.</description>
+        <externalId>false</externalId>
+        <formula>PAM__Clicked_Level__c  + PAM__Completed_Level__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText># campaign members that clicked a link provided in a campaign email one time. For series and newsletter campaigns, this count refers to the current edition.</inlineHelpText>
+        <label>Clicked Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAM__Complaint_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Complaints / Delivered</description>
+        <externalId>false</externalId>
+        <formula>IF( PAM__Delivered__c = 0,0, (PAM__Complaints_Rollup__c  /  PAM__Delivered__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText># complaints / # emails delivered</inlineHelpText>
+        <label>Complaint Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>PAM__Complaints_Rollup__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Campaign members that submitted complaints via Yahoo, AOL or other feedback loop.
+Complaints are most often submitted by clicking a &quot;This is Spam&quot; type button
+
+A complaint auto-generates an opt out and will also be included in the Opt Out Direct count.</description>
+        <externalId>false</externalId>
+        <inlineHelpText># campaign members that submitted complaints via Yahoo, AOL or other feedback loop.  A complaint auto-generates an opt out status and will also be included in the Opt Out Direct count.</inlineHelpText>
+        <label>Complaints</label>
+        <summaryFilterItems>
+            <field>CampaignMember.PAM__Reason__c</field>
+            <operation>equals</operation>
+            <value>38</value>
+        </summaryFilterItems>
+        <summaryForeignKey>CampaignMember.CampaignId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>PAM__Completed_Level__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Members that have clicked to a completion page.</description>
+        <externalId>false</externalId>
+        <formula>PAM__Can_Not_Be_Sent__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Active Members that have reached the completed level</inlineHelpText>
+        <label>Completed Level</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAM__Completed__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Accumulated # of members that reached a completion page.</description>
+        <externalId>false</externalId>
+        <formula>PAM__Completed_Level__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText># campaign members that reached your defined completion level one time. For series and newsletter campaigns, this count refers to the current edition</inlineHelpText>
+        <label>Completed Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAM__Completion_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Completed / Delivered</description>
+        <externalId>false</externalId>
+        <formula>IF( PAM__Delivered__c =0,0,( PAM__Completed__c /  PAM__Delivered__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText># members that reached your defined completion level / # emails delivered</inlineHelpText>
+        <label>Completed Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>PAM__Completion_To_Open_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Completed / Opened</description>
+        <externalId>false</externalId>
+        <formula>IF( PAM__Opened__c = 0 ,0, (PAM__Completed__c / PAM__Opened__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Completed / Opened</inlineHelpText>
+        <label>Completed To Open Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>PAM__Delivered__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Accumulated # emails that have been sent and not bounced.
+
+For Newsletters this number refers to the current edition.</description>
+        <externalId>false</externalId>
+        <formula>PAM__Sent__c  -  PAM__Bounced__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText># emails sent - # emails that bounced</inlineHelpText>
+        <label>Delivered Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAM__Delivery_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Delivered / Sent</description>
+        <externalId>false</externalId>
+        <formula>IF(  PAM__Sent__c =0,0,(PAM__Delivered__c /  PAM__Sent__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText># emails delivered / # emails sent</inlineHelpText>
+        <label>Delivered Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>PAM__Inactive_Members__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Members that cannot be sent emails</description>
+        <externalId>false</externalId>
+        <formula>PAM__Total_Members__c - PAM__Active_Members__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total Members - Active Members</inlineHelpText>
+        <label>Inactive Members</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAM__Not_Synced__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Members that have not yet been synced to Predictive</description>
+        <externalId>false</externalId>
+        <formula>PAM__Total_Members__c - PAM__Pending__c -  PAM__Sent__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Members that have not yet been synced to Predictive</inlineHelpText>
+        <label>Not Synced</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAM__Open_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Opened / Delivered</description>
+        <externalId>false</externalId>
+        <formula>IF( PAM__Delivered__c = 0,0,(PAM__Opened__c  / PAM__Delivered__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText># emails opened one time / # emails delivered</inlineHelpText>
+        <label>Opened Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>PAM__Opened_Level__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Members that have opened the email but not clicked a link.
+
+For Newsletters this number refers to the current edition.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Campaign Members who have opened the email at least once, but not yet registered a click
+For Series and Newsletter this number refers to the current edition</inlineHelpText>
+        <label>Opened Level</label>
+        <summaryFilterItems>
+            <field>CampaignMember.PAM__Level__c</field>
+            <operation>equals</operation>
+            <value>2</value>
+        </summaryFilterItems>
+        <summaryForeignKey>CampaignMember.CampaignId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>PAM__Opened__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Accumulated # of emails that have been opened at least once.
+
+For Newsletters this number refers to the current edition.</description>
+        <externalId>false</externalId>
+        <formula>PAM__Opened_Level__c + PAM__Clicked_Level__c + PAM__Can_Not_Be_Sent__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText># campaign members that have opened at least one campaign email one time. For series and newsletter campaigns, this count refers to the current edition.</inlineHelpText>
+        <label>Opened Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAM__Opt_Out_Direct__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Members that have opted out in this campaign.</description>
+        <externalId>false</externalId>
+        <inlineHelpText># campaign members that clicked the unsubscribe link in an email for this campaign.</inlineHelpText>
+        <label>Opt Out Direct</label>
+        <summaryFilterItems>
+            <field>CampaignMember.PAM__Reason__c</field>
+            <operation>equals</operation>
+            <value>25,31</value>
+        </summaryFilterItems>
+        <summaryForeignKey>CampaignMember.CampaignId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>PAM__Opt_Out_Indirect_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Opt Out Indirect / Delivered
+
+Members that have opted out in this campaign / emails delivered.</description>
+        <externalId>false</externalId>
+        <formula>IF( PAM__Delivered__c = 0,0,(PAM__Opt_Out_Indirect__c  / PAM__Delivered__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Opt Out Indirect / Delivered
+
+Members that have opted out in this campaign / emails delivered.</inlineHelpText>
+        <label>Opt Out Indirect Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>PAM__Opt_Out_Indirect__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Members that have opted out in another campaign, after being added to this campaign.</description>
+        <externalId>false</externalId>
+        <inlineHelpText># campaign members that unsubscribed from another campaign after being added to this campaign.</inlineHelpText>
+        <label>Opt Out Indirect</label>
+        <summaryFilterItems>
+            <field>CampaignMember.PAM__Reason__c</field>
+            <operation>equals</operation>
+            <value>39</value>
+        </summaryFilterItems>
+        <summaryForeignKey>CampaignMember.CampaignId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>PAM__Opt_Out_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Opt Out Direct / Delivered
+
+Members that have opted out in this campaign / emails delivered.</description>
+        <externalId>false</externalId>
+        <formula>IF( PAM__Delivered__c = 0,0,(PAM__Opt_Out_Direct__c  / PAM__Delivered__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText># direct opt outs / # emails delivered</inlineHelpText>
+        <label>Opt Out Direct Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>PAM__Outbox_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Pending / Total Members</description>
+        <externalId>false</externalId>
+        <formula>IF(PAM__Total_Members__c = 0,0,(PAM__Outbox__c /  PAM__Total_Members__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText># of emails currently in the outbox / # total campaign members</inlineHelpText>
+        <label>Pending Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>PAM__Outbox__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Use Pending Level instead
+This field should not be shown on the Campaign Page</description>
+        <externalId>false</externalId>
+        <inlineHelpText># pending emails - emails that cannot be sent</inlineHelpText>
+        <label>Pending Level Base</label>
+        <summaryFilterItems>
+            <field>CampaignMember.PAM__Level__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </summaryFilterItems>
+        <summaryForeignKey>CampaignMember.CampaignId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>PAM__Pending_Level__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Members that have not been sent the email.
+
+For Newsletters this number refers to the current edition.</description>
+        <externalId>false</externalId>
+        <formula>PAM__Outbox__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Not yet sent (sum of Outbox + what can not be sent)</inlineHelpText>
+        <label>Pending Level</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAM__Pending__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Accumulated # of emails that have not been sent.
+
+For Newsletters this number refers to the current edition.</description>
+        <externalId>false</externalId>
+        <formula>PAM__Outbox__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText># of emails waiting to be sent</inlineHelpText>
+        <label>Pending Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAM__Sent_Level__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Members that have been sent the email but not opened it.
+
+For Newsletters this number refers to the current edition.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Unique number of Members which have received one or more emails in this Campaign,  but have not yet registered an open</inlineHelpText>
+        <label>Sent Level</label>
+        <summaryFilterItems>
+            <field>CampaignMember.PAM__Level__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </summaryFilterItems>
+        <summaryForeignKey>CampaignMember.CampaignId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>PAM__Sent_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Sent / Total Members</description>
+        <externalId>false</externalId>
+        <formula>IF(PAM__Total_Members__c = 0,0,(PAM__Sent__c /  PAM__Total_Members__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Sent / Total Members</inlineHelpText>
+        <label>Sent Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>PAM__Sent__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Accumulated # of emails that have been sent. 
+
+For Newsletters this number refers to the current edition.</description>
+        <externalId>false</externalId>
+        <formula>PAM__Sent_Level__c +  PAM__Opened_Level__c  +  PAM__Clicked_Level__c + PAM__Can_Not_Be_Sent__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Unique # of campaign members that have been sent one or more emails in this campaign</inlineHelpText>
+        <label>Sent Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAM__Subscription_Line_Item__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The subscription group  this Campaign is assigned to - if any
+A Campaign can be optionally be assigned to a Subscription, if you have chosen to use Subscription Management</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The subscription this Campaign is assigned to - if any
+A Campaign can be optionally be assigned to a Subscription, if you have chosen to use Subscription Management</inlineHelpText>
+        <label>Subscription</label>
+        <referenceTo>PAM__Subscription__c</referenceTo>
+        <relationshipLabel>Campaigns</relationshipLabel>
+        <relationshipName>Campaigns</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PAM__Total_All_Levels__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Sum of all levels</description>
+        <externalId>false</externalId>
+        <formula>PAM__Pending_Level__c +  PAM__Sent_Level__c +  PAM__Opened_Level__c +  PAM__Clicked_Level__c +  PAM__Completed_Level__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Sum of all levels</inlineHelpText>
+        <label>Total All Levels</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAM__Total_Members__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Number of Leads + Number of Contacts - Converted Leads</description>
+        <externalId>false</externalId>
+        <formula>NumberOfContacts +  NumberOfLeads - NumberOfConvertedLeads</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Number of Leads + Number of Contacts - Converted Leads</inlineHelpText>
+        <label>Total Members</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Referral_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Referral Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Referral Campaigns</relationshipLabel>
+        <relationshipName>Referral_Campaigns</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Referral_Percent__c</fullName>
+        <externalId>false</externalId>
+        <formula>Referral_Account__r.Referral_Percent__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Referral %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Referral_Type_Formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( Referral_Account__r.Referral_Type__c )</formula>
+        <label>Referral Type Formula</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>StartDate</fullName>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aborted</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Planned</fullName>
+                <default>true</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Toggle__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Toggle</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Advertisement - Newspaper</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Advertisement - Radio</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Advertisement - TV</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Affiliate</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Blogger</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Business Benefit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consumer Show</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Word of Mouth</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Digital - Cart Abandonment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Digital - Facebook</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Digital - In Site Abandonment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Digital - Instagram</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Digital - Internet</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Digital - Remarketing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Digital - Retargeting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Digital - Twitter</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email - B2B</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email - Consumer Drip</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email - HCP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email - Promotion</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Medical - Doctor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Medical Show</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Promotion</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Relations</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shows - B2B</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <listViews>
+        <fullName>Advertisement</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.CREATED_DATE</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.BUDGETED_COST</columns>
+        <columns>CAMPAIGN.ACTUAL_COST</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.CAMPAIGN_TYPE</field>
+            <operation>equals</operation>
+            <value>Advertisement</value>
+        </filters>
+        <label>Advertisement</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Medical_Campaigns</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <columns>CAMPAIGN.NUM_LEADS</columns>
+        <columns>CAMPAIGN.NUM_CONTACTS</columns>
+        <columns>CAMPAIGN.NUM_WON_OPPORTUNITIES</columns>
+        <columns>AMOUNT_WON</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.CAMPAIGN_TYPE</field>
+            <operation>equals</operation>
+            <value>Medical - Doctor</value>
+        </filters>
+        <label>All Medical Campaigns</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Medical_Campaigns_2015</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <columns>CAMPAIGN.NUM_LEADS</columns>
+        <columns>CAMPAIGN.NUM_CONTACTS</columns>
+        <columns>CAMPAIGN.NUM_WON_OPPORTUNITIES</columns>
+        <columns>AMOUNT_WON</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.CAMPAIGN_TYPE</field>
+            <operation>equals</operation>
+            <value>Medical Show</value>
+        </filters>
+        <filters>
+            <field>CAMPAIGN.START_DATE</field>
+            <operation>greaterThan</operation>
+            <value>1/1/2015</value>
+        </filters>
+        <label>All Medical Show Campaigns 2015 Forward</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Medical_Campaigns_Not_Shows_2015</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <columns>CAMPAIGN.NUM_LEADS</columns>
+        <columns>CAMPAIGN.NUM_CONTACTS</columns>
+        <columns>CAMPAIGN.NUM_WON_OPPORTUNITIES</columns>
+        <columns>AMOUNT_WON</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.CAMPAIGN_TYPE</field>
+            <operation>equals</operation>
+            <value>Medical - Doctor</value>
+        </filters>
+        <label>All Medical Campaigns Not Shows 2015</label>
+    </listViews>
+    <listViews>
+        <fullName>Automate_Results_PPC</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.CAMPAIGN_TYPE</field>
+            <operation>equals</operation>
+            <value>PPC</value>
+        </filters>
+        <label>Automate Results PPC</label>
+    </listViews>
+    <listViews>
+        <fullName>Blogger_Campaigns</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>CAMPAIGN.NUM_LEADS</columns>
+        <columns>AMOUNT_ALL</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.BUDGETED_COST</columns>
+        <columns>CAMPAIGN.ACTUAL_COST</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.CAMPAIGN_TYPE</field>
+            <operation>equals</operation>
+            <value>Blogger</value>
+        </filters>
+        <label>Blogger Campaigns</label>
+    </listViews>
+    <listViews>
+        <fullName>Channel_Partner_Campaigns</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>Toggle__c</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.BUDGETED_COST</columns>
+        <columns>CAMPAIGN.ACTUAL_COST</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <filterScope>Everything</filterScope>
+        <label>Channel Partner Campaigns</label>
+    </listViews>
+    <listViews>
+        <fullName>Clean_Up</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.ACTIVE</columns>
+        <columns>CAMPAIGN.CREATED_DATE</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.NUM_LEADS</columns>
+        <columns>CAMPAIGN.NUM_CONTACTS</columns>
+        <columns>CAMPAIGN.NUM_OPPORTUNITIES</columns>
+        <columns>AMOUNT_WON</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.NAME</field>
+            <operation>contains</operation>
+            <value>marketing Internet</value>
+        </filters>
+        <filters>
+            <field>CAMPAIGN.NUM_LEADS</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>CAMPAIGN.NUM_CONTACTS</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Clean Up</label>
+    </listViews>
+    <listViews>
+        <fullName>Corp_Store_Campaigns</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.NAME</field>
+            <operation>startsWith</operation>
+            <value>corp,store</value>
+        </filters>
+        <label>Corp &amp; Store Campaigns</label>
+    </listViews>
+    <listViews>
+        <fullName>Documercial</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.ACTIVE</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.NUM_LEADS</columns>
+        <columns>CAMPAIGN.NUM_CONVERTED_LEADS</columns>
+        <columns>AMOUNT_ALL</columns>
+        <columns>AMOUNT_WON</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.NAME</field>
+            <operation>contains</operation>
+            <value>Documercial</value>
+        </filters>
+        <label>Documercial</label>
+    </listViews>
+    <listViews>
+        <fullName>Google_Campaigns</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.CREATED_DATE</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <columns>CAMPAIGN.NUM_LEADS</columns>
+        <columns>CAMPAIGN.NUM_CONTACTS</columns>
+        <columns>CAMPAIGN.NUM_WON_OPPORTUNITIES</columns>
+        <columns>AMOUNT_WON</columns>
+        <columns>CAMPAIGN.ACTUAL_COST</columns>
+        <columns>PARENT_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.START_DATE</field>
+            <operation>greaterThan</operation>
+            <value>1/1/2015</value>
+        </filters>
+        <filters>
+            <field>PARENT_NAME</field>
+            <operation>contains</operation>
+            <value>google</value>
+        </filters>
+        <label>Google Campaigns</label>
+    </listViews>
+    <listViews>
+        <fullName>MyActiveCampaigns</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CAMPAIGN.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CAMPAIGN.START_DATE</field>
+            <operation>greaterThan</operation>
+            <value>5/8/2015</value>
+        </filters>
+        <label>My Active Campaigns</label>
+    </listViews>
+    <listViews>
+        <fullName>Search</fullName>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>Referral_Account__c</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.ACTIVE</columns>
+        <columns>CAMPAIGN.BUDGETED_COST</columns>
+        <columns>CAMPAIGN.ACTUAL_COST</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <columns>CAMPAIGN.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.NAME</field>
+            <operation>contains</operation>
+            <value>SleepGenius</value>
+        </filters>
+        <label>Search</label>
+    </listViews>
+    <listViews>
+        <fullName>Word_of_Mouth</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>AMOUNT_WON</columns>
+        <columns>CAMPAIGN.BUDGETED_COST</columns>
+        <columns>CAMPAIGN.ACTUAL_COST</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <columns>CAMPAIGN.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.NAME</field>
+            <operation>contains</operation>
+            <value>Word</value>
+        </filters>
+        <label>Word of Mouth</label>
+    </listViews>
+    <listViews>
+        <fullName>all</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>AMOUNT_WON</columns>
+        <columns>CAMPAIGN.BUDGETED_COST</columns>
+        <columns>CAMPAIGN.ACTUAL_COST</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <columns>CAMPAIGN.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>all</label>
+    </listViews>
+    <recordTypes>
+        <fullName>Default</fullName>
+        <active>true</active>
+        <label>Default</label>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Aborted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planned</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Advertisement - Newspaper</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Advertisement - Radio</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Advertisement - TV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Word of Mouth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital - Cart Abandonment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital - Facebook</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital - In Site Abandonment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital - Instagram</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital - Internet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital - Remarketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital - Retargeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital - Twitter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email - B2B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email - Consumer Drip</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email - HCP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email - Promotion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Promotion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shows - B2B</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Referral_Campaign</fullName>
+        <active>true</active>
+        <label>Referral Campaign</label>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Aborted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planned</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Affiliate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blogger</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business Benefit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical - Doctor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>CAMPAIGN.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CAMPAIGN.STATUS</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CAMPAIGN.START_DATE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>CAMPAIGN.NAME</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CAMPAIGN.NAME</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PARENT_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.CAMPAIGN_TYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.START_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.END_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.NUM_LEADS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.NUM_OPPORTUNITIES</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>AMOUNT_ALL</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.CREATED_DATE</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>FullAccess</sharingModel>
+    <validationRules>
+        <fullName>Enforce_Customer_Channel_Partner</fullName>
+        <active>true</active>
+        <description>(WS) Ensures Account used on Campaign is Customer and not Vendor</description>
+        <errorConditionFormula>AND(
+OR(
+TEXT(Type) = &quot;Medical - Doctor&quot;, 
+TEXT(Type) = &quot;Blogger&quot;),
+
+Referral_Account__r.RecordType.DeveloperName &lt;&gt; &quot;Customer&quot;)</errorConditionFormula>
+        <errorMessage>You must use a &quot;Customer&quot; Account when setting Referral_Account__c</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Add_to_Pardot_List</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Add to Pardot List</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>https://pi.pardot.com/list/pullCrmCampaign/fid/{!Campaign.Id}/campaignName/{!URLENCODE(Campaign.Name)}/leadCount/{!Campaign.NumberOfLeads}/contactCount/{!Campaign.NumberOfContacts}?sessionid={!$Api.Session_ID}&amp;serverurl={!$Api.Partner_Server_URL_90}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>PAM__Design_Studio</fullName>
+        <availability>online</availability>
+        <description>Design Studio button for the v10</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Design Studio</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&apos;/soap/ajax/28.0/connection.js&apos;)}
+var validateMsg = new String(sforce.apex.execute(&quot;PAM.CampaignValidator_AC&quot;,&quot;validateCampaignButton&quot;, {campaignId:&quot;{!Campaign.Id}&quot;}));
+if(validateMsg == &apos;&apos;){
+   window.location = &apos;apex/PAM__Design_Studio?id={!Campaign.Id}&apos;;
+}
+else{
+   alert(&quot;AD-001:\nInvalid campaign type&quot;);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>PAM__Design_Studio_XP</fullName>
+        <availability>online</availability>
+        <description>Design Studio button for the v9 xPress Lite page layout</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>x Design Studio (not supported)</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&apos;/soap/ajax/28.0/connection.js&apos;)}
+var validateMsg = new String(sforce.apex.execute(&quot;PAM.CampaignValidator_AC&quot;,&quot;validateCampaignButton&quot;, {campaignId:&quot;{!Campaign.Id}&quot;}));
+if(validateMsg == &apos;&apos;){
+   window.location = &apos;apex/PAM__Design_Studio?id={!Campaign.Id}&apos;;
+}
+else{
+   alert(&quot;LT-001:\nInvalid campaign type&quot;);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>PAM__PAM_Syncronize</fullName>
+        <availability>online</availability>
+        <description>Synchronize button for the v9 xPress Advanced page layout</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>x Synchronize (not supported</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>//2013-06-28 9:01
+{!REQUIRESCRIPT(&quot;/soap/ajax/26.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/26.0/apex.js&quot;)} 
+
+main(); 
+
+function main() { 
+// 2 
+var ret = checkCampaignType(); 
+if (ret != true) return; 
+// 3
+//var ret = checkIfActive(); 
+//if (ret != true) return; 
+// 1 
+var ret = wantToSync(); 
+if (ret != true) return; 
+// 5 
+synchronize();
+} // end-main 
+
+// ***********************
+// ** 1. Do you want to sync?
+// ***********************
+function wantToSync() {
+   var r = confirm(&quot;Do you want to synchronize now?&quot;); 
+   return r;
+}
+// ***********************
+// ** 2. Check Campaign Type
+// ***********************
+function checkCampaignType() {
+   if(
+       {!ISPICKVAL(Campaign.Type,&apos;Email&apos;)}     ||
+       {!ISPICKVAL(Campaign.Type,&apos;xPress&apos;)}    ||
+       {!ISPICKVAL(Campaign.Type,&apos;Series&apos;)}    || 
+       {!ISPICKVAL(Campaign.Type,&apos;Drip&apos;)}      ||
+       {!ISPICKVAL(Campaign.Type,&apos;Scheduled&apos;)} ||
+       {!ISPICKVAL(Campaign.Type,&apos;Adaptive&apos;)}  ||
+       {!ISPICKVAL(Campaign.Type,&apos;Newsletter&apos;)}) { 
+       return(true);       
+   } // end-if
+   else {
+      alert(&quot;AD-041:\nInvalid campaign type&quot;);
+      return(false);
+   } // end-else
+} // end-function
+
+// ***********************
+// ** 4. Check if Active
+// ***********************
+function checkIfActive() {
+   if({!Campaign.IsActive}) { 
+       return(true); 
+   } // end-if
+   else {
+      alert(&quot;AD-042:\nCampaign is NOT active\nCheck the Active check-box to enable&quot;);
+      return(false);
+   } // end-else
+} // end-function
+
+// ***********************
+// ** 5. Synchronize
+// ***********************
+function synchronize() { 
+try{
+var returnMsg = sforce.apex.execute(
+   &quot;PAM.ServiceCallout_AC&quot;,
+   &quot;doCallout&quot;,{endpointUrl:&quot;https://aws.predictiveresponse.net/services/syncsend/syncsend.php?sessionId={!$Api.Session_ID}&amp;serverURL={!$Api.Partner_Server_URL_80}&amp;userEmail={!$User.Email}&amp;campaignId={!CASESAFEID(Campaign.Id)}&amp;orgId={!CASESAFEID(Organization.Id)}&amp;option=sync&amp;method=Campaign.Synchronize&amp;debug=0&amp;encoding=Alpha&quot;}
+); // end-apex.execute 
+alert(returnMsg); // show returned service message from server
+} // end try
+catch(err) {
+   var errMessage = err.message;
+   if(err.message == null || err.message == &apos;undefined&apos;){
+       errMessage = &quot;No response from server&quot;;
+   }
+   alert(&quot;Oops, we encountered some kind of error.\n Error description: &quot;+errMessage+&quot;\nPlease try again later&quot;);
+  }  // end catch
+} // end-function</url>
+    </webLinks>
+    <webLinks>
+        <fullName>PAM__Predictive_AM</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Predictive AM</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&apos;/soap/ajax/28.0/connection.js&apos;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/26.0/apex.js&quot;)}
+var validateMsg = new String(sforce.apex.execute(&quot;PAM.CampaignValidator_AC&quot;,&quot;validateCampaignButton&quot;, {campaignId:&quot;{!Campaign.Id}&quot;})); 
+if(validateMsg == &apos;&apos;){ 
+   window.location = &apos;apex/PAM__Predictive_AM_Button_VFP?id={!Campaign.Id}&apos;; 
+} 
+else{ 
+   alert(&quot;AD-061:\nNot a Predictive Campaign Type&quot;); 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>PAM__Predictive_Help</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>1200</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Predictive Help</masterLabel>
+        <openType>newWindow</openType>
+        <position>topLeft</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://help.predictiveresponse.net/predictivehelpcenter</url>
+    </webLinks>
+    <webLinks>
+        <fullName>PAM__Send_Emails</fullName>
+        <availability>online</availability>
+        <description>Used for the Predictive Version 8 and
+xPress Advanced page layout</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>x Send Emails (not supported)</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>//2013-06-28 9:01
+{!REQUIRESCRIPT(&quot;/soap/ajax/26.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/26.0/apex.js&quot;)} 
+
+main(); 
+
+function main() { 
+// 2 
+var ret = checkCampaignType(); 
+if (ret != true) return; 
+// 3
+var ret = checkIfActive(); 
+if (ret != true) return; 
+// 1 
+var ret = wantToSend(); 
+if (ret != true) return; 
+// 5 
+sendEmails();
+} // end-main 
+
+// ***********************
+// ** 1. Do you want to send?
+// ***********************
+function wantToSend() {
+   var r = confirm(&quot;Do you want to send emails now?&quot;); 
+   return r;
+}
+// ***********************
+// ** 2. Check Campaign Type
+// ***********************
+function checkCampaignType() {
+   if(
+       {!ISPICKVAL(Campaign.Type,&apos;Email&apos;)}  ||
+       {!ISPICKVAL(Campaign.Type,&apos;xPress&apos;)} ||
+       {!ISPICKVAL(Campaign.Type,&apos;Series&apos;)} || 
+       {!ISPICKVAL(Campaign.Type,&apos;Drip&apos;)}   ||
+       {!ISPICKVAL(Campaign.Type,&apos;Newsletter&apos;)}) { 
+       return(true);       
+   } // end-if
+   else {
+      alert(&quot;AD-051:\nInvalid campaign type&quot;);
+      return(false);
+   } // end-else
+} // end-function
+
+// ***********************
+// ** 4. Check if Active
+// ***********************
+function checkIfActive() {
+   if({!Campaign.IsActive}) { 
+       return(true); 
+   } // end-if
+   else {
+      alert(&quot;AD-052:\nCampaign is NOT active\nCheck the Active check-box to enable&quot;);
+      return(false);
+   } // end-else
+} // end-function
+
+// ***********************
+// ** 5. Send Emails
+// ***********************
+function sendEmails() { 
+try{
+var returnMsg = sforce.apex.execute(
+   &quot;PAM.ServiceCallout_AC&quot;,
+   &quot;doCallout&quot;,{endpointUrl:&quot;https://aws.predictiveresponse.net/services/syncsend/syncsend.php?sessionId={!$Api.Session_ID}&amp;serverURL={!$Api.Partner_Server_URL_80}&amp;userEmail={!$User.Email}&amp;campaignId={!CASESAFEID(Campaign.Id)}&amp;orgId={!CASESAFEID(Organization.Id)}&amp;option=send&amp;method=Campaign.Synchronize&amp;debug=0&amp;encoding=Alpha&quot;}
+); // end-apex.execute 
+alert(returnMsg); // show returned service message from server
+} // end try
+catch(err) {
+   var errMessage = err.message;
+   if(err.message == null || err.message == &apos;undefined&apos;){
+       errMessage = &quot;No response from server&quot;;
+   }
+   alert(&quot;Oops, we encountered some kind of error.\n Error description: &quot;+errMessage+&quot;\nPlease try again later&quot;);
+  }  // end catch
+} // end-function</url>
+    </webLinks>
+    <webLinks>
+        <fullName>PAM__Send_Test_Emails</fullName>
+        <availability>online</availability>
+        <description>Used for the Predictive AM Version 8</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>x Test Email (not supported)</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>//2013-06-28 10:01
+{!REQUIRESCRIPT(&quot;/soap/ajax/26.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/26.0/apex.js&quot;)} 
+
+var r = confirm(&quot;Do you want to send test emails now?&quot;); 
+if(r == true){ 
+   if({!ISPICKVAL(Campaign.Type,&apos;Email&apos;)} ||
+       {!ISPICKVAL(Campaign.Type,&apos;Series&apos;)} || {!ISPICKVAL(Campaign.Type,&apos;Drip&apos;)}
+       || {!ISPICKVAL(Campaign.Type,&apos;Newsletter&apos;)}) { 
+       r = true; 
+   } // end-if
+   else {
+      r = false;
+      alert(&quot;Campaign is not a valid advanced type campaign\nValid campaign types are Series, Newsletter &amp; Email&quot;);
+   } // end-else
+} // end-if true
+//
+if(r == true){ 
+try{
+var returnMsg = sforce.apex.execute(
+   &quot;PAM.ServiceCallout_AC&quot;,
+   &quot;doCallout&quot;,{endpointUrl:&quot;https://aws.predictiveresponse.net/services/syncsend/syncsend.php?sessionId={!$Api.Session_ID}&amp;serverURL={!$Api.Partner_Server_URL_80}&amp;userEmail={!$User.Email}&amp;campaignId={!CASESAFEID(Campaign.Id)}&amp;orgId={!CASESAFEID(Organization.Id)}&amp;option=test&amp;method=Campaign.TestEmails&amp;debug=0&amp;encoding=Alpha&quot;}
+); // end-apex.execute 
+alert(returnMsg); // show returned service message from server
+} // end try
+catch(err) {
+   var errMessage = err.message;
+   if(err.message == null || err.message == &apos;undefined&apos;){
+       errMessage = &quot;No response from server&quot;;
+   }
+   alert(&quot;Ooops, we encountered some kind of error.\n Error description: &quot;+errMessage+&quot;\nPlease try again later&quot;);
+  }  // end catch
+} // end outer if (Clicked OK)</url>
+    </webLinks>
+    <webLinks>
+        <fullName>PAM__Sync_Send</fullName>
+        <availability>online</availability>
+        <description>Used for the Predictive AM Version 8</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>x Sync &amp; Send (not supported)</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>//2013-06-28 9:01
+{!REQUIRESCRIPT(&quot;/soap/ajax/26.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/26.0/apex.js&quot;)} 
+
+var r = confirm(&quot;Do you want to synchronize and send emails now?&quot;); 
+if(r == true){ 
+   if({!ISPICKVAL(Campaign.Type,&apos;Email&apos;)} ||
+       {!ISPICKVAL(Campaign.Type,&apos;Series&apos;)} || {!ISPICKVAL(Campaign.Type,&apos;Drip&apos;)}
+       || {!ISPICKVAL(Campaign.Type,&apos;Newsletter&apos;)}) { 
+       r = true; 
+   } // end-if
+   else {
+      r = false;
+      alert(&quot;Campaign does not have a valid Advanced campaign-type\nValid campaign-types are Series, Newsletter &amp; Email&quot;);
+   } // end-else
+} // end-if true
+////
+if(r == true){ 
+   if({!Campaign.IsActive}) { 
+       r = true; 
+   } // end-if
+   else {
+      r = false;
+      alert(&quot;Campaign is NOT active\nCheck the Active check-box to enable&quot;);
+   } // end-else
+} // end-if true
+//
+if(r == true){ 
+try{
+var returnMsg = sforce.apex.execute(
+   &quot;PAM.ServiceCallout_AC&quot;,
+   &quot;doCallout&quot;,{endpointUrl:&quot;https://aws.predictiveresponse.net/services/syncsend/syncsend.php?sessionId={!$Api.Session_ID}&amp;serverURL={!$Api.Partner_Server_URL_80}&amp;userEmail={!$User.Email}&amp;campaignId={!CASESAFEID(Campaign.Id)}&amp;orgId={!CASESAFEID(Organization.Id)}&amp;option=syncsend&amp;method=Campaign.Synchronize&amp;debug=0&amp;encoding=Alpha&quot;}
+); // end-apex.execute 
+alert(returnMsg); // show returned service message from server
+} // end try
+catch(err) {
+   var errMessage = err.message;
+   if(err.message == null || err.message == &apos;undefined&apos;){
+       errMessage = &quot;No response from server&quot;;
+   }
+   alert(&quot;Ooops, we encountered some kind of error.\n Error description: &quot;+errMessage+&quot;\nPlease try again later&quot;);
+  }  // end catch
+} // end outer if (Clicked OK)</url>
+    </webLinks>
+    <webLinks>
+        <fullName>PAM__Test_Sync</fullName>
+        <availability>online</availability>
+        <description>Used for the Predictive AM Version 8</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>x Test Sync (not supported)</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>//2013-06-28 10:01
+if(r == true){ 
+   if({!Campaign.IsActive} &amp;&amp; ({!ISPICKVAL(Campaign.Type,&apos;Email&apos;)} ||
+       {!ISPICKVAL(Campaign.Type,&apos;Series&apos;)} || {!ISPICKVAL(Campaign.Type,&apos;Drip&apos;)}
+       || {!ISPICKVAL(Campaign.Type,&apos;Newsletter&apos;)})) { 
+       r = true; 
+       alert(Test Sync Successful);
+   } // end-if
+   else {
+      r = false;
+      alert(&quot;Campaign is either not active or is not a Predictive type campaign&quot;);
+   } // end-else
+} // end-if true
+//</url>
+    </webLinks>
+    <webLinks>
+        <fullName>PAM__ViewCampaignInfluenceReport</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>500</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>View Campaign Influence Report</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/00O?rt=117&amp;break0=CAN&amp;scope=1&amp;scopeid_lkid={!Campaign.Id}&amp;scopeid={!Campaign.Name}&amp;c=CAN&amp;c=MR&amp;c=PCS&amp;c=CFN&amp;c=RN&amp;c=ON&amp;c=OA&amp;c=OS&amp;c=OCD&amp;c=AN&amp;s=OA&amp;duel0=CAN%2CMR%2CCFN%2CRN%2CAN%2CON%2CPCS%2COS%2COCD%2COA&amp;details=yes&amp;format=t</url>
+        <width>500</width>
+    </webLinks>
+    <webLinks>
+        <fullName>PAM__XP_Send</fullName>
+        <availability>online</availability>
+        <description>Send Email button for v9 xPress Lite page layout</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>x Send Emails (not supported)</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>//2013-12-15 10:01
+{!REQUIRESCRIPT(&quot;/soap/ajax/26.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/26.0/apex.js&quot;)}
+
+main();
+
+function main() {
+   // 1
+   var ret = wantToSend();
+   if (ret != true) return;
+   // 2
+   var ret = checkCampaignType(); 
+   if (ret != true) return;
+   // 3
+   var transType = getTransType();
+   // 4
+   var ret = checkIfActive();
+   if (ret != true) return;
+   // 5
+   liteOrAdvanced(transType); 
+//}
+// ***********************
+// ** 1. Do you want to send?
+// ***********************
+function wantToSend(){
+   var ret = confirm(&quot;Do you want to send campaign emails now?&quot;);
+   return(ret);  
+} // end-function
+//
+// ***********************
+// ** 2. Check campaign type
+// ***********************
+function checkCampaignType(){
+   if({!ISPICKVAL(Campaign.Type,&apos;xPress&apos;)}) {
+          return(true);
+   } // end-if 
+   else {
+      alert(&quot;LT-030:\n Campaign type is not valid, please select xPress campaign type&quot;);
+      return(false);
+   } // end-else
+} // end-function
+
+// ***********************
+// ** 3. Get transType
+// ***********************
+function getTransType() {
+   var transType = &apos;void&apos;;
+   if({!ISPICKVAL(Campaign.Type,&apos;xPress&apos;)}) 
+      transType = &apos;Lite&apos;;
+   else
+      transType = &apos;Advanced&apos;;
+   return(transType);
+} // end-function
+
+// ***********************
+// ** 4. checkIfActive()
+// ***********************
+function checkIfActive() {
+    if({!Campaign.IsActive}) {
+        r = true;
+    } // end-if
+    else {
+      r = false;
+      alert(&quot;LT-031:\n Campaign is NOT active. \nCheck the Active check-box to enable&quot;);
+    } // end-else
+    return(r);
+   } // end-if true
+} // end-function
+
+// *********************** 
+// ** 5. Check email template 
+// *********************** 
+function validateEmailTemplate() { 
+var validConfirm = false; 
+// 
+if({!ISPICKVAL(Campaign.Type,&apos;xPress&apos;)}) { 
+var validationMsg = sforce.apex.execute(&quot;PAM.CampaignTemplateValidator_XP_AC&quot;,&quot;validate&quot;,{campId:&quot;{!Campaign.Id}&quot;}); 
+validationMsg = new String(validationMsg); 
+var validConfirm = true; 
+if(validationMsg != &apos;&apos; &amp;&amp; validationMsg != &apos;no_email&apos;){ 
+validConfirm = confirm(validationMsg); 
+} 
+else if(validationMsg == &apos;no_email&apos;){ 
+alert(&quot;LT-032:\nThere is no saved email edition for this campaign.\nIf you have just created and saved an edition, please try in a few minutes again, else click on Design Studio to create your email.&quot;); 
+validConfirm = false; 
+}// end-if 
+} 
+return(validConfirm); 
+} // end-function 
+
+// ***********************
+// ** 5. liteOrAdvanced()
+// ***********************
+function liteOrAdvanced(transType) {
+   if(transType == &apos;Lite&apos;) {
+      var ret = validateEmailTemplate();
+      if (ret != true) return;
+      sendEmails(&apos;xpress&apos;);
+   }
+   else   
+      sendEmails(&apos;send&apos;);
+}
+// end-of-function
+// ***********************
+// ** 5.1 Send email
+// ***********************
+function sendEmails(option) {
+// valid option values: sync,send,syncsend,test,xpress,xpAdd
+try {
+var returnMsg = sforce.apex.execute(&quot;PAM.ServiceCallout_AC&quot;,&quot;doCallout&quot;,{endpointUrl:&quot;https://aws.predictiveresponse.net/services/syncsend/xpress.php?sessionId{!$Api.Session_ID}&amp;serverURL={!$Api.Partner_Server_URL_80}&amp;userEmail={!$User.Email}&amp;campaignId={!CASESAFEID(Campaign.Id)}&amp;orgId={!CASESAFEID(Organization.Id)}&amp;option=&quot; + option + &quot;&amp;method=Campaign.XP_Send&amp;debug=0&amp;encoding=Alpha&quot;});
+           alert(returnMsg); // show returned service message from server
+   } // end try
+   catch(err) {
+      var errMessage = err.message;
+      if(err.message == null || err.message == &apos;undefined&apos;){
+          errMessage = &quot;LT-038: No response from server&quot;;
+      }
+      alert(&quot;LT-039:\n Oops, we encountered some kind of error.\n Error description: &quot;+errMessage+&quot;\nPlease try again later&quot;);
+   } // end catch
+} // end-function</url>
+    </webLinks>
+    <webLinks>
+        <fullName>PAM__XP_Send_Test</fullName>
+        <availability>online</availability>
+        <description>Test Emai button for the xPress Lite page layout</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>x Test Email (not supported)</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>//2013-12-15 10:01
+{!REQUIRESCRIPT(&quot;/soap/ajax/26.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/26.0/apex.js&quot;)}
+
+main();
+
+function main() {
+   // 0
+   var ret = checkTestMembers(); 
+   if (ret != true) return;
+   // 1
+   var ret = checkCampaignType(); 
+   if (ret != true) return;
+   // 2
+   var ret = wantToSend();
+   if (ret != true) return;
+   // 3
+   var transType = getTransType();
+   // 4
+   if(transType == &apos;Lite&apos;) {
+      var ret = validateEmailTemplate();
+      if (ret != true) return;   
+      sendTestEmail(&apos;xptest&apos;);
+   }
+   else   
+      sendTestEmail(&apos;test&apos;);
+}
+// ***********************
+// ** 0. checkTestMembers
+// ***********************
+function checkTestMembers() {
+var ret = sforce.apex.execute(&quot;PAM.CheckTestMembers_XP_AC&quot;,&quot;validate&quot;,{campId:&quot;{!Campaign.Id}&quot;});
+if(ret == &apos;false&apos;){
+   alert(&quot;LT-051:\nNo test members&quot;);
+   return(false); 
+}// end-if
+return(true);
+} // end-function
+
+// ***********************
+// ** 1. Do you want to send?
+// ***********************
+function wantToSend(){
+   var ret = confirm(&quot;Do you want to send test emails now?&quot;);
+   return(ret);  
+} // end-function
+//
+// ***********************
+// ** 2. Check campaign type
+// ***********************
+function checkCampaignType(){
+   if({!ISPICKVAL(Campaign.Type,&apos;xPress&apos;)}) {
+          return(true);
+   } // end-if 
+   else {
+      alert(&quot;LT-010:\nInvalid campaign type&quot;);
+      return(false);
+   } // end-else
+} // end-function
+
+// ***********************
+// ** 3. Get transType
+// ***********************
+function getTransType() {
+   var transType = &apos;void&apos;;
+   if({!ISPICKVAL(Campaign.Type,&apos;xPress&apos;)}) 
+      transType = &apos;Lite&apos;;
+   else
+      transType = &apos;Advanced&apos;;
+   return(transType);
+} // end-function
+
+// ***********************
+// ** 4. Check email template
+// ***********************
+function validateEmailTemplate() {
+var validConfirm = false;
+//
+if({!ISPICKVAL(Campaign.Type,&apos;xPress&apos;)}) {
+var validationMsg = sforce.apex.execute(&quot;PAM.CampaignTemplateValidator_XP_AC&quot;,&quot;validate&quot;,{campId:&quot;{!Campaign.Id}&quot;});
+      validationMsg = new String(validationMsg);
+      var validConfirm = true;
+      if(validationMsg != &apos;&apos; &amp;&amp; validationMsg != &apos;no_email&apos;){
+         validConfirm = confirm(validationMsg);
+      }
+   else if(validationMsg == &apos;no_email&apos;){
+      alert(&quot;LT-011:\nThere is no saved email edition for this campaign.&quot;);
+   validConfirm = false;
+   }// end-if
+}
+   return(validConfirm);
+} // end-function
+
+// ***********************
+// ** 5.1 Send Test email
+// ***********************
+function sendTestEmail(option) {
+// valid option values: sync,send,syncsend,test,xpress,xpAdd
+try {
+var returnMsg = sforce.apex.execute(&quot;PAM.ServiceCallout_AC&quot;,&quot;doCallout&quot;,{endpointUrl:&quot;https://aws.predictiveresponse.net/services/syncsend/xpress.php?sessionId{!$Api.Session_ID}&amp;serverURL={!$Api.Partner_Server_URL_80}&amp;userEmail={!$User.Email}&amp;campaignId={!CASESAFEID(Campaign.Id)}&amp;orgId={!CASESAFEID(Organization.Id)}&amp;option=&quot; + option + &quot;&amp;method=Campaign.XP_Send_Test&amp;debug=0&amp;encoding=Alpha&quot;});
+           alert(returnMsg); // show returned service message from server
+   } // end try
+   catch(err) {
+      var errMessage = err.message;
+      if(err.message == null || err.message == &apos;undefined&apos;){
+          errMessage = &quot;LT-018: No response from server&quot;;
+      }
+      alert(&quot;LT-019:\nOops, we encountered some kind of error.\n Error description: &quot;+errMessage+&quot;\nPlease try again later&quot;);
+   } // end catch
+} // end-function</url>
+    </webLinks>
+    <webLinks>
+        <fullName>ViewAllCampaignMembers</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>500</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>View All Campaign Members</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/camp/rptcmpgncalldown.jsp?scope=1&amp;scopeid={!Campaign_Name}</url>
+        <width>500</width>
+    </webLinks>
+    <webLinks>
+        <fullName>ViewCampaignInfluenceReport</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>500</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>View Campaign Influence Report</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/00O?rt=117&amp;break0=CAN&amp;scope=1&amp;scopeid_lkid={!Campaign.Id}&amp;scopeid={!Campaign_Name}&amp;c=CAN&amp;c=MR&amp;c=PCS&amp;c=CFN&amp;c=RN&amp;c=ON&amp;c=OA&amp;c=OS&amp;c=OCD&amp;c=AN&amp;s=OA&amp;duel0=CAN%2CMR%2CCFN%2CRN%2CAN%2CON%2CPCS%2COS%2COCD%2COA&amp;details=yes&amp;format=t</url>
+        <width>500</width>
+    </webLinks>
+</CustomObject>

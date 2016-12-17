@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>13</activeVersionNumber>
+    <description>Launched by an After Insert Process Builder on all new Commissions Records, this flow determines what amount (value) to apply based on the parent Sales Document and the Role. This flow was necessary to bypass object reference limit restrictions on Commissions. 
+
+For questions ask your Admin or email [Support@Winnets.com]</description>
+    <masterLabel>(WS) Assign Commission Values</masterLabel>
+</FlowDefinition>

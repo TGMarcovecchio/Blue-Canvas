@@ -1,0 +1,3115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Affiliate RP I agree to program T &amp; C --></label>
+        <name>Affiliate_RP_I_agree_to_program_T_C__c</name>
+    </fields>
+    <fields>
+        <label><!-- Affiliate Segment 1 --></label>
+        <name>Affiliate_Segment_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Affiliate Segment 2 --></label>
+        <name>Affiliate_Segment_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Affiliate Segment 3 --></label>
+        <name>Affiliate_Segment_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Affiliate Segment 4 --></label>
+        <name>Affiliate_Segment_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Age --></label>
+        <name>Age__c</name>
+        <picklistValues>
+            <masterLabel>13-21</masterLabel>
+            <translation><!-- 13-21 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2-6</masterLabel>
+            <translation><!-- 2-6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>22-49</masterLabel>
+            <translation><!-- 22-49 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50 or older</masterLabel>
+            <translation><!-- 50 or older --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7-12</masterLabel>
+            <translation><!-- 7-12 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Allergies --></label>
+        <name>Allergies__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appt Set Count --></label>
+        <name>Appt_Set_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appt Set? --></label>
+        <name>Appt_Set__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assessment Notes --></label>
+        <name>Assessment_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assistant --></label>
+        <name>Assistant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hot Buttons --></label>
+        <name>BD_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- BD Rep Ext --></label>
+        <name>BD_Rep_Ext__c</name>
+        <picklistValues>
+            <masterLabel>Al</masterLabel>
+            <translation><!-- Al --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jason</masterLabel>
+            <translation><!-- Jason --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ralph</masterLabel>
+            <translation><!-- Ralph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tom</masterLabel>
+            <translation><!-- Tom --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- BD Rep* --></label>
+        <name>BD_Rep__c</name>
+        <picklistValues>
+            <masterLabel>Al</masterLabel>
+            <translation><!-- Al --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cameron</masterLabel>
+            <translation><!-- Cameron --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jason</masterLabel>
+            <translation><!-- Jason --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Josh</masterLabel>
+            <translation><!-- Josh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Koa</masterLabel>
+            <translation><!-- Koa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ralph</masterLabel>
+            <translation><!-- Ralph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sam</masterLabel>
+            <translation><!-- Sam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tom</masterLabel>
+            <translation><!-- Tom --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- BD Status --></label>
+        <name>BD_Status__c</name>
+        <picklistValues>
+            <masterLabel>10th Call</masterLabel>
+            <translation><!-- 10th Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1st Call | V1-E1</masterLabel>
+            <translation><!-- 1st Call | V1-E1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2nd Call | noVE</masterLabel>
+            <translation><!-- 2nd Call | noVE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3rd Call | V2-E2</masterLabel>
+            <translation><!-- 3rd Call | V2-E2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4th Call | V3-E3</masterLabel>
+            <translation><!-- 4th Call | V3-E3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5th Call | V4-E4</masterLabel>
+            <translation><!-- 5th Call | V4-E4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6th Call</masterLabel>
+            <translation><!-- 6th Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7th Call</masterLabel>
+            <translation><!-- 7th Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8th Call</masterLabel>
+            <translation><!-- 8th Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9th Call | V5-E5</masterLabel>
+            <translation><!-- 9th Call | V5-E5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Back --></label>
+        <name>Back__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bad Phone --></label>
+        <name>Bad_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bed in Clinic --></label>
+        <name>Bed_in_Clinic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bed in Home --></label>
+        <name>Bed_in_Home__c</name>
+    </fields>
+    <fields>
+        <label><!-- Body type --></label>
+        <name>Body_type__c</name>
+        <picklistValues>
+            <masterLabel>A few extra pounds</masterLabel>
+            <translation><!-- A few extra pounds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Athletic</masterLabel>
+            <translation><!-- Athletic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Average</masterLabel>
+            <translation><!-- Average --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Obese</masterLabel>
+            <translation><!-- Obese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small-Petite</masterLabel>
+            <translation><!-- Small-Petite --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Consumer Referral Program picklist for Consumer to attest and agree to Program Terms and Conditions --></help>
+        <label><!-- CRP I agree to program T &amp; C --></label>
+        <name>CRP_I_agree_to_program_T_C__c</name>
+        <picklistValues>
+            <masterLabel>I agree to program terms and conditions</masterLabel>
+            <translation><!-- I agree to program terms and conditions --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Call Back Date --></label>
+        <name>Call_Back_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseSafeID --></label>
+        <name>CaseSafeID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>Consumer</masterLabel>
+            <translation><!-- Consumer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doctor</masterLabel>
+            <translation><!-- Doctor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Channel Partner Sign Up Date --></label>
+        <name>Channel_Partner_Sign_Up_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chest size --></label>
+        <name>Chest_size__c</name>
+        <picklistValues>
+            <masterLabel>30 or less</masterLabel>
+            <translation><!-- 30 or less --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>31</masterLabel>
+            <translation><!-- 31 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>32</masterLabel>
+            <translation><!-- 32 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>33</masterLabel>
+            <translation><!-- 33 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>34</masterLabel>
+            <translation><!-- 34 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35</masterLabel>
+            <translation><!-- 35 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36</masterLabel>
+            <translation><!-- 36 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>37</masterLabel>
+            <translation><!-- 37 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>38</masterLabel>
+            <translation><!-- 38 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>39</masterLabel>
+            <translation><!-- 39 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40</masterLabel>
+            <translation><!-- 40 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>41</masterLabel>
+            <translation><!-- 41 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>42</masterLabel>
+            <translation><!-- 42 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>43</masterLabel>
+            <translation><!-- 43 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>44</masterLabel>
+            <translation><!-- 44 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45</masterLabel>
+            <translation><!-- 45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>46</masterLabel>
+            <translation><!-- 46 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>47</masterLabel>
+            <translation><!-- 47 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48</masterLabel>
+            <translation><!-- 48 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>49</masterLabel>
+            <translation><!-- 49 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50</masterLabel>
+            <translation><!-- 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>51</masterLabel>
+            <translation><!-- 51 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>52</masterLabel>
+            <translation><!-- 52 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>53</masterLabel>
+            <translation><!-- 53 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>54</masterLabel>
+            <translation><!-- 54 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>55 or more</masterLabel>
+            <translation><!-- 55 or more --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Completed Web 2 Lead Form --></label>
+        <name>Completed_Web_2_Lead_Form__c</name>
+    </fields>
+    <fields>
+        <label><!-- Confirmed Appt? --></label>
+        <name>Confirmed_Appt__c</name>
+    </fields>
+    <fields>
+        <help><!-- Coupon Code Used to Purchase --></help>
+        <label><!-- Coupon Code --></label>
+        <name>Coupon_Code_Used_to_Purchase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created From Lead --></label>
+        <name>Created_From_Lead__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created On --></label>
+        <name>Created_On__c</name>
+    </fields>
+    <fields>
+        <help><!-- Find out what they are currently sleeping on. How old is it? Is it Sagging? What firmness is it? What did they like about it when it was new? What do they dislike about it now? --></help>
+        <label><!-- Current Mattress --></label>
+        <name>Current_Mattress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Id --></label>
+        <name>Customer_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- DC have a Facobook Page? --></label>
+        <name>DC_have_a_Facobook_Page__c</name>
+        <picklistValues>
+            <masterLabel>I don&apos;t know</masterLabel>
+            <translation><!-- I don&apos;t know --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date BD Set Appt* --></label>
+        <name>Date_BD_Set_Appt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Birth --></label>
+        <name>Date_of_Birth__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field captures the date of the form submission for Referral Program enrollment. --></help>
+        <label><!-- Date of Enrollment in Referral Program --></label>
+        <name>Date_of_Enrollment_in_Referral_Program__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day of the Week --></label>
+        <name>Day_of_the_Week__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Days Until Appt Set --></label>
+        <name>Days_Until_Appt_Set__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Days Until Transferred --></label>
+        <name>Days_Until_Transferred__c</name>
+    </fields>
+    <fields>
+        <label><!-- Describe your sleeping style --></label>
+        <name>Describe_your_sleeping_style__c</name>
+        <picklistValues>
+            <masterLabel>Back and Stomach</masterLabel>
+            <translation><!-- Back and Stomach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Back only</masterLabel>
+            <translation><!-- Back only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Side and Back</masterLabel>
+            <translation><!-- Side and Back --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Side and Stomach</masterLabel>
+            <translation><!-- Side and Stomach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Side only</masterLabel>
+            <translation><!-- Side only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stomach only</masterLabel>
+            <translation><!-- Stomach only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Toss and turn from all positions</masterLabel>
+            <translation><!-- Toss and turn from all positions --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Schedule appt. w/ Kristen? --></label>
+        <name>Do_they_want_to_schedule_an_appointment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do you plan to recommend intelliBED? --></label>
+        <name>Do_you_plan_to_recommend_intelliBED__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Sure Yet</masterLabel>
+            <translation><!-- Not Sure Yet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ducks - Couple, Both DM&apos;s on Call --></label>
+        <name>Ducks_Couple_Both_DM_s_on_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ducks - Explanation for Setting w/ 1 DM --></label>
+        <name>Ducks_Explanation_for_Setting_w_1_DM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ducks-Ok with 2k+ Pricing? --></label>
+        <name>Ducks_Ok_with_2k_Pricing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ducks - Single Sleeper, No Partner --></label>
+        <name>Ducks_Single_Sleeper_No_Partner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ducks-Watched Video? --></label>
+        <name>Ducks_Watched_Video__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check the box if a salesperson has engaged and/or remains engaged with the prospect. --></help>
+        <label><!-- Engaged by Sales --></label>
+        <name>Engaged_by_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enrolled in Referral Program? --></label>
+        <name>Enrolled_in_Referral_Program__c</name>
+        <picklistValues>
+            <masterLabel>Affiliated</masterLabel>
+            <translation><!-- Affiliated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Formerly Enrolled</masterLabel>
+            <translation><!-- Formerly Enrolled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Interested</masterLabel>
+            <translation><!-- Not Interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opt Out</masterLabel>
+            <translation><!-- Opt Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Returned Mattress</masterLabel>
+            <translation><!-- Returned Mattress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y</masterLabel>
+            <translation><!-- Y --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter known Facebook account(s), page(s) --></help>
+        <label><!-- Facebook --></label>
+        <name>Facebook__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fibromyalgia --></label>
+        <name>Fibromyalgia__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gel Sample Sent --></label>
+        <name>Gel_Sample_Sent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter known Google+ account(s) --></help>
+        <label><!-- Google+ --></label>
+        <name>Google__c</name>
+    </fields>
+    <fields>
+        <label><!-- HCP Referral Prog Terms and Conditions --></label>
+        <name>HCP_Referral_Prog_Terms_and_Conditions__c</name>
+    </fields>
+    <fields>
+        <help><!-- New HCP
+NO Training
+NO Beds Sold --></help>
+        <label><!-- HCP Segment 1 --></label>
+        <name>HCP_Segment_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Watched Training 
+NO Beds Sold
+NO Self-Purchase
+Incentive = 50% Off Self-Purchase --></help>
+        <label><!-- HCP Segment 2 - Clinical Partner --></label>
+        <name>HCP_Segment_2_Clinical_Partner__c</name>
+    </fields>
+    <fields>
+        <help><!-- NO Beds Sold
+NO Self-Purchase
+NO Training --></help>
+        <label><!-- HCP Segment 3 --></label>
+        <name>HCP_Segment_3__c</name>
+    </fields>
+    <fields>
+        <help><!-- NO Beds Sold
+Self-Purchased Bed --></help>
+        <label><!-- HCP Segment 4 --></label>
+        <name>HCP_Segment_4__c</name>
+    </fields>
+    <fields>
+        <help><!-- 1 Bed Sold
+Gamefication Driven
+Incentive = Bucket of GelSamples w/ Carabiner --></help>
+        <label><!-- HCP Segment 5 - Silver Partner --></label>
+        <name>HCP_Segment_5_Silver_Partner__c</name>
+    </fields>
+    <fields>
+        <help><!-- (15 Beds Sold w/in 12 Months)
+Status = Platinum Partner
+Incentive = TBD (Free Bed/Equivalent Value) --></help>
+        <label><!-- HCP Segment 6 - Platinum Partner --></label>
+        <name>HCP_Segment_6_Platinum_Partner__c</name>
+    </fields>
+    <fields>
+        <help><!-- (Sold 5 Beds w/in 6 Months)
+Status = Senior Partner
+Incentive = Full Display --></help>
+        <label><!-- HCP Segment 6 - Senior Partner --></label>
+        <name>HCP_Segment_6_Senior_Partner__c</name>
+    </fields>
+    <fields>
+        <label><!-- HCR Script --></label>
+        <name>HCR_Script__c</name>
+    </fields>
+    <fields>
+        <label><!-- Heart Disease --></label>
+        <name>Heart_Disease__c</name>
+    </fields>
+    <fields>
+        <label><!-- Height --></label>
+        <name>Height__c</name>
+        <picklistValues>
+            <masterLabel>4&apos;10&quot; and under</masterLabel>
+            <translation><!-- 4&apos;10&quot; and under --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4&apos;11&quot;</masterLabel>
+            <translation><!-- 4&apos;11&quot; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5&apos;</masterLabel>
+            <translation><!-- 5&apos; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5&apos;1&apos;&apos;</masterLabel>
+            <translation><!-- 5&apos;1&apos;&apos; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5&apos;10&apos;&apos;</masterLabel>
+            <translation><!-- 5&apos;10&apos;&apos; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5&apos;11&apos;&apos;</masterLabel>
+            <translation><!-- 5&apos;11&apos;&apos; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5&apos;2&apos;&apos;</masterLabel>
+            <translation><!-- 5&apos;2&apos;&apos; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5&apos;3&apos;&apos;</masterLabel>
+            <translation><!-- 5&apos;3&apos;&apos; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5&apos;4&apos;&apos;</masterLabel>
+            <translation><!-- 5&apos;4&apos;&apos; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5&apos;5&apos;&apos;</masterLabel>
+            <translation><!-- 5&apos;5&apos;&apos; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5&apos;6&apos;&apos;</masterLabel>
+            <translation><!-- 5&apos;6&apos;&apos; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5&apos;7&apos;&apos;</masterLabel>
+            <translation><!-- 5&apos;7&apos;&apos; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5&apos;8&apos;&apos;</masterLabel>
+            <translation><!-- 5&apos;8&apos;&apos; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5&apos;9&apos;&apos;</masterLabel>
+            <translation><!-- 5&apos;9&apos;&apos; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6&apos;</masterLabel>
+            <translation><!-- 6&apos; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6&apos;1&apos;&apos;</masterLabel>
+            <translation><!-- 6&apos;1&apos;&apos; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6&apos;2&apos;&apos;</masterLabel>
+            <translation><!-- 6&apos;2&apos;&apos; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6&apos;3&apos;&apos;</masterLabel>
+            <translation><!-- 6&apos;3&apos;&apos; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6&apos;4&quot;</masterLabel>
+            <translation><!-- 6&apos;4&quot; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6&apos;5&quot; and over</masterLabel>
+            <translation><!-- 6&apos;5&quot; and over --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Hips/Sciatica --></label>
+        <name>Hips_Sciatica__c</name>
+    </fields>
+    <fields>
+        <help><!-- Projects the Hotel is planning over the next year --></help>
+        <label><!-- Hospitality Projects --></label>
+        <name>Hospitality_Projects__c</name>
+    </fields>
+    <fields>
+        <help><!-- Projected Value of purchases over the next 12 months --></help>
+        <label><!-- Hospitality Purchases next 12 months --></label>
+        <name>Hospitality_Purchases_next_12_months__c</name>
+    </fields>
+    <fields>
+        <help><!-- Type of Lodging/Hospitality Group --></help>
+        <label><!-- Hospitality Type --></label>
+        <name>Hospitality_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hour of Day --></label>
+        <name>Hour_of_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- How can we help you reach your goals --></label>
+        <name>How_can_we_help_you_reach_your_goals__c</name>
+    </fields>
+    <fields>
+        <label><!-- How many hours do you allow for sleep --></label>
+        <name>How_many_hours_do_you_allow_for_sleep__c</name>
+        <picklistValues>
+            <masterLabel>4-6 hours</masterLabel>
+            <translation><!-- 4-6 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6-8 hours</masterLabel>
+            <translation><!-- 6-8 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Less than 4 hours</masterLabel>
+            <translation><!-- Less than 4 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>More than 8 hours</masterLabel>
+            <translation><!-- More than 8 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- How many locations need displays for? --></label>
+        <name>How_many_practice_locations_do_you_ne__c</name>
+        <picklistValues>
+            <masterLabel>3 or more (call to discuss our needs)</masterLabel>
+            <translation><!-- 3 or more (call to discuss our needs) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One location only</masterLabel>
+            <translation><!-- One location only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Two locations</masterLabel>
+            <translation><!-- Two locations --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- How many visits do you see a week? --></label>
+        <name>How_many_visits_do_you_see_a_week__c</name>
+        <picklistValues>
+            <masterLabel>100-300 Visits per week</masterLabel>
+            <translation><!-- 100-300 Visits per week --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>300-500 Visits per week.</masterLabel>
+            <translation><!-- 300-500 Visits per week. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50-100 Visits per week</masterLabel>
+            <translation><!-- 50-100 Visits per week --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greater then 500 Visits per week</masterLabel>
+            <translation><!-- Greater then 500 Visits per week --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Less then 50 visits per week</masterLabel>
+            <translation><!-- Less then 50 visits per week --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not sure.  I’m new in practice</masterLabel>
+            <translation><!-- Not sure.  I’m new in practice --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- How often do they send out a news letter --></label>
+        <name>How_often_do_they_send_out_a_news_letter__c</name>
+    </fields>
+    <fields>
+        <label><!-- How old is your current bed? --></label>
+        <name>How_old_is_your_current_bed__c</name>
+        <picklistValues>
+            <masterLabel>&lt; 1 Year</masterLabel>
+            <translation><!-- &lt; 1 Year --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt; 10 Years</masterLabel>
+            <translation><!-- &gt; 10 Years --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Between 1 &amp; 5 Years</masterLabel>
+            <translation><!-- Between 1 &amp; 5 Years --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Between 5 &amp; 10 Years</masterLabel>
+            <translation><!-- Between 5 &amp; 10 Years --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- How old is your current mattress --></label>
+        <name>How_old_is_your_current_mattress__c</name>
+        <picklistValues>
+            <masterLabel>1-3 years old</masterLabel>
+            <translation><!-- 1-3 years old --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3-5 years old</masterLabel>
+            <translation><!-- 3-5 years old --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5-8 years old</masterLabel>
+            <translation><!-- 5-8 years old --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8-10 years old</masterLabel>
+            <translation><!-- 8-10 years old --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Less than 1 year old</masterLabel>
+            <translation><!-- Less than 1 year old --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over 10 years old</masterLabel>
+            <translation><!-- Over 10 years old --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- check one --></help>
+        <label><!-- I agree to program terms and conditions --></label>
+        <name>I_agree_to_program_terms_and_conditions__c</name>
+        <picklistValues>
+            <masterLabel>Yes, I agree to the terms and conditions.</masterLabel>
+            <translation><!-- Yes, I agree to the terms and conditions. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- I consume caffeine or sugar within 6 hou --></label>
+        <name>I_consume_caffeine_or_sugar_within_6_hou__c</name>
+    </fields>
+    <fields>
+        <label><!-- I eat a full meal 2 hours of bedtime --></label>
+        <name>I_eat_a_full_meal_2_hours_of_bedtime__c</name>
+    </fields>
+    <fields>
+        <label><!-- I engage in stimulating activities 1 you --></label>
+        <name>I_engage_in_stimulating_activities_1_you__c</name>
+    </fields>
+    <fields>
+        <label><!-- I exercise within 3 hours of bedtime --></label>
+        <name>I_exercise_within_3_hours_of_bedtime__c</name>
+    </fields>
+    <fields>
+        <label><!-- I experience tingling --></label>
+        <name>I_experience_tingling__c</name>
+    </fields>
+    <fields>
+        <label><!-- I feel tired of groggy during the day --></label>
+        <name>I_feel_tired_of_groggy_during_the_day__c</name>
+    </fields>
+    <fields>
+        <label><!-- I fight to stay awake during the day --></label>
+        <name>I_fight_to_stay_awake_during_the_day__c</name>
+    </fields>
+    <fields>
+        <label><!-- I have difficulty falling/staying asleep --></label>
+        <name>I_have_difficulty_falling_staying_asleep__c</name>
+    </fields>
+    <fields>
+        <label><!-- I have trouble concentrating work/school --></label>
+        <name>I_have_trouble_concentrating_work_school__c</name>
+    </fields>
+    <fields>
+        <label><!-- I hold my breath/stop breathing at night --></label>
+        <name>I_hold_my_breath_stop_breathing_at_night__c</name>
+    </fields>
+    <fields>
+        <label><!-- I perspire more when I sleep --></label>
+        <name>I_perspire_more_when_I_sleep__c</name>
+    </fields>
+    <fields>
+        <label><!-- I sometimes drink alcohol 3 hours of bed --></label>
+        <name>I_sometimes_drink_alcohol_3_hours_of_bed__c</name>
+    </fields>
+    <fields>
+        <label><!-- I take a sleeping pill to help me sleep --></label>
+        <name>I_take_a_sleeping_pill_to_help_me_sleep__c</name>
+    </fields>
+    <fields>
+        <label><!-- I toss and turn during the night --></label>
+        <name>I_toss_and_turn_during_the_night__c</name>
+    </fields>
+    <fields>
+        <label><!-- I wake up and have trouble sleeping --></label>
+        <name>I_wake_up_and_have_trouble_sleeping__c</name>
+    </fields>
+    <fields>
+        <label><!-- I wake up with pain in the morning --></label>
+        <name>I_wake_up_with_pain_in_the_morning__c</name>
+    </fields>
+    <fields>
+        <label><!-- If not interested, why? --></label>
+        <name>If_not_interested_why__c</name>
+    </fields>
+    <fields>
+        <label><!-- If other, please describe --></label>
+        <name>If_other_please_describe__c</name>
+    </fields>
+    <fields>
+        <name>Industry</name>
+        <picklistValues>
+            <masterLabel>Agriculture</masterLabel>
+            <translation><!-- Agriculture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Apparel</masterLabel>
+            <translation><!-- Apparel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banking</masterLabel>
+            <translation><!-- Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biotechnology</masterLabel>
+            <translation><!-- Biotechnology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chemicals</masterLabel>
+            <translation><!-- Chemicals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communications</masterLabel>
+            <translation><!-- Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction</masterLabel>
+            <translation><!-- Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consulting</masterLabel>
+            <translation><!-- Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electronics</masterLabel>
+            <translation><!-- Electronics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energy</masterLabel>
+            <translation><!-- Energy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering</masterLabel>
+            <translation><!-- Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entertainment</masterLabel>
+            <translation><!-- Entertainment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environmental</masterLabel>
+            <translation><!-- Environmental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food &amp; Beverage</masterLabel>
+            <translation><!-- Food &amp; Beverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government</masterLabel>
+            <translation><!-- Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Healthcare</masterLabel>
+            <translation><!-- Healthcare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitality</masterLabel>
+            <translation><!-- Hospitality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Machinery</masterLabel>
+            <translation><!-- Machinery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing</masterLabel>
+            <translation><!-- Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media</masterLabel>
+            <translation><!-- Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not For Profit</masterLabel>
+            <translation><!-- Not For Profit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recreation</masterLabel>
+            <translation><!-- Recreation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping</masterLabel>
+            <translation><!-- Shipping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology</masterLabel>
+            <translation><!-- Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telecommunications</masterLabel>
+            <translation><!-- Telecommunications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transportation</masterLabel>
+            <translation><!-- Transportation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utilities</masterLabel>
+            <translation><!-- Utilities --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Insomnia --></label>
+        <name>Insomnia__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Visited Page --></label>
+        <name>Last_Visited_Page__c</name>
+    </fields>
+    <fields>
+        <name>LeadSource</name>
+        <picklistValues>
+            <masterLabel>Affiliate</masterLabel>
+            <translation><!-- Affiliate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blogger Program</masterLabel>
+            <translation><!-- Blogger Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Benefit</masterLabel>
+            <translation><!-- Business Benefit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer Show</masterLabel>
+            <translation><!-- Consumer Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Referral</masterLabel>
+            <translation><!-- Customer Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Digital Media</masterLabel>
+            <translation><!-- Digital Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Sales</masterLabel>
+            <translation><!-- Direct Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitality</masterLabel>
+            <translation><!-- Hospitality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Program</masterLabel>
+            <translation><!-- Medical Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Show</masterLabel>
+            <translation><!-- Medical Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store - City Creek, Utah</masterLabel>
+            <translation><!-- Store - City Creek, Utah --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store - Draper, Utah</masterLabel>
+            <translation><!-- Store - Draper, Utah --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store - Factory, Utah</masterLabel>
+            <translation><!-- Store - Factory, Utah --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store - Orem, Utah</masterLabel>
+            <translation><!-- Store - Orem, Utah --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store - Salt Lake City, Utah</masterLabel>
+            <translation><!-- Store - Salt Lake City, Utah --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesale</masterLabel>
+            <translation><!-- Wholesale --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead Created Date* --></label>
+        <name>Lead_Created_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Merge Type* --></label>
+        <name>Lead_Merge_Type__c</name>
+        <picklistValues>
+            <masterLabel>Bed Merge</masterLabel>
+            <translation><!-- Bed Merge --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead Number --></label>
+        <name>Lead_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- DO NOT display on layouts --></help>
+        <label><!-- Lead Record Type Text --></label>
+        <name>Lead_Record_Type_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Source 2 --></label>
+        <name>Lead_Source_2__c</name>
+        <picklistValues>
+            <masterLabel>123456789123456789123456789123456789123456789123456789123456789123456789123456789</masterLabel>
+            <translation><!-- 123456789123456789123456789123456789123456789123456789123456789123456789123456789 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advertisement</masterLabel>
+            <translation><!-- Advertisement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2B Web Site</masterLabel>
+            <translation><!-- B2B Web Site --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2C Web Site</masterLabel>
+            <translation><!-- B2C Web Site --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Channel Partner</masterLabel>
+            <translation><!-- Channel Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chat</masterLabel>
+            <translation><!-- Chat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Referral</masterLabel>
+            <translation><!-- Employee Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Referral</masterLabel>
+            <translation><!-- External Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HC Chiro</masterLabel>
+            <translation><!-- HC Chiro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LP</masterLabel>
+            <translation><!-- LP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profit Fuel</masterLabel>
+            <translation><!-- Profit Fuel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Relations</masterLabel>
+            <translation><!-- Public Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seminar - Internal</masterLabel>
+            <translation><!-- Seminar - Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seminar - Partner</masterLabel>
+            <translation><!-- Seminar - Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Show - CCA 2014 Backyard (San Francisco)</masterLabel>
+            <translation><!-- Show - CCA 2014 Backyard (San Francisco) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Influencer</masterLabel>
+            <translation><!-- Social Influencer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade Show</masterLabel>
+            <translation><!-- Trade Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Word of mouth</masterLabel>
+            <translation><!-- Word of mouth --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead Source Robert* --></label>
+        <name>Lead_Source__c</name>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/1/goo/content-displayad/sleeplikethedead.com</masterLabel>
+            <translation><!-- Intellibed.com/ppc/1/goo/content-displayad/sleeplikethedead.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/1/goo/content-displayad/sleeplikethedead.com/bed-mattress-review-home.html</masterLabel>
+            <translation><!-- Intellibed.com/ppc/1/goo/content-displayad/sleeplikethedead.com/bed-mattress-review-home.html --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/1/goo/content-displayad/sleeplikethedead.com/mattress-bad-back.html</masterLabel>
+            <translation><!-- Intellibed.com/ppc/1/goo/content-displayad/sleeplikethedead.com/mattress-bad-back.html --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/1/goo/content-displayad/sleeplikethedead.com/mattress-heavy-people.html</masterLabel>
+            <translation><!-- Intellibed.com/ppc/1/goo/content-displayad/sleeplikethedead.com/mattress-heavy-people.html --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/1/goo/content-displayad/sleeplikethedead.com/mattress-reviews-air-bed.html</masterLabel>
+            <translation><!-- Intellibed.com/ppc/1/goo/content-displayad/sleeplikethedead.com/mattress-reviews-air-bed.html --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/1/goo/content-displayad/sleeplikethedead.com/mattress-reviews-latex.html</masterLabel>
+            <translation><!-- Intellibed.com/ppc/1/goo/content-displayad/sleeplikethedead.com/mattress-reviews-latex.html --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/1/goo/content-displayad/sleeplikethedead.com/mattress-topper-compare.html</masterLabel>
+            <translation><!-- Intellibed.com/ppc/1/goo/content-displayad/sleeplikethedead.com/mattress-topper-compare.html --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/1/goo/content-displayad/sleeplikethedead.com/mattressreview-memory-foam.html</masterLabel>
+            <translation><!-- Intellibed.com/ppc/1/goo/content-displayad/sleeplikethedead.com/mattressreview-memory-foam.html --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/1/goo/content-displayad/sleeplikethedead.com/review-sleep-number.html</masterLabel>
+            <translation><!-- Intellibed.com/ppc/1/goo/content-displayad/sleeplikethedead.com/review-sleep-number.html --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/1/goo/content-displayad/spine-health.com</masterLabel>
+            <translation><!-- Intellibed.com/ppc/1/goo/content-displayad/spine-health.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/1/goo/content-displayad/spine-health.com/video/choosing-a-mattress-back-pain-video</masterLabel>
+            <translation><!-- Intellibed.com/ppc/1/goo/content-displayad/spine-health.com/video/choosing-a-mattress-back-pain-video --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/1/goo/content-displayad/spine-health.com/wellness/sleep</masterLabel>
+            <translation><!-- Intellibed.com/ppc/1/goo/content-displayad/spine-health.com/wellness/sleep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/1/goo/content-textad/sleeplikethedead.com</masterLabel>
+            <translation><!-- Intellibed.com/ppc/1/goo/content-textad/sleeplikethedead.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/1/goo/content-textad/sleeplikethedead.com/bed-mattress-review-home.html</masterLabel>
+            <translation><!-- Intellibed.com/ppc/1/goo/content-textad/sleeplikethedead.com/bed-mattress-review-home.html --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/1/goo/content-textad/sleeplikethedead.com/mattress-bad-back.html</masterLabel>
+            <translation><!-- Intellibed.com/ppc/1/goo/content-textad/sleeplikethedead.com/mattress-bad-back.html --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/1/goo/content-textad/sleeplikethedead.com/mattress-heavy-people.html</masterLabel>
+            <translation><!-- Intellibed.com/ppc/1/goo/content-textad/sleeplikethedead.com/mattress-heavy-people.html --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/1/goo/content-textad/sleeplikethedead.com/mattress-reviews-air-bed.html</masterLabel>
+            <translation><!-- Intellibed.com/ppc/1/goo/content-textad/sleeplikethedead.com/mattress-reviews-air-bed.html --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/1/goo/content-textad/sleeplikethedead.com/mattress-topper-compare.html</masterLabel>
+            <translation><!-- Intellibed.com/ppc/1/goo/content-textad/sleeplikethedead.com/mattress-topper-compare.html --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/1/goo/content-textad/sleeplikethedead.com/mattressreview-memory-foam.html</masterLabel>
+            <translation><!-- Intellibed.com/ppc/1/goo/content-textad/sleeplikethedead.com/mattressreview-memory-foam.html --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/1/goo/content-textad/sleeplikethedead.com/review-sleep-number.html</masterLabel>
+            <translation><!-- Intellibed.com/ppc/1/goo/content-textad/sleeplikethedead.com/review-sleep-number.html --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/1/goo/content-textad/spine-health.com</masterLabel>
+            <translation><!-- Intellibed.com/ppc/1/goo/content-textad/spine-health.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/1/goo/content-textad/spine-health.com/video/choosing-a-mattress-back-pain-video</masterLabel>
+            <translation><!-- Intellibed.com/ppc/1/goo/content-textad/spine-health.com/video/choosing-a-mattress-back-pain-video --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/1/goo/content-textad/spine-health.com/wellness/sleep</masterLabel>
+            <translation><!-- Intellibed.com/ppc/1/goo/content-textad/spine-health.com/wellness/sleep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/2/goo/content-displayad/sleeplikethedead.com</masterLabel>
+            <translation><!-- Intellibed.com/ppc/2/goo/content-displayad/sleeplikethedead.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/2/goo/content-displayad/sleeplikethedead.com/bed-mattress-review-home.php</masterLabel>
+            <translation><!-- Intellibed.com/ppc/2/goo/content-displayad/sleeplikethedead.com/bed-mattress-review-home.php --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/2/goo/content-displayad/sleeplikethedead.com/mattress-bad-back.php</masterLabel>
+            <translation><!-- Intellibed.com/ppc/2/goo/content-displayad/sleeplikethedead.com/mattress-bad-back.php --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/2/goo/content-displayad/sleeplikethedead.com/mattress-heavy-people.php</masterLabel>
+            <translation><!-- Intellibed.com/ppc/2/goo/content-displayad/sleeplikethedead.com/mattress-heavy-people.php --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/2/goo/content-displayad/sleeplikethedead.com/mattress-reviews-air-bed.php</masterLabel>
+            <translation><!-- Intellibed.com/ppc/2/goo/content-displayad/sleeplikethedead.com/mattress-reviews-air-bed.php --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/2/goo/content-displayad/sleeplikethedead.com/mattress-reviews-latex.php</masterLabel>
+            <translation><!-- Intellibed.com/ppc/2/goo/content-displayad/sleeplikethedead.com/mattress-reviews-latex.php --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/2/goo/content-displayad/sleeplikethedead.com/mattress-topper-compare.php</masterLabel>
+            <translation><!-- Intellibed.com/ppc/2/goo/content-displayad/sleeplikethedead.com/mattress-topper-compare.php --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/2/goo/content-displayad/sleeplikethedead.com/mattressreview-memory-foam.php</masterLabel>
+            <translation><!-- Intellibed.com/ppc/2/goo/content-displayad/sleeplikethedead.com/mattressreview-memory-foam.php --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/2/goo/content-displayad/sleeplikethedead.com/review-sleep-number.php</masterLabel>
+            <translation><!-- Intellibed.com/ppc/2/goo/content-displayad/sleeplikethedead.com/review-sleep-number.php --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/2/goo/content-displayad/spine-health.com</masterLabel>
+            <translation><!-- Intellibed.com/ppc/2/goo/content-displayad/spine-health.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/2/goo/content-displayad/spine-health.com/video/choosing-a-mattress-back-pain-video</masterLabel>
+            <translation><!-- Intellibed.com/ppc/2/goo/content-displayad/spine-health.com/video/choosing-a-mattress-back-pain-video --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/2/goo/content-displayad/spine-health.com/wellness/sleep</masterLabel>
+            <translation><!-- Intellibed.com/ppc/2/goo/content-displayad/spine-health.com/wellness/sleep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/2/goo/content-textad/sleeplikethedead.com</masterLabel>
+            <translation><!-- Intellibed.com/ppc/2/goo/content-textad/sleeplikethedead.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/2/goo/content-textad/sleeplikethedead.com/bed-mattress-review-home.php</masterLabel>
+            <translation><!-- Intellibed.com/ppc/2/goo/content-textad/sleeplikethedead.com/bed-mattress-review-home.php --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/2/goo/content-textad/sleeplikethedead.com/mattress-bad-back.php</masterLabel>
+            <translation><!-- Intellibed.com/ppc/2/goo/content-textad/sleeplikethedead.com/mattress-bad-back.php --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/2/goo/content-textad/sleeplikethedead.com/mattress-heavy-people.php</masterLabel>
+            <translation><!-- Intellibed.com/ppc/2/goo/content-textad/sleeplikethedead.com/mattress-heavy-people.php --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/2/goo/content-textad/sleeplikethedead.com/mattress-reviews-air-bed.php</masterLabel>
+            <translation><!-- Intellibed.com/ppc/2/goo/content-textad/sleeplikethedead.com/mattress-reviews-air-bed.php --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/2/goo/content-textad/sleeplikethedead.com/mattress-topper-compare.php</masterLabel>
+            <translation><!-- Intellibed.com/ppc/2/goo/content-textad/sleeplikethedead.com/mattress-topper-compare.php --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/2/goo/content-textad/sleeplikethedead.com/mattressreview-memory-foam.php</masterLabel>
+            <translation><!-- Intellibed.com/ppc/2/goo/content-textad/sleeplikethedead.com/mattressreview-memory-foam.php --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/2/goo/content-textad/sleeplikethedead.com/review-sleep-number.php</masterLabel>
+            <translation><!-- Intellibed.com/ppc/2/goo/content-textad/sleeplikethedead.com/review-sleep-number.php --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/2/goo/content-textad/spine-health.com</masterLabel>
+            <translation><!-- Intellibed.com/ppc/2/goo/content-textad/spine-health.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/2/goo/content-textad/spine-health.com/video/choosing-a-mattress-back-pain-video</masterLabel>
+            <translation><!-- Intellibed.com/ppc/2/goo/content-textad/spine-health.com/video/choosing-a-mattress-back-pain-video --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intellibed.com/ppc/2/goo/content-textad/spine-health.com/wellness/sleep</masterLabel>
+            <translation><!-- Intellibed.com/ppc/2/goo/content-textad/spine-health.com/wellness/sleep --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead Status --></label>
+        <name>Lead_Status__c</name>
+        <picklistValues>
+            <masterLabel>1 - New Lead - not touched yet ;</masterLabel>
+            <translation><!-- 1 - New Lead - not touched yet ; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10- Sent Quote; Part 2 Appt Set; Part 2 Appt Missed; Part 2 Cplt;</masterLabel>
+            <translation><!-- 10- Sent Quote; Part 2 Appt Set; Part 2 Appt Missed; Part 2 Cplt; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11 - Not Interested - Yet!; I already bought a bed ; Low Budget; SOLD - Converted; Part 1 Cplt; Part 1 Appt Set</masterLabel>
+            <translation><!-- 11 - Not Interested - Yet!; I already bought a bed ; Low Budget; SOLD - Converted; Part 1 Cplt; Part 1 Appt Set --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - Attempting Contact ;</masterLabel>
+            <translation><!-- 2 - Attempting Contact ; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2a. Contact - In Progress;</masterLabel>
+            <translation><!-- 2a. Contact - In Progress; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3- Call after 5pm;</masterLabel>
+            <translation><!-- 3- Call after 5pm; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 - Responded thru email;</masterLabel>
+            <translation><!-- 4 - Responded thru email; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 - Bad Phone Number;</masterLabel>
+            <translation><!-- 5 - Bad Phone Number; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5a. Bad Phone and Email : Bogus Lead;</masterLabel>
+            <translation><!-- 5a. Bad Phone and Email : Bogus Lead; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 - BP Email Response-replied to BP eml;</masterLabel>
+            <translation><!-- 6 - BP Email Response-replied to BP eml; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 - CUSTOMER CANCELLED APPT;</masterLabel>
+            <translation><!-- 7 - CUSTOMER CANCELLED APPT; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 - CUST RESCHEDULE REQUEST; DEAD - Remove From List ; 9a - Transferred - Not Presented;</masterLabel>
+            <translation><!-- 8 - CUST RESCHEDULE REQUEST; DEAD - Remove From List ; 9a - Transferred - Not Presented; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9ab - Transferred - Not Presented DEAD;</masterLabel>
+            <translation><!-- 9ab - Transferred - Not Presented DEAD; --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead Type --></label>
+        <name>Lead_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leave Last Name BLANK --></label>
+        <name>Leave_Last_Name_BLANK__c</name>
+    </fields>
+    <fields>
+        <label><!-- Left Voice Message 1 --></label>
+        <name>Left_Voice_Message_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Left Voice Message 2 --></label>
+        <name>Left_Voice_Message_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Left Voice Message 3 --></label>
+        <name>Left_Voice_Message_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Left Voice Message 4 --></label>
+        <name>Left_Voice_Message_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Left Voice Message 5 --></label>
+        <name>Left_Voice_Message_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legacy - Lead Source --></label>
+        <name>Legacy_Lead_Source__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter know LinkedIn account(s) --></help>
+        <label><!-- LinkedIn --></label>
+        <name>LinkedIn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medical Treatment --></label>
+        <name>Medical_Treatment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Missed Appt Date --></label>
+        <name>Missed_Appt_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- My sleep is affected by room temperature --></label>
+        <name>My_sleep_is_affected_by_room_temperature__c</name>
+    </fields>
+    <fields>
+        <label><!-- My sleep is delayed/interrupted by noise --></label>
+        <name>My_sleep_is_delayed_interrupted_by_noise__c</name>
+    </fields>
+    <fields>
+        <label><!-- Narcolepsy --></label>
+        <name>Narcolepsy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Neck --></label>
+        <name>Neck__c</name>
+    </fields>
+    <fields>
+        <label><!-- Not interested, included in emails. --></label>
+        <name>Not_interested_included_in_emails__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Nurture Emails Sent* --></label>
+        <name>Nurture_Emails_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Often email patients? # of emails? --></label>
+        <name>Often_email_patients_of_emails__c</name>
+    </fields>
+    <fields>
+        <label><!-- One Legger? --></label>
+        <name>One_Legger__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Other --></label>
+        <name>Other__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, this lead is  automatically added to ALL campaigns as a test member and will receive all Predictive test emails. --></help>
+        <label><!-- Test Member --></label>
+        <name>PAM__Is_Test_Member__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Score Rating --></label>
+        <name>PAM__Lead_Score_Rating__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lead score based on online activity such as email opens and web visits. --></help>
+        <label><!-- Lead Score --></label>
+        <name>PAM__Lead_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test Group --></label>
+        <name>PAM__Test_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- ❷ Pain Areas: --></label>
+        <name>Pain_Areas__c</name>
+    </fields>
+    <fields>
+        <label><!-- Part 2 Appt Date --></label>
+        <name>Part_2_Appt_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Part 2 Appt Time --></label>
+        <name>Part_2_Appt_Time__c</name>
+        <picklistValues>
+            <masterLabel>08:00</masterLabel>
+            <translation><!-- 08:00 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Part 2 Cplt Date --></label>
+        <name>Part_2_Cplt_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone 2 --></label>
+        <name>Phone_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pillow in Clinic --></label>
+        <name>Pillow_in_Clinic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pillow in Home --></label>
+        <name>Pillow_in_Home__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Attributes/Symptoms/Conditions --></label>
+        <name>Primary_Attributes_Symptoms_Conditions__c</name>
+        <picklistValues>
+            <masterLabel>Acid Reflux</masterLabel>
+            <translation><!-- Acid Reflux --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arthritis</masterLabel>
+            <translation><!-- Arthritis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Back Pain</masterLabel>
+            <translation><!-- Back Pain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diabetes</masterLabel>
+            <translation><!-- Diabetes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fibromyalgia</masterLabel>
+            <translation><!-- Fibromyalgia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General</masterLabel>
+            <translation><!-- General --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hip Pain</masterLabel>
+            <translation><!-- Hip Pain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kids</masterLabel>
+            <translation><!-- Kids --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MDA</masterLabel>
+            <translation><!-- MDA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical</masterLabel>
+            <translation><!-- Medical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mom</masterLabel>
+            <translation><!-- Mom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neck</masterLabel>
+            <translation><!-- Neck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Baby</masterLabel>
+            <translation><!-- New Baby --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Mover</masterLabel>
+            <translation><!-- New Mover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remodel</masterLabel>
+            <translation><!-- Remodel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restless Leg</masterLabel>
+            <translation><!-- Restless Leg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scoliosis</masterLabel>
+            <translation><!-- Scoliosis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shoulder Pain</masterLabel>
+            <translation><!-- Shoulder Pain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Toxicity</masterLabel>
+            <translation><!-- Toxicity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Profession --></label>
+        <name>Profession__c</name>
+        <picklistValues>
+            <masterLabel>Accupuncturist</masterLabel>
+            <translation><!-- Accupuncturist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinic Staff</masterLabel>
+            <translation><!-- Clinic Staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer</masterLabel>
+            <translation><!-- Consumer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decorator</masterLabel>
+            <translation><!-- Decorator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LMT</masterLabel>
+            <translation><!-- LMT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local Retailer</masterLabel>
+            <translation><!-- Local Retailer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network Marketer</masterLabel>
+            <translation><!-- Network Marketer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nurse Practicioner</masterLabel>
+            <translation><!-- Nurse Practicioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office Manager</masterLabel>
+            <translation><!-- Office Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PT</masterLabel>
+            <translation><!-- PT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Realtor</masterLabel>
+            <translation><!-- Realtor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retailer</masterLabel>
+            <translation><!-- Retailer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Properly advised on your purchase? --></label>
+        <name>Properly_advised_on_your_purchase__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Sure</masterLabel>
+            <translation><!-- Not Sure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Used to calculate commissions. --></help>
+        <label><!-- Purchase Method --></label>
+        <name>Purchase_Method__c</name>
+        <picklistValues>
+            <masterLabel>Call In</masterLabel>
+            <translation><!-- Call In --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online</masterLabel>
+            <translation><!-- Online --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Show</masterLabel>
+            <translation><!-- Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store</masterLabel>
+            <translation><!-- Store --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Rating</name>
+        <picklistValues>
+            <masterLabel>Cold</masterLabel>
+            <translation><!-- Cold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dead</masterLabel>
+            <translation><!-- Dead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hot</masterLabel>
+            <translation><!-- Hot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retired</masterLabel>
+            <translation><!-- Retired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed Contract Imminent</masterLabel>
+            <translation><!-- Signed Contract Imminent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unrated</masterLabel>
+            <translation><!-- Unrated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warm</masterLabel>
+            <translation><!-- Warm --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reason for 6mo 1Yr Purchase Timeframe --></label>
+        <name>Reason_for_6mo_1Yr_Purchase_Timeframe__c</name>
+        <picklistValues>
+            <masterLabel>Finances</masterLabel>
+            <translation><!-- Finances --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moving</masterLabel>
+            <translation><!-- Moving --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Referral Code --></label>
+        <name>Referral_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Partner Consultation Fee --></label>
+        <name>Referral_Partner_Consultation_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Type --></label>
+        <name>Referral_Type__c</name>
+        <picklistValues>
+            <masterLabel>Affiliate</masterLabel>
+            <translation><!-- Affiliate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blogger</masterLabel>
+            <translation><!-- Blogger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Benefit</masterLabel>
+            <translation><!-- Business Benefit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Referral</masterLabel>
+            <translation><!-- Business Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Referral</masterLabel>
+            <translation><!-- Customer Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doctor</masterLabel>
+            <translation><!-- Doctor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitality</masterLabel>
+            <translation><!-- Hospitality --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Restless Leg Syndrome (RLS) --></label>
+        <name>Restless_Leg_Syndrome_RLS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Round Robin ID --></label>
+        <name>Round_Robin_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Person 1 --></label>
+        <name>Sales_Person_1__c</name>
+        <relationshipLabel><!-- Leads (Sales Person 1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales Person 2 --></label>
+        <name>Sales_Person_2__c</name>
+        <relationshipLabel><!-- Leads (Sales Person 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Schedule Evaluation Date --></label>
+        <name>Schedule_Evaluation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule Evaluation Time --></label>
+        <name>Schedule_Evaluation_Time__c</name>
+        <picklistValues>
+            <masterLabel>10:00 am</masterLabel>
+            <translation><!-- 10:00 am --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10:30 am</masterLabel>
+            <translation><!-- 10:30 am --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11:00 am</masterLabel>
+            <translation><!-- 11:00 am --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11:30 am</masterLabel>
+            <translation><!-- 11:30 am --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12:00 pm</masterLabel>
+            <translation><!-- 12:00 pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12:30 pm</masterLabel>
+            <translation><!-- 12:30 pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1:00 pm</masterLabel>
+            <translation><!-- 1:00 pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1:30 pm</masterLabel>
+            <translation><!-- 1:30 pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2:00 pm</masterLabel>
+            <translation><!-- 2:00 pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2:30 pm</masterLabel>
+            <translation><!-- 2:30 pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3:00 pm</masterLabel>
+            <translation><!-- 3:00 pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3:30 pm</masterLabel>
+            <translation><!-- 3:30 pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4:00 pm</masterLabel>
+            <translation><!-- 4:00 pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4:30 pm</masterLabel>
+            <translation><!-- 4:30 pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5:00 pm</masterLabel>
+            <translation><!-- 5:00 pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5:30 pm</masterLabel>
+            <translation><!-- 5:30 pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6:00 pm</masterLabel>
+            <translation><!-- 6:00 pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6:30 pm</masterLabel>
+            <translation><!-- 6:30 pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7:00 pm</masterLabel>
+            <translation><!-- 7:00 pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7:30 pm</masterLabel>
+            <translation><!-- 7:30 pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8:00 am</masterLabel>
+            <translation><!-- 8:00 am --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8:00 pm</masterLabel>
+            <translation><!-- 8:00 pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8:30 am</masterLabel>
+            <translation><!-- 8:30 am --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8:30 pm</masterLabel>
+            <translation><!-- 8:30 pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9:00 am</masterLabel>
+            <translation><!-- 9:00 am --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9:00 pm</masterLabel>
+            <translation><!-- 9:00 pm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9:30 am</masterLabel>
+            <translation><!-- 9:30 am --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Scoliosis --></label>
+        <name>Scoliosis__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Attributes/Symptoms/Conditions --></label>
+        <name>Secondary_Attributes_Symptoms_Conditions__c</name>
+        <picklistValues>
+            <masterLabel>Acid Reflux</masterLabel>
+            <translation><!-- Acid Reflux --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arthritis</masterLabel>
+            <translation><!-- Arthritis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Back Pain</masterLabel>
+            <translation><!-- Back Pain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diabetes</masterLabel>
+            <translation><!-- Diabetes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fibromyalgia</masterLabel>
+            <translation><!-- Fibromyalgia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General</masterLabel>
+            <translation><!-- General --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hip Pain</masterLabel>
+            <translation><!-- Hip Pain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kids</masterLabel>
+            <translation><!-- Kids --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MDA</masterLabel>
+            <translation><!-- MDA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical</masterLabel>
+            <translation><!-- Medical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mom</masterLabel>
+            <translation><!-- Mom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neck</masterLabel>
+            <translation><!-- Neck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Baby</masterLabel>
+            <translation><!-- New Baby --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Mover</masterLabel>
+            <translation><!-- New Mover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remodel</masterLabel>
+            <translation><!-- Remodel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restless Leg</masterLabel>
+            <translation><!-- Restless Leg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scoliosis</masterLabel>
+            <translation><!-- Scoliosis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shoulder Pain</masterLabel>
+            <translation><!-- Shoulder Pain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Toxicity</masterLabel>
+            <translation><!-- Toxicity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Secondary Phone --></label>
+        <name>Secondary_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Share goals for the next 36 mo --></label>
+        <name>Share_goals_for_the_next_36_mo__c</name>
+        <picklistValues>
+            <masterLabel>Hire/train associate</masterLabel>
+            <translation><!-- Hire/train associate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase profit center income</masterLabel>
+            <translation><!-- Increase profit center income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replace, hire, retrain key staff person</masterLabel>
+            <translation><!-- Replace, hire, retrain key staff person --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sell my practice and retire</masterLabel>
+            <translation><!-- Sell my practice and retire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teaching/lecturing</masterLabel>
+            <translation><!-- Teaching/lecturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transition practice to a family member</masterLabel>
+            <translation><!-- Transition practice to a family member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Working on advanced cert./diplomat</masterLabel>
+            <translation><!-- Working on advanced cert./diplomat --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Shoulders --></label>
+        <name>Shoulders__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signed W9 Received --></label>
+        <name>Signed_W9_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sleep Apnea / Snoring --></label>
+        <name>Sleep_Apnea_Snoring__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sleep - Pain Areas --></label>
+        <name>Sleep_Pain_Areas__c</name>
+        <picklistValues>
+            <masterLabel>Hip/Sciatica</masterLabel>
+            <translation><!-- Hip/Sciatica --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lower/Upper Back</masterLabel>
+            <translation><!-- Lower/Upper Back --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neck</masterLabel>
+            <translation><!-- Neck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shoulders</masterLabel>
+            <translation><!-- Shoulders --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ❶ Sleep Problems/Sleep Stealers: --></label>
+        <name>Sleep_Problems_Sleep_Stealers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sleep Walking / Night Terrors --></label>
+        <name>Sleep_Walking_Night_Terrors__c</name>
+    </fields>
+    <fields>
+        <name>Status</name>
+        <picklistValues>
+            <masterLabel>Attempted Contact</masterLabel>
+            <translation><!-- Attempted Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engaged</masterLabel>
+            <translation><!-- Engaged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualified</masterLabel>
+            <translation><!-- Qualified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unqualified</masterLabel>
+            <translation><!-- Unqualified --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Website &quot;Contact Us&quot; form field --></help>
+        <label><!-- Subject --></label>
+        <name>Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- MatchKey --></label>
+        <name>TRIMEC__MatchKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Match Level --></label>
+        <name>TRIMEC__MatchLevel__c</name>
+    </fields>
+    <fields>
+        <label><!-- MatchScore --></label>
+        <name>TRIMEC__MatchScore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax ID Number --></label>
+        <name>Tax_ID_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tertiary Attributes/Symptoms/Conditions --></label>
+        <name>Tertiary_Attributes_Symptoms_Conditions__c</name>
+        <picklistValues>
+            <masterLabel>Acid Reflux</masterLabel>
+            <translation><!-- Acid Reflux --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arthritis</masterLabel>
+            <translation><!-- Arthritis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Back Pain</masterLabel>
+            <translation><!-- Back Pain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diabetes</masterLabel>
+            <translation><!-- Diabetes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fibromyalgia</masterLabel>
+            <translation><!-- Fibromyalgia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General</masterLabel>
+            <translation><!-- General --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hip Pain</masterLabel>
+            <translation><!-- Hip Pain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kids</masterLabel>
+            <translation><!-- Kids --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MDA</masterLabel>
+            <translation><!-- MDA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical</masterLabel>
+            <translation><!-- Medical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mom</masterLabel>
+            <translation><!-- Mom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neck</masterLabel>
+            <translation><!-- Neck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Baby</masterLabel>
+            <translation><!-- New Baby --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Mover</masterLabel>
+            <translation><!-- New Mover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remodel</masterLabel>
+            <translation><!-- Remodel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restless Leg</masterLabel>
+            <translation><!-- Restless Leg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scoliosis</masterLabel>
+            <translation><!-- Scoliosis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shoulder Pain</masterLabel>
+            <translation><!-- Shoulder Pain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Toxicity</masterLabel>
+            <translation><!-- Toxicity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Time Zone --></label>
+        <name>Time_Zone__c</name>
+        <picklistValues>
+            <masterLabel>AKT</masterLabel>
+            <translation><!-- AKT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AST</masterLabel>
+            <translation><!-- AST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CST</masterLabel>
+            <translation><!-- CST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EST</masterLabel>
+            <translation><!-- EST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HAST</masterLabel>
+            <translation><!-- HAST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MST</masterLabel>
+            <translation><!-- MST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PST</masterLabel>
+            <translation><!-- PST --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Transfer Count --></label>
+        <name>Transfer_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transfer/SHOW Date --></label>
+        <name>Transfer_SHOW_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transfer/SHOW SP --></label>
+        <name>Transfer_SHOW_SP__c</name>
+        <picklistValues>
+            <masterLabel>Al</masterLabel>
+            <translation><!-- Al --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jason</masterLabel>
+            <translation><!-- Jason --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ralph</masterLabel>
+            <translation><!-- Ralph --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tom</masterLabel>
+            <translation><!-- Tom --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Transferred ? --></label>
+        <name>Transferred__c</name>
+    </fields>
+    <fields>
+        <help><!-- Auto populates from the Web to Lead form when a DC fills out the Contact Us Page on intellibedDC.com --></help>
+        <label><!-- 4 - Try the Bed --></label>
+        <name>Try_the_Bed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter known Twitter handle(s), account(s) --></help>
+        <label><!-- Twitter --></label>
+        <name>Twitter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Mattress do you currently sleep --></label>
+        <name>Type_of_Mattress_do_you_currently_sleep1__c</name>
+        <picklistValues>
+            <masterLabel>Air Mattress (i.e. Sleep Number)</masterLabel>
+            <translation><!-- Air Mattress (i.e. Sleep Number) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inner Spring Mattress</masterLabel>
+            <translation><!-- Inner Spring Mattress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Memory Foam Mattress</masterLabel>
+            <translation><!-- Memory Foam Mattress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Update Lead for Workflow --></label>
+        <name>Update_Lead_for_Workflow__c</name>
+    </fields>
+    <fields>
+        <label><!-- Username --></label>
+        <name>Username__c</name>
+    </fields>
+    <fields>
+        <label><!-- VAT Status --></label>
+        <name>VAT_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- VAT --></label>
+        <name>VAT__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is updated in Salesforce.com automatically when the custom redirect has been clicked on all three training videos for the the HCP program. --></help>
+        <label><!-- Watched all HCP Training Vidoes --></label>
+        <name>Watched_all_HCP_Training_Vidoes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weight --></label>
+        <name>Weight__c</name>
+        <picklistValues>
+            <masterLabel>110-120 lbs</masterLabel>
+            <translation><!-- 110-120 lbs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120-130 lbs</masterLabel>
+            <translation><!-- 120-130 lbs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>130-140 lbs</masterLabel>
+            <translation><!-- 130-140 lbs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>140-150 lbs</masterLabel>
+            <translation><!-- 140-150 lbs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>150-160 lbs</masterLabel>
+            <translation><!-- 150-160 lbs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>160-170 lbs</masterLabel>
+            <translation><!-- 160-170 lbs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>170-180 lbs</masterLabel>
+            <translation><!-- 170-180 lbs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>180-190 lbs</masterLabel>
+            <translation><!-- 180-190 lbs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>190-200 lbs</masterLabel>
+            <translation><!-- 190-200 lbs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>200-225 lbs</masterLabel>
+            <translation><!-- 200-225 lbs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>225-250 lbs</masterLabel>
+            <translation><!-- 225-250 lbs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>250-275 lbs</masterLabel>
+            <translation><!-- 250-275 lbs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>275-300 lbs</masterLabel>
+            <translation><!-- 275-300 lbs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>300-350 lbs</masterLabel>
+            <translation><!-- 300-350 lbs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>350-400 lbs</masterLabel>
+            <translation><!-- 350-400 lbs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>400-450 lbs</masterLabel>
+            <translation><!-- 400-450 lbs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>450-500 lbs</masterLabel>
+            <translation><!-- 450-500 lbs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>500-600 lbs</masterLabel>
+            <translation><!-- 500-600 lbs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over 600 lbs</masterLabel>
+            <translation><!-- Over 600 lbs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under 110 lbs</masterLabel>
+            <translation><!-- Under 110 lbs --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ❸ What I like LEAST about my current bed --></label>
+        <name>What_I_like_LEAST_about_my_current_bed__c</name>
+    </fields>
+    <fields>
+        <label><!-- ❹ What I like MOST about my current bed: --></label>
+        <name>What_I_like_MOST_about_my_current_bed__c</name>
+    </fields>
+    <fields>
+        <label><!-- ❺ What I need to change or improve: --></label>
+        <name>What_I_need_to_change_or_improve__c</name>
+    </fields>
+    <fields>
+        <label><!-- What additional info would interest them --></label>
+        <name>What_additional_info_would_interest_them__c</name>
+    </fields>
+    <fields>
+        <label><!-- What best describes your daily activity --></label>
+        <name>What_best_describes_your_daily_activity__c</name>
+        <picklistValues>
+            <masterLabel>Driving for most of the day</masterLabel>
+            <translation><!-- Driving for most of the day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other*</masterLabel>
+            <translation><!-- Other* --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sitting on office chair most of the day</masterLabel>
+            <translation><!-- Sitting on office chair most of the day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standing or walking most of the day</masterLabel>
+            <translation><!-- Standing or walking most of the day --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- What product displays do you use? --></label>
+        <name>What_product_displays_do_you_use__c</name>
+        <picklistValues>
+            <masterLabel>Coffee table style displays</masterLabel>
+            <translation><!-- Coffee table style displays --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Counter top displays</masterLabel>
+            <translation><!-- Counter top displays --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DO NOT send us a display</masterLabel>
+            <translation><!-- DO NOT send us a display --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Floor stand racks/shelves</masterLabel>
+            <translation><!-- Floor stand racks/shelves --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In treatment room displays/brochures</masterLabel>
+            <translation><!-- In treatment room displays/brochures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Posters and brochures</masterLabel>
+            <translation><!-- Posters and brochures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wall mounted displays</masterLabel>
+            <translation><!-- Wall mounted displays --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>We don’t use displays, we are open to it</masterLabel>
+            <translation><!-- We don’t use displays, we are open to it --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- What products do you display? --></label>
+        <name>What_products_do_you_display__c</name>
+        <picklistValues>
+            <masterLabel>Braces, Wraps, or other DME</masterLabel>
+            <translation><!-- Braces, Wraps, or other DME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hot/Cold Packs</masterLabel>
+            <translation><!-- Hot/Cold Packs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orthotics</masterLabel>
+            <translation><!-- Orthotics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other (s)</masterLabel>
+            <translation><!-- Other (s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other brand pillows</masterLabel>
+            <translation><!-- Other brand pillows --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TENS units</masterLabel>
+            <translation><!-- TENS units --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Topical Creams ie:  Biofreeze</masterLabel>
+            <translation><!-- Topical Creams ie:  Biofreeze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vitamins/nutritional</masterLabel>
+            <translation><!-- Vitamins/nutritional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>We DO NOT display any products</masterLabel>
+            <translation><!-- We DO NOT display any products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>intelliBed</masterLabel>
+            <translation><!-- intelliBed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>intelliBed Pillows</masterLabel>
+            <translation><!-- intelliBed Pillows --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- What&apos;s most important to you w iB? --></label>
+        <name>What_s_most_important_to_you_w_iB__c</name>
+        <picklistValues>
+            <masterLabel>Cash profit-center income</masterLabel>
+            <translation><!-- Cash profit-center income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Improve patient outcomes</masterLabel>
+            <translation><!-- Improve patient outcomes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Natural material construction</masterLabel>
+            <translation><!-- Natural material construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- What&apos;s prompted you to look for new bed? --></label>
+        <name>What_s_prompted_you_to_look_for_new_bed__c</name>
+        <picklistValues>
+            <masterLabel>Have health condition (back-pain, etc)</masterLabel>
+            <translation><!-- Have health condition (back-pain, etc) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I am concerned about mattress toxicity</masterLabel>
+            <translation><!-- I am concerned about mattress toxicity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I am interested in Gel sleep surfaces</masterLabel>
+            <translation><!-- I am interested in Gel sleep surfaces --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I&apos;m planning to move</masterLabel>
+            <translation><!-- I&apos;m planning to move --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Our mattress is old and sagging</masterLabel>
+            <translation><!-- Our mattress is old and sagging --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- What type of mattress do you prefer --></label>
+        <name>What_type_of_mattress_do_you_prefer__c</name>
+        <picklistValues>
+            <masterLabel>Firm</masterLabel>
+            <translation><!-- Firm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium-Firm</masterLabel>
+            <translation><!-- Medium-Firm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soft</masterLabel>
+            <translation><!-- Soft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soft-Medium</masterLabel>
+            <translation><!-- Soft-Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- What was discussed? How can we help them --></label>
+        <name>What_was_discussed_How_can_we_help_them__c</name>
+    </fields>
+    <fields>
+        <label><!-- When Pain Start? --></label>
+        <name>When_Pain_Start__c</name>
+    </fields>
+    <fields>
+        <label><!-- When do you plan on purchasing a new bed --></label>
+        <name>When_do_you_plan_on_purchasing_a_new_bed__c</name>
+        <picklistValues>
+            <masterLabel>Next Month</masterLabel>
+            <translation><!-- Next Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Today</masterLabel>
+            <translation><!-- Today --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 30 Days</masterLabel>
+            <translation><!-- Within 30 Days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within a Week</masterLabel>
+            <translation><!-- Within a Week --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within a Year</masterLabel>
+            <translation><!-- Within a Year --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Which stats do you regularly monitor --></label>
+        <name>Which_stats_do_you_regularly_monitor__c</name>
+        <picklistValues>
+            <masterLabel>Average charge per visit</masterLabel>
+            <translation><!-- Average charge per visit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly gross collections</masterLabel>
+            <translation><!-- Monthly gross collections --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Number of new patient visits</masterLabel>
+            <translation><!-- Number of new patient visits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient Case Average</masterLabel>
+            <translation><!-- Patient Case Average --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient Length of Stay</masterLabel>
+            <translation><!-- Patient Length of Stay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Units of non–service products sold</masterLabel>
+            <translation><!-- Units of non–service products sold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>We MONITOR ALL of these &amp; more</masterLabel>
+            <translation><!-- We MONITOR ALL of these &amp; more --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Why did you choose an iBED --></label>
+        <name>Why_did_you_choose_an_iBED__c</name>
+        <picklistValues>
+            <masterLabel>Health Condition IB can help with</masterLabel>
+            <translation><!-- Health Condition IB can help with --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The Professional Discount</masterLabel>
+            <translation><!-- The Professional Discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The natural materials/intelliGel</masterLabel>
+            <translation><!-- The natural materials/intelliGel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To test before recommending to patients</masterLabel>
+            <translation><!-- To test before recommending to patients --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Why no patient purchases yet? --></label>
+        <name>Why_no_patient_purchases_yet__c</name>
+        <picklistValues>
+            <masterLabel>I do not have display materials</masterLabel>
+            <translation><!-- I do not have display materials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I do not know my promo code</masterLabel>
+            <translation><!-- I do not know my promo code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I have not been properly trained</masterLabel>
+            <translation><!-- I have not been properly trained --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I have not begun recommending yet</masterLabel>
+            <translation><!-- I have not begun recommending yet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I have not changed my intake forms</masterLabel>
+            <translation><!-- I have not changed my intake forms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I&apos;m fearful of &quot;selling beds&quot;</masterLabel>
+            <translation><!-- I&apos;m fearful of &quot;selling beds&quot; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I&apos;m not comfortable recommending yet</masterLabel>
+            <translation><!-- I&apos;m not comfortable recommending yet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too expensive for my patients</masterLabel>
+            <translation><!-- Too expensive for my patients --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Auto populates from the Web to Lead form when a DC fills out the Contact Us Page on intellibedDC.com --></help>
+        <label><!-- 1 - integrate sleep wellness --></label>
+        <name>X1__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Auto populates from the Web to Lead form when a DC fills out the Contact Us Page on intellibedDC.com --></help>
+        <label><!-- 2 - Become More Knowlegable --></label>
+        <name>X2__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Auto populates from the Web to Lead form when a DC fills out the Contact Us Page on intellibedDC.com --></help>
+        <label><!-- 3 - Learn More about Opportunity --></label>
+        <name>X3__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter known YouTube account(s), pages(s) --></help>
+        <label><!-- YouTube --></label>
+        <name>YouTube__c</name>
+    </fields>
+    <fields>
+        <help><!-- Website &quot;Contact Us&quot; form field --></help>
+        <label><!-- Your Message --></label>
+        <name>Your_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- iB better than last bed? --></label>
+        <name>iB_better_than_last_bed__c</name>
+        <picklistValues>
+            <masterLabel>I can&apos;t tell the difference</masterLabel>
+            <translation><!-- I can&apos;t tell the difference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I have not decided yet</masterLabel>
+            <translation><!-- I have not decided yet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Needs Score Synced --></label>
+        <name>pi__Needs_Score_Synced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Last Scored At --></label>
+        <name>pi__Pardot_Last_Scored_At__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Campaign --></label>
+        <name>pi__campaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Comments --></label>
+        <name>pi__comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Conversion Date --></label>
+        <name>pi__conversion_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Conversion Object Name --></label>
+        <name>pi__conversion_object_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Conversion Object Type --></label>
+        <name>pi__conversion_object_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Created Date --></label>
+        <name>pi__created_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot First Activity --></label>
+        <name>pi__first_activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot First Referrer Query --></label>
+        <name>pi__first_search_term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot First Referrer Type --></label>
+        <name>pi__first_search_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot First Referrer --></label>
+        <name>pi__first_touch_url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Grade --></label>
+        <name>pi__grade__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Last Activity --></label>
+        <name>pi__last_activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Notes --></label>
+        <name>pi__notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Hard Bounced --></label>
+        <name>pi__pardot_hard_bounced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Score --></label>
+        <name>pi__score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot URL --></label>
+        <name>pi__url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Analytics Campaign --></label>
+        <name>pi__utm_campaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Analytics Content --></label>
+        <name>pi__utm_content__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Analytics Medium --></label>
+        <name>pi__utm_medium__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Analytics Source --></label>
+        <name>pi__utm_source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Analytics Term --></label>
+        <name>pi__utm_term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send A Tango Card® --></label>
+        <name>tangocardapp__Send_A_Tango_Card_Lead__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Blogger --></label>
+        <name>Blogger</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Doctor --></label>
+        <name>Doctor</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Hospitality --></label>
+        <name>Hospitality</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PPC --></label>
+        <name>PPC</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Customer --></label>
+        <name>Sales_Center</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- Conga_Composer_OAuth --></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Mail_Merge --></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Opt_In --></label>
+        <name>PAM__Opt_In</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Opt_Out --></label>
+        <name>PAM__Opt_Out</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Predictive_AM_Activity --></label>
+        <name>PAM__Predictive_AM_Activity</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Subscriptions --></label>
+        <name>PAM__Subscriptions</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Offer_Appointment --></label>
+        <name>TDSF__Offer_Appointment</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Offer_Appointment_Multiple --></label>
+        <name>TDSF__Offer_Appointment_Multiple</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Convert --></label>
+        <name>TRIMEC__Convert</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Merge --></label>
+        <name>TRIMEC__Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Email --></label>
+        <name>pi__Send_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Emails --></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_to_Prospect_Insight --></label>
+        <name>pi__Send_to_Prospect_Insight</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_A_Tango_Card_From_Lead --></label>
+        <name>tangocardapp__Send_A_Tango_Card_From_Lead</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_A_Tango_Card_From_Lead_List --></label>
+        <name>tangocardapp__Send_A_Tango_Card_From_Lead_List</name>
+    </webLinks>
+</CustomObjectTranslation>
