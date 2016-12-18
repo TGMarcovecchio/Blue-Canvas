@@ -26,7 +26,7 @@
         </outputAssignments>
         <outputAssignments>
             <assignToReference>EngagementIdFound</assignToReference>
-            <field>Engagment__c</field>
+            <field>Engagement__c</field>
         </outputAssignments>
     </recordLookups>
     <recordUpdates>
