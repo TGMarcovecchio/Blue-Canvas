@@ -154,6 +154,20 @@
         <trackTrending>false</trackTrending>
     </fields>
     <fields>
+        <fullName>Intake__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Intake</label>
+        <referenceTo>Intake__c</referenceTo>
+        <relationshipLabel>Cases</relationshipLabel>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>IsClosedOnCreate</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -178,6 +192,10 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Web</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Intake</fullName>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>

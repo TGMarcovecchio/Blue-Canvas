@@ -7,6 +7,7 @@ public class WSIntakeTools {
 		Set<Id> newids = new Set<Id>(); //A set of New Ids
 
 		List<Intake__c> ins = new List<Intake__c>(); //A list of Intakes
+		List<Intake__c> iups = new List<Intake__C>(); //A list of Intakes to Update
 		List<Metrics__c> newmetrics = new List<Metrics__c>(); //A list of new metrics
 
 		SObjectType intaketype = Schema.getGlobalDescribe().get('Intake__c');
@@ -128,37 +129,41 @@ public class WSIntakeTools {
 
 		}
 
-		if(!newmetrics.isEmpty()){
-
+		if(!newmetrics.isEmpty()){ //Only do something if the list of new metrics is not empty
 			try{
-				
-				Database.SaveResult[] srs = Database.Insert(newmetrics,false);
-
+				Database.SaveResult[] srs = Database.Insert(newmetrics,false); //Try  to insert the new metrics
 				for(Database.SaveResult sr : srs){ //Cycle through the Save Results
-
 					if(sr.isSuccess() == TRUE){ //Do something if the result is a success
 						newids.add(sr.getId()); //Add the new Ids to a set of Ids
 					}
-
 				}
-
 			}catch(Exception e){
 				System.Debug('------------Error Inserting Metric from Intake------------'+e.getMessage());
 			}
-
 		}
 
-		List<Metrics__c> mets = [SELECT Id, Contact__c FROM Metrics__c WHERE Id IN: newids]; //The list of new metrics
-
-		if(!mets.isEmpty()){ //Do something if the list of new metrics is not empty
-			for(Metrics__c m : mets){ //Cycle through the list of metrics
-				metmap.put(m.Contact__c, m.id); //Add values to the map
+		if(!newids.isEmpty()){//Only do something if the set of new ids is not empty
+			List<Metrics__c> mets = [SELECT Id, Contact__c FROM Metrics__c WHERE Id IN: newids]; //The list of new metrics
+			if(!mets.isEmpty()){ //Do something if the list of new metrics is not empty
+				for(Metrics__c m : mets){ //Cycle through the list of metrics
+					metmap.put(m.Contact__c, m.id); //Add values to the map
+				}
 			}
 		}
 
-		for(Intake__c i : ins){
+		for(Intake__c i : ins){ //Cycle the the original list of Intakes
+			if(metmap.get(i.Contact__c) != NULL){ //Only do somethign if there is a contact to metric map value
+				i.Metric__c = metmap.get(i.Contact__c); //Update the metric reference on the intake using the contact map 
+				iups.add(i); //Add the intake to the list of metrics to be updated
+			}
+		}
 
-
+		if(!iups.isEmpty()){ //Only do something if the list of Intakes to update is not empty
+			try{
+				Database.UpsertResult[] sru = Database.Upsert(iups,false); //Try  to update the Intakes
+			}catch(Exception eu){
+				System.Debug('------------Error Updating Intakes with the Metric------------'+eu.getMessage());
+			}
 		}
 
 	}

@@ -14,10 +14,19 @@
         <relationshipLabel><!-- Cases --></relationshipLabel>
     </fields>
     <fields>
+        <label><!-- Intake --></label>
+        <name>Intake__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
         <name>Origin</name>
         <picklistValues>
             <masterLabel>Email</masterLabel>
             <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intake</masterLabel>
+            <translation><!-- Intake --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Phone</masterLabel>

@@ -1,4 +1,4 @@
-trigger WSIntakeTrigger on Intake__c (before insert, after update) {
+trigger WSIntakeTrigger on Intake__c (after insert, after update) {
 
 	Set<Id> iids = new Set<Id>();
 	List<Intake__c> sos = new List<Intake__c>();
@@ -8,9 +8,9 @@ trigger WSIntakeTrigger on Intake__c (before insert, after update) {
             for(Intake__c i : trigger.new){
                 Intake__c oldi = trigger.oldMap.get(i.id);
 
-                if(i.Metric__c == NULL){ //&& i.Contact__c != oldi.Contact__c i.Contact__c != NULL && 
+                if(i.Contact__c != NULL && i.Metric__c == NULL){ //&& i.Contact__c != oldi.Contact__c i.Contact__c != NULL && 
 
-                    sos.add(i);
+                    iids.add(i.Id);
 
                 }
             }
@@ -18,7 +18,7 @@ trigger WSIntakeTrigger on Intake__c (before insert, after update) {
 
         if(!iids.isEmpty()){
 
-        	WSIntakeTools.createMetricFromIntake(sos);
+        	WSIntakeTools.createMetricFromIntake(iids);
         }
 
 }
