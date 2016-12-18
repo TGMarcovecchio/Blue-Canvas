@@ -1,15 +1,37 @@
 public class WSIntakeTools {
 
-	public static void createMetricFromIntake(List<Intake__c> ins) {
+	public static void createMetricFromIntake(Set<Id> iids) {
 
 		Set<Id> nocnts = new Set<Id>(); //A set of Intake Ids with no contacts
 		Set<Id> noeng = new Set<Id>(); //A set of Intake Ids with no Cases (Engagements)
+		Set<Id> newids = new Set<Id>(); //A set of New Ids
 
+		List<Intake__c> ins = new List<Intake__c>(); //A list of Intakes
 		List<Metrics__c> newmetrics = new List<Metrics__c>(); //A list of new metrics
 
-		Boolean CreateMetric = TRUE;
+		SObjectType intaketype = Schema.getGlobalDescribe().get('Intake__c');
+        Map<String,Schema.SObjectField> intakeFields = intakeType.getDescribe().fields.getMap(); //A Map of Fields on Payment
+
+        Map<Id,Id> metmap = new Map<Id,Id>(); //A map of contact Id to metric Id
+
+        string intakeselect = 'Select ';
+
+        for(string pd : intakeFields.keyset()){
+            intakeselect = intakeselect + intakeFields.get(pd) + ', ';
+        }
+        intakeselect = intakeselect.substring(0,intakeselect.length()-2);
+        intakeselect = intakeselect + '';
+        intakeselect = intakeselect + ' FROM Intake__c';
+
+        try{
+            ins = (Intake__c[])Database.query(intakeselect); //The list of Intakes
+        }catch(Exception epr){
+            system.debug('***********************ERROR Querying Intakes ***********************' + epr.getMessage());
+        }
 
 		for(Intake__c i : ins){
+
+			Boolean CreateMetric = TRUE;
 
 			//Intake__c i = (Intake__c)so;
 
@@ -17,6 +39,7 @@ public class WSIntakeTools {
 
 			if(i.Contact__c != NULL){
 				m.Contact__c  = i.Contact__c;
+
 			}else{
 				nocnts.add(i.id);
 				CreateMetric = FALSE;
@@ -26,7 +49,6 @@ public class WSIntakeTools {
 				m.Case__c = i.Engagement__c;
 			}else{
 				noeng.add(i.id);
-				CreateMetric = FALSE;
 			}
 
 			m.Auto_Loans_Payment__c  = i.Auto_Loans_Payment__c;
@@ -109,10 +131,33 @@ public class WSIntakeTools {
 		if(!newmetrics.isEmpty()){
 
 			try{
+				
 				Database.SaveResult[] srs = Database.Insert(newmetrics,false);
+
+				for(Database.SaveResult sr : srs){ //Cycle through the Save Results
+
+					if(sr.isSuccess() == TRUE){ //Do something if the result is a success
+						newids.add(sr.getId()); //Add the new Ids to a set of Ids
+					}
+
+				}
+
 			}catch(Exception e){
 				System.Debug('------------Error Inserting Metric from Intake------------'+e.getMessage());
 			}
+
+		}
+
+		List<Metrics__c> mets = [SELECT Id, Contact__c FROM Metrics__c WHERE Id IN: newids]; //The list of new metrics
+
+		if(!mets.isEmpty()){ //Do something if the list of new metrics is not empty
+			for(Metrics__c m : mets){ //Cycle through the list of metrics
+				metmap.put(m.Contact__c, m.id); //Add values to the map
+			}
+		}
+
+		for(Intake__c i : ins){
+
 
 		}
 
