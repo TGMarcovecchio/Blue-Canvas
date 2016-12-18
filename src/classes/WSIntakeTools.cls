@@ -3,12 +3,16 @@ public class WSIntakeTools {
 	public static void createMetricFromIntake(Set<Id> iids) {
 
 		Set<Id> nocnts = new Set<Id>(); //A set of Intake Ids with no contacts
-		Set<Id> noeng = new Set<Id>(); //A set of Intake Ids with no Cases (Engagements)
+		Map<Id,Id> noeng = new Map<Id,Id>(); //A map of Contact Id to Intake Id of Intake Ids with no Cases (Engagements)
+		Map<Id,Id> casemap = new Map<Id,Id>(); //A map of Intake Id to Case Id
 		Set<Id> newids = new Set<Id>(); //A set of New Ids
+		Set<Id> caseids = new Set<Id>(); //A set of Case Ids
 
 		List<Intake__c> ins = new List<Intake__c>(); //A list of Intakes
-		List<Intake__c> iups = new List<Intake__C>(); //A list of Intakes to Update
+		List<Intake__c> iups = new List<Intake__c>(); //A list of Intakes to Update
+		List<Intake__c> inoc = new List<Intake__c>(); //A list of Intakes with no Case (Engagement)
 		List<Metrics__c> newmetrics = new List<Metrics__c>(); //A list of new metrics
+		List<Case> newcases = new List<Case>(); //A list of cases
 
 		SObjectType intaketype = Schema.getGlobalDescribe().get('Intake__c');
         Map<String,Schema.SObjectField> intakeFields = intakeType.getDescribe().fields.getMap(); //A Map of Fields on Payment
@@ -49,7 +53,7 @@ public class WSIntakeTools {
 			if(i.Engagement__c != NULL){
 				m.Case__c = i.Engagement__c;
 			}else{
-				noeng.add(i.id);
+				inoc.add(i);
 			}
 
 			m.Auto_Loans_Payment__c  = i.Auto_Loans_Payment__c;
@@ -151,11 +155,70 @@ public class WSIntakeTools {
 			}
 		}
 
+		if(!inoc.isEmpty()){
+
+			for(Intake__c inc : inoc){
+
+				Case c = new Case();
+
+				if(inc.Contact__c != NULL){
+					c.ContactId = inc.Contact__c;
+					c.AccountId = inc.Contact__r.AccountId;
+				}
+
+				c.Intake__c = inc.Id;
+				c.Status = 'New';
+				c.Origin = 'Intake';
+
+				newcases.add(c);
+
+			}
+
+		}
+
+		if(!newcases.isEmpty()){
+
+			try{
+				Database.SaveResult[] src = Database.Insert(newcases,false); //Try  to insert the new metrics
+				for(Database.SaveResult sc : src){ //Cycle through the Save Results
+					if(sc.isSuccess() == TRUE){ //Do something if the result is a success
+						caseids.add(sc.getId()); //Add the new Ids to a set of Ids
+					}
+				}
+			}catch(Exception e){
+			System.Debug('------------Error Inserting Metric from Intake------------'+e.getMessage());
+			}
+
+		}
+
+		if(!caseids.isEmpty()){//Only do something if the set of case ids is not empty
+			List<Case> css = [SELECT Id, Intake__c FROM Case WHERE Id IN: caseids]; //The list of new cases
+			if(!css.isEmpty()){ //Do something if the list of new metrics is not empty
+				for(Case c : css){ //Cycle through the list of cases
+					casemap.put(c.Intake__c, c.id); //Add values to the map
+				}
+			}
+		}
+
 		for(Intake__c i : ins){ //Cycle the the original list of Intakes
-			if(metmap.get(i.Contact__c) != NULL){ //Only do somethign if there is a contact to metric map value
+
+			Boolean addc = FALSE;
+			Boolean addi = FALSE;
+
+			if(metmap.get(i.Contact__c) != NULL && i.Metric__c == NULL){ //Only do somethign if there is a contact to metric map value
 				i.Metric__c = metmap.get(i.Contact__c); //Update the metric reference on the intake using the contact map 
+				addc = TRUE;
+			}
+
+			if(casemap.get(i.Id) != NULL && i.Engagement__c == NULL){
+				i.Engagement__c = casemap.get(i.Id);
+				addi = TRUE;
+			}
+
+			if(addc || addi){
 				iups.add(i); //Add the intake to the list of metrics to be updated
 			}
+
 		}
 
 		if(!iups.isEmpty()){ //Only do something if the list of Intakes to update is not empty
@@ -164,6 +227,11 @@ public class WSIntakeTools {
 			}catch(Exception eu){
 				System.Debug('------------Error Updating Intakes with the Metric------------'+eu.getMessage());
 			}
+		}
+
+		if(!noeng.isEmpty()){
+
+
 		}
 
 	}
