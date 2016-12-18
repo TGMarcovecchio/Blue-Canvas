@@ -1,5 +1,7 @@
-<apex:page standardController="Case" sidebar="false" showHeader="false">
+<apex:page sidebar="true" showHeader="true">
+    
     <GBLite:EmbedComponent baseGridUrl="{!$Page.GBLite__Grid}" />
 
     <iframe id="gridFrame" scrolling="auto" height="600" width="100%" frameborder="0" src="{!gridPage}gname=Engagements&sh=0&ssb=0&sbb=1"></iframe>
+    
 </apex:page>

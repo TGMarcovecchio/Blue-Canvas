@@ -10,4 +10,5 @@
     <tab>standard-ContentNote</tab>
     <tab>standard-report</tab>
     <tab>npsp__Engagement_Plan__c</tab>
+    <tab>Engagement_Grid</tab>
 </CustomApplication>
