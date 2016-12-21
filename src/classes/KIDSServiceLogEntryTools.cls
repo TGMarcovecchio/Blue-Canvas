@@ -1,5 +1,5 @@
 /**********************************************************************
-* Name:     KIDSServiceLogTools
+* Name:     KIDSServiceLogEntryTools
 * Author:   World-Class Industrial Network, LLC (www.winnets.com)
 * Date:     19 Dec 2016
 * ======================================================
@@ -13,10 +13,10 @@
 * VERSION   DATE            INITIALS    DESCRIPTION/FEATURES ADDED
 * 1.0       19 Dec 2016     TGM         Initial Development
 ***********************************************************************/
-public class KIDSServiceLogTools{
-	
-	public KIDSServiceLogTools(){
+public class KIDSServiceLogEntryTools{
+
+	public KIDSServiceLogEntryTools(){
 		
 	}
-
+	
 }
