@@ -34,6 +34,23 @@ public class KIDSServiceLogTools{
 		=l.Most_Recent_File_Result__c
 		=l.Report_Date__c
 		=l.Status__c
+
+		Attachment AttachmentObj = new Attachment(Body = csvBlob,
+                              Name = 'Test-' +System.now().format('yyyy-MMM-dd-hh-mm-ss') + '.csv',
+                              parentId = 'some id');
+
+        Database.SaveResult[]  sr = Database.Insert(AttachemntObj, false)                      
+		
+		for(Database.SaveResult s : sr){
+	
+		if(s.isSuccess()){
+
+			Id newid = sr.getId()  
+	
+		}else{
+	
+		}
+
 		*/
 	}
 
