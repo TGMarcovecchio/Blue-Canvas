@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>33.0</apiVersion>
+    <availableInTouch>false</availableInTouch>
+    <confirmationTokenRequired>false</confirmationTokenRequired>
+    <description>Contains additional running total for total operating income and suppressing TB2  ffrgridsumlabeld</description>
+    <label>TFISEBIT</label>
+    <packageVersions>
+        <majorNumber>3</majorNumber>
+        <minorNumber>0</minorNumber>
+        <namespace>ffr</namespace>
+    </packageVersions>
+</ApexPage>
