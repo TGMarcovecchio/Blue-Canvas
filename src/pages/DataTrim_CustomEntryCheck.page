@@ -1,0 +1,339 @@
+<apex:page controller="TRIMEC.EC_Controller"  tabStyle="TRIMEC__DataTrim_Entry_Check__tab" action="{!invokeServiceAuto}" >
+<!-- <apex:page controller="EC_Controller"  tabStyle="Entry_Check__tab" action="{!invokeServiceAuto}"> -->
+<apex:sectionHeader title="IntelliBed" subtitle="Entry Check" ></apex:sectionHeader>
+<!--<apex:sectionHeader title="{!$Label.TRIMEC__Company_Name}" subtitle="{!$Label.TRIMEC__Entry_Check}" ></apex:sectionHeader>-->
+<apex:stylesheet value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, 'DataTrim_EntryCheck.css')}"/>
+
+<apex:form rendered="{!Not Initialized}">
+<apex:pageBlock title="Application Initialization">
+<strong>Thank you for Installing DataTrim Entry Check</strong>
+<br />You are almost ready to start using the application, but before you can start using it you will have to initialize the application using the button below.
+<br />The initialization will set all the search/check settings to their default values. 
+<br />Once this is done you can change these settings using the setup link which will appear in the top-right corner of the Entry Check Page.<br />
+<br />
+<apex:commandButton action="{!InitializeMe}" value="Intialize Entry Check Setttings" id="btnInitialize"  styleClass="btnSharing" />
+<br />
+</apex:pageBlock>
+<apex:pageBlock title="To Learn More...">
+<br /><b>Setting up DataTrim Entry Check:</b>&nbsp; Check the <a href="http://www.datatrim.com/downloads/DatatrimEntryCheck_SetupGuide.pdf#zoom=80" title="Datatrim Entry Check User Guide" target="_blank">User Guide</a> for details.<br /> 
+<br />
+<b>Tutorials:</b>&nbsp;To get the most out of our application we recommend you to spend a few minutes watching this <a href="http://www.datatrim.com/d2b.asp?mode=LearnMore_EC" title="Datatrim Entry Check Introduction Demo" target="_blank">introduction Demo</a><br /> 
+<br />
+
+<b>Support:</b>&nbsp;Contact us at <a  href="mailto:support@datatrim.com" target="_blank">support@datatrim.com</a> with any question or ideas <br />-We appreciate all the feedback we can get.<br />
+
+<b>Follow product updates and news on our Blog, and Twitter:</b> 
+<a href="http://www.datatrim.com/blog" target="_new"><apex:image url="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, 'wordpress_32.png')}" width="24px" height="24px" alt="DataTrim Blog" title="Follow product updates and news on our Blog" /></a>
+<a href="http://www.twitter.com/datatrim" target="_new"><apex:image url="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, 'twitter_32.png')}" width="24px" height="24px" alt="DataTrim on Twitter" title="Follow DataTrim on Twitter" /></a>
+<br />  
+</apex:pageBlock>
+</apex:form>
+
+<apex:outputPanel rendered="{!Initialized}">
+<apex:form > 
+  <apex:pageBlock >
+  
+        <table width='100%' cellpadding='0' cellspacing='0' border='0'>
+        <tr >
+            <td width='33%' ><strong>Enter:</strong></td>
+            <td width='33%' ></td>
+            <!-- OLD 2012-11-29 <td width='33%' align='right'><apex:commandLink action="{!Settings.gotoSetup}" value="Setup" rendered="{!Settings.isUserAdmin}" title="Edit Entry Check Parameters" /></td> -->
+            <td width='33%' align='right'><apex:commandLink action="/apex/TRIMEC__DataTrim_EntryCheckSetup" value="Setup" rendered="{!Settings.isUserAdmin}" title="Edit Entry Check Parameters" /></td>
+        </tr>
+        </table>
+        <table width='825px' cellpadding='0' cellspacing='1' border='0'>
+        <tr ><td ></td><td ></td><td ></td>
+        </tr>
+        <tr >
+            <apex:PanelGroup rendered="{!Not Settings.Hide_FirstName}"><td width='250px'  ><table cellpadding='0' cellspacing='0'><tr><td class='pbLabelb'>FirstName:</td><td class='pdData'><apex:inputText id="srcFirstName" value="{!FirstName}" onkeypress="handleKeyPress(event);" /></td></tr></table></td></apex:PanelGroup>
+            <apex:PanelGroup rendered="{!Not Settings.Hide_LastName}"><td width='250px' ><table cellpadding='0' cellspacing='0'><tr><td class='pbLabelb'>LastName:</td><td class='pdData'><apex:inputText id="srcLastName" value="{!LastName}" onkeypress="handleKeyPress(event);"/></td></tr></table></td></apex:PanelGroup>
+            <apex:PanelGroup rendered="{!Not Settings.Hide_Email}"><td width='250px' ><table cellpadding='0' cellspacing='0'><tr><td class='pbLabelb'>Email:</td><td class='pdData'> <apex:inputText id="srcEmail" value="{!Email}" onkeypress="handleKeyPress(event);"/></td></tr></table></td></apex:PanelGroup>
+        </tr>
+        <tr>
+            <apex:PanelGroup rendered="{!Not Settings.Hide_Company}"><td width='250px'><table cellpadding='0' cellspacing='0'><tr><td class='pbLabelb'>Account:</td><td class='pdData'><apex:inputText id="srcCompany" value="{!Company}" onkeypress="handleKeyPress(event);"/></td></tr></table></td></apex:PanelGroup>
+            <apex:PanelGroup rendered="{!Not Settings.Hide_Website}"><td width='250px'><table cellpadding='0' cellspacing='0'><tr><td class='pbLabelb'>Website:</td><td class='pdData'><apex:inputText id="srcWebSite" value="{!Website}" onkeypress="handleKeyPress(event);"/></td></tr></table></td></apex:PanelGroup>
+        </tr>
+        <tr>
+            <apex:PanelGroup rendered="{!Not Settings.Hide_Street}"><td width='250px'><table cellpadding='0' cellspacing='0'><tr><td class='pbLabel'>Street:</td><td class='pdData'><apex:inputText id="srcStreet" value="{!Street}" onkeypress="handleKeyPress(event);"/></td></tr></table></td></apex:PanelGroup>
+            <apex:PanelGroup rendered="{!Not Settings.Hide_PostalCode}"><td width='250px'><table cellpadding='0' cellspacing='0'><tr><td class='pbLabel'>Postal Code:</td><td class='pdData'><apex:inputText id="srcPostcode" value="{!PostCode}" onkeypress="handleKeyPress(event);"/></td></tr></table></td></apex:PanelGroup>
+            <apex:PanelGroup rendered="{!Not Settings.Hide_City}"><td width='250px'><table cellpadding='0' cellspacing='0'><tr><td class='pbLabel'>City:&nbsp;&nbsp;</td><td class='pdData'><apex:inputText id="srcCity" value="{!City}" onkeypress="handleKeyPress(event);"/></td></tr></table></td></apex:PanelGroup>
+        </tr>
+        <tr>
+            <apex:PanelGroup rendered="{!Not Settings.Hide_State}"><td width='250px'><table cellpadding='0' cellspacing='0'><tr><td class='pbLabel'>State:&nbsp;&nbsp;</td><td class='pdData'><apex:inputText id="srcState" value="{!State}" onkeypress="handleKeyPress(event);"/></td></tr></table></td></apex:PanelGroup>
+            <apex:PanelGroup rendered="{!Not Settings.Hide_Country}"><td width='250px'><table cellpadding='0' cellspacing='0'><tr><td class='pbLabel'>Country:</td><td class='pdData'><apex:inputText id="srcCountry" value="{!Country}" onkeypress="handleKeyPress(event);"/></td></tr></table></td></apex:PanelGroup>
+        </tr>
+        <tr>
+            <apex:PanelGroup rendered="{!Not Settings.Hide_Phone}"><td width='250px'><table cellpadding='0' cellspacing='0'><tr><td class='pbLabelb'>Phone:</td><td class='pdData'><apex:inputText id="srcPhone" value="{!Phone}" onkeypress="handleKeyPress(event);"/></td></tr></table></td></apex:PanelGroup>
+            <apex:PanelGroup rendered="{!Not Settings.Hide_Fax}"><td width='250px'><table cellpadding='0' cellspacing='0'><tr><td class='pbLabelb'>Fax:&nbsp;&nbsp;&nbsp;</td><td class='pdData'><apex:inputText id="srcFax" value="{!Fax}" onkeypress="handleKeyPress(event);"/></td></tr></table></td></apex:PanelGroup> 
+            <apex:PanelGroup rendered="{!Not Settings.Hide_Mobile}"><td width='250px'><table cellpadding='0' cellspacing='0'><tr><td class='pbLabelb'>MobilePhone:</td><td class='pdData'><apex:inputText id="srcMobile" value="{!Mobile}" onkeypress="handleKeyPress(event);"/></td></tr></table></td></apex:PanelGroup>
+        </tr>
+        <tr>
+            <apex:PanelGroup ><td width='750px' colspan='3'><table cellpadding='0' cellspacing='0'><tr><td class='pbLabelb'>Hot Buttons:</td><td >
+                <input type="text" id="srcCustomField4a"  title="Hot Buttons"  onchange="setCustomField4b();" onkeypress="handleKeyPress(event);" size="111" />
+                <apex:inputText id="srcCustomField4b" value="{!upt_l}" title="Hot Buttons"  size="110"  style="display:none;" />
+                </td></tr></table></td>
+             </apex:PanelGroup>
+             <script type="text/javascript">
+                       function setCustomField4b(){
+                        var myinput  = document.getElementById("srcCustomField4a");
+                        var inputText  = document.getElementById("{!$Component.srcCustomField4b}");
+                        inputText.value =  '00N50000002pgbX=' + myinput.value;
+                     }
+              </script>
+        </tr>
+        </table>
+        
+        <!-- Section to be used in Custom Entry Check page, for disabling searches on specific objects -->
+        <apex:inputText id="srcsearchleads" value="{!searchleads}" style="display:none" />
+        <apex:inputText id="srcsearchaccounts" value="{!searchaccounts}" style="display:none" />
+        <apex:inputText id="srcsearchcontacts" value="{!searchcontacts}" style="display:none" />
+        <apex:inputText id="srcsearchpersons" value="{!searchpersons}" style="display:none" />
+        
+        <apex:panelGrid columns="2" columnClasses="pbLabel,pdData" border="0" cellpadding="0 0 10 0" cellspacing="0" width="50%">
+            <apex:commandButton action="{!invokeService}" value="Search/Check" id="btnSearch" rerender="newData" styleClass="btnSharing" status="actionStatus" >
+                <!--<apex:param name="LeadThreshold" assignTo="{!Settings.LeadThreshold}" value="96" />-->
+                <!--<apex:param name="ContactThreshold"  assignTo="{!Settings.ContactThreshold}" value="96" /> -->
+                <!--<apex:param name="Limit" assignTo="{!Settings.QueryLimit}" value="50" />-->
+                <!--<apex:param name="labelLead" assignTo="{!Settings.labelLeads}" value="prospect" />-->
+                <!--<apex:param name="labelcontact" assignTo="{!Settings.labelContacts}" value="individual" />-->
+                <!--<apex:param name="labelaccount" assignTo="{!Settings.labelAccounts}" value="cusomer" />-->
+            </apex:commandButton>
+          </apex:panelGrid>
+          
+         <script type="text/javascript">
+           function handleKeyPress(e){
+           var key= 0;
+           if(window.event){
+             key= e.keyCode;    //IE
+           }else if(e.which){
+            key= e.which;       //Firefox
+           }
+           if(key==13){
+                var sbutton = document.getElementById("{!$Component.btnSearch}");
+                sbutton.click();
+           }
+         }
+        </script>
+     </apex:pageBlock>
+ </apex:form>
+ 
+ <apex:actionStatus Id="actionStatus" >
+     <apex:facet name="start"><h1>Wait Searching...</h1></apex:facet>
+ </apex:actionStatus>
+ 
+ <apex:outputPanel id="newData" >
+     
+     <!-- changed 2010-09-28 <apex:pageBlock rendered="{!CheckFailed}" tabStyle="Lead"> -->
+         <apex:pageMessages /> 
+         <!-- {!CheckFailed}-->
+     <!-- </apex:pageBlock> -->
+     <!-- {!Settings.ExclusionList} -->
+
+     <apex:form id="theForm">
+     <apex:pageBlock title="{!CheckResult4Leads}"  tabStyle="Lead" rendered="{!Settings.CheckLeads}">
+     <apex:image id="theLeadFlagImage" value="/img/samples/flag_yellow.gif" width="11" height="11" title="Certain searches returned more records than the query limit allow. There may therefore be more matching records than what is shown below!" rendered="{!MatchResult.LeadNote != null}" />
+        <apex:pageBlockButtons Location="top" id="leadbuttons">
+            <apex:commandButton value="Create Lead" id="btnNewLead" action="{!invokeNewLead}" disabled="{!not MatchResult.Checked}" styleClass="btnSharing" />
+            <!-- <apex:commandButton value="Merge" id="btnOpenMergeLeads" action="{!invokeMergeLeads}" rendered="{!NOT Settings.Hide_MergeButton}" disabled="{!NoOfLeads < 2}" styleClass="btnSharing" />-->
+            <!-- {!MergeLeadsPossible}-->
+            <!-- <apex:outputLink align="right" value="/{!Settings.Id}?retURL={!Settings.Id}" >Edit Search Layout</apex:outputLink> -->
+        </apex:pageBlockButtons>
+        <apex:outputPanel rendered="{!MatchResult.Checked}">
+            <apex:outputPanel id="resultPanelLeads" layout="block" rendered="{!showLeads}">    
+                <apex:dataTable id="LeadList" value="{!MatchResult.MatchedLeads}" var="l" bgcolor="#F3F3EC" styleClass="list" rowClasses="dataRow" onRowMouseOver="hiOn(this);" onRowMouseOut="hiOff(this);">
+                    <apex:column rendered="{!NOT Settings.Hide_MergeButton}" width="1">
+                        <apex:facet name="header"><b>Select</b></apex:facet>
+                        <apex:inputCheckbox title="Select Max 3 Leadsto merge" value="{!l.selected}" onchange="checkLeads(l)" id="checkedoneLead" />
+                    </apex:column>
+                    <apex:column width="1">
+                        <apex:facet name="header" ><b>Action</b></apex:facet>
+                        <!-- <apex:outputLink value="/{!l.id}/e" >Edit</apex:outputLink> -->
+                        <apex:outputLink rendered="{!l.HasEditAccess}" value="/{!l.id}/e" >Edit</apex:outputLink>
+                        <apex:outputLink rendered="{!Not l.HasEditAccess}" value="{!Settings.Action_Page_Share_Lead}&id={!l.id}&owner={!l.OwnerId}" >Share</apex:outputLink>
+                    </apex:column>
+                    <apex:column rendered="{!Settings.ClassifyDupes}">
+                        <apex:facet name="header" ><b>Match Level</b></apex:facet>
+                        <apex:image title="({!l.MatchScore})" value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck,l.ClassImage)}" />
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header" ><b>{!$ObjectType.lead.fields.name.label}</b></apex:facet>
+                        <apex:outputLink value="/{!l.lead.id}" >{!l.lead.name}</apex:outputLink>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header" ><b>{!$ObjectType.lead.fields.company.label}</b></apex:facet>
+                        {!l.lead.Company}
+                    </apex:column>
+                    <apex:column >
+                           <apex:facet name="header" ><b>{!$ObjectType.lead.fields.website.label}</b></apex:facet>
+                           {!l.lead.Website}
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header" ><b>{!$ObjectType.lead.fields.email.label}</b></apex:facet>
+                        {!l.lead.Email} 
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header" ><b>{!$ObjectType.lead.fields.phone.label}</b></apex:facet>
+                        {!l.lead.Phone}
+                    </apex:column>
+                    <!-- 
+                    <apex:column >
+                        <apex:facet name="header" ><b>{!$ObjectType.lead.fields.country.label}</b></apex:facet>
+                        {!l.lead.Country}
+                    </apex:column> 
+                     -->
+                    <apex:column >
+                        <apex:facet name="header" ><b>{!$ObjectType.lead.fields.status.label}</b></apex:facet>
+                        {!l.lead.Status}
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header" ><b>{!$ObjectType.lead.fields.leadsource.label}</b></apex:facet>
+                        {!l.lead.LeadSource }
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header" ><b>Owner</b></apex:facet>
+                        {!l.lead.Owner.Name}
+                    </apex:column>
+                </apex:dataTable>
+           </apex:outputPanel>
+         </apex:outputPanel>
+     </apex:pageBlock>
+     </apex:form>
+    
+     <apex:form >
+     <apex:pageBlock title="{!CheckResult4Contacts}"  tabStyle="Contact" rendered="{!OR(Settings.CheckContacts,Settings.CheckPersonAccounts)}">
+    <apex:image id="theContactFlagImage" value="/img/samples/flag_yellow.gif" width="11" height="11" title="Certain searches returned more records than the query limit allow. There may therefore be more matching records than what is shown below!" rendered="{!MatchResult.ContactNote != null}" />
+     <apex:pageBlockButtons Location="top" >
+         <apex:commandButton value="Create Contact" id="btnNewContact" action="{!invokeNewContact}" rendered="{!Settings.CheckContacts}" disabled="{!not AND(MatchResult.Checked,Settings.CheckContacts)}" styleClass="btnSharing" />
+         <apex:commandButton value="Create Person" id="btnNewPersonAccount" action="{!invokeNewPersonAccount}" rendered="{!Settings.CheckPersonAccounts}" disabled="{!not AND(MatchResult.Checked,Settings.CheckPersonAccounts)}" styleClass="btnSharing" />
+         <!-- <apex:commandButton value="Merge" id="btnMergeContacts" action="{!invokeMergeContacts}" title="Merge" styleClass="btnSharing" rendered="{!NOT Settings.Hide_MergeButton}"  disabled="{!NoOfContacts < 2}" /> -->
+     </apex:pageBlockButtons>
+        
+        <apex:outputPanel rendered="{!MatchResult.Checked}">
+            <apex:outputPanel id="resultPanelContact" layout="block" rendered="{!showContacts}">
+                 <apex:dataTable id="ContactList" value="{!MatchResult.MatchedContacts}" var="c" bgcolor="#F3F3EC" styleClass="list" rowClasses="dataRow" onRowMouseOver="hiOn(this);" onRowMouseOut="hiOff(this);">
+                    <apex:column rendered="{!NOT Settings.Hide_MergeButton}" width="1">
+                        <apex:facet name="header"><b>Select</b></apex:facet>
+                        <apex:inputCheckbox title="Select Max 3 Contacts to merge" value="{!c.selected}" id="checkedoneContact" />
+                    </apex:column>
+                    <apex:column width="1">
+                        <apex:facet name="header" ><b>Action</b></apex:facet>
+                        <apex:outputLink rendered="{!c.HasEditAccess}" value="/{!c.id}/e" >Edit</apex:outputLink>
+                        <apex:outputLink rendered="{!Not c.HasEditAccess}" value="{!Settings.Action_Page_Share_Contact}&id={!c.id}&owner={!c.OwnerId}" >Share</apex:outputLink>
+                    </apex:column>
+                    <apex:column rendered="{!Settings.ClassifyDupes}">
+                        <apex:facet name="header" ><b>Match Level</b></apex:facet>
+                        <apex:image title="({!c.MatchScore})" value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck,c.ClassImage)}" /> 
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header" ><b>{!$ObjectType.contact.fields.name.label}</b></apex:facet>
+                        <apex:outputLink rendered="{!c.HasReadAccess}" value="/{!c.id}" >{!c.contact.name}</apex:outputLink>
+                        <apex:outputText rendered="{!Not c.HasReadAccess}">{!c.contact.name}</apex:outputText>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header" ><b>{!Settings.labelAccount}</b></apex:facet>
+                        <apex:outputLink rendered="{!c.HasReadAccess}" value="/{!c.contact.AccountId}" >{!c.contact.Account.Name}</apex:outputLink>
+                        <apex:outputText rendered="{!Not c.HasReadAccess}">{!c.contact.Account.Name}</apex:outputText>
+                    </apex:column>            
+                    <apex:column >
+                        <apex:facet name="header" ><b>{!$ObjectType.contact.fields.email.label}</b></apex:facet>
+                        {!c.contact.Email}
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header" ><b>{!$ObjectType.contact.fields.phone.label}</b></apex:facet>
+                        {!c.contact.Phone}
+                    </apex:column> 
+                    <apex:column >
+                        <apex:facet name="header" ><b>Owner</b></apex:facet>
+                        {!c.contact.Owner.Name}
+                    </apex:column>
+                </apex:dataTable>
+             </apex:outputPanel>
+        </apex:outputPanel>
+    </apex:pageBlock>
+    </apex:form>
+
+    <apex:outputPanel id="resultPanelaccountAll" layout="block" rendered="{!AND(DisplayAccResults,Settings.CheckAccounts)}">
+         <apex:form >
+         <apex:pageBlock title="{!CheckResult4Accounts}"  tabStyle="Account">
+         <apex:image id="theAccountFlagImage" value="/img/samples/flag_yellow.gif" width="11" height="11" title="Certain searches returned more records than the query limit allow. There may therefore be more matching records than what is shown below!" rendered="{!MatchResult.AccountNote != null}" />
+         <apex:pageBlockButtons Location="top" >
+             <apex:commandButton value="Create Account" id="btnNewAccount" action="{!invokeNewAccount}" disabled="{!not MatchResult.Checked}" styleClass="btnSharing" />
+             <!-- <apex:commandButton value="Merge" id="btnMergeAccounts" action="{!invokeMergeAccounts}" title="Merge" styleClass="btnSharing" rendered="{!NOT Settings.Hide_MergeButton}" disabled="{!NoOfAccounts <2}" /> -->
+             
+         </apex:pageBlockButtons>
+         <apex:outputPanel rendered="{!MatchResult.Checked}">
+               <apex:outputPanel id="resultPanelaccount" layout="block" rendered="{!showAccounts}">
+                   <apex:dataTable id="AccountList" value="{!MatchResult.MatchedAccounts}" var="a" bgcolor="#F3F3EC" styleClass="list" rowClasses="dataRow" onRowMouseOver="hiOn(this);" onRowMouseOut="hiOff(this);">
+                        <apex:column rendered="{!NOT Settings.Hide_MergeButton}" width="1">
+                            <apex:facet name="header"><b>Select</b></apex:facet>
+                            <apex:inputCheckbox title="Select Max 3 Accounts to merge" value="{!a.selected}" id="checkedoneAccount" />
+                        </apex:column>
+                        <apex:column width="1">
+                            <apex:facet name="header" ><b>Action</b></apex:facet>
+                            <!-- <apex:outputLink value="/{!a.id}/e" >Edit</apex:outputLink> -->
+                            <apex:outputLink rendered="{!a.HasEditAccess}" value="/{!a.id}/e" >Edit</apex:outputLink>
+                        <apex:outputLink rendered="{!Not a.HasEditAccess}" value="{!Settings.Action_Page_Share_Account}&id={!a.id}&owner={!a.OwnerId}" >Share</apex:outputLink>
+                       </apex:column>
+                       <apex:column width="1">
+                            <apex:facet name="header" ><b></b></apex:facet>
+                            <apex:commandLink action="{!invokeNewContact}" value="Create Contact" id="lnkNewContact" ><apex:param name="accid2" value="{!a.id}" /></apex:commandLink>
+                       </apex:column>                      
+                       <apex:column rendered="{!Settings.ClassifyDupes}">
+                           <apex:facet name="header" ><b>Match Level</b></apex:facet>
+                           <apex:image title="({!a.MatchScore})" value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck,a.ClassImage)}" /> 
+                       </apex:column>
+                       <apex:column >
+                           <apex:facet name="header" ><b>{!$ObjectType.account.fields.name.label}</b></apex:facet>
+                           <apex:outputLink value="/{!a.id}" >{!a.account.name}</apex:outputLink>
+                       </apex:column>
+                       <apex:column >
+                           <apex:facet name="header" ><b>{!$ObjectType.account.fields.site.label}</b></apex:facet>
+                           {!a.account.Site}
+                       </apex:column>
+                       <apex:column >
+                           <!-- <apex:facet name="header" ><b>{!$ObjectType.account.fields.Billingpostalcode.Label}</b></apex:facet> -->
+                           <apex:facet name="header" ><b>Postal Code</b></apex:facet>
+                           {!a.account.Billingpostalcode}
+                       </apex:column>                      
+                       <apex:column >
+                           <!-- <apex:facet name="header" ><b>{!$ObjectType.account.fields.billingcity.label}</b></apex:facet> -->
+                           <apex:facet name="header" ><b>City</b></apex:facet>
+                           {!a.account.Billingcity}
+                       </apex:column>
+                       <apex:column >
+                           <!-- <apex:facet name="header" ><b>{!$ObjectType.account.fields.billingstate.label}</b></apex:facet> -->
+                           <apex:facet name="header" ><b>State</b></apex:facet>
+                           {!a.account.BillingState}
+                       </apex:column>
+                       <apex:column >
+                           <!-- <apex:facet name="header" ><b>{!$ObjectType.account.fields.billingcountry.label}</b></apex:facet> -->
+                           <apex:facet name="header" ><b>Country</b></apex:facet>
+                           {!a.account.Billingcountry}
+                       </apex:column>
+                       <apex:column >
+                           <apex:facet name="header" ><b>{!$ObjectType.account.fields.website.label}</b></apex:facet>
+                           {!a.account.Website}
+                       </apex:column>
+                       <apex:column >
+                           <apex:facet name="header" ><b>{!$ObjectType.account.fields.phone.label}</b></apex:facet>
+                           {!a.account.Phone}
+                       </apex:column>  
+                       <apex:column >
+                           <apex:facet name="header" ><b>{!$ObjectType.account.fields.type.label}</b></apex:facet>
+                           {!a.account.Type}
+                       </apex:column> 
+                       <apex:column >
+                           <apex:facet name="header" ><b>Owner</b></apex:facet>
+                           {!a.account.Owner.Name}
+                       </apex:column>
+                   </apex:dataTable>
+                </apex:outputPanel>
+            </apex:outputPanel>
+        </apex:pageBlock>
+     </apex:form>
+  </apex:outputPanel>  
+
+  </apex:outputPanel>
+  </apex:outputPanel>
+   <div style="text-align: center;font-size:xx-small;font-family:Arial;">Copyright © 2007-2014 DataTrim Entry Check by d2b International ApS, All rights reserved. </div>
+ </apex:page>
