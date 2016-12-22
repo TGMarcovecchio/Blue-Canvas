@@ -1,0 +1,1021 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Check amount received from Claim --></help>
+        <label><!-- Amount Reimbursed --></label>
+        <name>Amount_Reimbursed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Value of damage claim --></help>
+        <label><!-- Amount Claimed --></label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mode of Delivery --></label>
+        <name>Ascent2Ups__Mode_of_Delivery__c</name>
+        <picklistValues>
+            <masterLabel>Fedex</masterLabel>
+            <translation><!-- Fedex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freight</masterLabel>
+            <translation><!-- Freight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPS</masterLabel>
+            <translation><!-- UPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USPS</masterLabel>
+            <translation><!-- USPS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Shipping Cost --></label>
+        <name>Ascent2Ups__Shipping_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracking Code --></label>
+        <name>Ascent2Ups__Tracking_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Notes --></label>
+        <name>Case_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check as true if the claim is denied. AND fill out the Claim Notes with details why it was denied. --></help>
+        <label><!-- Claim Denied --></label>
+        <name>Claim_Denied__c</name>
+    </fields>
+    <fields>
+        <label><!-- Claim Notes --></label>
+        <name>Claim_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- For Seko use their Original Bill Number --></help>
+        <label><!-- Claim # --></label>
+        <name>Claim__c</name>
+    </fields>
+    <fields>
+        <help><!-- Second biggest comfort issue for the customer --></help>
+        <label><!-- Comfort Issues Secondary --></label>
+        <name>Comfort_Issues_Secondary__c</name>
+        <picklistValues>
+            <masterLabel>Back Pain</masterLabel>
+            <translation><!-- Back Pain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doesn&apos;t like feel of the Gel</masterLabel>
+            <translation><!-- Doesn&apos;t like feel of the Gel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hip Pain</masterLabel>
+            <translation><!-- Hip Pain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lower Back Pain</masterLabel>
+            <translation><!-- Lower Back Pain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Motion Transfer</masterLabel>
+            <translation><!-- Motion Transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Odor/Chemical Sensitivity</masterLabel>
+            <translation><!-- Odor/Chemical Sensitivity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Returned for STORE Credit</masterLabel>
+            <translation><!-- Returned for STORE Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shoulder Pain</masterLabel>
+            <translation><!-- Shoulder Pain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too Firm</masterLabel>
+            <translation><!-- Too Firm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too Soft</masterLabel>
+            <translation><!-- Too Soft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upper Back Pain</masterLabel>
+            <translation><!-- Upper Back Pain --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Third Comfort Issue --></help>
+        <label><!-- Comfort Issues Tertiary --></label>
+        <name>Comfort_Issues_Tertiary__c</name>
+        <picklistValues>
+            <masterLabel>Back Pain</masterLabel>
+            <translation><!-- Back Pain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doesn&apos;t like feel of the Gel</masterLabel>
+            <translation><!-- Doesn&apos;t like feel of the Gel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hip Pain</masterLabel>
+            <translation><!-- Hip Pain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lower Back Pain</masterLabel>
+            <translation><!-- Lower Back Pain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Motion Transfer</masterLabel>
+            <translation><!-- Motion Transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Odor/Chemical Sensitivity</masterLabel>
+            <translation><!-- Odor/Chemical Sensitivity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shoulder Pain</masterLabel>
+            <translation><!-- Shoulder Pain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too Firm</masterLabel>
+            <translation><!-- Too Firm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too Soft</masterLabel>
+            <translation><!-- Too Soft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upper Back Pain</masterLabel>
+            <translation><!-- Upper Back Pain --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Primary Comfort Issue, the biggest concern for the customer. --></help>
+        <label><!-- Comfort Issues --></label>
+        <name>Comfort_Issues__c</name>
+        <picklistValues>
+            <masterLabel>Back Pain</masterLabel>
+            <translation><!-- Back Pain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doesn&apos;t like feel of the Gel</masterLabel>
+            <translation><!-- Doesn&apos;t like feel of the Gel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hip Pain</masterLabel>
+            <translation><!-- Hip Pain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lower Back Pain</masterLabel>
+            <translation><!-- Lower Back Pain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Motion Transfer</masterLabel>
+            <translation><!-- Motion Transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Odor/Chemical Sensitivity</masterLabel>
+            <translation><!-- Odor/Chemical Sensitivity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Returned for STORE Credit</masterLabel>
+            <translation><!-- Returned for STORE Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shoulder Pain</masterLabel>
+            <translation><!-- Shoulder Pain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sleeps HOT</masterLabel>
+            <translation><!-- Sleeps HOT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too Firm</masterLabel>
+            <translation><!-- Too Firm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too Soft</masterLabel>
+            <translation><!-- Too Soft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upper Back Pain</masterLabel>
+            <translation><!-- Upper Back Pain --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Date that we submit/filed the claim --></help>
+        <label><!-- Date Claim Filed --></label>
+        <name>Date_Claim_Filed__c</name>
+    </fields>
+    <fields>
+        <name>Origin</name>
+        <picklistValues>
+            <masterLabel>3 Day Call</masterLabel>
+            <translation><!-- 3 Day Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 Day Call</masterLabel>
+            <translation><!-- 30 Day Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 Day Call</masterLabel>
+            <translation><!-- 60 Day Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Came into Store</masterLabel>
+            <translation><!-- Came into Store --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inbound Call</masterLabel>
+            <translation><!-- Inbound Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inbound Call shortly after 3 day call</masterLabel>
+            <translation><!-- Inbound Call shortly after 3 day call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inbound Call shortly after 30 day call</masterLabel>
+            <translation><!-- Inbound Call shortly after 30 day call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inbound Call shortly after 60 day call</masterLabel>
+            <translation><!-- Inbound Call shortly after 60 day call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inbound Email</masterLabel>
+            <translation><!-- Inbound Email --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- From Location --></label>
+        <name>PBSI__From_Location__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Item which this case is related to... --></help>
+        <label><!-- Item --></label>
+        <name>PBSI__Item__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Movement Journal --></label>
+        <name>PBSI__Movement_Journal__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- No of Lines --></label>
+        <name>PBSI__No_of_Lines__c</name>
+    </fields>
+    <fields>
+        <label><!-- Org Exchange Rate --></label>
+        <name>PBSI__Org_Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Purchase Order --></label>
+        <name>PBSI__Purchase_Order__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Replacement Purchase Order --></label>
+        <name>PBSI__Replacement_Purchase_Order__c</name>
+        <relationshipLabel><!-- Cases (Replacement Purchase Order) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Replacement Sales Order --></label>
+        <name>PBSI__Replacement_Sales_Order__c</name>
+        <relationshipLabel><!-- Cases (Replacement Sales Order) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Return Type --></label>
+        <name>PBSI__Return_Type__c</name>
+        <picklistValues>
+            <masterLabel>From Customer</masterLabel>
+            <translation><!-- From Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To Vendor</masterLabel>
+            <translation><!-- To Vendor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Sales which this RMA Case is tied to --></help>
+        <label><!-- Original Sales Order --></label>
+        <name>PBSI__Sales_Order__c</name>
+        <relationshipLabel><!-- RMAs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Serial Number for the RMA to trace back to sales order line --></help>
+        <label><!-- Serial Number --></label>
+        <name>PBSI__Serial_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Quantity To Receive --></label>
+        <name>PBSI__Total_Quantity_To_Receive__c</name>
+    </fields>
+    <fields>
+        <name>Priority</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Issues Resolution --></label>
+        <name>Product_Issues_Resolution__c</name>
+        <picklistValues>
+            <masterLabel>Refunding for Product</masterLabel>
+            <translation><!-- Refunding for Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sending Replacement Product</masterLabel>
+            <translation><!-- Sending Replacement Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping Different Size (They cover shipping)</masterLabel>
+            <translation><!-- Shipping Different Size (They cover shipping) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping Different Size (We cover shipping)</masterLabel>
+            <translation><!-- Shipping Different Size (We cover shipping) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swapping for Non-Split Mattress</masterLabel>
+            <translation><!-- Swapping for Non-Split Mattress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swapping with Split Mattress</masterLabel>
+            <translation><!-- Swapping with Split Mattress --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Issues --></label>
+        <name>Product_Issues__c</name>
+        <picklistValues>
+            <masterLabel>Customer Bought Wrong Size</masterLabel>
+            <translation><!-- Customer Bought Wrong Size --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Cancelled Product</masterLabel>
+            <translation><!-- Customer Cancelled Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decided on Different Size</masterLabel>
+            <translation><!-- Decided on Different Size --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decides on a Split Mattress</masterLabel>
+            <translation><!-- Decides on a Split Mattress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doesn&apos;t Like Split Down the Middle</masterLabel>
+            <translation><!-- Doesn&apos;t Like Split Down the Middle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edges are too soft</masterLabel>
+            <translation><!-- Edges are too soft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing issue - not correct size</masterLabel>
+            <translation><!-- Manufacturing issue - not correct size --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Stained</masterLabel>
+            <translation><!-- Product Stained --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipped Wrong Size (Our Fault)</masterLabel>
+            <translation><!-- Shipped Wrong Size (Our Fault) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Received Back from Customer --></label>
+        <name>Product_Received_Back_from_Customer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used for when the repaired Warranty product is returned back to customer --></help>
+        <label><!-- Product Returned Back To Customer --></label>
+        <name>Product_Returned_Back_To_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Type --></label>
+        <name>Product_Type__c</name>
+    </fields>
+    <fields>
+        <name>Reason</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Acclimated Kept Product</masterLabel>
+            <translation><!-- Closed - Acclimated Kept Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Exchanged</masterLabel>
+            <translation><!-- Closed - Exchanged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Exchanged Product LOST</masterLabel>
+            <translation><!-- Closed - Exchanged Product LOST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Exchanged Product WON</masterLabel>
+            <translation><!-- Closed - Exchanged Product WON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Returned</masterLabel>
+            <translation><!-- Closed - Returned --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Date that we receive the Claim Reimbursement payment --></help>
+        <label><!-- Reimbursement Date --></label>
+        <name>Reimbursement_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Second resolution for comfort issues. --></help>
+        <label><!-- Resolution for Comfort Issues 2 --></label>
+        <name>Resolution_for_Comfort_Issues_2__c</name>
+        <picklistValues>
+            <masterLabel>Customer giving time to let body adjust</masterLabel>
+            <translation><!-- Customer giving time to let body adjust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Return for Refund</masterLabel>
+            <translation><!-- Return for Refund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send Pillow</masterLabel>
+            <translation><!-- Send Pillow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send replacement product</masterLabel>
+            <translation><!-- Send replacement product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sending Gel topper to improve comfort</masterLabel>
+            <translation><!-- Sending Gel topper to improve comfort --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sending Latex topper to improve comfort</masterLabel>
+            <translation><!-- Sending Latex topper to improve comfort --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap with Firmer Mattress</masterLabel>
+            <translation><!-- Swap with Firmer Mattress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap with Low Motion Mattress</masterLabel>
+            <translation><!-- Swap with Low Motion Mattress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap with Same Product</masterLabel>
+            <translation><!-- Swap with Same Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap with Softer Mattress</masterLabel>
+            <translation><!-- Swap with Softer Mattress --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Third Resolution for Comfort Issues. --></help>
+        <label><!-- Resolution for Comfort Issues 3 --></label>
+        <name>Resolution_for_Comfort_Issues_3__c</name>
+        <picklistValues>
+            <masterLabel>Customer giving time to let body adjust</masterLabel>
+            <translation><!-- Customer giving time to let body adjust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Return for Refund</masterLabel>
+            <translation><!-- Return for Refund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send Pillow</masterLabel>
+            <translation><!-- Send Pillow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send replacement product</masterLabel>
+            <translation><!-- Send replacement product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sending Gel topper to improve comfort</masterLabel>
+            <translation><!-- Sending Gel topper to improve comfort --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sending Latex topper to improve comfort</masterLabel>
+            <translation><!-- Sending Latex topper to improve comfort --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap with Firmer Mattress</masterLabel>
+            <translation><!-- Swap with Firmer Mattress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap with Low Motion Mattress</masterLabel>
+            <translation><!-- Swap with Low Motion Mattress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap with Same Product</masterLabel>
+            <translation><!-- Swap with Same Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap with Softer Mattress</masterLabel>
+            <translation><!-- Swap with Softer Mattress --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Initial Resolution for Comfort Issues --></help>
+        <label><!-- Resolution for Comfort Issues --></label>
+        <name>Resolution_for_Comfort_Issues__c</name>
+        <picklistValues>
+            <masterLabel>Customer giving time to let body adjust</masterLabel>
+            <translation><!-- Customer giving time to let body adjust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Return for Refund</masterLabel>
+            <translation><!-- Return for Refund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send Pillow</masterLabel>
+            <translation><!-- Send Pillow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Send replacement product</masterLabel>
+            <translation><!-- Send replacement product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sending Gel topper to improve comfort</masterLabel>
+            <translation><!-- Sending Gel topper to improve comfort --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sending Latex topper to improve comfort</masterLabel>
+            <translation><!-- Sending Latex topper to improve comfort --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap with Firmer Mattress</masterLabel>
+            <translation><!-- Swap with Firmer Mattress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap with Low Motion Mattress</masterLabel>
+            <translation><!-- Swap with Low Motion Mattress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap with Same Product</masterLabel>
+            <translation><!-- Swap with Same Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap with Softer Mattress</masterLabel>
+            <translation><!-- Swap with Softer Mattress --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Date that product coming back to us from a customer is picked up from the customer. Either for a Return or an exchange. --></help>
+        <label><!-- Return/Exchange Inbound P/U Date --></label>
+        <name>Return_Exchange_Inbound_P_U_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Product Issues Resolution --></label>
+        <name>Secondary_Product_Issues_Resolution__c</name>
+        <picklistValues>
+            <masterLabel>Refunding for Product</masterLabel>
+            <translation><!-- Refunding for Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swapping for Non-Split Mattress</masterLabel>
+            <translation><!-- Swapping for Non-Split Mattress --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Secondary Product Issues --></label>
+        <name>Secondary_Product_Issues__c</name>
+        <picklistValues>
+            <masterLabel>Customer Cancelled Product</masterLabel>
+            <translation><!-- Customer Cancelled Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doesn&apos;t Like Split Down the Middle</masterLabel>
+            <translation><!-- Doesn&apos;t Like Split Down the Middle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edges are too soft</masterLabel>
+            <translation><!-- Edges are too soft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing issue - not correct size</masterLabel>
+            <translation><!-- Manufacturing issue - not correct size --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Use this if there was a second issue with Shipping. --></help>
+        <label><!-- Shipping Issues Secondary --></label>
+        <name>Shipping_Issues_Secondary__c</name>
+        <picklistValues>
+            <masterLabel>Box Cutter Damage</masterLabel>
+            <translation><!-- Box Cutter Damage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Changed Service Level</masterLabel>
+            <translation><!-- Changed Service Level --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fork Lift Damage</masterLabel>
+            <translation><!-- Fork Lift Damage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Large Stain</masterLabel>
+            <translation><!-- Large Stain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liquid Damage</masterLabel>
+            <translation><!-- Liquid Damage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missed Appointment  (Did Call)</masterLabel>
+            <translation><!-- Missed Appointment  (Did Call) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missed Appointment (No Call)</masterLabel>
+            <translation><!-- Missed Appointment (No Call) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Damage</masterLabel>
+            <translation><!-- Product Damage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Re-Scheduled Delivery</masterLabel>
+            <translation><!-- Re-Scheduled Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Stain</masterLabel>
+            <translation><!-- Small Stain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring Tears through Bottom Fabric</masterLabel>
+            <translation><!-- Spring Tears through Bottom Fabric --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If there was a problem with Shipping, Use this as the primary issue. --></help>
+        <label><!-- Shipping Issues --></label>
+        <name>Shipping_Issues__c</name>
+        <picklistValues>
+            <masterLabel>Box Cutter Damage</masterLabel>
+            <translation><!-- Box Cutter Damage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Changed Service Level</masterLabel>
+            <translation><!-- Changed Service Level --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fork Lift Damage</masterLabel>
+            <translation><!-- Fork Lift Damage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Large Stain</masterLabel>
+            <translation><!-- Large Stain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liquid Damage</masterLabel>
+            <translation><!-- Liquid Damage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missed Appointment  (Did Call)</masterLabel>
+            <translation><!-- Missed Appointment  (Did Call) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missed Appointment (No Call)</masterLabel>
+            <translation><!-- Missed Appointment (No Call) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Damage</masterLabel>
+            <translation><!-- Product Damage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Re-Scheduled Delivery</masterLabel>
+            <translation><!-- Re-Scheduled Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Stain</masterLabel>
+            <translation><!-- Small Stain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring Tears through Bottom Fabric</masterLabel>
+            <translation><!-- Spring Tears through Bottom Fabric --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Shipping Resolution 2 --></label>
+        <name>Shipping_Resolution_2__c</name>
+        <picklistValues>
+            <masterLabel>Crediting Customer for Damaged Product</masterLabel>
+            <translation><!-- Crediting Customer for Damaged Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Re-Scheduled Delivery</masterLabel>
+            <translation><!-- Re-Scheduled Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refunding All of the shipping Cost</masterLabel>
+            <translation><!-- Refunding All of the shipping Cost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refunding Some of the Shipping Cost</masterLabel>
+            <translation><!-- Refunding Some of the Shipping Cost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replacing Damaged Product</masterLabel>
+            <translation><!-- Replacing Damaged Product --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Shipping Resolution --></label>
+        <name>Shipping_Resolution__c</name>
+        <picklistValues>
+            <masterLabel>Crediting Customer for Damaged Product</masterLabel>
+            <translation><!-- Crediting Customer for Damaged Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Re-Scheduled Delivery</masterLabel>
+            <translation><!-- Re-Scheduled Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refunding All of the Shipping Cost</masterLabel>
+            <translation><!-- Refunding All of the Shipping Cost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refunding Some of the Shipping Cost</masterLabel>
+            <translation><!-- Refunding Some of the Shipping Cost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replacing Damaged Product</masterLabel>
+            <translation><!-- Replacing Damaged Product --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Status</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Escalated</masterLabel>
+            <translation><!-- Escalated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Type</name>
+        <picklistValues>
+            <masterLabel>Added Discount Code</masterLabel>
+            <translation><!-- Added Discount Code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complaint</masterLabel>
+            <translation><!-- Complaint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exchange</masterLabel>
+            <translation><!-- Exchange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Return</masterLabel>
+            <translation><!-- Return --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping Issue</masterLabel>
+            <translation><!-- Shipping Issue --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Warranty Issue Secondary --></label>
+        <name>Warranty_Issue_Secondary__c</name>
+        <picklistValues>
+            <masterLabel>Deformation</masterLabel>
+            <translation><!-- Deformation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gel Separation (Full)</masterLabel>
+            <translation><!-- Gel Separation (Full) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gel Separation (Partial)</masterLabel>
+            <translation><!-- Gel Separation (Partial) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sagging</masterLabel>
+            <translation><!-- Sagging --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring Poking Out</masterLabel>
+            <translation><!-- Spring Poking Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Squeaky Box Spring</masterLabel>
+            <translation><!-- Squeaky Box Spring --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Warranty Issue --></label>
+        <name>Warranty_Issue__c</name>
+        <picklistValues>
+            <masterLabel>Deformation</masterLabel>
+            <translation><!-- Deformation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gel Separation (Full)</masterLabel>
+            <translation><!-- Gel Separation (Full) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gel Separation (Partial)</masterLabel>
+            <translation><!-- Gel Separation (Partial) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sagging</masterLabel>
+            <translation><!-- Sagging --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring Poking Out</masterLabel>
+            <translation><!-- Spring Poking Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Squeaky Box Spring</masterLabel>
+            <translation><!-- Squeaky Box Spring --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Used for specifics on warranty issues for example exactly what was repaired, or exactly why it doesn&apos;t meet the guidelines. --></help>
+        <label><!-- Warranty Notes --></label>
+        <name>Warranty_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warranty Resolution Secondary --></label>
+        <name>Warranty_Resolution_Secondary__c</name>
+        <picklistValues>
+            <masterLabel>Doesn&apos;t Meet Warranty (Sag less than .75&quot;)</masterLabel>
+            <translation><!-- Doesn&apos;t Meet Warranty (Sag less than .75&quot;) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doesn&apos;t Meet Warranty (Sag less than 1.5&quot;)</masterLabel>
+            <translation><!-- Doesn&apos;t Meet Warranty (Sag less than 1.5&quot;) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doesn&apos;t Meet Warranty requirements</masterLabel>
+            <translation><!-- Doesn&apos;t Meet Warranty requirements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repair (Sag greater than .75&quot;)</masterLabel>
+            <translation><!-- Repair (Sag greater than .75&quot;) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repair (Sag greater than 1.5&quot;)</masterLabel>
+            <translation><!-- Repair (Sag greater than 1.5&quot;) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repair Other</masterLabel>
+            <translation><!-- Repair Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repaired Innerspring</masterLabel>
+            <translation><!-- Repaired Innerspring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replace Top Panel</masterLabel>
+            <translation><!-- Replace Top Panel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replaced Gel Crib</masterLabel>
+            <translation><!-- Replaced Gel Crib --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stained Warranty VOID</masterLabel>
+            <translation><!-- Stained Warranty VOID --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Warranty Resolution --></label>
+        <name>Warranty_Resolution__c</name>
+        <picklistValues>
+            <masterLabel>Doesn&apos;t Meet Warranty (Sag less than .75&quot;)</masterLabel>
+            <translation><!-- Doesn&apos;t Meet Warranty (Sag less than .75&quot;) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doesn&apos;t Meet Warranty (Sag less than 1.5&quot;)</masterLabel>
+            <translation><!-- Doesn&apos;t Meet Warranty (Sag less than 1.5&quot;) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doesn&apos;t Meet Warranty requirements</masterLabel>
+            <translation><!-- Doesn&apos;t Meet Warranty requirements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repair (Sag greater than .75&quot;)</masterLabel>
+            <translation><!-- Repair (Sag greater than .75&quot;) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repair (Sag greater than 1.5&quot;)</masterLabel>
+            <translation><!-- Repair (Sag greater than 1.5&quot;) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repair Other</masterLabel>
+            <translation><!-- Repair Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repaired Innerspring</masterLabel>
+            <translation><!-- Repaired Innerspring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replace Top Panel</masterLabel>
+            <translation><!-- Replace Top Panel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replaced Gel Crib</masterLabel>
+            <translation><!-- Replaced Gel Crib --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replaced Mattress</masterLabel>
+            <translation><!-- Replaced Mattress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stained Warranty VOID</masterLabel>
+            <translation><!-- Stained Warranty VOID --></translation>
+        </picklistValues>
+    </fields>
+    <quickActions>
+        <label><!-- NewChildCase --></label>
+        <name>NewChildCase</name>
+    </quickActions>
+    <webLinks>
+        <label><!-- Conga_Composer_OAuth --></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Mail_Merge --></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Credit_Note --></label>
+        <name>Ascent2FF__Credit_Note</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Credit_Note --></label>
+        <name>PBSI__Credit_Note</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RMA_Credit --></label>
+        <name>PBSI__RMA_Credit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Receive_RMA_Line --></label>
+        <name>PBSI__Receive_RMA_Line</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+</CustomObjectTranslation>

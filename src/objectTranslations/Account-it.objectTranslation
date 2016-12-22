@@ -1,0 +1,1393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <name>AccountSource</name>
+        <picklistValues>
+            <masterLabel>Affiliate</masterLabel>
+            <translation><!-- Affiliate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blogger Program</masterLabel>
+            <translation><!-- Blogger Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer Show</masterLabel>
+            <translation><!-- Consumer Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Referral</masterLabel>
+            <translation><!-- Customer Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Digital Media</masterLabel>
+            <translation><!-- Digital Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Sales</masterLabel>
+            <translation><!-- Direct Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitality</masterLabel>
+            <translation><!-- Hospitality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Program</masterLabel>
+            <translation><!-- Medical Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Show</masterLabel>
+            <translation><!-- Medical Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store - City Creek, Utah</masterLabel>
+            <translation><!-- Store - City Creek, Utah --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store - Draper, Utah</masterLabel>
+            <translation><!-- Store - Draper, Utah --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store - Factory, Utah</masterLabel>
+            <translation><!-- Store - Factory, Utah --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store - Orem, Utah</masterLabel>
+            <translation><!-- Store - Orem, Utah --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store - Salt Lake City, Utah</masterLabel>
+            <translation><!-- Store - Salt Lake City, Utah --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesale</masterLabel>
+            <translation><!-- Wholesale --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Conga Conductor Print Referral Report --></label>
+        <name>Conga_Conductor_Print_Referral_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mattresses Sold last 6 Months --></label>
+        <name>CountSoldRefReport__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created On --></label>
+        <name>Created_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Id --></label>
+        <name>Customer_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date 1st Carabiners Sent --></label>
+        <name>Date_1st_Carabiners_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date 1st Easel Sent --></label>
+        <name>Date_1st_Easel_Sent__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field stores the date and time of the form submission for enrollment in the referral program --></help>
+        <label><!-- Date of Enrollment in Referral Program --></label>
+        <name>Date_of_Enrollment_in_Referral_Program__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- FirstContactId --></label>
+        <name>FirstContactId__c</name>
+    </fields>
+    <fields>
+        <help><!-- In Referral Hierarchy --></help>
+        <label><!-- Grandparent Account --></label>
+        <name>Grand_ParentAccount__c</name>
+        <relationshipLabel><!-- Grand Child Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Indirect referral fee for qualified sale related to grandchild account (In Referral Hierarchy) --></help>
+        <label><!-- Grandparent Referral % --></label>
+        <name>Grandparent_Referral_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hierarchical Grandparent % --></label>
+        <name>Hierarchical_Grandparent_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hierarchical Parent % --></label>
+        <name>Hierarchical_Parent_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hospitality Projects --></label>
+        <name>Hospitality_Projects__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hospitality Purchases next 12 months --></label>
+        <name>Hospitality_Purchases_next_12_months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hospitality Type --></label>
+        <name>Hospitality_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- True for customers who we hold the financing in house. Used in reports as a filter to identify people who have financed in house. --></help>
+        <label><!-- In House Financing --></label>
+        <name>In_House_Financing__c</name>
+    </fields>
+    <fields>
+        <name>Industry</name>
+        <picklistValues>
+            <masterLabel>Agriculture</masterLabel>
+            <translation><!-- Agriculture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Apparel</masterLabel>
+            <translation><!-- Apparel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banking</masterLabel>
+            <translation><!-- Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biotechnology</masterLabel>
+            <translation><!-- Biotechnology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chemicals</masterLabel>
+            <translation><!-- Chemicals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communications</masterLabel>
+            <translation><!-- Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction</masterLabel>
+            <translation><!-- Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consulting</masterLabel>
+            <translation><!-- Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electronics</masterLabel>
+            <translation><!-- Electronics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energy</masterLabel>
+            <translation><!-- Energy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering</masterLabel>
+            <translation><!-- Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entertainment</masterLabel>
+            <translation><!-- Entertainment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environmental</masterLabel>
+            <translation><!-- Environmental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food &amp; Beverage</masterLabel>
+            <translation><!-- Food &amp; Beverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government</masterLabel>
+            <translation><!-- Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Healthcare</masterLabel>
+            <translation><!-- Healthcare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitality</masterLabel>
+            <translation><!-- Hospitality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Machinery</masterLabel>
+            <translation><!-- Machinery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing</masterLabel>
+            <translation><!-- Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media</masterLabel>
+            <translation><!-- Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not For Profit</masterLabel>
+            <translation><!-- Not For Profit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recreation</masterLabel>
+            <translation><!-- Recreation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping</masterLabel>
+            <translation><!-- Shipping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology</masterLabel>
+            <translation><!-- Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telecommunications</masterLabel>
+            <translation><!-- Telecommunications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transportation</masterLabel>
+            <translation><!-- Transportation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utilities</masterLabel>
+            <translation><!-- Utilities --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Keep Shipping Address in Sync --></label>
+        <name>Keep_Shipping_Address_in_Sync__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Visited Page --></label>
+        <name>Last_Visited_Page__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Mattresses Sold last 6 Months --></label>
+        <name>Mattresses_Sold_last_6_Months__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of mattresses sold since we went to FinancialForce 1/1/2015 --></help>
+        <label><!-- Number of Mattresses Sold 2015 Forward --></label>
+        <name>Number_of_Mattresses_Sold_2015_Forward__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of mattresses sold in Great Planes before SF --></help>
+        <label><!-- Number of Mattresses Sold PRE-2015 --></label>
+        <name>Number_of_Mattresses_Sold_PRE_2015__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Days Offset Default --></label>
+        <name>Override_Days_Offset_Default__c</name>
+    </fields>
+    <fields>
+        <name>Ownership</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private</masterLabel>
+            <translation><!-- Private --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public</masterLabel>
+            <translation><!-- Public --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subsidiary</masterLabel>
+            <translation><!-- Subsidiary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account Group --></label>
+        <name>PBSI__Account_Group__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>PBSI__Active__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Default Delivery for Purchase Orders? --></label>
+        <name>PBSI__Default_Delivery_for_Purchase_Orders__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is This my Organization Account? --></label>
+        <name>PBSI__Is_This_my_Organization_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Locations --></label>
+        <name>PBSI__NumberofLocations__c</name>
+    </fields>
+    <fields>
+        <help><!-- Payments terms/trade agreements for this account --></help>
+        <label><!-- Payment Terms --></label>
+        <name>PBSI__Payment_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Precisio Type --></label>
+        <name>PBSI__Precisio_Type__c</name>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation><!-- Both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral Partner</masterLabel>
+            <translation><!-- Referral Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor</masterLabel>
+            <translation><!-- Vendor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Customer&apos;s standard discount --></help>
+        <label><!-- Standard Discount (%) --></label>
+        <name>PBSI__Standard_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Code --></label>
+        <name>PBSI__Tax_Code__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Taxes --></label>
+        <name>PBSI__Taxes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indirect referral fee for qualified sale related to child account (In Referral Hierarchy) --></help>
+        <label><!-- Parent Referral % --></label>
+        <name>Parent_Referral_Percent__c</name>
+    </fields>
+    <fields>
+        <name>Rating</name>
+        <picklistValues>
+            <masterLabel>Cold</masterLabel>
+            <translation><!-- Cold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dead</masterLabel>
+            <translation><!-- Dead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hot</masterLabel>
+            <translation><!-- Hot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retired</masterLabel>
+            <translation><!-- Retired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed Contract Imminent</masterLabel>
+            <translation><!-- Signed Contract Imminent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unrated</masterLabel>
+            <translation><!-- Unrated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warm</masterLabel>
+            <translation><!-- Warm --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Direct referral fee for qualified sale --></help>
+        <label><!-- Referral % --></label>
+        <name>Referral_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Template Id --></label>
+        <name>Referral_Template_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Type --></label>
+        <name>Referral_Type__c</name>
+        <picklistValues>
+            <masterLabel>Affiliate</masterLabel>
+            <translation><!-- Affiliate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blogger</masterLabel>
+            <translation><!-- Blogger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Benefit</masterLabel>
+            <translation><!-- Business Benefit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Referral</masterLabel>
+            <translation><!-- Customer Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doctor</masterLabel>
+            <translation><!-- Doctor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitality</masterLabel>
+            <translation><!-- Hospitality --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MatchKey --></label>
+        <name>TRIMEC__MatchKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Match Level --></label>
+        <name>TRIMEC__MatchLevel__c</name>
+    </fields>
+    <fields>
+        <label><!-- MatchScore --></label>
+        <name>TRIMEC__MatchScore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Toggle --></label>
+        <name>Toggle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Number of Mattresses Sold All Time --></label>
+        <name>Total_Number_of_Mattresses_Sold_All_Time__c</name>
+    </fields>
+    <fields>
+        <name>Type</name>
+        <picklistValues>
+            <masterLabel>Analyst</masterLabel>
+            <translation><!-- Analyst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor</masterLabel>
+            <translation><!-- Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integrator</masterLabel>
+            <translation><!-- Integrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investor</masterLabel>
+            <translation><!-- Investor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Press</masterLabel>
+            <translation><!-- Press --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation><!-- Prospect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reseller</masterLabel>
+            <translation><!-- Reseller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reseller w/Terms</masterLabel>
+            <translation><!-- Reseller w/Terms --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Username --></label>
+        <name>Username__c</name>
+    </fields>
+    <fields>
+        <label><!-- VAT Status --></label>
+        <name>VAT_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- VAT --></label>
+        <name>VAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Trading Currency --></label>
+        <name>c2g__CODAAccountTradingCurrency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accounts Payable Control --></label>
+        <name>c2g__CODAAccountsPayableControl__c</name>
+        <relationshipLabel><!-- Accounts (Accounts Payable Control Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Accounts Receivable Control --></label>
+        <name>c2g__CODAAccountsReceivableControl__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Allow Deletion of Account in Use --></label>
+        <name>c2g__CODAAllowDeleteInUse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Account Name --></label>
+        <name>c2g__CODABankAccountName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Account Number --></label>
+        <name>c2g__CODABankAccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Account Reference --></label>
+        <name>c2g__CODABankAccountReference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank City --></label>
+        <name>c2g__CODABankCity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Country --></label>
+        <name>c2g__CODABankCountry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Fax --></label>
+        <name>c2g__CODABankFax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank IBAN Number --></label>
+        <name>c2g__CODABankIBANNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Name --></label>
+        <name>c2g__CODABankName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Phone --></label>
+        <name>c2g__CODABankPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank SWIFT Number --></label>
+        <name>c2g__CODABankSWIFTNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Sort Code --></label>
+        <name>c2g__CODABankSortCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank State/Province --></label>
+        <name>c2g__CODABankStateProvince__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Street --></label>
+        <name>c2g__CODABankStreet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Zip/Postal Code --></label>
+        <name>c2g__CODABankZipPostalCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Base Date 1 --></label>
+        <name>c2g__CODABaseDate1__c</name>
+        <picklistValues>
+            <masterLabel>End of Next Month</masterLabel>
+            <translation><!-- End of Next Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice Date</masterLabel>
+            <translation><!-- Invoice Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Start of Next Month</masterLabel>
+            <translation><!-- Start of Next Month --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Base Date 2 --></label>
+        <name>c2g__CODABaseDate2__c</name>
+        <picklistValues>
+            <masterLabel>End of Next Month</masterLabel>
+            <translation><!-- End of Next Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice Date</masterLabel>
+            <translation><!-- Invoice Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Start of Next Month</masterLabel>
+            <translation><!-- Start of Next Month --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Base Date 3 --></label>
+        <name>c2g__CODABaseDate3__c</name>
+        <picklistValues>
+            <masterLabel>End of Next Month</masterLabel>
+            <translation><!-- End of Next Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice Date</masterLabel>
+            <translation><!-- Invoice Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Start of Next Month</masterLabel>
+            <translation><!-- Start of Next Month --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Base Date 4 --></label>
+        <name>c2g__CODABaseDate4__c</name>
+        <picklistValues>
+            <masterLabel>End of Next Month</masterLabel>
+            <translation><!-- End of Next Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice Date</masterLabel>
+            <translation><!-- Invoice Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Start of Next Month</masterLabel>
+            <translation><!-- Start of Next Month --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Billing Address Validated --></label>
+        <name>c2g__CODABillingAddressIsValid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Method --></label>
+        <name>c2g__CODABillingMethod__c</name>
+        <picklistValues>
+            <masterLabel>Electronic</masterLabel>
+            <translation><!-- Electronic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paper</masterLabel>
+            <translation><!-- Paper --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-billing</masterLabel>
+            <translation><!-- Self-billing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Credit Agency --></label>
+        <name>c2g__CODACreditAgency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Limit Enabled --></label>
+        <name>c2g__CODACreditLimitEnabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Limit Reviewed --></label>
+        <name>c2g__CODACreditLimitReviewed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Limit --></label>
+        <name>c2g__CODACreditLimit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Manager --></label>
+        <name>c2g__CODACreditManager__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Credit Rating Reviewed --></label>
+        <name>c2g__CODACreditRatingReviewed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Rating --></label>
+        <name>c2g__CODACreditRating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Reference --></label>
+        <name>c2g__CODACreditReference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Status --></label>
+        <name>c2g__CODACreditStatus__c</name>
+        <picklistValues>
+            <masterLabel>Cash with Order</masterLabel>
+            <translation><!-- Cash with Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Allowed</masterLabel>
+            <translation><!-- Credit Allowed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Days Offset 1 --></label>
+        <name>c2g__CODADaysOffset1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Offset 2 --></label>
+        <name>c2g__CODADaysOffset2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Offset 3 --></label>
+        <name>c2g__CODADaysOffset3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Offset 4 --></label>
+        <name>c2g__CODADaysOffset4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Expense Account --></label>
+        <name>c2g__CODADefaultExpenseAccount__c</name>
+        <relationshipLabel><!-- Accounts (Default Expense Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description 1 --></label>
+        <name>c2g__CODADescription1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description 2 --></label>
+        <name>c2g__CODADescription2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description 3 --></label>
+        <name>c2g__CODADescription3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description 4 --></label>
+        <name>c2g__CODADescription4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dimension 1 --></label>
+        <name>c2g__CODADimension1__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Dimension 2 --></label>
+        <name>c2g__CODADimension2__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Dimension 3 --></label>
+        <name>c2g__CODADimension3__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Dimension 4 --></label>
+        <name>c2g__CODADimension4__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Discount 1 --></label>
+        <name>c2g__CODADiscount1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount 2 --></label>
+        <name>c2g__CODADiscount2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount 3 --></label>
+        <name>c2g__CODADiscount3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount 4 --></label>
+        <name>c2g__CODADiscount4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Country Code --></label>
+        <name>c2g__CODAECCountryCode__c</name>
+        <picklistValues>
+            <masterLabel>AE</masterLabel>
+            <translation><!-- AE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AT</masterLabel>
+            <translation><!-- AT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AU</masterLabel>
+            <translation><!-- AU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BE</masterLabel>
+            <translation><!-- BE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BG</masterLabel>
+            <translation><!-- BG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH</masterLabel>
+            <translation><!-- CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CY</masterLabel>
+            <translation><!-- CY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CZ</masterLabel>
+            <translation><!-- CZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DK</masterLabel>
+            <translation><!-- DK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EE</masterLabel>
+            <translation><!-- EE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EL</masterLabel>
+            <translation><!-- EL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ES</masterLabel>
+            <translation><!-- ES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FI</masterLabel>
+            <translation><!-- FI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FR</masterLabel>
+            <translation><!-- FR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GB</masterLabel>
+            <translation><!-- GB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GR</masterLabel>
+            <translation><!-- GR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HK</masterLabel>
+            <translation><!-- HK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HU</masterLabel>
+            <translation><!-- HU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IE</masterLabel>
+            <translation><!-- IE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT</masterLabel>
+            <translation><!-- IT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LT</masterLabel>
+            <translation><!-- LT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LU</masterLabel>
+            <translation><!-- LU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LV</masterLabel>
+            <translation><!-- LV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MY</masterLabel>
+            <translation><!-- MY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NL</masterLabel>
+            <translation><!-- NL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NZ</masterLabel>
+            <translation><!-- NZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PL</masterLabel>
+            <translation><!-- PL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PT</masterLabel>
+            <translation><!-- PT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RO</masterLabel>
+            <translation><!-- RO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SE</masterLabel>
+            <translation><!-- SE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SG</masterLabel>
+            <translation><!-- SG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SI</masterLabel>
+            <translation><!-- SI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SK</masterLabel>
+            <translation><!-- SK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US</masterLabel>
+            <translation><!-- US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZA</masterLabel>
+            <translation><!-- ZA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Entity / Use Code --></label>
+        <name>c2g__CODAEntityUseCode__c</name>
+        <picklistValues>
+            <masterLabel>A - Federal government - United States</masterLabel>
+            <translation><!-- A - Federal government - United States --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B - State government - United States</masterLabel>
+            <translation><!-- B - State government - United States --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C - Tribe / Status Indian / Indian Band - both</masterLabel>
+            <translation><!-- C - Tribe / Status Indian / Indian Band - both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D - Foreign diplomat - both</masterLabel>
+            <translation><!-- D - Foreign diplomat - both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E - Charitable or benevolent org - both</masterLabel>
+            <translation><!-- E - Charitable or benevolent org - both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F - Religious or educational org - both</masterLabel>
+            <translation><!-- F - Religious or educational org - both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G - Resale - both</masterLabel>
+            <translation><!-- G - Resale - both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>H - Commercial agricultural production - both</masterLabel>
+            <translation><!-- H - Commercial agricultural production - both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I - Industrial production / manufacturer - both</masterLabel>
+            <translation><!-- I - Industrial production / manufacturer - both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J - Direct pay permit - United States</masterLabel>
+            <translation><!-- J - Direct pay permit - United States --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K - Direct mail - United States</masterLabel>
+            <translation><!-- K - Direct mail - United States --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>L - Other - both</masterLabel>
+            <translation><!-- L - Other - both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N - Local government - United States</masterLabel>
+            <translation><!-- N - Local government - United States --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P - Commercial aquaculture - Canada</masterLabel>
+            <translation><!-- P - Commercial aquaculture - Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q - Commercial Fishery - Canada</masterLabel>
+            <translation><!-- Q - Commercial Fishery - Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R - Non-resident - Canada</masterLabel>
+            <translation><!-- R - Non-resident - Canada --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Exemption Certificate --></label>
+        <name>c2g__CODAExemptionCertificate__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>c2g__CODAExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Federally Reportable 1099 --></label>
+        <name>c2g__CODAFederallyReportable1099__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance Contact --></label>
+        <name>c2g__CODAFinanceContact__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Income Tax Type --></label>
+        <name>c2g__CODAIncomeTaxType__c</name>
+        <picklistValues>
+            <masterLabel>1 - Rents</masterLabel>
+            <translation><!-- 1 - Rents --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 - Crop Insurance Proceeds</masterLabel>
+            <translation><!-- 10 - Crop Insurance Proceeds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11 - Unused 11</masterLabel>
+            <translation><!-- 11 - Unused 11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12 - Unused 12</masterLabel>
+            <translation><!-- 12 - Unused 12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13 - Excess Golden Parachute Payments</masterLabel>
+            <translation><!-- 13 - Excess Golden Parachute Payments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14 - Gross Proceeds Paid to an Attorney</masterLabel>
+            <translation><!-- 14 - Gross Proceeds Paid to an Attorney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - Royalties</masterLabel>
+            <translation><!-- 2 - Royalties --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - Other Income</masterLabel>
+            <translation><!-- 3 - Other Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 - Federal Income Tax Withheld</masterLabel>
+            <translation><!-- 4 - Federal Income Tax Withheld --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 - Fishing Boat Proceeds</masterLabel>
+            <translation><!-- 5 - Fishing Boat Proceeds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 - Medical and Healthcare Payments</masterLabel>
+            <translation><!-- 6 - Medical and Healthcare Payments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 - Nonemployee Compensation</masterLabel>
+            <translation><!-- 7 - Nonemployee Compensation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 - Substitute Payments in Lieu of Dividends or Interest</masterLabel>
+            <translation><!-- 8 - Substitute Payments in Lieu of Dividends or Interest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9 - Payer Made Direct Sales of 5000 or More</masterLabel>
+            <translation><!-- 9 - Payer Made Direct Sales of 5000 or More --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Reportable</masterLabel>
+            <translation><!-- Not Reportable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Input VAT/GST Code --></label>
+        <name>c2g__CODAInputVATCode__c</name>
+        <relationshipLabel><!-- Accounts (Input VAT/GST Code) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Intercompany Account --></label>
+        <name>c2g__CODAIntercompanyAccount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Email --></label>
+        <name>c2g__CODAInvoiceEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge Id --></label>
+        <name>c2g__CODAMergeId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Output VAT/GST Code --></label>
+        <name>c2g__CODAOutputVATCode__c</name>
+        <relationshipLabel><!-- Accounts (Output VAT/GST Code) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Payment Method --></label>
+        <name>c2g__CODAPaymentMethod__c</name>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Check</masterLabel>
+            <translation><!-- Check --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electronic</masterLabel>
+            <translation><!-- Electronic --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reporting Code --></label>
+        <name>c2g__CODAReportingCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Tax Status --></label>
+        <name>c2g__CODASalesTaxStatus__c</name>
+        <picklistValues>
+            <masterLabel>Exempt</masterLabel>
+            <translation><!-- Exempt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exempt for Qualifying Products</masterLabel>
+            <translation><!-- Exempt for Qualifying Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taxable</masterLabel>
+            <translation><!-- Taxable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Shipping Address Validated --></label>
+        <name>c2g__CODAShippingAddressIsValid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Calculation Method --></label>
+        <name>c2g__CODATaxCalculationMethod__c</name>
+        <picklistValues>
+            <masterLabel>Gross</masterLabel>
+            <translation><!-- Gross --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net of Discount</masterLabel>
+            <translation><!-- Net of Discount --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tax Code 1 --></label>
+        <name>c2g__CODATaxCode1__c</name>
+        <relationshipLabel><!-- Accounts (Tax Code 1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Tax Code 2 --></label>
+        <name>c2g__CODATaxCode2__c</name>
+        <relationshipLabel><!-- Accounts (Tax Code 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Tax Code 3 --></label>
+        <name>c2g__CODATaxCode3__c</name>
+        <relationshipLabel><!-- Accounts (Tax Code 3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Taxpayer Identification Number --></label>
+        <name>c2g__CODATaxpayerIdentificationNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit of Work --></label>
+        <name>c2g__CODAUnitOfWork__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Registration Number --></label>
+        <name>c2g__CODAVATRegistrationNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Status --></label>
+        <name>c2g__CODAVATStatus__c</name>
+        <picklistValues>
+            <masterLabel>EC Non-registered</masterLabel>
+            <translation><!-- EC Non-registered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EC Registered</masterLabel>
+            <translation><!-- EC Registered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Export</masterLabel>
+            <translation><!-- Export --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation><!-- Home --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ValidatedBillingCity --></label>
+        <name>c2g__CODAValidatedBillingCity__c</name>
+    </fields>
+    <fields>
+        <label><!-- ValidatedBillingCountry --></label>
+        <name>c2g__CODAValidatedBillingCountry__c</name>
+    </fields>
+    <fields>
+        <label><!-- ValidatedBillingPostCode --></label>
+        <name>c2g__CODAValidatedBillingPostCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- ValidatedBillingState --></label>
+        <name>c2g__CODAValidatedBillingState__c</name>
+    </fields>
+    <fields>
+        <label><!-- ValidatedBillingStreet --></label>
+        <name>c2g__CODAValidatedBillingStreet__c</name>
+    </fields>
+    <fields>
+        <label><!-- ValidatedShippingCity --></label>
+        <name>c2g__CODAValidatedShippingCity__c</name>
+    </fields>
+    <fields>
+        <label><!-- ValidatedShippingCountry --></label>
+        <name>c2g__CODAValidatedShippingCountry__c</name>
+    </fields>
+    <fields>
+        <label><!-- ValidatedShippingPostCode --></label>
+        <name>c2g__CODAValidatedShippingPostCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- ValidatedShippingState --></label>
+        <name>c2g__CODAValidatedShippingState__c</name>
+    </fields>
+    <fields>
+        <label><!-- ValidatedShippingStreet --></label>
+        <name>c2g__CODAValidatedShippingStreet__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Customer --></label>
+        <name>Customer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Vendor --></label>
+        <name>Vendor</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please Ensure that the Partner Consulation Fee is Equal to or Greater than Zero for Referral Partners --></errorMessage>
+        <name>Enforce_Consultation_Fee_Percentage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must provide a &quot;IsParent Consultant Fee&quot; on this Account before they can be referenced on related Referral Partners --></errorMessage>
+        <name>Enforce_Valid_Referral_Grandparent</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must provide a &quot;IsParent Consultant Fee&quot; on this Account before they can be referenced on related Referral Partners --></errorMessage>
+        <name>Enforce_Valid_Referral_Parent</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Conga_Composer_OAuth --></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Mail_Merge --></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Commission_History --></label>
+        <name>Commission_History</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Sales_Order --></label>
+        <name>PBSI__Create_Sales_Order</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Print_Referral_Report --></label>
+        <name>Print_Referral_Report</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Returns_History --></label>
+        <name>Returns_History</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Merge --></label>
+        <name>TRIMEC__Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CODAValidateBillingAddress --></label>
+        <name>c2g__CODAValidateBillingAddress</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CODAValidateCustomer --></label>
+        <name>c2g__CODAValidateCustomer</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CODAValidateShippingAddress --></label>
+        <name>c2g__CODAValidateShippingAddress</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CODAValidateVendor --></label>
+        <name>c2g__CODAValidateVendor</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CashMatching --></label>
+        <name>c2g__CashMatching</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Verify_with_DNB --></label>
+        <name>dsfs__Verify_with_DNB</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Emails --></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Affiliate (%) --></label>
+        <name>Affiliate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Blogger (%) --></label>
+        <name>Blogger_Commission_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Benefit (%) --></label>
+        <name>Business_Benefit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Referral (%) --></label>
+        <name>Business_Referral__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consumer Show (%) --></label>
+        <name>Consuner_Show_Commission__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Referral (%) --></label>
+        <name>Customer_Referral__c</name>
+    </fields>
+    <fields>
+        <label><!-- Digital Media (%) --></label>
+        <name>Digital_Media_Commission_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hospitality (%) --></label>
+        <name>Hospitality__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medical Show (%) --></label>
+        <name>Medical_Show_Commission_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medical (%) --></label>
+        <name>Medical__c</name>
+    </fields>
+    <fields>
+        <label><!-- Online (%) --></label>
+        <name>Online__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inventory Location --></label>
+        <name>PBSI__Inventory_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Center  (%) --></label>
+        <name>Sales_Center__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signature --></label>
+        <name>Signature__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store (%) --></label>
+        <name>Store_Commission_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wholesale (%) --></label>
+        <name>Wholesale__c</name>
+    </fields>
+    <fields>
+        <label><!-- API License Key --></label>
+        <name>c2g__APILicenseKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Support Data Access Key --></label>
+        <name>c2g__SupportDataAccessKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSProSFMembershipStatus --></label>
+        <name>dsfs__DSProSFMembershipStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSProSFPassword --></label>
+        <name>dsfs__DSProSFPassword__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSProSFUsername --></label>
+        <name>dsfs__DSProSFUsername__c</name>
+    </fields>
+    <fields>
+        <label><!-- Can View Not Assigned Prospects --></label>
+        <name>pi__Can_View_Not_Assigned_Prospects__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Api Key --></label>
+        <name>pi__Pardot_Api_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Api Version --></label>
+        <name>pi__Pardot_Api_Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot User Id --></label>
+        <name>pi__Pardot_User_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot User Key --></label>
+        <name>pi__Pardot_User_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot User Role --></label>
+        <name>pi__Pardot_User_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Printer Name --></label>
+        <name>zkbase__Printer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- UPS Printer Name --></label>
+        <name>zkups__PrinterName__c</name>
+    </fields>
+    <fields>
+        <label><!-- UPS Registered Preference --></label>
+        <name>zkups__UPSRegisteredPreference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Preference Used --></label>
+        <name>zkusps__shippingPreferenceUsed__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- Conga_Composer_OAuth --></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Mail_Merge --></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
+</CustomObjectTranslation>

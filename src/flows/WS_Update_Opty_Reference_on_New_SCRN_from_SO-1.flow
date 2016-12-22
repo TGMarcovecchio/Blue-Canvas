@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>(WS) Update Opty Reference on New SCRN from SO</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Opty_on_SCRN</name>
+        <label>Update Opty on SCRN</label>
+        <locationX>36</locationX>
+        <locationY>42</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>SCRNId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>c2g__Opportunity__c</field>
+            <value>
+                <elementReference>OptyId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>c2g__codaCreditNote__c</object>
+    </recordUpdates>
+    <startElementReference>Update_Opty_on_SCRN</startElementReference>
+    <variables>
+        <name>OptyId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>SCRNId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>
