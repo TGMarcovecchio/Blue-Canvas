@@ -25,6 +25,9 @@ public class KIDSServiceLogTools{
 
 	public static void updateParentLog(Id theid, String theMessage, String theStatus, Date thedate){
 
+		// Create a savepoint
+		Savepoint sp = Database.setSavepoint();
+
 		//Update the parent log file after processing
 		/*
 				=l.Click_To_Download_Most_Recent_File__c
@@ -52,11 +55,22 @@ public class KIDSServiceLogTools{
 		}
 
 		*/
+
+		// Rollback to the previous database point
+		Database.rollback(sp);
 	}
 
 	public static void generateAttachments(Map<Integer,Blob> blobmap, Id theid){
 
 		//Attache each blob as a pipe delimited file to the parent record identifeid by theid
+
+		// Create a savepoint
+		Savepoint sp = Database.setSavepoint();
+
+		
+
+		// Rollback to the previous database point
+		Database.rollback(sp);
 
 	}
 
