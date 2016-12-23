@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Close</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteSeries</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewTask</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ActivityDate</fullName>
+    </fields>
+    <fields>
+        <fullName>CallDisposition</fullName>
+    </fields>
+    <fields>
+        <fullName>CallDurationInSeconds</fullName>
+    </fields>
+    <fields>
+        <fullName>CallObject</fullName>
+    </fields>
+    <fields>
+        <fullName>CallType</fullName>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+    </fields>
+    <fields>
+        <fullName>Priority</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>High</fullName>
+                <default>false</default>
+                <highPriority>true</highPriority>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Normal</fullName>
+                <default>true</default>
+                <highPriority>false</highPriority>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Low</fullName>
+                <default>false</default>
+                <highPriority>false</highPriority>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>RecurrenceInterval</fullName>
+    </fields>
+    <fields>
+        <fullName>RecurrenceRegeneratedType</fullName>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <closed>true</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Waiting on someone else</fullName>
+                <default>false</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Deferred</fullName>
+                <default>false</default>
+                <closed>false</closed>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subject</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Send Letter</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Send Quote</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>TaskSubtype</fullName>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>WhatId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>WhoId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <sharingModel>Private</sharingModel>
+    <webLinks>
+        <fullName>CC__Start_Sharing</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Start Sharing</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&apos;/soap/ajax/19.0/connection.js&apos;)} 
+{!REQUIRESCRIPT(&apos;/soap/ajax/19.0/apex.js&apos;)} 
+
+//We want to use jQuery as well as the UI elements, so first lets load the stylesheet by injecting it into the dom. 
+var head= document.getElementsByTagName(&apos;head&apos;)[0]; 
+var v_css = document.createElement(&apos;link&apos;); 
+v_css.rel = &apos;stylesheet&apos; 
+v_css.type = &apos;text/css&apos;; 
+v_css.href = &apos;https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/redmond/jquery-ui.css&apos;; 
+head.appendChild(v_css); 
+
+//Okay, now we need the core jQuery library, lets fetch that and inject it into the dom as well 
+var script= document.createElement(&apos;script&apos;); 
+script.type= &apos;text/javascript&apos;; 
+script.src= &apos;https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js&apos;; 
+head.appendChild(script); 
+
+//And of course we need the jQuery UI elements 
+var scriptUI = document.createElement(&apos;script&apos;); 
+scriptUI.type = &apos;text/javascript&apos;; 
+scriptUI.src = &apos;https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js&apos;; 
+head.appendChild(scriptUI); 
+
+//update payment records to active 
+function reloadPage() { 
+ var url = &apos;{!Task.Id}&apos;; 
+ parent.location.href = url; 
+
+} 
+
+
+function verifyConditions() { 
+
+try 
+{ 
+ //record any exceptions caught in and array 
+ var myExceptions = new Array(); 
+
+if({!Task.CC__External_Task__c} == true) 
+{ 
+myExceptions.push(&quot;This task is already share to external customers&quot;); 
+} 
+else 
+{ 
+var methodResult = sforce.apex.execute(&apos;CC.buttonExecutionClass&apos;,&apos;sharingButtonMethod&apos;,{processType: &apos;Start&apos;, taskID : &apos;{!Task.Id}&apos;}); 
+
+if(methodResult == &apos;Success&apos;){ 
+reloadPage(); 
+} 
+else 
+{ 
+myExceptions.push(methodResult); 
+} 
+
+
+
+} 
+
+//alert(myExceptions.length); 
+//check if exceptions has no value and loop it 
+if(myExceptions.length &gt; 0) 
+ { 
+//loop it to ol  
+        var record = &quot;&lt;ol&gt;&quot;;  
+        for (var i=0; i&lt; myExceptions.length; i++) {  
+            record = record + &quot;&lt;li&gt;&quot; + myExceptions[i] + &quot;&lt;/li&gt;&quot;;  
+        }  
+        record = record + &quot;&lt;/ol&gt;&quot;;  
+
+       $(&apos;&lt;div&gt;&lt;/div&gt;&apos;).appendTo(&apos;body&apos;)  
+                    .html(&apos;&lt;div id=&quot;exceptions&quot; style=&quot;width:600px&quot;&gt;You cannot share this task because the following conditions are not satisfied.&lt;/div&gt;&apos; + record)  
+                    .dialog({  
+                        modal: true, title: &apos;Exception&apos;, zIndex: 10000, autoOpen: true,  
+                        width: &apos;auto&apos;, resizable: false,  
+                        buttons: {  
+                            Ok: function () {  
+                                $(this).dialog(&quot;close&quot;);  
+                            }  
+                        },  
+                        close: function (event, ui) {  
+                            $(this).remove();  
+                        }  
+                    });  
+   //end check  
+ } 
+
+} 
+catch(error) 
+{ 
+alert(&quot;Failed to Update with error: &quot; + error); 
+} 
+
+
+} 
+//end function verify condtions 
+
+interval=self.setInterval(function() 
+
+{ 
+	//Check to see if jQuery has loaded 
+	if(jQuery) 
+	{ 
+	//if jQuery has loaded, clear the interval 
+	window.clearInterval(interval); 
+
+
+ //record any exceptions caught in and array 
+ var myMainExceptions = new Array(); 
+
+if({!Task.CC__External_Task__c} == true) 
+{ 
+myMainExceptions .push(&quot;This task is already share to external customers&quot;); 
+} 
+
+
+//check if exceptions has no value and loop it 
+if(myMainExceptions.length &gt; 0) 
+ { 
+//loop it to ol  
+        var record = &quot;&lt;ol&gt;&quot;;  
+        for (var i=0; i&lt; myMainExceptions.length; i++) {  
+            record = record + &quot;&lt;li&gt;&quot; + myMainExceptions[i] + &quot;&lt;/li&gt;&quot;;  
+        }  
+        record = record + &quot;&lt;/ol&gt;&quot;;  
+
+       $(&apos;&lt;div&gt;&lt;/div&gt;&apos;).appendTo(&apos;body&apos;)  
+                    .html(&apos;&lt;div id=&quot;exceptions&quot; style=&quot;width:600px&quot;&gt;You cannot share this task because the following conditions are not satisfied.&lt;/div&gt;&apos; + record)  
+                    .dialog({  
+                        modal: true, title: &apos;Exception&apos;, zIndex: 10000, autoOpen: true,  
+                        width: &apos;auto&apos;, resizable: false,  
+                        buttons: {  
+                            Ok: function () {  
+                                $(this).dialog(&quot;close&quot;);  
+                            }  
+                        },  
+                        close: function (event, ui) {  
+                            $(this).remove();  
+                        }  
+                    });  
+   //end check  
+ } 
+else 
+{ 
+
+
+
+
+	//create a div in the body which we will use for our dialog. 
+	$(&apos;&lt;div&gt;&lt;/div&gt;&apos;).appendTo(&apos;body&apos;) 
+	.html(&apos;&lt;div id=&quot;success&quot; style=&quot;width:300px&quot;&gt;&lt;p&gt;Are you sure? Sharing will send an email to external user {! Contact.Name } including a link to edit the task. Press “Ok” to continue or “Cancel” to cancel the operation.&lt;/div&gt;&apos;) 
+	.dialog({ 
+	modal: true, title: &apos;Confirmation&apos;, zIndex: 10000, autoOpen: true, 
+	width: &apos;auto&apos;, resizable: false, 
+	buttons: { 
+	Ok: function () { 
+	$(this).dialog(&apos;close&apos;); 
+ //alert(&apos;Mustafa&apos;); 
+	verifyConditions(); 
+
+
+	}, 
+	Cancel: function() { 
+	$(this).dialog(&quot;close&quot;); 
+	} 
+	}, 
+
+	close: function (event, ui) { 
+	$(this).remove(); 
+	} 
+	}); 
+	} 
+} 
+}, 300);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>CC__Stop_Sharing</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Stop Sharing</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&apos;/soap/ajax/19.0/connection.js&apos;)} 
+{!REQUIRESCRIPT(&apos;/soap/ajax/19.0/apex.js&apos;)} 
+
+//We want to use jQuery as well as the UI elements, so first lets load the stylesheet by injecting it into the dom. 
+var head= document.getElementsByTagName(&apos;head&apos;)[0]; 
+var v_css = document.createElement(&apos;link&apos;); 
+v_css.rel = &apos;stylesheet&apos; 
+v_css.type = &apos;text/css&apos;; 
+v_css.href = &apos;https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/redmond/jquery-ui.css&apos;; 
+head.appendChild(v_css); 
+
+//Okay, now we need the core jQuery library, lets fetch that and inject it into the dom as well 
+var script= document.createElement(&apos;script&apos;); 
+script.type= &apos;text/javascript&apos;; 
+script.src= &apos;https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js&apos;; 
+head.appendChild(script); 
+
+//And of course we need the jQuery UI elements 
+var scriptUI = document.createElement(&apos;script&apos;); 
+scriptUI.type = &apos;text/javascript&apos;; 
+scriptUI.src = &apos;https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js&apos;; 
+head.appendChild(scriptUI); 
+
+//update payment records to active 
+function reloadPage() { 
+ var url = &apos;{!Task.Id}&apos;; 
+ parent.location.href = url; 
+
+} 
+
+
+function verifyConditions() { 
+
+try 
+{ 
+ //record any exceptions caught in and array 
+ var myExceptions = new Array(); 
+
+if({!Task.CC__External_Task__c} == false) 
+{ 
+myExceptions.push(&quot;This task is already not share with external customers&quot;); 
+} 
+else 
+{ 
+var methodResult = sforce.apex.execute(&apos;CC.buttonExecutionClass&apos;,&apos;sharingButtonMethod&apos;,{processType: &apos;Stop&apos;, taskID : &apos;{!Task.Id}&apos;}); 
+
+if(methodResult == &apos;Success&apos;){ 
+reloadPage(); 
+} 
+else 
+{ 
+myExceptions.push(methodResult); 
+} 
+
+
+
+} 
+
+//alert(myExceptions.length); 
+//check if exceptions has no value and loop it 
+if(myExceptions.length &gt; 0) 
+ { 
+//loop it to ol  
+        var record = &quot;&lt;ol&gt;&quot;;  
+        for (var i=0; i&lt; myExceptions.length; i++) {  
+            record = record + &quot;&lt;li&gt;&quot; + myExceptions[i] + &quot;&lt;/li&gt;&quot;;  
+        }  
+        record = record + &quot;&lt;/ol&gt;&quot;;  
+
+       $(&apos;&lt;div&gt;&lt;/div&gt;&apos;).appendTo(&apos;body&apos;)  
+                    .html(&apos;&lt;div id=&quot;exceptions&quot; style=&quot;width:600px&quot;&gt;You cannot un-share this task because the following conditions are not satisfied.&lt;/div&gt;&apos; + record)  
+                    .dialog({  
+                        modal: true, title: &apos;Exception&apos;, zIndex: 10000, autoOpen: true,  
+                        width: &apos;auto&apos;, resizable: false,  
+                        buttons: {  
+                            Ok: function () {  
+                                $(this).dialog(&quot;close&quot;);  
+                            }  
+                        },  
+                        close: function (event, ui) {  
+                            $(this).remove();  
+                        }  
+                    });  
+   //end check  
+ } 
+
+} 
+catch(error) 
+{ 
+alert(&quot;Failed to Update with error: &quot; + error); 
+} 
+
+
+} 
+//end function verify condtions 
+
+interval=self.setInterval(function() 
+
+{ 
+	//Check to see if jQuery has loaded 
+	if(jQuery) 
+	{ 
+	//if jQuery has loaded, clear the interval 
+	window.clearInterval(interval); 
+
+
+ //record any exceptions caught in and array 
+ var myMainExceptions = new Array(); 
+
+if({!Task.CC__External_Task__c} == false) 
+{ 
+myMainExceptions.push(&quot;This task is already not share with external customers&quot;); 
+} 
+
+//check if exceptions has no value and loop it 
+if(myMainExceptions.length &gt; 0) 
+ { 
+//loop it to ol  
+        var record = &quot;&lt;ol&gt;&quot;;  
+        for (var i=0; i&lt; myMainExceptions.length; i++) {  
+            record = record + &quot;&lt;li&gt;&quot; + myMainExceptions[i] + &quot;&lt;/li&gt;&quot;;  
+        }  
+        record = record + &quot;&lt;/ol&gt;&quot;;  
+
+       $(&apos;&lt;div&gt;&lt;/div&gt;&apos;).appendTo(&apos;body&apos;)  
+                    .html(&apos;&lt;div id=&quot;exceptions&quot; style=&quot;width:600px&quot;&gt;You cannot un-share this task because the following conditions are not satisfied.&lt;/div&gt;&apos; + record)  
+                    .dialog({  
+                        modal: true, title: &apos;Exception&apos;, zIndex: 10000, autoOpen: true,  
+                        width: &apos;auto&apos;, resizable: false,  
+                        buttons: {  
+                            Ok: function () {  
+                                $(this).dialog(&quot;close&quot;);  
+                            }  
+                        },  
+                        close: function (event, ui) {  
+                            $(this).remove();  
+                        }  
+                    });  
+   //end check  
+ } 
+else 
+{ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+	//create a div in the body which we will use for our dialog. 
+	$(&apos;&lt;div&gt;&lt;/div&gt;&apos;).appendTo(&apos;body&apos;) 
+	.html(&apos;&lt;div id=&quot;success&quot; style=&quot;width:300px&quot;&gt;&lt;p&gt;Are you sure? Stopping sharing will prevent {!Contact.Name} from accessing and editing this task. Press “Ok” to continue or “Cancel” to cancel the operation.&lt;/div&gt;&apos;) 
+	.dialog({ 
+	modal: true, title: &apos;Confirmation&apos;, zIndex: 10000, autoOpen: true, 
+	width: &apos;auto&apos;, resizable: false, 
+	buttons: { 
+	Ok: function () { 
+	$(this).dialog(&apos;close&apos;); 
+ //alert(&apos;Mustafa&apos;); 
+	verifyConditions(); 
+
+
+	}, 
+	Cancel: function() { 
+	$(this).dialog(&quot;close&quot;); 
+	} 
+	}, 
+
+	close: function (event, ui) { 
+	$(this).remove(); 
+	} 
+	}); 
+	} 
+} 
+}, 300);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>CnP_PaaS__Check_Status</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Check SMS Status</masterLabel>
+        <openType>sidebar</openType>
+        <page>CnP_PaaS__CnP_SMS_Status_Check</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>CnP_PaaS__Send_SMS</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Send SMS</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/apex/CnP_PaaS__CnP_SMS_Send?id={!Contact.Id}</url>
+    </webLinks>
+</CustomObject>

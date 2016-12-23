@@ -1,0 +1,2480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Intake: Annual Gross Income --></label>
+        <name>AGI__c</name>
+    </fields>
+    <fields>
+        <help><!-- willing to receive emailed tasks from Salesforce through TaskIt! --></help>
+        <label><!-- Accepts Emailed Tasks --></label>
+        <name>Accepts_Emailed_Tasks__c</name>
+    </fields>
+    <fields>
+        <help><!-- Calculated from the Birthdate field --></help>
+        <label><!-- Age --></label>
+        <name>Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset Goal Date --></label>
+        <name>Asset_Goal1_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset Goal Progress --></label>
+        <name>Asset_Goal1_Progress__c</name>
+        <picklistValues>
+            <masterLabel>Achieved goal</masterLabel>
+            <translation><!-- Achieved goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expressed need for goal</masterLabel>
+            <translation><!-- Expressed need for goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identified goal</masterLabel>
+            <translation><!-- Identified goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Progress made towards goal</masterLabel>
+            <translation><!-- Progress made towards goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Took a step back from goal</masterLabel>
+            <translation><!-- Took a step back from goal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Asset Goal --></label>
+        <name>Asset_Goal1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset Goal Date --></label>
+        <name>Asset_Goal2_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset Goal Progress --></label>
+        <name>Asset_Goal2_Progress__c</name>
+        <picklistValues>
+            <masterLabel>Achieved goal</masterLabel>
+            <translation><!-- Achieved goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expressed need for goal</masterLabel>
+            <translation><!-- Expressed need for goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identified goal</masterLabel>
+            <translation><!-- Identified goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Progress made towards goal</masterLabel>
+            <translation><!-- Progress made towards goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Took a step back from goal</masterLabel>
+            <translation><!-- Took a step back from goal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Asset Goal --></label>
+        <name>Asset_Goal2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Availability - Time of Day --></label>
+        <name>Availability_Time_of_day__c</name>
+        <picklistValues>
+            <masterLabel>Afternoon</masterLabel>
+            <translation><!-- Afternoon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evening</masterLabel>
+            <translation><!-- Evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Morning</masterLabel>
+            <translation><!-- Morning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Banked Status Goal Date --></label>
+        <name>Banked_Status_Goal1_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Banked Status Goal Progress --></label>
+        <name>Banked_Status_Goal1_Progress__c</name>
+        <picklistValues>
+            <masterLabel>Achieved goal</masterLabel>
+            <translation><!-- Achieved goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expressed need for goal</masterLabel>
+            <translation><!-- Expressed need for goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identified goal</masterLabel>
+            <translation><!-- Identified goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Progress made towards goal</masterLabel>
+            <translation><!-- Progress made towards goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Took a step back from goal</masterLabel>
+            <translation><!-- Took a step back from goal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Banked Status Goal --></label>
+        <name>Banked_Status_Goal1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Banked Status Goal Date --></label>
+        <name>Banked_Status_Goal2_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Banked Status Goal Progress --></label>
+        <name>Banked_Status_Goal2_Progress__c</name>
+        <picklistValues>
+            <masterLabel>Achieved goal</masterLabel>
+            <translation><!-- Achieved goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expressed need for goal</masterLabel>
+            <translation><!-- Expressed need for goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identified goal</masterLabel>
+            <translation><!-- Identified goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Progress made towards goal</masterLabel>
+            <translation><!-- Progress made towards goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Took a step back from goal</masterLabel>
+            <translation><!-- Took a step back from goal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Banked Status Goal --></label>
+        <name>Banked_Status_Goal2__c</name>
+    </fields>
+    <fields>
+        <help><!-- First banked status was not Banked and most recent banked status is Banked --></help>
+        <label><!-- Became Banked --></label>
+        <name>Became_Banked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>C4G_Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Does this contact wish to remain anonymous for ALL of their giving? --></help>
+        <label><!-- Anonymous --></label>
+        <name>C4G_Anonymous__c</name>
+    </fields>
+    <fields>
+        <help><!-- How much was the most recent ask amount from this person? --></help>
+        <label><!-- Ask Amount --></label>
+        <name>C4G_Ask_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is the email address of this person&apos;s assistant? Helpful in conjunction with Relationships, or if only a name/email address is known. --></help>
+        <label><!-- Assistant Email Address --></label>
+        <name>C4G_Assistant_Email_Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- Does this contact have a bad mailing address? --></help>
+        <label><!-- Bad Address --></label>
+        <name>C4G_Bad_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bad Secondary Address --></label>
+        <name>C4G_Bad_Secondary_Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- How much is this person capable of donating? --></help>
+        <label><!-- Capacity --></label>
+        <name>C4G_Capacity__c</name>
+        <picklistValues>
+            <masterLabel>$10,000 - $24,999</masterLabel>
+            <translation><!-- $10,000 - $24,999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$100,000 - $499,999</masterLabel>
+            <translation><!-- $100,000 - $499,999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$1M+</masterLabel>
+            <translation><!-- $1M+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$2,500 - $4,999</masterLabel>
+            <translation><!-- $2,500 - $4,999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$25,000 - $49,999</masterLabel>
+            <translation><!-- $25,000 - $49,999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$5,000 - $9,999</masterLabel>
+            <translation><!-- $5,000 - $9,999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$50,000 - $99,999</masterLabel>
+            <translation><!-- $50,000 - $99,999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$500,000 - $999,999</masterLabel>
+            <translation><!-- $500,000 - $999,999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Less than $2,500</masterLabel>
+            <translation><!-- Less than $2,500 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- What is the stage of cultivating this person overall as a donor? This is different from the stage of a specific donation cultivation tied to this person. --></help>
+        <label><!-- Cultivation Stage --></label>
+        <name>C4G_Cultivation_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Cultivation</masterLabel>
+            <translation><!-- Cultivation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identification</masterLabel>
+            <translation><!-- Identification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Proceeding</masterLabel>
+            <translation><!-- Not Proceeding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research</masterLabel>
+            <translation><!-- Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solicitation</masterLabel>
+            <translation><!-- Solicitation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- What is the known date this person became deceased? Filling in this field will also check the &quot;Deceased&quot; checkbox when the record is saved. --></help>
+        <label><!-- Deceased Date --></label>
+        <name>C4G_Deceased_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is this person deceased?  Adding a Deceased Date will automatically check this box. --></help>
+        <label><!-- Deceased --></label>
+        <name>C4G_Deceased__c</name>
+    </fields>
+    <fields>
+        <help><!-- How likely is this contact to donate? --></help>
+        <label><!-- Inclination --></label>
+        <name>C4G_Inclination__c</name>
+        <picklistValues>
+            <masterLabel>Cold</masterLabel>
+            <translation><!-- Cold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hot</masterLabel>
+            <translation><!-- Hot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Questionable</masterLabel>
+            <translation><!-- Questionable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warm</masterLabel>
+            <translation><!-- Warm --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- How does this person wish to be recognized for their own gifts/donations, if different from their First/Last Name? --></help>
+        <label><!-- Individual Giving Recognition Name --></label>
+        <name>C4G_Individual_Giving_Recognition_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is this person&apos;s Twitter handle, excluding the @? --></help>
+        <label><!-- Individual Twitter Handle @: --></label>
+        <name>C4G_Individual_Twitter_Handle__c</name>
+    </fields>
+    <fields>
+        <label><!-- LastName, FirstName --></label>
+        <name>C4G_LastName_FirstName__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is this person&apos;s Maiden Name, in full or part? --></help>
+        <label><!-- Maiden Name --></label>
+        <name>C4G_Maiden_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Middle Name --></label>
+        <name>C4G_Middle_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- When was this person most recently asked for a gift/donation? Use this in conjunction with the Ask Amount field for donor cultivation. --></help>
+        <label><!-- Most Recent Ask Date --></label>
+        <name>C4G_Most_Recent_Ask_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Should this contact receive any paper mail, at all? --></help>
+        <label><!-- No Paper Mail --></label>
+        <name>C4G_No_Paper_Mail__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is this person&apos;s informal/personal greeting or nickname, if different from their First Name? --></help>
+        <label><!-- Personal Greeting/Nickname --></label>
+        <name>C4G_Personal_Greeting_Nickname__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is this contact&apos;s personal Web site, blog URL, or other Web presence? --></help>
+        <label><!-- Personal Web Site --></label>
+        <name>C4G_Personal_Web_Site__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is this person&apos;s primary professional suffix? --></help>
+        <label><!-- Professional Suffix --></label>
+        <name>C4G_Professional_Suffix__c</name>
+        <picklistValues>
+            <masterLabel>CPA</masterLabel>
+            <translation><!-- CPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Esq.</masterLabel>
+            <translation><!-- Esq. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J.D.</masterLabel>
+            <translation><!-- J.D. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M.D.</masterLabel>
+            <translation><!-- M.D. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ph. D.</masterLabel>
+            <translation><!-- Ph. D. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- How soon is this contact ready to be solicited for a donation? --></help>
+        <label><!-- Readiness --></label>
+        <name>C4G_Readiness__c</name>
+        <picklistValues>
+            <masterLabel>0 - 6 Months</masterLabel>
+            <translation><!-- 0 - 6 Months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12+ Months</masterLabel>
+            <translation><!-- 12+ Months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 - 12 Months</masterLabel>
+            <translation><!-- 6 - 12 Months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No timeline</masterLabel>
+            <translation><!-- No timeline --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Suffix --></label>
+        <name>C4G_Suffix__c</name>
+        <picklistValues>
+            <masterLabel>III</masterLabel>
+            <translation><!-- III --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IV</masterLabel>
+            <translation><!-- IV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jr.</masterLabel>
+            <translation><!-- Jr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sr.</masterLabel>
+            <translation><!-- Sr. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Where does the client have a checking account? --></help>
+        <label><!-- Checking Institution --></label>
+        <name>Checking_Institution__c</name>
+    </fields>
+    <fields>
+        <label><!-- C&amp;P Alias Contact Data --></label>
+        <name>CnP_PaaS__Alias_Contact_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- C&amp;P Connect Alias --></label>
+        <name>CnP_PaaS__CnP_Connect_Alias_Index__c</name>
+    </fields>
+    <fields>
+        <label><!-- C&amp;P Patron Rank --></label>
+        <name>CnP_PaaS__CnP_Global_Rank__c</name>
+    </fields>
+    <fields>
+        <label><!-- C&amp;P Lift Expiration date --></label>
+        <name>CnP_PaaS__CnP_Lift_Expiration_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- C&amp;P Average Payment --></label>
+        <name>CnP_PaaS__CnP_Payment_Average__c</name>
+    </fields>
+    <fields>
+        <label><!-- C&amp;P Last Payment --></label>
+        <name>CnP_PaaS__CnP_Payment_Last__c</name>
+    </fields>
+    <fields>
+        <label><!-- C&amp;P Maximum Payment --></label>
+        <name>CnP_PaaS__CnP_Payment_Maximum__c</name>
+    </fields>
+    <fields>
+        <label><!-- C&amp;P Minimum Payment --></label>
+        <name>CnP_PaaS__CnP_Payment_Minimum__c</name>
+    </fields>
+    <fields>
+        <label><!-- C&amp;P Total Personal Value --></label>
+        <name>CnP_PaaS__CnP_Total_Intrinsic__c</name>
+    </fields>
+    <fields>
+        <label><!-- C&amp;P Total Network Value --></label>
+        <name>CnP_PaaS__CnP_Total_extrinsic__c</name>
+    </fields>
+    <fields>
+        <label><!-- C&amp;P Connect Global Profile --></label>
+        <name>CnP_PaaS__Connect_Link__c</name>
+    </fields>
+    <fields>
+        <help><!-- Red flag if an agreement is needed --></help>
+        <label><!-- Financial Coaching Flag --></label>
+        <name>Coaching_Agreement_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Address --></label>
+        <name>Contact_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Phone --></label>
+        <name>Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Goal Date --></label>
+        <name>Credit_Goal1_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Goal Progress --></label>
+        <name>Credit_Goal1_Progress__c</name>
+        <picklistValues>
+            <masterLabel>Achieved goal</masterLabel>
+            <translation><!-- Achieved goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expressed need for goal</masterLabel>
+            <translation><!-- Expressed need for goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identified goal</masterLabel>
+            <translation><!-- Identified goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Progress made towards goal</masterLabel>
+            <translation><!-- Progress made towards goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Took a step back from goal</masterLabel>
+            <translation><!-- Took a step back from goal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Credit Goal --></label>
+        <name>Credit_Goal1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Goal Date --></label>
+        <name>Credit_Goal2_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Goal Progress --></label>
+        <name>Credit_Goal2_Progress__c</name>
+        <picklistValues>
+            <masterLabel>Achieved goal</masterLabel>
+            <translation><!-- Achieved goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expressed need for goal</masterLabel>
+            <translation><!-- Expressed need for goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identified goal</masterLabel>
+            <translation><!-- Identified goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Progress made towards goal</masterLabel>
+            <translation><!-- Progress made towards goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Took a step back from goal</masterLabel>
+            <translation><!-- Took a step back from goal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Credit Goal --></label>
+        <name>Credit_Goal2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debt Goal Date --></label>
+        <name>Debt_Goal1_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debt Goal Progress --></label>
+        <name>Debt_Goal1_Progress__c</name>
+        <picklistValues>
+            <masterLabel>Achieved goal</masterLabel>
+            <translation><!-- Achieved goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expressed need for goal</masterLabel>
+            <translation><!-- Expressed need for goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identified goal</masterLabel>
+            <translation><!-- Identified goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Progress made towards goal</masterLabel>
+            <translation><!-- Progress made towards goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Took a step back from goal</masterLabel>
+            <translation><!-- Took a step back from goal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Debt Goal --></label>
+        <name>Debt_Goal1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debt Goal Date --></label>
+        <name>Debt_Goal2_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debt Goal Progress --></label>
+        <name>Debt_Goal2_Progress__c</name>
+        <picklistValues>
+            <masterLabel>Achieved goal</masterLabel>
+            <translation><!-- Achieved goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expressed need for goal</masterLabel>
+            <translation><!-- Expressed need for goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identified goal</masterLabel>
+            <translation><!-- Identified goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Progress made towards goal</masterLabel>
+            <translation><!-- Progress made towards goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Took a step back from goal</masterLabel>
+            <translation><!-- Took a step back from goal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Debt Goal --></label>
+        <name>Debt_Goal2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delta Credit Score (Most Recent) --></label>
+        <name>Delta_Credit_Score_Most_Recent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delta Debt (Most Recent) --></label>
+        <name>Delta_Debt_Most_Recent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delta Expense (Most Recent) --></label>
+        <name>Delta_Expense_Most_Recent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delta Income (Most Recent) --></label>
+        <name>Delta_Income_Most_Recent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delta Savings (Most Recent) --></label>
+        <name>Delta_Savings_Most_Recent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dependent in Household --></label>
+        <name>Dependent_in_Household__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disputes --></label>
+        <name>Disputes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Intake: Do you rent or own your home? --></label>
+        <name>Do_you_rent_or_own_your_home__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Own</masterLabel>
+            <translation><!-- Own --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rent</masterLabel>
+            <translation><!-- Rent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Emergency Contact Address --></label>
+        <name>Emergency_Contact_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Emergency Contact Name --></label>
+        <name>Emergency_Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Emergency Contact Phone --></label>
+        <name>Emergency_Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Emergency Contact Relationship --></label>
+        <name>Emergency_Contact_Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employment Status --></label>
+        <name>Employment_Status__c</name>
+        <picklistValues>
+            <masterLabel>Full-time</masterLabel>
+            <translation><!-- Full-time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multiple jobs</masterLabel>
+            <translation><!-- Multiple jobs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Part-time</masterLabel>
+            <translation><!-- Part-time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retired</masterLabel>
+            <translation><!-- Retired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student</masterLabel>
+            <translation><!-- Student --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under 18</masterLabel>
+            <translation><!-- Under 18 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unemployed</masterLabel>
+            <translation><!-- Unemployed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- English is first language --></label>
+        <name>English_is_first_language__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refused</masterLabel>
+            <translation><!-- Refused --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Date when contact first enrolled in a class or counseling. Populated via Process Builder, do not edit --></help>
+        <label><!-- Enrollment Date --></label>
+        <name>Enrollment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ethnicity --></label>
+        <name>Ethnicity__c</name>
+        <picklistValues>
+            <masterLabel>Hispanic or Latino</masterLabel>
+            <translation><!-- Hispanic or Latino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Hispanic or Latino</masterLabel>
+            <translation><!-- Not Hispanic or Latino --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Expense Goal Date --></label>
+        <name>Expense_Goal1_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Goal Progress --></label>
+        <name>Expense_Goal1_Progress__c</name>
+        <picklistValues>
+            <masterLabel>Achieved goal</masterLabel>
+            <translation><!-- Achieved goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expressed need for goal</masterLabel>
+            <translation><!-- Expressed need for goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identified goal</masterLabel>
+            <translation><!-- Identified goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Progress made towards goal</masterLabel>
+            <translation><!-- Progress made towards goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Took a step back from goal</masterLabel>
+            <translation><!-- Took a step back from goal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Expense Goal --></label>
+        <name>Expense_Goal1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Goal Date --></label>
+        <name>Expense_Goal2_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Goal Progress --></label>
+        <name>Expense_Goal2_Progress__c</name>
+        <picklistValues>
+            <masterLabel>Achieved goal</masterLabel>
+            <translation><!-- Achieved goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expressed need for goal</masterLabel>
+            <translation><!-- Expressed need for goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identified goal</masterLabel>
+            <translation><!-- Identified goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Progress made towards goal</masterLabel>
+            <translation><!-- Progress made towards goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Took a step back from goal</masterLabel>
+            <translation><!-- Took a step back from goal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Expense Goal --></label>
+        <name>Expense_Goal2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicate if the client needs to sign a Financial Coaching Agreement --></help>
+        <label><!-- Financial Coaching Agreement --></label>
+        <name>Financial_Coaching_Agreement_Needed__c</name>
+        <picklistValues>
+            <masterLabel>Needed</masterLabel>
+            <translation><!-- Needed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed</masterLabel>
+            <translation><!-- Signed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Date of first recorded Banked Status from Metrics. Populated automatically --></help>
+        <label><!-- First Banked Status Date --></label>
+        <name>First_Banked_Status_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- First complete Banked Status from Metrics. Populated automatically --></help>
+        <label><!-- First Banked Status --></label>
+        <name>First_Banked_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date of first complete Credit History record from Metrics. Populated automatically --></help>
+        <label><!-- First Credit History Date --></label>
+        <name>First_Credit_History_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date of first complete Debt record from Metrics. Populated automatically --></help>
+        <label><!-- First Debt Date --></label>
+        <name>First_Debt_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- First complete Debt from Metrics. Populated automatically --></help>
+        <label><!-- First Debt --></label>
+        <name>First_Debt__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date of first complete Expenses record from Metrics. Populated automatically --></help>
+        <label><!-- First Expenses Date --></label>
+        <name>First_Expenses_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- First complete annual Expenses from Metrics. Populated automatically --></help>
+        <label><!-- First Expenses --></label>
+        <name>First_Expenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Fin. Future Confidence Date --></label>
+        <name>First_Fin_Future_Confidence_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- How confident are you about your financial future? --></help>
+        <label><!-- First Fin. Future Confidence --></label>
+        <name>First_Fin_Future_Confidence__c</name>
+        <picklistValues>
+            <masterLabel>Confident</masterLabel>
+            <translation><!-- Confident --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not at all confident</masterLabel>
+            <translation><!-- Not at all confident --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not very confident</masterLabel>
+            <translation><!-- Not very confident --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat confident</masterLabel>
+            <translation><!-- Somewhat confident --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very confident</masterLabel>
+            <translation><!-- Very confident --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Date of first recorded Annual Income from Metrics. Populated automatically --></help>
+        <label><!-- First Income Date --></label>
+        <name>First_Income_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- First recorded Annual Income based on Metric.Annual_Income__c (not tax verified from tax return). Populated automatically --></help>
+        <label><!-- First Income --></label>
+        <name>First_Income__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date of first complete Savings record from Metrics. Populated automatically --></help>
+        <label><!-- First Savings Date --></label>
+        <name>First_Savings_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- First complete Savings total from Metrics. Populated automatically --></help>
+        <label><!-- First Savings --></label>
+        <name>First_Savings__c</name>
+    </fields>
+    <fields>
+        <help><!-- First complete Credit Score from Metrics. Populated automatically --></help>
+        <label><!-- First Self-reported Credit Score --></label>
+        <name>First_Self_reported_Credit_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- First complete verified Credit Score from Metrics. Populated automatically --></help>
+        <label><!-- First Verified Credit Score --></label>
+        <name>First_Verified_Credit_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date of first complete verified Income record from Metrics. Populated automatically --></help>
+        <label><!-- First Verified Income Date --></label>
+        <name>First_Verified_Income_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- First complete verified Annual Income from Metrics. Populated automatically --></help>
+        <label><!-- First Verified Income --></label>
+        <name>First_Verified_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funder --></label>
+        <name>Funder__c</name>
+    </fields>
+    <fields>
+        <help>Das Startdatum der ersten Freiwilligenstunden</help>
+        <label><!-- First Volunteer Date --></label>
+        <name>GW_Volunteers__First_Volunteer_Date__c</name>
+    </fields>
+    <fields>
+        <help>Das Enddatum der letzten Freiwilligenstunden</help>
+        <label><!-- Last Volunteer Date --></label>
+        <name>GW_Volunteers__Last_Volunteer_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Volunteer Unique Count --></label>
+        <name>GW_Volunteers__Unique_Volunteer_Count__c</name>
+    </fields>
+    <fields>
+        <help>Aktivieren Sie diese Option, wenn der Kontakt keine automatischen Erinnerungs-E-Mails zu seinen bevorstehenden Schichten mehr erhalten möchte.  Verwendet in der Workflow-Regel für &quot;Erinnerungs-E-Mail zu Freiwilligenstunden&quot;</help>
+        <label><!-- Volunteer Auto-Reminder Email Opt Out --></label>
+        <name>GW_Volunteers__Volunteer_Auto_Reminder_Email_Opt_Out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Volunteer Availability --></label>
+        <name>GW_Volunteers__Volunteer_Availability__c</name>
+        <picklistValues>
+            <masterLabel>Afternoon</masterLabel>
+            <translation>Nachmittag</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Morning</masterLabel>
+            <translation>Vormittag</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekdays</masterLabel>
+            <translation>Wochentags</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekends</masterLabel>
+            <translation>Wochenende</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation>Wöchentlich</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Gesamtanzahl der Stunden, die &quot;Abgeleistet&quot; sind. Stunden mit anderen Statuswerten sind nicht enthalten.</help>
+        <label><!-- Volunteer Hours --></label>
+        <name>GW_Volunteers__Volunteer_Hours__c</name>
+    </fields>
+    <fields>
+        <help>Das Datum der letzten Anmeldung eines Freiwilligen im Web  Wird zum Auslösen des Workflows für Benachrichtigungen und Danke-E-Mails verwendet</help>
+        <label><!-- Volunteer Last Web Signup Date --></label>
+        <name>GW_Volunteers__Volunteer_Last_Web_Signup_Date__c</name>
+    </fields>
+    <fields>
+        <help>Hinweise über den Freiwilligen, zu dem der Freiwilligen-Manager oder Mitarbeiter der Organisation einen Datensatz anlegen möchte</help>
+        <label><!-- Volunteer Manager Notes --></label>
+        <name>GW_Volunteers__Volunteer_Manager_Notes__c</name>
+    </fields>
+    <fields>
+        <help>Hinweise des Freiwilligen  Beachten Sie, dass das Webanmeldeformular die Freiwilligenkommentare in diesem Feld anfügt.</help>
+        <label><!-- Volunteer Notes --></label>
+        <name>GW_Volunteers__Volunteer_Notes__c</name>
+    </fields>
+    <fields>
+        <help>Die Organisation, das Unternehmen oder die Gruppe, in deren Namen der Freiwillige aktiv wird</help>
+        <label><!-- Volunteer Organization --></label>
+        <name>GW_Volunteers__Volunteer_Organization__c</name>
+    </fields>
+    <fields>
+        <help>Wählen Sie die Fertigkeiten dieses Kontakts aus, die zum Suchen von Freiwilligenaufträgen verwendet werden sollten.</help>
+        <label><!-- Volunteer Skills --></label>
+        <name>GW_Volunteers__Volunteer_Skills__c</name>
+        <picklistValues>
+            <masterLabel>Computer usage</masterLabel>
+            <translation>Computernutzung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event Planning</masterLabel>
+            <translation>Veranstaltungsplanung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fundraising</masterLabel>
+            <translation>Spendenaktion</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manual labor</masterLabel>
+            <translation>Körperliche Arbeit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teaching/Training</masterLabel>
+            <translation><!-- Teaching/Training --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Volunteer Status --></label>
+        <name>GW_Volunteers__Volunteer_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation>Aktiv</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation>Inaktiv</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Sign Up</masterLabel>
+            <translation>Neue Anmeldung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospective</masterLabel>
+            <translation>Potenziell</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>Gender__c</name>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation><!-- Female --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation><!-- Male --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transgender</masterLabel>
+            <translation><!-- Transgender --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Manually enter the number of household members. This field is used to calculate the HUD income level. --></help>
+        <label><!-- Number of Household Members (Contact) --></label>
+        <name>HH_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Certification Completed Date --></label>
+        <name>HUD_Certification_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Certification Form --></label>
+        <name>HUD_Certification_Form__c</name>
+        <picklistValues>
+            <masterLabel>Completed - City</masterLabel>
+            <translation><!-- Completed - City --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed - County</masterLabel>
+            <translation><!-- Completed - County --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needed</masterLabel>
+            <translation><!-- Needed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Compares Intake AGI and Number of Household Members (Auto) to HUD Income Levels --></help>
+        <label><!-- HUD Income Level (Auto) --></label>
+        <name>HUD_Income_Level_Auto__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Income Level --></label>
+        <name>HUD_Income_Level_General__c</name>
+        <picklistValues>
+            <masterLabel>Extremely Low</masterLabel>
+            <translation><!-- Extremely Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moderate</masterLabel>
+            <translation><!-- Moderate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Low</masterLabel>
+            <translation><!-- Very Low --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Compares Most Recent Verified Income and Number of Household Members (Contact) to HUD Income Levels --></help>
+        <label><!-- HUD Income Level (Verified) --></label>
+        <name>HUD_Income_Level_Verified__c</name>
+    </fields>
+    <fields>
+        <help><!-- Compares Intake AGI and Number of Household Members (Contact) to HUD Income Levels --></help>
+        <label><!-- HUD Income Level --></label>
+        <name>HUD_Income_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Checking Account --></label>
+        <name>Has_Checking_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Savings Account --></label>
+        <name>Has_Savings_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the client the head of household? --></help>
+        <label><!-- Head of Household --></label>
+        <name>Head_of_Household__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula displays rollup summary count of Contacts in the Household. --></help>
+        <label><!-- Number of Household Members (Auto) --></label>
+        <name>Household_RUS__c</name>
+    </fields>
+    <fields>
+        <help><!-- How did you hear about our financial literacy classes and/or coaching? --></help>
+        <label><!-- How did you hear about us? --></label>
+        <name>How_did_you_hear_about_us__c</name>
+    </fields>
+    <fields>
+        <label><!-- Income Goal Date --></label>
+        <name>Income_Goal1_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Income Goal Progress --></label>
+        <name>Income_Goal1_Progress__c</name>
+        <picklistValues>
+            <masterLabel>Achieved goal</masterLabel>
+            <translation><!-- Achieved goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expressed need for goal</masterLabel>
+            <translation><!-- Expressed need for goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identified goal</masterLabel>
+            <translation><!-- Identified goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Progress made towards goal</masterLabel>
+            <translation><!-- Progress made towards goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Took a step back from goal</masterLabel>
+            <translation><!-- Took a step back from goal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Income Goal --></label>
+        <name>Income_Goal1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Income Goal Date --></label>
+        <name>Income_Goal2_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Income Goal Progress --></label>
+        <name>Income_Goal2_Progress__c</name>
+        <picklistValues>
+            <masterLabel>Achieved goal</masterLabel>
+            <translation><!-- Achieved goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expressed need for goal</masterLabel>
+            <translation><!-- Expressed need for goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identified goal</masterLabel>
+            <translation><!-- Identified goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Progress made towards goal</masterLabel>
+            <translation><!-- Progress made towards goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Took a step back from goal</masterLabel>
+            <translation><!-- Took a step back from goal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Income Goal --></label>
+        <name>Income_Goal2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Information Correct --></label>
+        <name>Information_Correct__c</name>
+    </fields>
+    <fields>
+        <label><!-- Intake: Approx Home Value --></label>
+        <name>Intake_Approx_Home_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Do you currently contribute to retirement? --></help>
+        <label><!-- Intake: Contributing to retirement --></label>
+        <name>Intake_Contributing_to_retirement__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Do you have cash value or term life insurance? --></help>
+        <label><!-- Intake: Life Insurance --></label>
+        <name>Intake_Life_Insurance__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Intake: Monthly Home Payment Amount --></label>
+        <name>Intake_Monthly_Home_Payment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Intake: Received a tax refund last year --></label>
+        <name>Intake_Received_a_tax_refund_last_year__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Intake: Total Auto Loan Debt --></label>
+        <name>Intake_Total_Auto_Loan_Debt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Intake: Total Debt on Home --></label>
+        <name>Intake_Total_Debt_on_Home__c</name>
+    </fields>
+    <fields>
+        <label><!-- Intake: Total of all other debt --></label>
+        <name>Intake_Total_of_all_other_debt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Intake --></label>
+        <name>Intake__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Intake: How many auto loans do you have? --></label>
+        <name>Intake_auto_loans__c</name>
+    </fields>
+    <fields>
+        <name>LeadSource</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Referral</masterLabel>
+            <translation><!-- Partner Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Inquiry</masterLabel>
+            <translation><!-- Phone Inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchased List</masterLabel>
+            <translation><!-- Purchased List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Looking for work --></label>
+        <name>Looking_for_work__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refused</masterLabel>
+            <translation><!-- Refused --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MC Subscriber --></label>
+        <name>MC4SF__MC_Subscriber__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Member Since: --></label>
+        <name>Member_Since__c</name>
+    </fields>
+    <fields>
+        <label><!-- Intake: Monthly Take-home Pay --></label>
+        <name>Monthly_Take_home_Pay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Banked Status Date --></label>
+        <name>Most_Recent_Banked_Status_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Most recent complete Banked Status from Metrics. Populated automatically --></help>
+        <label><!-- Most Recent Banked Status --></label>
+        <name>Most_Recent_Banked_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Credit History Date --></label>
+        <name>Most_Recent_Credit_History_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Debt Date --></label>
+        <name>Most_Recent_Debt_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Debt from most recent complete Debt Metric. Populated automatically --></help>
+        <label><!-- Most Recent Debt --></label>
+        <name>Most_Recent_Debt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Expenses Date --></label>
+        <name>Most_Recent_Expenses_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Most recent total annual expenses. Populated automatically --></help>
+        <label><!-- Most Recent Expenses --></label>
+        <name>Most_Recent_Expenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Fin. Future Confidence Date --></label>
+        <name>Most_Recent_Fin_Future_Confidence_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Fin. Future Confidence --></label>
+        <name>Most_Recent_Fin_Future_Confidence__c</name>
+        <picklistValues>
+            <masterLabel>Confident</masterLabel>
+            <translation><!-- Confident --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not at all confident</masterLabel>
+            <translation><!-- Not at all confident --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not very confident</masterLabel>
+            <translation><!-- Not very confident --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat confident</masterLabel>
+            <translation><!-- Somewhat confident --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very confident</masterLabel>
+            <translation><!-- Very confident --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Goal Confidence Date --></label>
+        <name>Most_Recent_Goal_Confidence_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- How confident are you in your ability to achieve the things we discussed today? --></help>
+        <label><!-- Most Recent Goal Confidence --></label>
+        <name>Most_Recent_Goal_Confidence__c</name>
+        <picklistValues>
+            <masterLabel>Confident</masterLabel>
+            <translation><!-- Confident --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not at all confident</masterLabel>
+            <translation><!-- Not at all confident --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not very confident</masterLabel>
+            <translation><!-- Not very confident --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat confident</masterLabel>
+            <translation><!-- Somewhat confident --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very confident</masterLabel>
+            <translation><!-- Very confident --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Income Date --></label>
+        <name>Most_Recent_Income_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Income Goal Date --></label>
+        <name>Most_Recent_Income_Goal1_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Income Goal Date --></label>
+        <name>Most_Recent_Income_Goal2_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Annual income based on Metric.Annual_Income__c (unverified). Populated via Process Builder, do not edit. --></help>
+        <label><!-- Most Recent Income --></label>
+        <name>Most_Recent_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Savings Date --></label>
+        <name>Most_Recent_Savings_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Most recent complete total Savings from Metrics. Populated automatically --></help>
+        <label><!-- Most Recent Savings --></label>
+        <name>Most_Recent_Savings__c</name>
+    </fields>
+    <fields>
+        <help><!-- Most recent complete self-reported credit score. Populated automatically --></help>
+        <label><!-- Most Recent Self-reported Credit Score --></label>
+        <name>Most_Recent_Self_reported_Credit_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- Most recent verified Credit score from Metrics. Populated automatically --></help>
+        <label><!-- Most Recent Verified Credit Score --></label>
+        <name>Most_Recent_Verified_Credit_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- Annual income based on Metric.Annual_Income_from_Tax_Return__c (tax return verified). Populated via Process Builder, do not edit. --></help>
+        <label><!-- Most Recent Verified Income --></label>
+        <name>Most_Recent_Verified_Income__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populated via Process Builder, do not edit --></help>
+        <label><!-- Most Recent Income Date --></label>
+        <name>Most_Recent_unverified_Income_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date of most recent verified annual income (Metric.Annual_Income_from_Tax_Return__c) Populated via Process Builder, do not edit. --></help>
+        <label><!-- Most Recent Verified Income Date --></label>
+        <name>Most_Recent_verified_Income_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Native or preferred language --></label>
+        <name>Native_or_preferred_language__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Credit Score Available --></label>
+        <name>No_Credit_Score_Available__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populated automatically --></help>
+        <label><!-- Number of Coaching Sessions Attended --></label>
+        <name>Number_of_Coaching_Sessions_Attended__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of classes attended --></help>
+        <label><!-- Number of Classes Attended --></label>
+        <name>Number_of_Meetings_Attended__c</name>
+    </fields>
+    <fields>
+        <label><!-- Photo and Statement Release --></label>
+        <name>Photo_and_Statement_Release__c</name>
+        <picklistValues>
+            <masterLabel>Needed</masterLabel>
+            <translation><!-- Needed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed</masterLabel>
+            <translation><!-- Signed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Place of Employment --></label>
+        <name>Place_of_Employment__c</name>
+        <relationshipLabel><!-- Contacts (Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Place of work --></label>
+        <name>Place_of_work__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Language --></label>
+        <name>Preferred_Language__c</name>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation><!-- English --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish</masterLabel>
+            <translation><!-- Spanish --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Preferred Mode of Contact --></label>
+        <name>Preferred_Mode_of_Contact__c</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Previous Volunteer Experience --></label>
+        <name>Previous_Volunteer_Experience__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amer Indian/Alaska Native &amp; White --></label>
+        <name>Race_Amer_Indian_Alaska_Native_White__c</name>
+    </fields>
+    <fields>
+        <label><!-- American Indian or Alaska Native --></label>
+        <name>Race_Amer_Indian__c</name>
+    </fields>
+    <fields>
+        <help><!-- American Indian or Alaska Native and Black or African American --></help>
+        <label><!-- Amer Indian/Alaska Native &amp; Black --></label>
+        <name>Race_American_Indian_or_Alaska_Native_a__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asian --></label>
+        <name>Race_Asian__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asian and White --></label>
+        <name>Race_Asian_and_White__c</name>
+    </fields>
+    <fields>
+        <label><!-- Black or African American --></label>
+        <name>Race_Black_or_African_American__c</name>
+    </fields>
+    <fields>
+        <label><!-- Black or African American and White --></label>
+        <name>Race_Black_or_African_American_and_Whit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Native Hawaiian or Pacific Islander --></label>
+        <name>Race_Native_Hawaiian_or_Pacific_Islande__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Multi-Racial --></label>
+        <name>Race_Other_Multi_Racial__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other --></label>
+        <name>Race_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- White --></label>
+        <name>Race_White__c</name>
+    </fields>
+    <fields>
+        <label><!-- Race --></label>
+        <name>Race__c</name>
+        <picklistValues>
+            <masterLabel>Amer Indian/Alaska Native &amp; Black</masterLabel>
+            <translation><!-- Amer Indian/Alaska Native &amp; Black --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amer Indian/Alaska Native &amp; White</masterLabel>
+            <translation><!-- Amer Indian/Alaska Native &amp; White --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>American Indian or Alaska Native</masterLabel>
+            <translation><!-- American Indian or Alaska Native --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asian</masterLabel>
+            <translation><!-- Asian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asian and White</masterLabel>
+            <translation><!-- Asian and White --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Black or African American</masterLabel>
+            <translation><!-- Black or African American --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Black or African American and White</masterLabel>
+            <translation><!-- Black or African American and White --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multi-Racial</masterLabel>
+            <translation><!-- Multi-Racial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Native Hawaiian or Pacific Islander</masterLabel>
+            <translation><!-- Native Hawaiian or Pacific Islander --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>White</masterLabel>
+            <translation><!-- White --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Client is using or has used RedDough services. --></help>
+        <label><!-- RedDough Client --></label>
+        <name>RedDough_Client__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reference Email --></label>
+        <name>Reference_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reference Name --></label>
+        <name>Reference_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reference Phone --></label>
+        <name>Reference_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reference Place of Employment --></label>
+        <name>Reference_Place_of_Employment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reference Title --></label>
+        <name>Reference_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Goal Date --></label>
+        <name>Referral_Goal1_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Goal Progress --></label>
+        <name>Referral_Goal1_Progress__c</name>
+        <picklistValues>
+            <masterLabel>Achieved goal</masterLabel>
+            <translation><!-- Achieved goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expressed need for goal</masterLabel>
+            <translation><!-- Expressed need for goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identified goal</masterLabel>
+            <translation><!-- Identified goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Progress made towards goal</masterLabel>
+            <translation><!-- Progress made towards goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Took a step back from goal</masterLabel>
+            <translation><!-- Took a step back from goal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Referral Goal --></label>
+        <name>Referral_Goal1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Goal Date --></label>
+        <name>Referral_Goal2_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Goal Progress --></label>
+        <name>Referral_Goal2_Progress__c</name>
+        <picklistValues>
+            <masterLabel>Achieved goal</masterLabel>
+            <translation><!-- Achieved goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expressed need for goal</masterLabel>
+            <translation><!-- Expressed need for goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identified goal</masterLabel>
+            <translation><!-- Identified goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Progress made towards goal</masterLabel>
+            <translation><!-- Progress made towards goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Took a step back from goal</masterLabel>
+            <translation><!-- Took a step back from goal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Referral Goal --></label>
+        <name>Referral_Goal2__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date when the individual requested follow up assistance --></help>
+        <label><!-- Requested Followup Assistance --></label>
+        <name>Requested_Followup_Assistance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Override DupeCatcher --></label>
+        <name>SFSSDupeCatcher__Override_DupeCatcher__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLCCU Member --></label>
+        <name>SLCCU_Member__c</name>
+    </fields>
+    <fields>
+        <help><!-- Where does the client have a savings account? --></help>
+        <label><!-- Savings Account Institution --></label>
+        <name>Savings_Account_Institution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Savings Goal Date --></label>
+        <name>Savings_Goal1_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Savings Goal Progress --></label>
+        <name>Savings_Goal1_Progress__c</name>
+        <picklistValues>
+            <masterLabel>Achieved goal</masterLabel>
+            <translation><!-- Achieved goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expressed need for goal</masterLabel>
+            <translation><!-- Expressed need for goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identified goal</masterLabel>
+            <translation><!-- Identified goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Progress made towards goal</masterLabel>
+            <translation><!-- Progress made towards goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Took a step back from goal</masterLabel>
+            <translation><!-- Took a step back from goal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Savings Goal --></label>
+        <name>Savings_Goal1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Savings Goal Date --></label>
+        <name>Savings_Goal2_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Savings Goal Progress --></label>
+        <name>Savings_Goal2_Progress__c</name>
+        <picklistValues>
+            <masterLabel>Achieved goal</masterLabel>
+            <translation><!-- Achieved goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expressed need for goal</masterLabel>
+            <translation><!-- Expressed need for goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identified goal</masterLabel>
+            <translation><!-- Identified goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Progress made towards goal</masterLabel>
+            <translation><!-- Progress made towards goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Took a step back from goal</masterLabel>
+            <translation><!-- Took a step back from goal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Savings Goal --></label>
+        <name>Savings_Goal2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Area(s) --></label>
+        <name>Service_Area_s__c</name>
+        <picklistValues>
+            <masterLabel>Maintenance</masterLabel>
+            <translation><!-- Maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oversight</masterLabel>
+            <translation><!-- Oversight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special Events</masterLabel>
+            <translation><!-- Special Events --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teaching</masterLabel>
+            <translation><!-- Teaching --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Signed Date --></label>
+        <name>Signed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Engagement --></label>
+        <name>Source_Engagement__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Source Intake --></label>
+        <name>Source_Intake__c</name>
+        <relationshipLabel><!-- Contacts (Source Intake) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Any special talents or skills you have that you feel would benefit our organization? --></help>
+        <label><!-- Special Talents/Skills --></label>
+        <name>Special_Talents_Skills__c</name>
+    </fields>
+    <fields>
+        <label><!-- Teaching Expertise --></label>
+        <name>Teaching_Expertise__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trend Credit Score --></label>
+        <name>Trend_Credit_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trend Debt --></label>
+        <name>Trend_Debt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trend Expense --></label>
+        <name>Trend_Expense__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trend Income --></label>
+        <name>Trend_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trend Savings --></label>
+        <name>Trend_Savings__c</name>
+    </fields>
+    <fields>
+        <help><!-- The type of followup assistance requested by the individual --></help>
+        <label><!-- Type of Followup Assistance --></label>
+        <name>Type_of_Followup_Assistance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of work --></label>
+        <name>Type_of_work__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the client a U.S. Citizen? --></help>
+        <label><!-- U.S. Citizen --></label>
+        <name>U_S_Citizen__c</name>
+    </fields>
+    <fields>
+        <label><!-- Veteran? --></label>
+        <name>Veteran__c</name>
+    </fields>
+    <fields>
+        <label><!-- Volunteer Consent Signed --></label>
+        <name>Volunteer_Consent_Signed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Availability - Day --></label>
+        <name>Weekday_Availability__c</name>
+        <picklistValues>
+            <masterLabel>Friday</masterLabel>
+            <translation><!-- Friday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monday</masterLabel>
+            <translation><!-- Monday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saturday</masterLabel>
+            <translation><!-- Saturday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sunday</masterLabel>
+            <translation><!-- Sunday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thursday</masterLabel>
+            <translation><!-- Thursday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuesday</masterLabel>
+            <translation><!-- Tuesday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wednesday</masterLabel>
+            <translation><!-- Wednesday --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Number of years between first and most recent Credit Metric --></help>
+        <label><!-- Years Between Credit Scores --></label>
+        <name>Years_Between_Credit_Scores__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of years between first and most recent Debt Metric --></help>
+        <label><!-- Years Between Debt Metrics --></label>
+        <name>Years_Between_Debt_Metrics__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of years between first and most recent Savings Metric --></help>
+        <label><!-- Years Between Savings Metrics --></label>
+        <name>Years_Between_Savings_Metrics__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disable Duplicate Check --></label>
+        <name>dupcheck__dc3DisableDuplicateCheck__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duplicate Check Index --></label>
+        <name>dupcheck__dc3Index__c</name>
+    </fields>
+    <fields>
+        <help>Die alternative E-Mail-Adresse ist eine optionale vierte E-Mail-Adresse: Keine persönliche, bevorzugte oder Büro-E-Mail-Adresse</help>
+        <label><!-- Alternate Email --></label>
+        <name>npe01__AlternateEmail__c</name>
+    </fields>
+    <fields>
+        <help>Siehe Feld &quot;Bevorzugte E-Mail-Adresse&quot;.</help>
+        <label><!-- Personal Email --></label>
+        <name>npe01__HomeEmail__c</name>
+    </fields>
+    <fields>
+        <help>Formel: Verwendet primäres Adressentypfeld zur Ermittlung der Privatadresse aus der Postanschrift oder einer anderen Adresse</help>
+        <label><!-- Home Address --></label>
+        <name>npe01__Home_Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- WARNING - This field may not accurately reflect the donation history. Please use the Last Gift Date field instead. --></help>
+        <label><!-- DEPRECATED - Last Transaction Date --></label>
+        <name>npe01__Last_Donation_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- WARNING- This field may not accurately reflect donation histories. Please use the Total Amount field on the Contact record instead. --></help>
+        <label><!-- Lifetime Transaction Total --></label>
+        <name>npe01__Lifetime_Giving_History_Amount__c</name>
+    </fields>
+    <fields>
+        <help>Formel: In der Reihenfolge der Einstellung: das Feld &quot;SYSTEM_AccountTyp&quot;, das Feld &quot;Account-Typ&quot; und &quot;Organisation&quot;</help>
+        <label><!-- Organization Type --></label>
+        <name>npe01__Organization_Type__c</name>
+    </fields>
+    <fields>
+        <help>Formel: Die Postanschrift, wenn der primäre Adresstyp &quot;Sonstige&quot; lautet  Die Adresse unter &quot;Sonstige&quot;, wenn der sekundäre Adresstyp &quot;Sonstige&quot; lautet</help>
+        <label><!-- Other Address --></label>
+        <name>npe01__Other_Address__c</name>
+    </fields>
+    <fields>
+        <help>Welche Telefonnummer sollte für die meisten Gespräche mit diesem Kontakt verwendet werden?</help>
+        <label><!-- Preferred Phone --></label>
+        <name>npe01__PreferredPhone__c</name>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation><!-- Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile</masterLabel>
+            <translation><!-- Mobile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work</masterLabel>
+            <translation><!-- Work --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Welche E-Mail-Adresse sollte für die meisten Konversationen mit diesem Kontakt verwendet werden?</help>
+        <label><!-- Preferred Email --></label>
+        <name>npe01__Preferred_Email__c</name>
+        <picklistValues>
+            <masterLabel>Alternate</masterLabel>
+            <translation><!-- Alternate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal</masterLabel>
+            <translation><!-- Personal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work</masterLabel>
+            <translation><!-- Work --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Welcher Typ von Adresse ist die Postanschrift?</help>
+        <label><!-- Primary Address Type --></label>
+        <name>npe01__Primary_Address_Type__c</name>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation>Privat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Sonstige</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work</masterLabel>
+            <translation>Geschäftlich</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Schließt diesen Kontakt von der Verarbeitung des Eins-zu-Eins- oder Bucket-Accounts aus</help>
+        <label><!-- Private --></label>
+        <name>npe01__Private__c</name>
+    </fields>
+    <fields>
+        <help>Welcher Typ von Adresse ist die andere Adresse?</help>
+        <label><!-- Secondary Address Type --></label>
+        <name>npe01__Secondary_Address_Type__c</name>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation>Privat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Sonstige</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work</masterLabel>
+            <translation>Geschäftlich</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Gibt an, welches Modell für das Verhalten der Account-Beziehung maßgeblich ist: Einzelperson (Bucket) oder Eins-zu-Eins</help>
+        <label><!-- _SYSTEM: ACCOUNT PROCESSOR --></label>
+        <name>npe01__SystemAccountProcessor__c</name>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation>Einzelperson</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One-to-One</masterLabel>
+            <translation><!-- One-to-One --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field is no longer used and should not be referenced. It has been replaced by Type_of_Account__c --></help>
+        <label><!-- _SYSTEM: IsIndividual - DEPRECATED --></label>
+        <name>npe01__SystemIsIndividual__c</name>
+    </fields>
+    <fields>
+        <help>Formel: &quot;Einzelperson&quot; oder &quot;Organisation&quot; je nach Einstellung unter Account</help>
+        <label><!-- Type of Account --></label>
+        <name>npe01__Type_of_Account__c</name>
+    </fields>
+    <fields>
+        <help>Siehe Feld &quot;Bevorzugte E-Mail-Adresse&quot;.</help>
+        <label><!-- Work Email --></label>
+        <name>npe01__WorkEmail__c</name>
+    </fields>
+    <fields>
+        <help>Siehe Feld &quot;Bevorzugte Telefonnummer&quot;.</help>
+        <label><!-- Work Phone --></label>
+        <name>npe01__WorkPhone__c</name>
+    </fields>
+    <fields>
+        <help>Formel: Die Postanschrift, wenn der primäre Adresstyp &quot;Büro&quot; lautet  Die Adresse unter &quot;Sonstige&quot;, wenn der sekundäre Adresstyp &quot;Büro&quot; lautet</help>
+        <label><!-- Work Address --></label>
+        <name>npe01__Work_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Gift --></label>
+        <name>npo02__AverageAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Best Gift Year Total --></label>
+        <name>npo02__Best_Gift_Year_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Best Gift Year --></label>
+        <name>npo02__Best_Gift_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Gift Date --></label>
+        <name>npo02__FirstCloseDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household Mailing Address --></label>
+        <name>npo02__Formula_HouseholdMailingAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household Phone --></label>
+        <name>npo02__Formula_HouseholdPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household Naming Order --></label>
+        <name>npo02__Household_Naming_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household --></label>
+        <name>npo02__Household__c</name>
+        <relationshipLabel><!-- Household Members --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Largest Gift --></label>
+        <name>npo02__LargestAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Household Gift Date --></label>
+        <name>npo02__LastCloseDateHH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Gift Date --></label>
+        <name>npo02__LastCloseDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Membership Amount --></label>
+        <name>npo02__LastMembershipAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Membership Date --></label>
+        <name>npo02__LastMembershipDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Membership Level --></label>
+        <name>npo02__LastMembershipLevel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Membership Origin --></label>
+        <name>npo02__LastMembershipOrigin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Gift Amount --></label>
+        <name>npo02__LastOppAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Membership End Date --></label>
+        <name>npo02__MembershipEndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Membership Join Date --></label>
+        <name>npo02__MembershipJoinDate__c</name>
+    </fields>
+    <fields>
+        <help>Legt fest, in welchen Haushalt-Namen dieser Kontakt NICHT als Teil enthalten ist</help>
+        <label><!-- Naming Exclusions --></label>
+        <name>npo02__Naming_Exclusions__c</name>
+        <picklistValues>
+            <masterLabel>Household__c.Formal_Greeting__c</masterLabel>
+            <translation><!-- Household__c.Formal_Greeting__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Household__c.Informal_Greeting__c</masterLabel>
+            <translation><!-- Household__c.Informal_Greeting__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Household__c.Name</masterLabel>
+            <translation><!-- Household__c.Name --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Number of Gifts --></label>
+        <name>npo02__NumberOfClosedOpps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Memberships --></label>
+        <name>npo02__NumberOfMembershipOpps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Gifts Two Years Ago --></label>
+        <name>npo02__OppAmount2YearsAgo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Gifts Last N Days --></label>
+        <name>npo02__OppAmountLastNDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Household Gifts Last Year --></label>
+        <name>npo02__OppAmountLastYearHH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Gifts Last Year --></label>
+        <name>npo02__OppAmountLastYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Household Gifts This Year --></label>
+        <name>npo02__OppAmountThisYearHH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Gifts This Year --></label>
+        <name>npo02__OppAmountThisYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Gifts Two Years Ago --></label>
+        <name>npo02__OppsClosed2YearsAgo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Gifts Last N Days --></label>
+        <name>npo02__OppsClosedLastNDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Gifts Last Year --></label>
+        <name>npo02__OppsClosedLastYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Gifts This Year --></label>
+        <name>npo02__OppsClosedThisYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Smallest Gift --></label>
+        <name>npo02__SmallestAmount__c</name>
+    </fields>
+    <fields>
+        <help>Gesamtbetrag des weichen Kredits im letzten Jahr</help>
+        <label><!-- Soft Credit Last Year --></label>
+        <name>npo02__Soft_Credit_Last_Year__c</name>
+    </fields>
+    <fields>
+        <help>Gesamtbetrag des weichen Kredits in diesem Jahr</help>
+        <label><!-- Soft Credit This Year --></label>
+        <name>npo02__Soft_Credit_This_Year__c</name>
+    </fields>
+    <fields>
+        <help>Gesamtbetrag der weichen Kredite während der Laufzeit dieses Kontakts Definiert in der Registerkarte &quot;Haushalt-Einstellungen&quot;</help>
+        <label><!-- Soft Credit Total --></label>
+        <name>npo02__Soft_Credit_Total__c</name>
+    </fields>
+    <fields>
+        <help>Gesamtbetrag des weichen Kredits vor zwei Jahren</help>
+        <label><!-- Soft Credit Two Years Ago --></label>
+        <name>npo02__Soft_Credit_Two_Years_Ago__c</name>
+    </fields>
+    <fields>
+        <label><!-- _SYSTEM: HOUSEHOLD PROCESSOR-DEPRECATED --></label>
+        <name>npo02__SystemHouseholdProcessor__c</name>
+        <picklistValues>
+            <masterLabel>All Individual Contacts</masterLabel>
+            <translation><!-- All Individual Contacts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All New or Edited Contacts</masterLabel>
+            <translation><!-- All New or Edited Contacts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Contacts</masterLabel>
+            <translation><!-- No Contacts --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Membership Amount --></label>
+        <name>npo02__TotalMembershipOppAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Gifts --></label>
+        <name>npo02__TotalOppAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Household Gifts --></label>
+        <name>npo02__Total_Household_Gifts__c</name>
+    </fields>
+    <fields>
+        <help>Klicken Sie oben auf der Seite &quot;Adresse&quot; auf die Schaltfläche &quot;Adresse überprüfen&quot;, falls diese Adresse überprüft werden muss. Weitere Informationen finden Sie in der Hilfedokumentation im &quot;Power of Us&quot;-Hub.</help>
+        <label><!-- Address Verification Status --></label>
+        <name>npsp__Address_Verification_Status__c</name>
+    </fields>
+    <fields>
+        <help>Nachschlageoption zum Batch, in dem dieser Kontakt erstellt wurde</help>
+        <label><!-- Batch --></label>
+        <name>npsp__Batch__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Die aktuelle Adresse, die in den Anschriftfeldern des Kontakts eingetragen ist</help>
+        <label><!-- Current Address --></label>
+        <name>npsp__Current_Address__c</name>
+        <relationshipLabel><!-- Contacts (Current Address) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, wird der Kontakt als verstorben gekennzeichnet und von Benennung, E-Mails und Telefonanrufen ausgeschlossen.</help>
+        <label><!-- Deceased --></label>
+        <name>npsp__Deceased__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, wird der Kontakt von E-Mails und Telefonanrufen ausgeschlossen.</help>
+        <label><!-- Do Not Contact --></label>
+        <name>npsp__Do_Not_Contact__c</name>
+    </fields>
+    <fields>
+        <help>Durch Aktivierung dieses Kontrollkästchens wird dieser Kontakt von der formellen Anrede des Haushalts ausgeschlossen.</help>
+        <label><!-- Exclude from Household Formal Greeting --></label>
+        <name>npsp__Exclude_from_Household_Formal_Greeting__c</name>
+    </fields>
+    <fields>
+        <help>Durch Aktivierung dieses Kontrollkästchens wird dieser Kontakt von der informellen Anrede des Haushalts ausgeschlossen.</help>
+        <label><!-- Exclude from Household Informal Greeting --></label>
+        <name>npsp__Exclude_from_Household_Informal_Greeting__c</name>
+    </fields>
+    <fields>
+        <help>Durch Aktivierung dieses Kontrollkästchens wird dieser Kontakt im Haushalt-Namen ausgeschlossen.</help>
+        <label><!-- Exclude from Household Name --></label>
+        <name>npsp__Exclude_from_Household_Name__c</name>
+    </fields>
+    <fields>
+        <help>Der Betrag des ersten weichen Kredits</help>
+        <label><!-- First Soft Credit Amount --></label>
+        <name>npsp__First_Soft_Credit_Amount__c</name>
+    </fields>
+    <fields>
+        <help>Der Betrag des ersten weichen Kredits</help>
+        <label><!-- First Soft Credit Date --></label>
+        <name>npsp__First_Soft_Credit_Date__c</name>
+    </fields>
+    <fields>
+        <help>Enthält die Kennung des aktuellen Haushalts, sei es ein Haushalt-Account oder ein Haushalt-Objekt.</help>
+        <label><!-- HHId --></label>
+        <name>npsp__HHId__c</name>
+    </fields>
+    <fields>
+        <help>Der Betrag des höchsten weichen Kredits</help>
+        <label><!-- Largest Soft Credit Amount --></label>
+        <name>npsp__Largest_Soft_Credit_Amount__c</name>
+    </fields>
+    <fields>
+        <help>Das Datum des höchsten weichen Kredits</help>
+        <label><!-- Largest Soft Credit Date --></label>
+        <name>npsp__Largest_Soft_Credit_Date__c</name>
+    </fields>
+    <fields>
+        <help>Der Betrag des letzten weichen Kredits</help>
+        <label><!-- Last Soft Credit Amount --></label>
+        <name>npsp__Last_Soft_Credit_Amount__c</name>
+    </fields>
+    <fields>
+        <help>Das Datum des letzten weichen Kredits</help>
+        <label><!-- Last Soft Credit Date --></label>
+        <name>npsp__Last_Soft_Credit_Date__c</name>
+    </fields>
+    <fields>
+        <help>Die Anzahl der weichen Kredite, die in den letzten Tagen abgeschlossen wurden, wie in den NPSP-Einstellungen definiert</help>
+        <label><!-- Number of Soft Credits Last N Days --></label>
+        <name>npsp__Number_of_Soft_Credits_Last_N_Days__c</name>
+    </fields>
+    <fields>
+        <help>Die Anzahl der weichen Kredite im letzten Jahr</help>
+        <label><!-- Number of Soft Credits Last Year --></label>
+        <name>npsp__Number_of_Soft_Credits_Last_Year__c</name>
+    </fields>
+    <fields>
+        <help>Die Anzahl der weichen Kredite in diesem Jahr</help>
+        <label><!-- Number of Soft Credits This Year --></label>
+        <name>npsp__Number_of_Soft_Credits_This_Year__c</name>
+    </fields>
+    <fields>
+        <help>Die Anzahl der weichen Kredite vor zwei Jahren</help>
+        <label><!-- Number of Soft Credits Two Years Ago --></label>
+        <name>npsp__Number_of_Soft_Credits_Two_Years_Ago__c</name>
+    </fields>
+    <fields>
+        <help>Die Anzahl der weichen Kredite</help>
+        <label><!-- Number of Soft Credits --></label>
+        <name>npsp__Number_of_Soft_Credits__c</name>
+    </fields>
+    <fields>
+        <help>Wird zur Verfolgung des Account des Datensatzes mit der Unternehmenszugehörigkeit des Kontakts verwendet</help>
+        <label><!-- Primary Affiliation --></label>
+        <name>npsp__Primary_Affiliation__c</name>
+        <relationshipLabel><!-- Do Not Use.  Use Organization Affiliations. --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Diese Option wird aktiviert, wenn der Benutzer der Hauptansprechpartner für seinen Account ist.  Der Hauptansprechpartner kann im Account bearbeitet werden.</help>
+        <label><!-- Primary Contact --></label>
+        <name>npsp__Primary_Contact__c</name>
+    </fields>
+    <fields>
+        <help>Der Gesamtbetrag des weichen Kredits, der in den letzten Tagen abgeschlossen wurde, wie in den Haushalt-Einstellungen definiert</help>
+        <label><!-- Soft Credit Last N Days --></label>
+        <name>npsp__Soft_Credit_Last_N_Days__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option aktiviert ist, wird die Standardadresse oder saisonale Adresse des Haushalts durch die aktuelle Adresse des Kontakts überschrieben.</help>
+        <label><!-- Address Override --></label>
+        <name>npsp__is_Address_Override__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- C&amp;P Online --></label>
+        <name>C_P_Online</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Client --></label>
+        <name>Client</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Donor --></label>
+        <name>Donor</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Partner --></label>
+        <name>Partner</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Volunteer --></label>
+        <name>Volunteer</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please select a Preferred Email --></errorMessage>
+        <name>Contact_Preferred_Email</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select a Preferred Phone --></errorMessage>
+        <name>Contact_Preferred_Phone</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Invoice_Virtual_Terminal --></label>
+        <name>CnP_PaaS__Invoice_Virtual_Terminal</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SMS --></label>
+        <name>CnP_PaaS__SMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Virtual_Terminal --></label>
+        <name>CnP_PaaS__Virtual_Terminal</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- MailChimp_Subscriptions_detail --></label>
+        <name>MC4SF__MailChimp_Subscriptions_detail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- MailChimp_Subscriptions_list --></label>
+        <name>MC4SF__MailChimp_Subscriptions_list</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Edit --></label>
+        <name>Mass_Edit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Update --></label>
+        <name>Mass_Update</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- dc3Check --></label>
+        <name>dupcheck__dc3Check</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- dc3Merge --></label>
+        <name>dupcheck__dc3Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Relationships_Viewer --></label>
+        <name>npe4__Relationships_Viewer</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Copy_Address_to_Household --></label>
+        <name>npo02__Copy_Address_to_Household</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Household --></label>
+        <name>npo02__Household</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Merge_Contacts --></label>
+        <name>npsp__Merge_Contacts</name>
+    </webLinks>
+</CustomObjectTranslation>
