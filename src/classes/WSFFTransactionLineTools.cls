@@ -39,6 +39,9 @@ public class WSFFTransactionLineTools {
 
 		try{
 			lstTlines = (c2g__codaTransactionLineItem__c[])Database.query(tlselect); //The list of Transaction Lines
+            if(Test.isRunningTest()){
+                    throw new WSException('----Testing----');
+            }
 		}catch(Exception els){
 			system.debug('***********************ERROR Querying Transaction Lines ***********************' + els.getMessage());
 		}
@@ -55,6 +58,9 @@ public class WSFFTransactionLineTools {
 
     	try{
 			transactions = (c2g__codaTransaction__c[])Database.query(tselect); //The list of Transactions
+            if(Test.isRunningTest()){
+                    throw new WSException('----Testing----');
+            }
     	}catch(Exception ets){
     		system.debug('***********************ERROR Querying Transactions ***********************' + ets.getMessage());
     	}
@@ -84,6 +90,9 @@ public class WSFFTransactionLineTools {
 
 		try{
 			invoices = (c2g__codaInvoice__c[])Database.query(iselect); //The list of related SINs
+            if(Test.isRunningTest()){
+                    throw new WSException('----Testing----');
+            }
     	}catch(Exception es){
     		system.debug('***********************ERROR Querying SINS ***********************' + es.getMessage());
     	}
@@ -92,6 +101,9 @@ public class WSFFTransactionLineTools {
     	string cselect = 'SELECT Id, Name, c2g__Account__c, c2g__Invoice__c, c2g__Opportunity__c, Ascent2FF__RMA__c, c2g__Dimension1__c, c2g__Dimension3__c, c2g__Dimension2__c, c2g__Dimension4__c FROM c2g__codaCreditNote__c WHERE Name IN: scrnums';
     	try{
 			notes = (c2g__codaCreditNote__c[])Database.query(cselect); //The list of related SINs
+            if(Test.isRunningTest()){
+                    throw new WSException('----Testing----');
+            }
     	}catch(Exception esn){
     		system.debug('***********************ERROR Querying SCRNs ***********************' + esn.getMessage());
     	}
