@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Added 3 Elements to manage new CE lookup relationship | Decision, Record Update &amp; Assignment Elements.</description>
+    <label>(WS) Payment to Cash Entry Translation v3</label>
+    <processType>AutoLaunchedFlow</processType>
+</Flow>

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Debugging</name>
+        <label>Debugging</label>
+        <locationX>142</locationX>
+        <locationY>341</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>DebugTemplate</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>IB.VisualFlow.Fault.Report</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>Support@winnets.com</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <assignments>
+        <name>Assign_Fault1</name>
+        <label>Assign Fault1</label>
+        <locationX>14</locationX>
+        <locationY>135</locationY>
+        <assignmentItems>
+            <assignToReference>InternalFaultMessage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Sales Order Fast Lookup Fault</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Debugging</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Fault2</name>
+        <label>Assign Fault2</label>
+        <locationX>136</locationX>
+        <locationY>137</locationY>
+        <assignmentItems>
+            <assignToReference>InternalFaultMessage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Opportunity Fast Lookup Fault</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Debugging</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Fault3</name>
+        <label>Assign Fault3</label>
+        <locationX>256</locationX>
+        <locationY>137</locationY>
+        <assignmentItems>
+            <assignToReference>InternalFaultMessage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Decision Found No Match</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Debugging</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Fault4</name>
+        <label>Assign Fault4</label>
+        <locationX>579</locationX>
+        <locationY>254</locationY>
+        <assignmentItems>
+            <assignToReference>InternalFaultMessage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Opportunity Fast Update Fault</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Debugging</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Fault5</name>
+        <label>Assign Fault5</label>
+        <locationX>717</locationX>
+        <locationY>252</locationY>
+        <assignmentItems>
+            <assignToReference>InternalFaultMessage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Sales Order Fast Update Fault</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Debugging</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Closed_Lost</name>
+        <label>Update Closed/Lost</label>
+        <locationX>440</locationX>
+        <locationY>171</locationY>
+        <assignmentItems>
+            <assignToReference>sObjectSalesOrder.Pardot_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Lost</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Sales_Order</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Post_15</name>
+        <label>Update Post 15</label>
+        <locationX>437</locationX>
+        <locationY>11</locationY>
+        <assignmentItems>
+            <assignToReference>sObjectOpportunity.X15_Days_After_Closed_Won__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>sObjectSalesOrder.Pardot_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Post 15</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Opportunity</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Post_30</name>
+        <label>Update Post 30</label>
+        <locationX>438</locationX>
+        <locationY>91</locationY>
+        <assignmentItems>
+            <assignToReference>sObjectOpportunity.X30_Days_After_Closed_Won__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>sObjectSalesOrder.Pardot_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Post 30</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Opportunity</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Review</name>
+        <label>Review</label>
+        <locationX>260</locationX>
+        <locationY>12</locationY>
+        <defaultConnector>
+            <targetReference>Assign_Fault3</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No Match</defaultConnectorLabel>
+        <rules>
+            <name>Post_15</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>sObjectSalesOrder.Post_Sale_Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed/Won</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>sObjectSalesOrder.Days_from_Closed_Won__c</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <numberValue>15.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>sObjectSalesOrder.Days_from_Closed_Won__c</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <numberValue>30.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Post_15</targetReference>
+            </connector>
+            <label>Post 15</label>
+        </rules>
+        <rules>
+            <name>Post_30</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>sObjectSalesOrder.Post_Sale_Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed/Won</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>sObjectSalesOrder.Days_from_Closed_Won__c</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <numberValue>30.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Post_30</targetReference>
+            </connector>
+            <label>Post 30</label>
+        </rules>
+        <rules>
+            <name>Closed_Lost</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>sObjectSalesOrder.Post_Sale_Stage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed/Lost</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Closed_Lost</targetReference>
+            </connector>
+            <label>Closed/Lost</label>
+        </rules>
+    </decisions>
+    <interviewLabel>WS Update 15/30 Pardot Fields on Opportunity {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>WS Update 15/30 Pardot Fields on Opportunity</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Pull_Related_Opportunity</name>
+        <label>Pull Related Opportunity</label>
+        <locationX>139</locationX>
+        <locationY>13</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Review</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Assign_Fault2</targetReference>
+        </faultConnector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>InputOpportunityId</elementReference>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <outputReference>sObjectOpportunity</outputReference>
+        <queriedFields>X15_Days_After_Closed_Won__c</queriedFields>
+        <queriedFields>X30_Days_After_Closed_Won__c</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>Pull_SO</name>
+        <label>Pull SO</label>
+        <locationX>16</locationX>
+        <locationY>14</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Pull_Related_Opportunity</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Assign_Fault1</targetReference>
+        </faultConnector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>InputOrderId</elementReference>
+            </value>
+        </filters>
+        <object>PBSI__PBSI_Sales_Order__c</object>
+        <outputReference>sObjectSalesOrder</outputReference>
+        <queriedFields>Post_Sale_Stage__c</queriedFields>
+        <queriedFields>Days_from_Closed_Won__c</queriedFields>
+        <queriedFields>Pardot_Status__c</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Opportunity</name>
+        <label>Update Opportunity</label>
+        <locationX>579</locationX>
+        <locationY>10</locationY>
+        <connector>
+            <targetReference>Update_Sales_Order</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Assign_Fault4</targetReference>
+        </faultConnector>
+        <inputReference>sObjectOpportunity</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Sales_Order</name>
+        <label>Update Sales Order</label>
+        <locationX>719</locationX>
+        <locationY>11</locationY>
+        <faultConnector>
+            <targetReference>Assign_Fault5</targetReference>
+        </faultConnector>
+        <inputReference>sObjectSalesOrder</inputReference>
+    </recordUpdates>
+    <startElementReference>Pull_SO</startElementReference>
+    <textTemplates>
+        <name>DebugTemplate</name>
+        <text>There was a fault inside of the visual flow which updates From Opportunity Pardot fields when the Parent Sales Order is post 15 or 30 days from Closed/Won. 
+
+Internal Log: 
+{!InternalFaultMessage}
+
+sObject Sales Order:
+Id: {!InputOrderId}
+Post-Sale Stage: {!sObjectSalesOrder.Post_Sale_Stage__c}
+Pardot Status: {!sObjectSalesOrder.Pardot_Status__c}
+Days from ClosedWon: {!sObjectSalesOrder.Days_from_Closed_Won__c}
+
+sObject Opportunity:
+From Opportunity: {!InputOpportunityId}
+Checkbox (15): {!sObjectOpportunity.X15_Days_After_Closed_Won__c}
+Checkbox (30): {!sObjectOpportunity.X30_Days_After_Closed_Won__c}
+
+System Fault:
+{!$Flow.FaultMessage}</text>
+    </textTemplates>
+    <variables>
+        <name>InputOpportunityId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>InputOrderId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>InternalFaultMessage</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>sObjectOpportunity</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+    <variables>
+        <name>sObjectSalesOrder</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>PBSI__PBSI_Sales_Order__c</objectType>
+    </variables>
+</Flow>
