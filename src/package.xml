@@ -254,10 +254,6 @@
     </types>
     <types>
         <members>*</members>
-        <name>Settings</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>SharingRules</name>
     </types>
     <types>
@@ -275,6 +271,10 @@
     <types>
         <members>*</members>
         <name>TransactionSecurityPolicy</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Settings</name>
     </types>
     <version>37.0</version>
 </Package>
