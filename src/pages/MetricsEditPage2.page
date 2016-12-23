@@ -1,0 +1,525 @@
+<apex:page standardController="Metrics__c" showHeader="true" sidebar="true" extensions="MetricsEditDetailPage_Ctrl">
+
+    <!-- Define Tab panel .css styles -->
+    <style>
+    .activeTab { background-color: #236FBD; color:white; background-image:none; font: bold 1.00em "Calibri Light", Calibri Light, sans-serif; padding: 5px 15px 5px 15px;}
+    .inactiveTab { background-color: lightgrey; color:white; background-image:none; font: bold 1.00em "Calibri Light", Calibri Light, sans-serif;padding: 5px 15px 5px 15px;}
+    </style>
+
+    <apex:pageBlock title="Metric Edit" id="Panel2" >
+
+    <apex:form >
+
+        <apex:actionFunction name="saveData" action="{!saveDepartingTab}" reRender="Panel2">
+        </apex:actionFunction>
+
+        <apex:pageBlockSection collapsible="False" columns="1">
+
+        <apex:tabPanel id="MetricsEditTabPanel" tabClass="activeTab" inactiveTabClass="inactiveTab" value="{!tabOpt}" height="200px">
+
+            <apex:tab label="Contact Details" name="Screen" id="tabScreen" ontableave="saveData()">
+
+                <apex:pageBlock id="Panel2A" >
+
+                    <apex:pageBlockButtons >
+                        <apex:commandButton value="Save & Next" action="{!jumpToTab2}"/>
+                        <apex:commandButton value="Save & Close" action="{!performCloseNavigation}"/>
+                    </apex:pageBlockButtons>
+
+                    <apex:pageBlockSection collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Details}" var="f"> 
+                            <apex:outputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection title="Testimonial" collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Testimonial}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+
+                </apex:pageBlock>
+
+            </apex:tab>
+            
+            <apex:tab label="Income" name="Income" id="tab2" ontableave="saveData()">
+
+                <apex:pageBlock id="Panel2B" >
+
+                    <apex:pageBlockButtons >
+                        <apex:commandButton value="Save & Next" action="{!jumpToTab3}"/>
+                        <apex:commandButton value="Save & Close" action="{!performCloseNavigation}"/>
+                    </apex:pageBlockButtons>
+
+                    <apex:pageBlockSection collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Details}" var="f"> 
+                            <apex:outputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection title="Monthly NET Income" collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Income_Monthly_Breakdown}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection title="Goals" collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Income_Goals}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+                        
+                    </apex:pageBlockSection>
+    
+                    <apex:pageBlockSection title="Session Info" collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Income_Session_Info}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+        
+                    </apex:pageBlockSection>
+
+                </apex:pageBlock>
+
+            </apex:tab>  
+
+            <apex:tab label="Expenses" name="Expenses" id="tab3" ontableave="saveData()">
+
+                <apex:pageBlock id="Panel2C" >
+
+                    <apex:pageBlockButtons >
+                        <apex:commandButton value="Save & Next" action="{!jumpToTab4}"/>
+                        <apex:commandButton value="Save & Close" action="{!performCloseNavigation}"/>
+                    </apex:pageBlockButtons>
+
+                    <apex:pageBlockSection collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Details}" var="f"> 
+                            <apex:outputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection title="Housing" collapsible="False" columns="2">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Housing}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection title="Family" collapsible="False" columns="2">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Family}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection title="Giving" collapsible="False" columns="2">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Giving}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection title="Leisure" collapsible="False" columns="2">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Leisure}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection title="Auto" collapsible="False" columns="2">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Auto}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection title="Debt Payments" collapsible="False" columns="2">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Debt_Payments}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection title="Insurance" collapsible="False" columns="2">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Insurance}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection title="Savings" collapsible="False" columns="2">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Savings_Budget}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection title="Taxes" collapsible="False" columns="2">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Taxes}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection title="Totals" collapsible="False" columns="2">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Totals}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection title="Goals" collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Expenses_Goals}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection title="Session Info" collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Expenses_Info}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+
+                </apex:pageBlock>
+
+            </apex:tab>  
+
+            <apex:tab label="Credit" name="Credit" id="tab4" ontableave="saveData()">
+
+                <apex:pageBlock id="Panel2D" >
+
+                    <apex:pageBlockButtons >
+                        <apex:commandButton value="Save & Next" action="{!jumpToTab5}"/>
+                        <apex:commandButton value="Save & Close" action="{!performCloseNavigation}"/>
+                    </apex:pageBlockButtons>
+
+                    <apex:pageBlockSection collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Details}" var="f"> 
+                            <apex:outputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection title="Credit Score Info" collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Credit_Credit_Score_Info}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection title="Goals" collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Credit_Goals}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection title="Session Info" collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Credit_Session_Info}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+
+                </apex:pageBlock>
+
+            </apex:tab>  
+
+            <apex:tab label="Debt" name="Debt" id="tab5" ontableave="saveData()">
+
+                <apex:pageBlock id="Panel2E" >
+
+                    <apex:pageBlockButtons >
+                        <apex:commandButton value="Save & Next" action="{!jumpToTab6}"/>
+                        <apex:commandButton value="Save & Close" action="{!performCloseNavigation}"/>
+                    </apex:pageBlockButtons>
+
+                    <apex:pageBlockSection collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Details}" var="f"> 
+                            <apex:outputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection title="Payments Past Due" collapsible="Flase" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Debt_Past_Due}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection title="Contributions" collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Debt_Contributions}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection title="Goals" collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Debt_Goals}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection title="Session Info" collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Debt_Session_Info}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+
+                </apex:pageBlock>
+
+            </apex:tab>  
+
+            <apex:tab label="Savings" name="Savings" id="tab6" ontableave="saveData()">
+
+                <apex:pageBlock id="Panel2F" >
+
+                    <apex:pageBlockButtons >
+                        <apex:commandButton value="Save & Next" action="{!jumpToTab7}"/>
+                        <apex:commandButton value="Save & Close" action="{!performCloseNavigation}"/>
+                    </apex:pageBlockButtons>
+
+                    <apex:pageBlockSection collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Details}" var="f"> 
+                            <apex:outputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection title="Contributions" collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Savings_Contributions}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection title="Goals" collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Savings_Goals}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection title="Session Info" collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Savings_Session_Info}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+
+                </apex:pageBlock>
+
+            </apex:tab>  
+
+            <apex:tab label="Banked Status" name="Banked Status" id="tab7" ontableave="saveData()">
+
+                <apex:pageBlock id="Panel2G" >
+
+                    <apex:pageBlockButtons >
+                        <apex:commandButton value="Save & Next" action="{!jumpToTab8}"/>
+                        <apex:commandButton value="Save & Close" action="{!performCloseNavigation}"/>
+                    </apex:pageBlockButtons>
+
+                    <apex:pageBlockSection collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Details}" var="f"> 
+                            <apex:outputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection title="Status" collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Banked_Status_Status}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection title="Goals" collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Banked_Status_Goals}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection title="Session Info" collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Banked_Status_Session_Info}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+
+                </apex:pageBlock>
+
+            </apex:tab>
+            
+            <apex:tab label="Referrals" name="Referrals" id="tab8" ontableave="saveData()">
+
+                <apex:pageBlock id="Panel2H" >
+
+                    <apex:pageBlockButtons >
+                        <apex:commandButton value="Save & Next" action="{!jumpToTab9}"/>
+                        <apex:commandButton value="Save & Close" action="{!performCloseNavigation}"/>
+                    </apex:pageBlockButtons>
+
+                    <apex:pageBlockSection collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Details}" var="f"> 
+                            <apex:outputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection title="Referrals Made" collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Referrals_Details}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection title="Goals" collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Referrals_Goals}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection title="Session Info" collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Referrals_Session_Info}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+
+                </apex:pageBlock>
+
+            </apex:tab>
+            
+            <apex:tab label="Assets" name="Assets" id="tab9" ontableave="saveData()">
+
+                <apex:pageBlock id="Panel2I" >
+
+                    <apex:pageBlockButtons >
+                        <apex:commandButton value="Save & Next" action="{!jumpToTab10}"/>
+                        <apex:commandButton value="Save & Close" action="{!performCloseNavigation}"/>
+                    </apex:pageBlockButtons>
+
+                    <apex:pageBlockSection collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Details}" var="f"> 
+                            <apex:outputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection title="Acquired Assets" collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Assets_Acquired_Assets}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection title="Goals" collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Assets_Goals}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+                    
+                    <apex:pageBlockSection title="Session Info" collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Assets_Session_Info}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+
+                </apex:pageBlock>
+
+            </apex:tab>
+            
+            <apex:tab label="Wellness/Confidence" name="Confidence/Wellness" id="tab10" ontableave="saveData()">
+
+                <apex:pageBlock id="Panel2J" >
+
+                    <apex:pageBlockButtons >
+                        <apex:commandButton value="Save & Close" action="{!performCloseNavigation}"/>
+                    </apex:pageBlockButtons>
+
+                    <apex:pageBlockSection collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Details}" var="f"> 
+                            <apex:outputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+
+                    </apex:pageBlockSection>
+
+                    <apex:pageBlockSection title="Wellness/Confidence" collapsible="False" columns="1">
+
+                        <apex:repeat value="{!$ObjectType.Metrics__c.FieldSets.Post_Session}" var="f"> 
+                            <apex:inputField value="{!Metrics__c[f]}"/>
+                        </apex:repeat>
+    
+                    </apex:pageBlockSection>
+
+                </apex:pageBlock>
+
+            </apex:tab>    
+
+        </apex:tabPanel>
+
+        </apex:pageBlockSection>
+
+    </apex:form>
+
+    </apex:pageBlock>
+
+</apex:page>
