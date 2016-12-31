@@ -45,6 +45,53 @@ private class WSTestIntakeTools {
 				i.Name = tempname;
 			}*/
 
+			List<Intake__c> intakes = new List<Intake__c>(); //A New List of Intakes to Insert
+
+			//First and Last Name Not Null
+			Intake__c i1 = new Intake__c();
+			i1.First_Name__c = 'TEST';
+			i1.Last_Name__c = 'TEST';
+			i1.Name = NULL;
+			intakes.add(i1);
+
+			Intake__c i2 = new Intake__c();
+			i2.First_Name__c = 'TEST';
+			i2.Last_Name__c = NULL;
+			i2.Name = NULL;
+			intakes.add(i2);
+
+			Intake__c i3 = new Intake__c();
+			i3.First_Name__c = NULL;
+			i3.Last_Name__c = 'TEST';
+			i3.Name = 'Default';
+			intakes.add(i3);
+
+			Intake__c i4 = new Intake__c();
+			i4.First_Name__c = NULL;
+			i4.Last_Name__c = NULL;
+			i4.Name = '';
+			intakes.add(i4);
+
+			Intake__c i5 = new Intake__c();
+			i5.First_Name__c = 'TEST';
+			i5.Last_Name__c = NULL;
+			i5.Name = 'Default';
+			intakes.add(i5);
+
+			Intake__c i6 = new Intake__c();
+			i6.First_Name__c = 'TEST';
+			i6.Last_Name__c = 'TEST';
+			i6.Name = 'NO MATCH';
+			intakes.add(i6);
+
+			//Start The Test
+			Test.startTest();
+
+			Database.SaveResult[] sr = Database.Insert(intakes,false);
+
+			//Stop The Test
+			Test.stopTest();
+
 	}
 
 	static testMethod void createContactFromIntake_Test(){
