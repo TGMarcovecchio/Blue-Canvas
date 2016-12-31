@@ -97,7 +97,7 @@ private class WSTestIntakeTools {
 	static testMethod void createContactFromIntake_Test(){
 
 		/*
-						c.Birthdate = i.Birthdate__c;
+				c.Birthdate = i.Birthdate__c;
 				c.Disputes__c = i.Disputes__c;
 				c.Employment_Status__c = i.Employment_Status__c;
 				c.Ethnicity__c = i.Ethnicity__c;
@@ -157,9 +157,260 @@ private class WSTestIntakeTools {
 				c.OtherPostalCode = i.Physical_Zip_Code__c;
 				*/
 
+
+				//Create An Engagement Plan Template
+				npsp__Engagement_Plan_Template__c ep = new npsp__Engagement_Plan_Template__c();
+				ep.Name = 'TEST';
+				ep.npsp__Automatically_Update_Child_Task_Due_Date__c = TRUE;
+				ep.npsp__Default_Assignee__c = 'Owner of Object for Engagement Plan';
+				ep.npsp__Description__c = 'TEST';
+				ep.npsp__Reschedule_To__c = 'Monday';
+				ep.npsp__Skip_Weekends__c = TRUE;
+				insert ep;
+				String epid = ep.id;
+
+				//Create An Engagement Plan Task Template
+				npsp__Engagement_Plan_Task__c ept = new npsp__Engagement_Plan_Task__c();
+				ept.Name = 'TEST';
+				ept.npsp__Engagement_Plan_Template__c = epid;
+				ept.npsp__Priority__c = 'Normal';
+				ept.npsp__Status__c = 'Not Started';
+				ept.npsp__Type__c = 'Meeting';
+				insert ept;
+				String eptid = ept.id;
+
+				//Create A New Intake
+
+				Intake__c i = new Intake__c();
+
+				//Intake Name Values
+
+				i.First_Name__c = 'TEST';
+				i.Last_Name__c = 'TEST';
+				i.Name = NULL;
+
+				//Contact Values
+
+				i.Disputes__c = TRUE;
+				i.Head_of_Household__c = TRUE;
+				i.Information_Correct__c = TRUE;
+				i.No_Credit_Score_Available__c = FALSE;
+				i.SLCCU_Member__c = TRUE;
+				i.U_S_Citizen__c = TRUE;
+				i.Veteran__c = TRUE;
+				i.Total_Income__c = 1000;
+				i.Birthdate__c = date.Today();
+				i.Member_Since__c = date.Today();
+				i.Alternate_Email__c = 'support@winnets.com';
+				i.Personal_Email__c = 'support@winnets.com';
+				i.Work_Email__c = 'support@winnets.com';
+				i.Number_of_Household_Residents__c = 1;
+				i.Self_Rated_Credit_Score__c = 600;
+				i.Verified_Credit_Score__c = 600;
+				i.Home_Phone__c = '4123251565';
+				i.Mobile_Phone__c = '4123251565';
+				i.Other_Phone__c = '4123251565';
+				i.Work_Phone__c = '4123251565';
+				i.Banked_Status__c = 'Banked';
+				i.Employment_Status__c = 'Full-time';
+				i.Ethnicity__c = 'Not Hispanic or Latino';
+				i.Financial_Future_Confidence__c = 'Confident';
+				i.Gender__c = 'Male';
+				i.Looking_for_Work__c = 'Yes';
+				i.Mailing_Address_Type__c = 'Home';
+				i.Mailing_State__c = 'PA';
+				i.Physical_Address_Type__c = 'Home';
+				i.Physical_State__c = 'PA';
+				i.Preferred_Email__c = 'Home';
+				i.Preferred_Phone__c = 'Home';
+				i.Preferred_Language__c = 'English';
+				i.Race__c = 'White';
+				i.Mailing_City__c = 'Pittsburgh';
+				i.Mailing_Street__c = 'Terminal Way';
+				i.Physical_City__c = 'Pittsburgh';
+				i.Physical_Street__c = 'Terminal Way';
+				i.Place_s_of_Work__c = 'Super Employer';
+				i.Type_of_Work__c = 'Labor';
+				i.Mailing_Zip_Code__c = '15219';
+				i.Physical_Zip_Code__c = '15219';
+				i.First_Name__c = 'Test';
+				i.Last_Name__c = 'Test';
+				i.Other_Preferred_Language__c = 'Russian';
+
+				//Metric Values
+
+				i.No_Credit_Score_Available__c = FALSE;
+				i.Auto_Loans_Payment__c = 100;
+				i.Car_Insurance__c = 100;
+				i.Cell_Phone__c = 100;
+				i.Child_Care__c = 100;
+				i.Child_Support_and_or_Alimony__c = 100;
+				i.Child_Support__c = 100;
+				i.Clothing__c = 100;
+				i.Total_College_Savings__c = 100;
+				i.Total_Emergency__c = 100;
+				i.Total_General__c = 100;
+				i.Total_Holiday_Vacation__c = 100;
+				i.Total_IDA__c = 100;
+				i.Total_Retirement__c = 100;
+				i.Disability__c = 100;
+				i.Formal_and_Informal_Employment__c = 100;
+				i.Entertainment__c = 100;
+				i.Friends_Family_Loan__c = 100;
+				i.Food__c = 100;
+				i.Health_Insurance__c = 100;
+				i.Housing__c = 100;
+				i.Total_Tax_Liens_Garnishments__c = 100;
+				i.Other_Loans_Payment__c = 100;
+				i.Real_Estate_Loans_Payment__c = 100;
+				i.Revolving_Loans_Payments__c = 100;
+				i.Secured_Installment_Loans_Payment__c = 100;
+				i.Student_Loans_Payment__c = 100;
+				i.Unsecured_Installment_Loans_Payment__c = 100;
+				i.Other_Income__c = 100;
+				i.Other_Monthly_Expense__c = 100;
+				i.Total_Auto_Loans__c = 100;
+				i.Total_Cell_Phone_Bills_Past_Due__c = 100;
+				i.Total_Friends_Family_Loans__c = 100;
+				i.Total_Household_Bills_Past_Due__c = 100;
+				i.Total_Medical_Bills_Past_Due__c = 100;
+				i.Total_Other_Bills_Past_Due__c = 100;
+				i.Total_Other_Loans__c = 100;
+				i.Total_Predatory_Loans__c = 100;
+				i.Total_Real_Estate_Loans__c = 100;
+				i.Total_Revolving_Loans__c = 100;
+				i.Total_Secured_Installment_Loans__c = 100;
+				i.Total_Student_Loans__c = 100;
+				i.Total_Unsecured_Installment_Loans__c = 100;
+				i.Pension_Retirement_and_Investment__c = 100;
+				i.Predatory_Loans_Payment__c = 100;
+				i.SNAP__c = 100;
+				i.Self_Employment__c = 100;
+				i.Social_Security__c = 100;
+				i.TANF__c = 100;
+				i.Tax_Liens_Garnishments2__c = 100;
+				i.Transportation__c = 100;
+				i.Unemployment__c = 100;
+				i.Utilities_Other_Household_Expenditures__c = 100;
+				i.Veteran_s_Assistance_Survivor_s_Benefits__c = 100;
+				i.WIC__c = 100;
+				i.Total_Warrants__c = 100;
+				i.Warrants2__c = 100;
+				i.Workman_s_Compensation__c = 100;
+				i.Verified_Credit_Score__c = 799;
+				i.Banked_Status__c = 'Banked';
+				i.Financial_Future_Confidence__c = 'Confident';
+				i.Other_Monthly_Expense_Explanation__c = 'TEST EXPLANATION';
+
+				//Engagement Plan Reference
+
+				i.Engagement_Plan_Template__c = epid;
+
+				//Setup The Query
+				String iid;
+				SObjectType intaketype = Schema.getGlobalDescribe().get('Intake__c');
+		        Map<String,Schema.SObjectField> intakeFields = intakeType.getDescribe().fields.getMap(); //A Map of Fields on Payment
+
+		        Map<Id,Id> metmap = new Map<Id,Id>(); //A map of contact Id to metric Id
+
+		        string intakeselect = 'Select ';
+
+		        for(string pd : intakeFields.keyset()){
+		            intakeselect = intakeselect + intakeFields.get(pd) + ', ';
+		        }
+		        intakeselect = intakeselect.substring(0,intakeselect.length()-2);
+		        intakeselect = intakeselect + '';
+		        intakeselect = intakeselect + ' FROM Intake__c WHERE Id =: iid';
+
+		        Intake__c iu = new Intake__c();
+
+				//Start The Test
+				Test.startTest();
+
+					insert i; // Insert the new Intake
+
+					iid = i.id; //Set the iid value
+
+					//Query for the New Intake
+			        try{
+			            iu = (Intake__c)Database.query(intakeselect); //The list of Intakes
+			        }catch(Exception epr){
+			            system.debug('***********************ERROR Querying Intakes ***********************' + epr.getMessage());
+			        }
+
+			        //Update the intake metric related values
+
+					iu.No_Credit_Score_Available__c = TRUE;
+					iu.Auto_Loans_Payment__c = 50;
+					iu.Car_Insurance__c = 50;
+					iu.Cell_Phone__c = 50;
+					iu.Child_Care__c = 50;
+					iu.Child_Support_and_or_Alimony__c = 50;
+					iu.Child_Support__c = 50;
+					iu.Clothing__c = 50;
+					iu.Total_College_Savings__c = 50;
+					iu.Total_Emergency__c = 50;
+					iu.Total_General__c = 50;
+					iu.Total_Holiday_Vacation__c = 50;
+					iu.Total_IDA__c = 50;
+					iu.Total_Retirement__c = 50;
+					iu.Disability__c = 50;
+					iu.Formal_and_Informal_Employment__c = 50;
+					iu.Entertainment__c = 50;
+					iu.Friends_Family_Loan__c = 50;
+					iu.Food__c = 50;
+					iu.Health_Insurance__c = 50;
+					iu.Housing__c = 50;
+					iu.Total_Tax_Liens_Garnishments__c = 50;
+					iu.Other_Loans_Payment__c = 50;
+					iu.Real_Estate_Loans_Payment__c = 50;
+					iu.Revolving_Loans_Payments__c = 50;
+					iu.Secured_Installment_Loans_Payment__c = 50;
+					iu.Student_Loans_Payment__c = 50;
+					iu.Unsecured_Installment_Loans_Payment__c = 50;
+					iu.Other_Income__c = 50;
+					iu.Other_Monthly_Expense__c = 50;
+					iu.Total_Auto_Loans__c = 50;
+					iu.Total_Cell_Phone_Bills_Past_Due__c = 50;
+					iu.Total_Friends_Family_Loans__c = 50;
+					iu.Total_Household_Bills_Past_Due__c = 50;
+					iu.Total_Medical_Bills_Past_Due__c = 50;
+					iu.Total_Other_Bills_Past_Due__c = 50;
+					iu.Total_Other_Loans__c = 50;
+					iu.Total_Predatory_Loans__c = 50;
+					iu.Total_Real_Estate_Loans__c = 50;
+					iu.Total_Revolving_Loans__c = 50;
+					iu.Total_Secured_Installment_Loans__c = 50;
+					iu.Total_Student_Loans__c = 50;
+					iu.Total_Unsecured_Installment_Loans__c = 50;
+					iu.Pension_Retirement_and_Investment__c = 50;
+					iu.Predatory_Loans_Payment__c = 50;
+					iu.SNAP__c = 50;
+					iu.Self_Employment__c = 50;
+					iu.Social_Security__c = 50;
+					iu.TANF__c = 50;
+					iu.Tax_Liens_Garnishments2__c = 50;
+					iu.Transportation__c = 50;
+					iu.Unemployment__c = 50;
+					iu.Utilities_Other_Household_Expenditures__c = 50;
+					iu.Veteran_s_Assistance_Survivor_s_Benefits__c = 50;
+					iu.WIC__c = 50;
+					iu.Total_Warrants__c = 50;
+					iu.Warrants2__c = 50;
+					iu.Workman_s_Compensation__c = 50;
+					iu.Verified_Credit_Score__c = 700;
+					iu.Banked_Status__c = 'Not Banked';
+					iu.Financial_Future_Confidence__c = 'Very Confident';
+					iu.Other_Monthly_Expense_Explanation__c = 'Explanation Change';
+
+					update iu;
+
+				//Stop The Test
+				Test.stopTest();
+
 	}
 
-	static testMethod void createCasefromIntake_Test(){
+	//static testMethod void createCasefromIntake_Test(){
 
 		/*
 		c.ContactId = i.Contact__c;
@@ -171,9 +422,9 @@ private class WSTestIntakeTools {
 
 		*/
 
-	}
+	//}
 
-	static testMethod void createMetricFromIntake_Test(){
+	//static testMethod void createMetricFromIntake_Test(){
 
 		/*
 		m.Auto_Loans_Payment__c  = i.Auto_Loans_Payment__c;
@@ -242,9 +493,9 @@ private class WSTestIntakeTools {
 			m.Workman_s_Compensation__c  = i.Workman_s_Compensation__c;
 			*/
 
-	}
+	//}
 
-	static testMethod void createEPfromIntake_Test(){
+	//static testMethod void createEPfromIntake_Test(){
 
 		/*
 		npsp__Engagement_Plan__c ep = new npsp__Engagement_Plan__c(); //Create a new case
@@ -264,9 +515,9 @@ private class WSTestIntakeTools {
 		}
 		*/
 
-	}
+	//}
 
-	static testMethod void updateMetricfromIntake_Test(){
+	//static testMethod void updateMetricfromIntake_Test(){
 
 		/*
 		if(m.Auto_Loans_Payment__c  != i.Auto_Loans_Payment__c){
@@ -659,5 +910,5 @@ private class WSTestIntakeTools {
 				}
 				*/
 
-	}
+	//}
 }

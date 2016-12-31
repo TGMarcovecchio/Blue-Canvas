@@ -22,7 +22,7 @@ trigger WSIntakeTrigger on Intake__c (before insert, before update, after insert
 
     if(TriggerOff==FALSE && ALLTriggersOff==FALSE){
 
-        if(checkRecursive.runOnce()){
+        //if(checkRecursive.runOnce()){
 
             List<Intake__c> iidn = new List<Intake__c>();
             Set<Id> iidc = new Set<Id>();
@@ -56,11 +56,6 @@ trigger WSIntakeTrigger on Intake__c (before insert, before update, after insert
                         }
 
                 }
-
-            }
-
-            if(trigger.isBefore && trigger.isUpdate){
-
 
             }
 
@@ -104,7 +99,7 @@ trigger WSIntakeTrigger on Intake__c (before insert, before update, after insert
 
             }
 
-        }//End Check Recursive
+        //}//End Check Recursive
 
     }//End If Trigger Off
 
