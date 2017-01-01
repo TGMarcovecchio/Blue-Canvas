@@ -21,7 +21,7 @@ trigger WSMetricsTrigger on Metrics__c (after insert, before insert) { //after u
 
     if(TriggerOff==FALSE && ALLTriggersOff==FALSE){
 
-        if(checkRecursive.runOnce()){
+        //if(checkRecursive.runOnce()){
 
             List<Metrics__c> newmetrics = new List<Metrics__c>(); //A List of Newly Inserted Metrics
 
@@ -54,11 +54,11 @@ trigger WSMetricsTrigger on Metrics__c (after insert, before insert) { //after u
                 WSMetricTools.setmetricintial(newmetrics);
             }
 
-        	if(!mids.isEmpty()){
+            if(!mids.isEmpty()){
     			WSMetricTools.setmetricchange(mids);
-    	}
+            }
 
-        }//End Check Recursive
+        //}//End Check Recursive
 
     }//End If Trigger Off
 
