@@ -1,7 +1,5 @@
 public class WSIntakeTools {
 
-
-
 	public static void beforeInsertIntake(List<Intake__c> ins){
 
 		for(Intake__c i : ins){
