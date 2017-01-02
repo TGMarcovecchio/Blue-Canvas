@@ -1,3 +1,18 @@
+/**********************************************************************
+* Name:     WSIntakeTools
+* Author:   World-Class Industrial Network, LLC (www.winnets.com)
+* Date:     28 Dec 2016
+* ======================================================
+* ======================================================
+* Purpose:                                                            
+* Class for Intake__c related methods
+*                                                            
+* ======================================================
+* ======================================================
+* History:                                                            
+* VERSION   DATE            INITIALS    DESCRIPTION/FEATURES ADDED
+* 1.0       28 Dec 2016     TGM         Initial Development
+***********************************************************************/
 public class WSIntakeTools {
 
 	public static void beforeInsertIntake(List<Intake__c> ins){

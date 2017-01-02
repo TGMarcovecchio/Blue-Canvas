@@ -1,3 +1,18 @@
+/**********************************************************************
+* Name:     WSMetricTools
+* Author:   World-Class Industrial Network, LLC (www.winnets.com)
+* Date:     28 Dec 2016
+* ======================================================
+* ======================================================
+* Purpose:                                                            
+* Class for Metric related methods
+*                                                            
+* ======================================================
+* ======================================================
+* History:                                                            
+* VERSION   DATE            INITIALS    DESCRIPTION/FEATURES ADDED
+* 1.0       28 Dec 2016     TGM         Initial Development
+***********************************************************************/
 public class WSMetricTools {
 
 	public static void setmetricintial(List<Metrics__c> metrics){
