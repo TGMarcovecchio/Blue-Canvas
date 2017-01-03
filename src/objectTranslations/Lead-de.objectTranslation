@@ -604,4 +604,8 @@
         <label><!-- dc3Merge --></label>
         <name>dupcheck__dc3Merge</name>
     </webLinks>
+    <workflowTasks>
+        <description>Eine automatische Danke-E-Mail wird für die Anmeldung als Freiwilliger an den Lead gesendet.</description>
+        <name>GW_Volunteers__Volunteer_Signup_Thank_You_Sent_Lead</name>
+    </workflowTasks>
 </CustomObjectTranslation>

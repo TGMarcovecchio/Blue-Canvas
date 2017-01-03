@@ -9,4 +9,9 @@
         <value>Installments</value>
     </caseValues>
     <startsWith>Consonant</startsWith>
+    <workflowTasks>
+        <description><!-- The opportunity&apos;s installment date is due. Please follow up on this to ensure payment. --></description>
+        <name>Installment_payment_due</name>
+        <subject><!-- Installment payment due --></subject>
+    </workflowTasks>
 </CustomObjectTranslation>

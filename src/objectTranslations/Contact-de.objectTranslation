@@ -2477,4 +2477,13 @@
         <label><!-- Merge_Contacts --></label>
         <name>npsp__Merge_Contacts</name>
     </webLinks>
+    <workflowTasks>
+        <description><!-- Please refer to the contact&apos;s record for more details. --></description>
+        <name>A_client_has_requested_followup_assistance</name>
+        <subject><!-- A client has requested followup assistance --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description>Eine automatische Danke-E-Mail wird für die Anmeldung als Freiwilliger an den Kontakt gesendet.</description>
+        <name>GW_Volunteers__Volunteer_Signup_Thank_You_Sent_Contact</name>
+    </workflowTasks>
 </CustomObjectTranslation>
