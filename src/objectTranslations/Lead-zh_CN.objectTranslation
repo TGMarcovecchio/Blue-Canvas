@@ -3124,4 +3124,60 @@ Incentive = Full Display --></help>
         <label><!-- Send_A_Tango_Card_From_Lead_List --></label>
         <name>tangocardapp__Send_A_Tango_Card_From_Lead_List</name>
     </webLinks>
+    <workflowTasks>
+        <name>Bad_Phone_1_Email_Sent</name>
+        <subject><!-- Bad Phone 1 Email Sent --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Bad_Phone_2_Email_Sent</name>
+        <subject><!-- Bad Phone 2 Email Sent --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Bad_Phone_3_Email_Sent</name>
+        <subject><!-- Bad Phone 3 Email Sent --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Bad_Phone_4_Email_Sent</name>
+        <subject><!-- Bad Phone 4 Email Sent --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Day_1_Nurture_Email_Sent</name>
+        <subject><!-- Day 1 Nurture Email Sent --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Day_1_Page_2_Nurture_Email_Sent</name>
+        <subject><!-- Day 1 Page 2 Nurture Email Sent --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Day_2_Nurture_Email_Sent</name>
+        <subject><!-- Day 2 Nurture Email Sent --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Day_2_Page_2_Nurture_Email_Sent</name>
+        <subject><!-- Day 2 Page 2 Nurture Email Sent --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Day_3_Nurture_Email_Sent</name>
+        <subject><!-- Day 3 Nurture Email Sent --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Day_3_Page_2_Nurture_Emails_Sent</name>
+        <subject><!-- Day 3 Page 2 Nurture Emails Sent --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Day_4_Nurture_Email_Sent</name>
+        <subject><!-- Day 4 Nurture Email Sent --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Day_4_Page_2_Nurture_Email_Sent</name>
+        <subject><!-- Day 4 Page 2 Nurture Email Sent --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Promo_Code_Summer_2015_has_been_sent</name>
+        <subject><!-- Promo Code Summer 2015 has been sent --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Welcome_Email_sent_to_New_Lead</name>
+        <subject><!-- Welcome Email sent to New Lead --></subject>
+    </workflowTasks>
 </CustomObjectTranslation>
