@@ -274,6 +274,10 @@
     </types>
     <types>
         <members>*</members>
+        <name>Workflow</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>Settings</name>
     </types>
     <version>37.0</version>
