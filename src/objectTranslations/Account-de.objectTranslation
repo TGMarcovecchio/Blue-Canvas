@@ -1390,4 +1390,20 @@
         <label><!-- Send_Single_Pardot_Email --></label>
         <name>pi__Send_Single_Pardot_Email</name>
     </webLinks>
+    <workflowTasks>
+        <name>Confirm_Accounting_has_W9</name>
+        <subject><!-- Confirm Accounting has W9 --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Confirm_Affiliate_Contract_is_on_File</name>
+        <subject><!-- Confirm Affiliate Contract is on File --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Get_accounting_coupon_code_name_invoice_number_and_percent</name>
+        <subject><!-- Get accounting coupon code, name, invoice number and percent --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Get_bed_to_warehouse_for_shipping</name>
+        <subject><!-- Get bed to warehouse for shipping --></subject>
+    </workflowTasks>
 </CustomObjectTranslation>

@@ -3056,4 +3056,40 @@ Incentive = Full Display --></help>
         <label><!-- Send_A_Tango_Card_From_Contact_List --></label>
         <name>tangocardapp__Send_A_Tango_Card_From_Contact_List</name>
     </webLinks>
+    <workflowTasks>
+        <name>Create_Coupon_code_web_access_for_doc</name>
+        <subject><!-- Create Coupon code &amp; web access for doc --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Create_coupon_campaign</name>
+        <subject><!-- Create coupon code and campaign --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Incentive_for_staff</name>
+        <subject><!-- Incentive for staff (make sure the bed wasn&apos;t returned) --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Order_desk_display</name>
+        <subject><!-- Order desk display &amp; pads --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Referral_Source_TY_email_contact_update</name>
+        <subject><!-- Referral Source TY email/contact update --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Reminder_email_for_staff_training</name>
+        <subject><!-- Reminder email for staff training --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Send_Welcome_Kit_intelliPillow</name>
+        <subject><!-- Send Welcome Kit + intelliPillow --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Setup_coupon_code_c</name>
+        <subject><!-- Create Coupon Code --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Shipping_update_HARD_TIME_Welcome_Kit_and_Pillow</name>
+        <subject><!-- Shipping update (HARD TIME) Welcome Kit and Pillow --></subject>
+    </workflowTasks>
 </CustomObjectTranslation>
