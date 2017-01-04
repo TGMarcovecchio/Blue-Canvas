@@ -202,6 +202,10 @@
     </types>
     <types>
         <members>*</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>Letterhead</name>
     </types>
     <types>
@@ -259,10 +263,6 @@
     <types>
         <members>*</members>
         <name>SharingSet</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>SiteDotCom</name>
     </types>
     <types>
         <members>*</members>
