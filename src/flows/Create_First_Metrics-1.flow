@@ -67,7 +67,7 @@
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>[Metrics__c].Contribution_to_General__c +[Metrics__c].Contribution_to_College_Savings__c +[Metrics__c].Contribution_to_Emergency__c+ [Metrics__c].Contribution_to_Holiday_Vacation__c +[Metrics__c].Contribution_to_IDA__c +[Metrics__c].Contribution_to_IRA__c </stringValue>
+                <stringValue>&quot;[Metrics__c].Contribution_to_General__c +[Metrics__c].Contribution_to_College_Savings__c +[Metrics__c].Contribution_to_Emergency__c+ [Metrics__c].Contribution_to_Holiday_Vacation__c +[Metrics__c].Contribution_to_IDA__c +[Metrics__c].Contribution_to_IRA__</stringValue>
             </value>
         </processMetadataValues>
         <name>formula_2_myRule_1_A1_First_Savings_c</name>
