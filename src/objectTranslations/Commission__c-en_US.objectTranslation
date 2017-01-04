@@ -8,5 +8,58 @@
         <plural>true</plural>
         <value>Commissions</value>
     </caseValues>
+    <layouts>
+        <layout>Adjustment Layout</layout>
+        <sections>
+            <label><!-- Adjustment Information --></label>
+            <section>Adjustment Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Credit Layout</layout>
+        <sections>
+            <label><!-- Commission CREDIT Detail --></label>
+            <section>Commission CREDIT Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- External Commissions --></label>
+            <section>External Commissions</section>
+        </sections>
+        <sections>
+            <label><!-- Internal Commissions --></label>
+            <section>Internal Commissions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Debit Layout</layout>
+        <sections>
+            <label><!-- Commission DEBIT Detail --></label>
+            <section>Commission DEBIT Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- External Commissions --></label>
+            <section>External Commissions</section>
+        </sections>
+        <sections>
+            <label><!-- Internal Commissions --></label>
+            <section>Internal Commissions</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

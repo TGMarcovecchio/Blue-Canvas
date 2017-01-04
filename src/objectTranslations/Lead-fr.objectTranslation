@@ -3000,6 +3000,179 @@ Incentive = Full Display --></help>
         <label><!-- Send A Tango Card® --></label>
         <name>tangocardapp__Send_A_Tango_Card_Lead__c</name>
     </fields>
+    <layouts>
+        <layout>Blogger Layout</layout>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Required Information --></label>
+            <section>Required Information</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Information --></label>
+            <section>Sales Information</section>
+        </sections>
+        <sections>
+            <label><!-- Transferred? --></label>
+            <section>Transferred?</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer Layout</layout>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Pardot --></label>
+            <section>Pardot</section>
+        </sections>
+        <sections>
+            <label><!-- Personal Data --></label>
+            <section>Personal Data</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Doctor Layout</layout>
+        <sections>
+            <label><!-- DC Store Program --></label>
+            <section>DC Store Program</section>
+        </sections>
+        <sections>
+            <label><!-- Discussed? --></label>
+            <section>Discussed?</section>
+        </sections>
+        <sections>
+            <label><!-- Doctor Information --></label>
+            <section>Doctor Information</section>
+        </sections>
+        <sections>
+            <label><!-- HCP Segments - Status --></label>
+            <section>HCP Segments - Status</section>
+        </sections>
+        <sections>
+            <label><!-- Healthcare Provider Survey --></label>
+            <section>Healthcare Provider Survey</section>
+        </sections>
+        <sections>
+            <label><!-- Pardot --></label>
+            <section>Pardot</section>
+        </sections>
+        <sections>
+            <label><!-- Required Information --></label>
+            <section>Required Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Hospitality</layout>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Pardot --></label>
+            <section>Pardot</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lead Layout</layout>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Discussed? --></label>
+            <section>Discussed?</section>
+        </sections>
+        <sections>
+            <label><!-- Ducks --></label>
+            <section>Ducks</section>
+        </sections>
+        <sections>
+            <label><!-- Needs? --></label>
+            <section>Needs?</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Pain Points --></label>
+            <section>Pain Points</section>
+        </sections>
+        <sections>
+            <label><!-- Personal Data --></label>
+            <section>Personal Data</section>
+        </sections>
+        <sections>
+            <label><!-- Required Information --></label>
+            <section>Required Information</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Information --></label>
+            <section>Sales Information</section>
+        </sections>
+        <sections>
+            <label><!-- Symptoms --></label>
+            <section>Symptoms</section>
+        </sections>
+        <sections>
+            <label><!-- Transferred? --></label>
+            <section>Transferred?</section>
+        </sections>
+        <sections>
+            <label><!-- Web to Lead page 2 data --></label>
+            <section>Web to Lead page 2 data</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>New Lead Layout</layout>
+        <sections>
+            <label><!-- Needs? --></label>
+            <section>Needs?</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Pain Points --></label>
+            <section>Pain Points</section>
+        </sections>
+        <sections>
+            <label><!-- Personal Data --></label>
+            <section>Personal Data</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>PPC Layout</layout>
+        <sections>
+            <label><!-- Needs? --></label>
+            <section>Needs?</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Pain Points --></label>
+            <section>Pain Points</section>
+        </sections>
+        <sections>
+            <label><!-- Personal Data --></label>
+            <section>Personal Data</section>
+        </sections>
+    </layouts>
     <recordTypes>
         <label><!-- Blogger --></label>
         <name>Blogger</name>
