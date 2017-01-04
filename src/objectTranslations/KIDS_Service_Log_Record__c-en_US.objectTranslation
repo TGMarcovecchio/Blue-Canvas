@@ -8,5 +8,16 @@
         <plural>true</plural>
         <value>KIDS Service Log Records</value>
     </caseValues>
+    <layouts>
+        <layout>KIDS Record Layout</layout>
+        <sections>
+            <label><!-- Activity Description and Comments --></label>
+            <section>Activity Description and Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

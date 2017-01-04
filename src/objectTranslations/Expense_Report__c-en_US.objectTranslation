@@ -8,5 +8,12 @@
         <plural>true</plural>
         <value>Expense Reports</value>
     </caseValues>
+    <layouts>
+        <layout>Expense Report Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

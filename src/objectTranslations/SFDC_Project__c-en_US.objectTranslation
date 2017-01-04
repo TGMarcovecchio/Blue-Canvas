@@ -8,5 +8,62 @@
         <plural>true</plural>
         <value>Projects</value>
     </caseValues>
+    <layouts>
+        <layout>Project Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Logistics --></label>
+            <section>Logistics</section>
+        </sections>
+        <sections>
+            <label><!-- Project-Related Information --></label>
+            <section>Project-Related Information</section>
+        </sections>
+        <sections>
+            <label><!-- Status Description --></label>
+            <section>Status Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Project Management &amp; Reporting</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Logistics --></label>
+            <section>Logistics</section>
+        </sections>
+        <sections>
+            <label><!-- Project-Related Information --></label>
+            <section>Project-Related Information</section>
+        </sections>
+        <sections>
+            <label><!-- Status Description --></label>
+            <section>Status Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Project Time &amp; Expense</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Logistics --></label>
+            <section>Logistics</section>
+        </sections>
+        <sections>
+            <label><!-- Project-Related Information --></label>
+            <section>Project-Related Information</section>
+        </sections>
+        <sections>
+            <label><!-- Status Description --></label>
+            <section>Status Description</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

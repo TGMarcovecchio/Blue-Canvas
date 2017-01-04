@@ -8,5 +8,36 @@
         <plural>true</plural>
         <value>Statements of Work</value>
     </caseValues>
+    <layouts>
+        <layout>Statement of Work Layout</layout>
+        <sections>
+            <label><!-- Costs Summary --></label>
+            <section>Costs Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Approval --></label>
+            <section>Customer Approval</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Labor Summary --></label>
+            <section>Labor Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Scope of Work --></label>
+            <section>Scope of Work</section>
+        </sections>
+        <sections>
+            <label><!-- Timeline --></label>
+            <section>Timeline</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

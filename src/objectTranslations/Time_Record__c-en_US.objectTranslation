@@ -8,5 +8,24 @@
         <plural>true</plural>
         <value>Time Records</value>
     </caseValues>
+    <layouts>
+        <layout>Time Record Layout</layout>
+        <sections>
+            <label><!-- Comment --></label>
+            <section>Comment</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Related Reports --></label>
+            <section>Related Reports</section>
+        </sections>
+        <sections>
+            <label><!-- Summary Information --></label>
+            <section>Summary Information</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

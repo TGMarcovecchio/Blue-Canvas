@@ -8,5 +8,40 @@
         <plural>true</plural>
         <value>Invoices</value>
     </caseValues>
+    <layouts>
+        <layout>Invoice Layout</layout>
+        <sections>
+            <label><!-- Address and Header --></label>
+            <section>Address and Header</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Dates --></label>
+            <section>Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Financial --></label>
+            <section>Financial</section>
+        </sections>
+        <sections>
+            <label><!-- Internal Notes --></label>
+            <section>Internal Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Narrative --></label>
+            <section>Narrative</section>
+        </sections>
+        <sections>
+            <label><!-- Report --></label>
+            <section>Report</section>
+        </sections>
+        <sections>
+            <label><!-- Spring CM Documents --></label>
+            <section>Spring CM Documents</section>
+        </sections>
+    </layouts>
     <startsWith>Vowel</startsWith>
 </CustomObjectTranslation>

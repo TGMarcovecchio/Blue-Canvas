@@ -8,5 +8,20 @@
         <plural>true</plural>
         <value>Agile Tasks</value>
     </caseValues>
+    <layouts>
+        <layout>Agile Task Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Story Details --></label>
+            <section>Story Details</section>
+        </sections>
+        <sections>
+            <label><!-- Title --></label>
+            <section>Title</section>
+        </sections>
+    </layouts>
     <startsWith>Vowel</startsWith>
 </CustomObjectTranslation>
