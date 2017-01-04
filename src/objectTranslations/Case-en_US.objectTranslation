@@ -129,6 +129,24 @@
             <translation><!-- Question --></translation>
         </picklistValues>
     </fields>
+    <layouts>
+        <layout>Case Layout</layout>
+        <sections>
+            <label><!-- Trends --></label>
+            <section>Trends</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Only Metrics</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
     <quickActions>
         <label><!-- NewChildCase --></label>
         <name>NewChildCase</name>

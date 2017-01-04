@@ -8,6 +8,13 @@
         <plural>true</plural>
         <value>Installments</value>
     </caseValues>
+    <layouts>
+        <layout>Installment Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
     <workflowTasks>
         <description><!-- The opportunity&apos;s installment date is due. Please follow up on this to ensure payment. --></description>

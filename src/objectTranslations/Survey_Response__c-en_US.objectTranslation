@@ -8,5 +8,19 @@
         <plural>true</plural>
         <value>Survey Responses</value>
     </caseValues>
+    <layouts>
+        <layout>Post-test Survey Response Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Pre-test Survey Response Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

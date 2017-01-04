@@ -8,5 +8,60 @@
         <plural>true</plural>
         <value>Intake</value>
     </caseValues>
+    <layouts>
+        <layout>Intake Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Banked Status --></label>
+            <section>Banked Status</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Credit --></label>
+            <section>Credit</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Debt --></label>
+            <section>Debt</section>
+        </sections>
+        <sections>
+            <label><!-- Employment --></label>
+            <section>Employment</section>
+        </sections>
+        <sections>
+            <label><!-- Household Details --></label>
+            <section>Household Details</section>
+        </sections>
+        <sections>
+            <label><!-- Monthly NET Income --></label>
+            <section>Monthly NET Income</section>
+        </sections>
+        <sections>
+            <label><!-- Monthly Spending --></label>
+            <section>Monthly Spending</section>
+        </sections>
+        <sections>
+            <label><!-- Race/Ethnicity --></label>
+            <section>Race/Ethnicity</section>
+        </sections>
+        <sections>
+            <label><!-- Savings --></label>
+            <section>Savings</section>
+        </sections>
+        <sections>
+            <label><!-- Wellbeing and Confidence --></label>
+            <section>Wellbeing and Confidence</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

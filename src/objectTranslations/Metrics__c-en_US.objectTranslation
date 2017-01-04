@@ -8,5 +8,151 @@
         <plural>true</plural>
         <value>Metrics</value>
     </caseValues>
+    <layouts>
+        <layout>Copy of Metric Layout</layout>
+        <sections>
+            <label><!-- Assets --></label>
+            <section>Assets</section>
+        </sections>
+        <sections>
+            <label><!-- Banked Status --></label>
+            <section>Banked Status</section>
+        </sections>
+        <sections>
+            <label><!-- Budget --></label>
+            <section>Budget</section>
+        </sections>
+        <sections>
+            <label><!-- Credit --></label>
+            <section>Credit</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Debt --></label>
+            <section>Debt</section>
+        </sections>
+        <sections>
+            <label><!-- Deltas --></label>
+            <section>Deltas</section>
+        </sections>
+        <sections>
+            <label><!-- Deprecated / Legacy Fields --></label>
+            <section>Deprecated / Legacy Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Expenses --></label>
+            <section>Expenses</section>
+        </sections>
+        <sections>
+            <label><!-- Income --></label>
+            <section>Income</section>
+        </sections>
+        <sections>
+            <label><!-- Initial Values at Metric Creation and Current Values on Contact --></label>
+            <section>Initial Values at Metric Creation and Current Values on Contact</section>
+        </sections>
+        <sections>
+            <label><!-- Referrals --></label>
+            <section>Referrals</section>
+        </sections>
+        <sections>
+            <label><!-- Savings --></label>
+            <section>Savings</section>
+        </sections>
+        <sections>
+            <label><!-- Status --></label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label><!-- Wellness/Confidence --></label>
+            <section>Wellness/Confidence</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Metric Layout</layout>
+        <sections>
+            <label><!-- Banked Status --></label>
+            <section>Banked Status</section>
+        </sections>
+        <sections>
+            <label><!-- Credit --></label>
+            <section>Credit</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Data Included in This Metric --></label>
+            <section>Data Included in This Metric</section>
+        </sections>
+        <sections>
+            <label><!-- Debt --></label>
+            <section>Debt</section>
+        </sections>
+        <sections>
+            <label><!-- Expenses --></label>
+            <section>Expenses</section>
+        </sections>
+        <sections>
+            <label><!-- Expenses: Clothing --></label>
+            <section>Expenses: Clothing</section>
+        </sections>
+        <sections>
+            <label><!-- Expenses: Food --></label>
+            <section>Expenses: Food</section>
+        </sections>
+        <sections>
+            <label><!-- Expenses: Health --></label>
+            <section>Expenses: Health</section>
+        </sections>
+        <sections>
+            <label><!-- Expenses: Housing and Utilities --></label>
+            <section>Expenses: Housing and Utilities</section>
+        </sections>
+        <sections>
+            <label><!-- Expenses: Other --></label>
+            <section>Expenses: Other</section>
+        </sections>
+        <sections>
+            <label><!-- Expenses: Personal --></label>
+            <section>Expenses: Personal</section>
+        </sections>
+        <sections>
+            <label><!-- Expenses: Recreation --></label>
+            <section>Expenses: Recreation</section>
+        </sections>
+        <sections>
+            <label><!-- Expenses: Savings Contributions --></label>
+            <section>Expenses: Savings Contributions</section>
+        </sections>
+        <sections>
+            <label><!-- Expenses: Transportation --></label>
+            <section>Expenses: Transportation</section>
+        </sections>
+        <sections>
+            <label><!-- Income --></label>
+            <section>Income</section>
+        </sections>
+        <sections>
+            <label><!-- SLCCU Checking Products --></label>
+            <section>SLCCU Checking Products</section>
+        </sections>
+        <sections>
+            <label><!-- SLCCU Loan Products --></label>
+            <section>SLCCU Loan Products</section>
+        </sections>
+        <sections>
+            <label><!-- SLCCU Savings Products --></label>
+            <section>SLCCU Savings Products</section>
+        </sections>
+        <sections>
+            <label><!-- Savings --></label>
+            <section>Savings</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

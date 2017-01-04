@@ -560,6 +560,25 @@
         <label><!-- Company Street --></label>
         <name>npsp__CompanyStreet__c</name>
     </fields>
+    <layouts>
+        <layout>Volunteer</layout>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Emergency Contact Information --></label>
+            <section>Emergency Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Reference --></label>
+            <section>Reference</section>
+        </sections>
+        <sections>
+            <label><!-- Volunteer Information --></label>
+            <section>Volunteer Information</section>
+        </sections>
+    </layouts>
     <recordTypes>
         <label><!-- Class Registration --></label>
         <name>Class_Registration</name>

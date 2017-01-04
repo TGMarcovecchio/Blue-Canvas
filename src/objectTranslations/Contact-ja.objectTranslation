@@ -2397,6 +2397,192 @@
         <label><!-- Address Override --></label>
         <name>npsp__is_Address_Override__c</name>
     </fields>
+    <layouts>
+        <layout>Contact Layout 2</layout>
+        <sections>
+            <label><!-- Client Information --></label>
+            <section>Client Information</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Details --></label>
+            <section>Contact Details</section>
+        </sections>
+        <sections>
+            <label><!-- Employment --></label>
+            <section>Employment</section>
+        </sections>
+        <sections>
+            <label><!-- Household Address --></label>
+            <section>Household Address</section>
+        </sections>
+        <sections>
+            <label><!-- Intake --></label>
+            <section>Intake</section>
+        </sections>
+        <sections>
+            <label><!-- Most Recent Metric Dates --></label>
+            <section>Most Recent Metric Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Race &amp; Ethnicity --></label>
+            <section>Race &amp; Ethnicity</section>
+        </sections>
+        <sections>
+            <label><!-- Volunteer Information --></label>
+            <section>Volunteer Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact Layout C4G</layout>
+        <sections>
+            <label><!-- Client Information --></label>
+            <section>Client Information</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Details --></label>
+            <section>Contact Details</section>
+        </sections>
+        <sections>
+            <label><!-- Employment --></label>
+            <section>Employment</section>
+        </sections>
+        <sections>
+            <label><!-- First Metrics --></label>
+            <section>First Metrics</section>
+        </sections>
+        <sections>
+            <label><!-- Household Address --></label>
+            <section>Household Address</section>
+        </sections>
+        <sections>
+            <label><!-- Intake --></label>
+            <section>Intake</section>
+        </sections>
+        <sections>
+            <label><!-- Most Recent Metrics --></label>
+            <section>Most Recent Metrics</section>
+        </sections>
+        <sections>
+            <label><!-- Race &amp; Ethnicity --></label>
+            <section>Race &amp; Ethnicity</section>
+        </sections>
+        <sections>
+            <label><!-- Volunteer Information --></label>
+            <section>Volunteer Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Donor</layout>
+        <sections>
+            <label><!-- Contact Details --></label>
+            <section>Contact Details</section>
+        </sections>
+        <sections>
+            <label><!-- Donation Information --></label>
+            <section>Donation Information</section>
+        </sections>
+        <sections>
+            <label><!-- Donation Totals --></label>
+            <section>Donation Totals</section>
+        </sections>
+        <sections>
+            <label><!-- Household Donation Info --></label>
+            <section>Household Donation Info</section>
+        </sections>
+        <sections>
+            <label><!-- Soft Credit Total --></label>
+            <section>Soft Credit Total</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Partner</layout>
+        <sections>
+            <label><!-- Contact Details --></label>
+            <section>Contact Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Revised Client Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Assets --></label>
+            <section>Assets</section>
+        </sections>
+        <sections>
+            <label><!-- Banked Status --></label>
+            <section>Banked Status</section>
+        </sections>
+        <sections>
+            <label><!-- Client Information --></label>
+            <section>Client Information</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Details --></label>
+            <section>Contact Details</section>
+        </sections>
+        <sections>
+            <label><!-- Credit --></label>
+            <section>Credit</section>
+        </sections>
+        <sections>
+            <label><!-- Debt --></label>
+            <section>Debt</section>
+        </sections>
+        <sections>
+            <label><!-- Deltas and Trends --></label>
+            <section>Deltas and Trends</section>
+        </sections>
+        <sections>
+            <label><!-- Expenses --></label>
+            <section>Expenses</section>
+        </sections>
+        <sections>
+            <label><!-- Household Details --></label>
+            <section>Household Details</section>
+        </sections>
+        <sections>
+            <label><!-- Income --></label>
+            <section>Income</section>
+        </sections>
+        <sections>
+            <label><!-- Race/Ethnicity --></label>
+            <section>Race/Ethnicity</section>
+        </sections>
+        <sections>
+            <label><!-- Referrals --></label>
+            <section>Referrals</section>
+        </sections>
+        <sections>
+            <label><!-- Savings --></label>
+            <section>Savings</section>
+        </sections>
+        <sections>
+            <label><!-- Wellness and Confidence --></label>
+            <section>Wellness and Confidence</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Volunteer</layout>
+        <sections>
+            <label><!-- Contact Details --></label>
+            <section>Contact Details</section>
+        </sections>
+        <sections>
+            <label><!-- Emergency Contact Information --></label>
+            <section>Emergency Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Reference --></label>
+            <section>Reference</section>
+        </sections>
+        <sections>
+            <label><!-- Volunteer Information --></label>
+            <section>Volunteer Information</section>
+        </sections>
+    </layouts>
     <recordTypes>
         <label><!-- C&amp;P Online --></label>
         <name>C_P_Online</name>

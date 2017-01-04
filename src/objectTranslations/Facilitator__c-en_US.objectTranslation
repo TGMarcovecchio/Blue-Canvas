@@ -8,5 +8,16 @@
         <plural>true</plural>
         <value>Facilitators</value>
     </caseValues>
+    <layouts>
+        <layout>Facilitator Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Evaluation --></label>
+            <section>Evaluation</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

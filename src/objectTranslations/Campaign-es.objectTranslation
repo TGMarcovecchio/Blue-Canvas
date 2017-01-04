@@ -599,6 +599,31 @@
             <translation><!-- Webinar --></translation>
         </picklistValues>
     </fields>
+    <layouts>
+        <layout>Campaign Layout</layout>
+        <sections>
+            <label><!-- Campaign Hierarchy Information --></label>
+            <section>Campaign Hierarchy Information</section>
+        </sections>
+        <sections>
+            <label><!-- Campaign Members --></label>
+            <section>Campaign Members</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Campaigns-C4G</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Volunteers Campaign Layout</layout>
+        <sections>
+            <label><!-- Volunteers --></label>
+            <section>Volunteers</section>
+        </sections>
+    </layouts>
     <recordTypes>
         <label><!-- Class Coaching Session --></label>
         <name>Class_Coaching_Session</name>

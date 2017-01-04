@@ -8,5 +8,16 @@
         <plural>true</plural>
         <value>Meeting Attendees</value>
     </caseValues>
+    <layouts>
+        <layout>Meeting Attendee Layout</layout>
+        <sections>
+            <label><!-- Anonymous Attendee Information --></label>
+            <section>Anonymous Attendee Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>
