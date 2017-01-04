@@ -8,5 +8,12 @@
         <plural>true</plural>
         <value>KIDS Primary Contact Records</value>
     </caseValues>
+    <layouts>
+        <layout>KIDS Primary Contact Record Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

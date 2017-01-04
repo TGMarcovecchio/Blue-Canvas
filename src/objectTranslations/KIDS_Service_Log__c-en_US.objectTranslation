@@ -8,5 +8,16 @@
         <plural>true</plural>
         <value>KIDS Service Logs</value>
     </caseValues>
+    <layouts>
+        <layout>KIDS Service Log Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Pipe File Details --></label>
+            <section>Pipe File Details</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

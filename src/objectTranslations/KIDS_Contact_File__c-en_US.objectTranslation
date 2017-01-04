@@ -8,5 +8,16 @@
         <plural>true</plural>
         <value>KIDS Contact Files</value>
     </caseValues>
+    <layouts>
+        <layout>KIDS Contact File Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- KIDS Pipe File Details --></label>
+            <section>KIDS Pipe File Details</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>
