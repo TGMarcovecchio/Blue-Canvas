@@ -533,11 +533,11 @@ NULL,
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>IF(ISBLANK([Opportunity].Secondary_Campaign__c.Referral_Account__c.Grand_ParentAccount__c.Grandparent_Referral_Percent__c),
+                <stringValue>&quot;IF(ISBLANK([Opportunity].Secondary_Campaign__c.Referral_Account__c.Grand_ParentAccount__c.Grandparent_Referral_Percent__c),
 NULL,
 [Opportunity].Secondary_Campaign__c.Referral_Account__c.Grand_ParentAccount__c.Grandparent_Referral_Percent__c *1000000)
 
-/*multiplied to offset a known issue with percent fields in process builder */</stringValue>
+/*</stringValue>
             </value>
         </processMetadataValues>
         <name>formula_18_myRule_16_A1_Grandparent_Referral_Percent_c</name>
@@ -569,10 +569,10 @@ NULL,
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>IF(ISBLANK([Opportunity].Secondary_Campaign__c.Referral_Account__c.ParentId ),
+                <stringValue>&quot;IF(ISBLANK([Opportunity].Secondary_Campaign__c.Referral_Account__c.ParentId ),
 NULL,([Opportunity].Secondary_Campaign__c.Referral_Account__c.Parent.Parent_Referral_Percent__c *1000000))
 
-/*multiplied to offset a known issue with percent fields in process builder */</stringValue>
+/*multiplied to offset a known issue with percent fields in process</stringValue>
             </value>
         </processMetadataValues>
         <name>formula_20_myRule_16_A1_Parent_Referral_Percent_c</name>

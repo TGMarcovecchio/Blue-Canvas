@@ -326,7 +326,7 @@ CASESAFEID({!myVariable_current.Campaign.Referral_Account__c.Id})
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>IF(
+                <stringValue>&quot;IF(
 ISBLANK([Opportunity].Campaign.Referral_Account__c),
 0,
 IF(
@@ -336,7 +336,7 @@ ISBLANK([Opportunity].Campaign.Referral_Account__c.Referral_Percent__c),
 )
 )
 
-/*multiplied to offset a known issue with percent fields in process builder */</stringValue>
+/*multiplied to offset a known issu</stringValue>
             </value>
         </processMetadataValues>
         <name>formula_11_myRule_3_A1_Referral_Percent_c</name>
@@ -401,15 +401,12 @@ NULL,
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>IF(ISBLANK([Opportunity].Secondary_Campaign__c.Referral_Account__c.Grand_ParentAccount__c),
+                <stringValue>&quot;IF(ISBLANK([Opportunity].Secondary_Campaign__c.Referral_Account__c.Grand_ParentAccount__c),
 0,
 IF(
 ISBLANK([Opportunity].Secondary_Campaign__c.Referral_Account__c.Grand_ParentAccount__c.Grandparent_Referral_Percent__c ),
 0,
-[Opportunity].Secondary_Campaign__c.Referral_Account__c.Grand_ParentAccount__c.Grandparent_Referral_Percent__c *1000000)
-)
-
-/*multiplied to offset a known issue with percent fields in process builder */</stringValue>
+[Opportunity].Secondary_Campai</stringValue>
             </value>
         </processMetadataValues>
         <name>formula_16_myRule_14_A1_Grandparent_Referral_Percent_c</name>
@@ -445,16 +442,13 @@ NULL,
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>IF(
+                <stringValue>&quot;IF(
 ISBLANK([Opportunity].Secondary_Campaign__c.Referral_Account__c.ParentId),
 0,
 IF(
 ISBLANK([Opportunity].Secondary_Campaign__c.Referral_Account__c.Parent.Parent_Referral_Percent__c),
 0,
-[Opportunity].Secondary_Campaign__c.Referral_Account__c.Parent.Parent_Referral_Percent__c *1000000)
-)
-
-/*multiplied to offset a known issue with percent fields in process builder */</stringValue>
+[Opportunity].Secondary_Campaign__c.Referral_Account__c.Parent.Pa</stringValue>
             </value>
         </processMetadataValues>
         <name>formula_18_myRule_14_A1_Parent_Referral_Percent_c</name>
@@ -527,16 +521,13 @@ CASESAFEID({!myVariable_current.Secondary_Campaign__c.Referral_Account__c.Id})
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>IF(
+                <stringValue>&quot;IF(
 ISBLANK([Opportunity].Secondary_Campaign__c.Referral_Account__c),
 0,
 IF(
 ISBLANK([Opportunity].Secondary_Campaign__c.Referral_Account__c.Referral_Percent__c ),
 0,
-[Opportunity].Secondary_Campaign__c.Referral_Account__c.Referral_Percent__c  *1000000)
-)
-
-/*multiplied to offset a known issue with percent fields in process builder */</stringValue>
+[Opportunity].Secondary_Campaign__c.Referral_Account__c.Referral_Percent__c  *1000000)</stringValue>
             </value>
         </processMetadataValues>
         <name>formula_22_myRule_14_A1_Referral_Percent_c</name>
@@ -557,15 +548,13 @@ ISBLANK({!myVariable_current.Secondary_Campaign__c.Referral_Account__c.Referral_
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>IF(
+                <stringValue>&quot;IF(
 ISBLANK([Opportunity].Secondary_Campaign__c.Referral_Account__c),
 NULL,
 IF(
 ISBLANK(TEXT([Opportunity].Secondary_Campaign__c.Referral_Account__c.Referral_Type__c)),
 NULL,
-TEXT([Opportunity].Secondary_Campaign__c.Referral_Account__c.Referral_Type__c)
-)
-)</stringValue>
+TEXT([Opportunity].Secondary_Campaign__c.Referral_Account__c.Referral_Type__c)</stringValue>
             </value>
         </processMetadataValues>
         <name>formula_23_myRule_14_A1_Referral_Type_Text_c</name>
@@ -602,7 +591,7 @@ NULL,
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>IF(
+                <stringValue>&quot;IF(
 ISBLANK([Opportunity].Campaign.Referral_Account__c),
 0,
 IF(
@@ -612,7 +601,7 @@ ISBLANK([Opportunity].Campaign.Referral_Account__c.Hierarchical_Grandparent_Perc
 )
 )
 
-/*multiplied to offset a known issue with percent fields in process builder */</stringValue>
+/*m</stringValue>
             </value>
         </processMetadataValues>
         <name>formula_5_myRule_3_A1_Grandparent_Referral_Percent_c</name>
@@ -650,7 +639,7 @@ NULL,
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>IF(
+                <stringValue>&quot;IF(
 ISBLANK([Opportunity].Campaign.Referral_Account__c),
 0,
 IF(
@@ -660,7 +649,7 @@ ISBLANK([Opportunity].Campaign.Referral_Account__c.Hierarchical_Parent_Percent__
 )
 )
 
-/*multiplied to offset a known issue with percent fields in process builder */</stringValue>
+/*multiplied</stringValue>
             </value>
         </processMetadataValues>
         <name>formula_7_myRule_3_A1_Parent_Referral_Percent_c</name>
