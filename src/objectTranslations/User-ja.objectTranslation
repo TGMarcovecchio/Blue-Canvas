@@ -124,6 +124,13 @@
         <label><!-- Shipping Preference Used --></label>
         <name>zkusps__shippingPreferenceUsed__c</name>
     </fields>
+    <layouts>
+        <layout>User Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
     <webLinks>
         <label><!-- Conga_Composer_OAuth --></label>
         <name>APXTConga4__Conga_Composer_OAuth</name>

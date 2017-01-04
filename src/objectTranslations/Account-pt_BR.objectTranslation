@@ -1282,6 +1282,119 @@
         <label><!-- ValidatedShippingStreet --></label>
         <name>c2g__CODAValidatedShippingStreet__c</name>
     </fields>
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label><!-- Account Balance --></label>
+            <section>Account Balance</section>
+        </sections>
+        <sections>
+            <label><!-- Hospitality --></label>
+            <section>Hospitality</section>
+        </sections>
+        <sections>
+            <label><!-- Referral Information --></label>
+            <section>Referral Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>FF Customer Layout</layout>
+        <sections>
+            <label><!-- Account Balance --></label>
+            <section>Account Balance</section>
+        </sections>
+        <sections>
+            <label><!-- Accounting Information --></label>
+            <section>Accounting Information</section>
+        </sections>
+        <sections>
+            <label><!-- Bank Details --></label>
+            <section>Bank Details</section>
+        </sections>
+        <sections>
+            <label><!-- Cash Matching Report --></label>
+            <section>Cash Matching Report</section>
+        </sections>
+        <sections>
+            <label><!-- Credit Management Information --></label>
+            <section>Credit Management Information</section>
+        </sections>
+        <sections>
+            <label><!-- Credit Terms --></label>
+            <section>Credit Terms</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Dimension Analysis --></label>
+            <section>Dimension Analysis</section>
+        </sections>
+        <sections>
+            <label><!-- Finance Correspondence --></label>
+            <section>Finance Correspondence</section>
+        </sections>
+        <sections>
+            <label><!-- Referral Commissions --></label>
+            <section>Referral Commissions</section>
+        </sections>
+        <sections>
+            <label><!-- Sales &amp; Use Tax Information --></label>
+            <section>Sales &amp; Use Tax Information</section>
+        </sections>
+        <sections>
+            <label><!-- VAT/GST Information --></label>
+            <section>VAT/GST Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>FF Vendor Layout</layout>
+        <sections>
+            <label><!-- Account Balance --></label>
+            <section>Account Balance</section>
+        </sections>
+        <sections>
+            <label><!-- Accounting Information --></label>
+            <section>Accounting Information</section>
+        </sections>
+        <sections>
+            <label><!-- Bank Details --></label>
+            <section>Bank Details</section>
+        </sections>
+        <sections>
+            <label><!-- Cash Matching Report --></label>
+            <section>Cash Matching Report</section>
+        </sections>
+        <sections>
+            <label><!-- Credit Management Information --></label>
+            <section>Credit Management Information</section>
+        </sections>
+        <sections>
+            <label><!-- Credit Terms --></label>
+            <section>Credit Terms</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Dimension Analysis --></label>
+            <section>Dimension Analysis</section>
+        </sections>
+        <sections>
+            <label><!-- Finance Correspondence --></label>
+            <section>Finance Correspondence</section>
+        </sections>
+        <sections>
+            <label><!-- Sales &amp; Use Tax Information --></label>
+            <section>Sales &amp; Use Tax Information</section>
+        </sections>
+        <sections>
+            <label><!-- VAT/GST Information --></label>
+            <section>VAT/GST Information</section>
+        </sections>
+    </layouts>
     <recordTypes>
         <label><!-- Customer --></label>
         <name>Customer</name>

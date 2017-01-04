@@ -8,5 +8,12 @@
         <plural>true</plural>
         <value>Sales Order Line Historic Price</value>
     </caseValues>
+    <layouts>
+        <layout>Sales Order Line Historic Price Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

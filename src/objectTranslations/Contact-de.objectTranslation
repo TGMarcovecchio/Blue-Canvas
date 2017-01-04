@@ -2944,6 +2944,252 @@ Incentive = Full Display --></help>
         <label><!-- Send A Tango Card® --></label>
         <name>tangocardapp__Send_A_Tango_Card_Contact__c</name>
     </fields>
+    <layouts>
+        <layout>Blogger Layout</layout>
+        <sections>
+            <label><!-- Blogger Enrolled Information --></label>
+            <section>Blogger Enrolled Information</section>
+        </sections>
+        <sections>
+            <label><!-- Blogger Personal Bed --></label>
+            <section>Blogger Personal Bed</section>
+        </sections>
+        <sections>
+            <label><!-- Required Information --></label>
+            <section>Required Information</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Information --></label>
+            <section>Sales Information</section>
+        </sections>
+        <sections>
+            <label><!-- Social Media --></label>
+            <section>Social Media</section>
+        </sections>
+        <sections>
+            <label><!-- Social Media Info --></label>
+            <section>Social Media Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer Layout</layout>
+        <sections>
+            <label><!-- Customer Purchase --></label>
+            <section>Customer Purchase</section>
+        </sections>
+        <sections>
+            <label><!-- Pardot --></label>
+            <section>Pardot</section>
+        </sections>
+        <sections>
+            <label><!-- Required Information --></label>
+            <section>Required Information</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Information --></label>
+            <section>Sales Information</section>
+        </sections>
+        <sections>
+            <label><!-- Social Media Info --></label>
+            <section>Social Media Info</section>
+        </sections>
+        <sections>
+            <label><!-- Survey Questions --></label>
+            <section>Survey Questions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer | Default</layout>
+        <sections>
+            <label><!-- Customer Purchase --></label>
+            <section>Customer Purchase</section>
+        </sections>
+        <sections>
+            <label><!-- Doctor Best Practices --></label>
+            <section>Doctor Best Practices</section>
+        </sections>
+        <sections>
+            <label><!-- Doctor Clinic Contact Info --></label>
+            <section>Doctor Clinic Contact Info</section>
+        </sections>
+        <sections>
+            <label><!-- Doctor Marketing Material --></label>
+            <section>Doctor Marketing Material</section>
+        </sections>
+        <sections>
+            <label><!-- Doctor Stats --></label>
+            <section>Doctor Stats</section>
+        </sections>
+        <sections>
+            <label><!-- HCP Segment - Status --></label>
+            <section>HCP Segment - Status</section>
+        </sections>
+        <sections>
+            <label><!-- Required Enrolled Information --></label>
+            <section>Required Enrolled Information</section>
+        </sections>
+        <sections>
+            <label><!-- Required Information --></label>
+            <section>Required Information</section>
+        </sections>
+        <sections>
+            <label><!-- Returns and Complaints --></label>
+            <section>Returns and Complaints</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Information --></label>
+            <section>Sales Information</section>
+        </sections>
+        <sections>
+            <label><!-- Social Media --></label>
+            <section>Social Media</section>
+        </sections>
+        <sections>
+            <label><!-- Social Media Info --></label>
+            <section>Social Media Info</section>
+        </sections>
+        <sections>
+            <label><!-- Warranty Information --></label>
+            <section>Warranty Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Doctor Layout</layout>
+        <sections>
+            <label><!-- DC Store Program --></label>
+            <section>DC Store Program</section>
+        </sections>
+        <sections>
+            <label><!-- Doctor Best Practices --></label>
+            <section>Doctor Best Practices</section>
+        </sections>
+        <sections>
+            <label><!-- Doctor Clinic Contact Info --></label>
+            <section>Doctor Clinic Contact Info</section>
+        </sections>
+        <sections>
+            <label><!-- Doctor Marketing Material --></label>
+            <section>Doctor Marketing Material</section>
+        </sections>
+        <sections>
+            <label><!-- Doctor Purchases --></label>
+            <section>Doctor Purchases</section>
+        </sections>
+        <sections>
+            <label><!-- Doctor Stats --></label>
+            <section>Doctor Stats</section>
+        </sections>
+        <sections>
+            <label><!-- HCP Segment - Status --></label>
+            <section>HCP Segment - Status</section>
+        </sections>
+        <sections>
+            <label><!-- Pardot --></label>
+            <section>Pardot</section>
+        </sections>
+        <sections>
+            <label><!-- Required Enrolled Information --></label>
+            <section>Required Enrolled Information</section>
+        </sections>
+        <sections>
+            <label><!-- Required Information --></label>
+            <section>Required Information</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Information --></label>
+            <section>Sales Information</section>
+        </sections>
+        <sections>
+            <label><!-- Social Media --></label>
+            <section>Social Media</section>
+        </sections>
+        <sections>
+            <label><!-- Social Media Info --></label>
+            <section>Social Media Info</section>
+        </sections>
+        <sections>
+            <label><!-- Survey --></label>
+            <section>Survey</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Hospitality</layout>
+        <sections>
+            <label><!-- Blogger Enrolled Information --></label>
+            <section>Blogger Enrolled Information</section>
+        </sections>
+        <sections>
+            <label><!-- Blogger Personal Bed --></label>
+            <section>Blogger Personal Bed</section>
+        </sections>
+        <sections>
+            <label><!-- Required Information --></label>
+            <section>Required Information</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Information --></label>
+            <section>Sales Information</section>
+        </sections>
+        <sections>
+            <label><!-- Social Media --></label>
+            <section>Social Media</section>
+        </sections>
+        <sections>
+            <label><!-- Social Media Info --></label>
+            <section>Social Media Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>PPC Layout</layout>
+        <sections>
+            <label><!-- Customer Purchase --></label>
+            <section>Customer Purchase</section>
+        </sections>
+        <sections>
+            <label><!-- Doctor Best Practices --></label>
+            <section>Doctor Best Practices</section>
+        </sections>
+        <sections>
+            <label><!-- Doctor Clinic Contact Info --></label>
+            <section>Doctor Clinic Contact Info</section>
+        </sections>
+        <sections>
+            <label><!-- Doctor Marketing Material --></label>
+            <section>Doctor Marketing Material</section>
+        </sections>
+        <sections>
+            <label><!-- Doctor Stats --></label>
+            <section>Doctor Stats</section>
+        </sections>
+        <sections>
+            <label><!-- Required Enrolled Information --></label>
+            <section>Required Enrolled Information</section>
+        </sections>
+        <sections>
+            <label><!-- Required Information --></label>
+            <section>Required Information</section>
+        </sections>
+        <sections>
+            <label><!-- Returns and Complaints --></label>
+            <section>Returns and Complaints</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Information --></label>
+            <section>Sales Information</section>
+        </sections>
+        <sections>
+            <label><!-- Social Media --></label>
+            <section>Social Media</section>
+        </sections>
+        <sections>
+            <label><!-- Social Media Info --></label>
+            <section>Social Media Info</section>
+        </sections>
+        <sections>
+            <label><!-- Warranty Information --></label>
+            <section>Warranty Information</section>
+        </sections>
+    </layouts>
     <recordTypes>
         <label><!-- Affiliate --></label>
         <name>Affiliate</name>

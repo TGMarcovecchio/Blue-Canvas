@@ -1835,6 +1835,33 @@ Store sales that were referred by a Dr. must also be in as Patient --></help>
         <label><!-- testing email --></label>
         <name>testing_email__c</name>
     </fields>
+    <layouts>
+        <layout>Opportunity Layout</layout>
+        <sections>
+            <label><!-- Dashboard Data --></label>
+            <section>Dashboard Data</section>
+        </sections>
+        <sections>
+            <label><!-- Lines --></label>
+            <section>Lines</section>
+        </sections>
+        <sections>
+            <label><!-- Marketing Info --></label>
+            <section>Marketing Info</section>
+        </sections>
+        <sections>
+            <label><!-- Purchase Info --></label>
+            <section>Purchase Info</section>
+        </sections>
+        <sections>
+            <label><!-- Referral Partner Details --></label>
+            <section>Referral Partner Details</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Commission --></label>
+            <section>Sales Commission</section>
+        </sections>
+    </layouts>
     <validationRules>
         <errorMessage><!-- Please provide a value --></errorMessage>
         <name>Enforce_Medical_Type</name>
