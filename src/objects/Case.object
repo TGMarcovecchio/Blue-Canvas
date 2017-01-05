@@ -1669,6 +1669,11 @@
             <field>Claim__c</field>
             <operation>notEqual</operation>
         </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>notEqual</operation>
+            <value>Closed</value>
+        </filters>
         <label>Claim</label>
     </listViews>
     <listViews>
