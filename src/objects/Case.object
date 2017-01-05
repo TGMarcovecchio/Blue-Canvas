@@ -1651,6 +1651,27 @@
         <label>All Closed Cases</label>
     </listViews>
     <listViews>
+        <fullName>Claims</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <columns>PBSI__Item__c</columns>
+        <columns>Comfort_Issues__c</columns>
+        <columns>Resolution_for_Comfort_Issues__c</columns>
+        <columns>Product_Issues__c</columns>
+        <columns>Product_Issues_Resolution__c</columns>
+        <columns>Shipping_Issues__c</columns>
+        <columns>Shipping_Resolution__c</columns>
+        <columns>Case_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Claim__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>Claim</label>
+    </listViews>
+    <listViews>
         <fullName>MyCases</fullName>
         <filterScope>Mine</filterScope>
         <label>My Cases</label>
