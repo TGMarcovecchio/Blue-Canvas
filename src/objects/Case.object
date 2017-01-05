@@ -1657,13 +1657,13 @@
         <columns>CASES.SUBJECT</columns>
         <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
         <columns>PBSI__Item__c</columns>
-        <columns>Comfort_Issues__c</columns>
-        <columns>Resolution_for_Comfort_Issues__c</columns>
-        <columns>Product_Issues__c</columns>
-        <columns>Product_Issues_Resolution__c</columns>
         <columns>Shipping_Issues__c</columns>
         <columns>Shipping_Resolution__c</columns>
-        <columns>Case_Notes__c</columns>
+        <columns>Date_Claim_Filed__c</columns>
+        <columns>Amount__c</columns>
+        <columns>Amount_Reimbursed__c</columns>
+        <columns>Reimbursement_Date__c</columns>
+        <columns>CASES.STATUS</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>Claim__c</field>
